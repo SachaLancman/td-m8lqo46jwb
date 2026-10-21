@@ -1,0 +1,97 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paper Trading Dashboard</title>
+<meta name="robots" content="noindex,nofollow">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+:root{--bg:#0d1117;--card:#161b22;--bd:#30363d;--fg:#e6edf3;--mut:#8b949e;--g:#3fb950;--r:#f85149;--b:#58a6ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 -apple-system,Segoe UI,Roboto,sans-serif}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;border-bottom:1px solid var(--bd);flex-wrap:wrap;gap:8px}
+h1{font-size:18px;margin:0}.badge{background:#1f6feb33;color:var(--b);border:1px solid #1f6feb;border-radius:12px;padding:1px 9px;font-size:12px;margin-left:8px}
+.mut{color:var(--mut)}main{padding:18px 22px;max-width:1400px;margin:auto}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:16px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:14px 16px}
+.kl{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.05em}.kv{font-size:24px;font-weight:600;margin-top:4px}.ks{font-size:12px;color:var(--mut)}
+.pos{color:var(--g)}.neg{color:var(--r)}
+.bar{height:6px;background:#21262d;border-radius:3px;margin-top:8px;overflow:hidden}.bar>div{height:100%;background:var(--b)}
+h2{font-size:15px;margin:0 0 10px}section{margin-bottom:16px}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:6px 8px;border-bottom:1px solid var(--bd);text-align:left;white-space:nowrap}
+th{color:var(--mut);font-weight:500}td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}td.d{white-space:normal;color:var(--mut)}
+.scroll{max-height:420px;overflow:auto}pre{white-space:pre-wrap;word-wrap:break-word;margin:0;font:13px/1.5 ui-monospace,Menlo,Consolas,monospace;max-height:600px;overflow:auto}
+#err{display:none;background:#f8514922;border:1px solid var(--r);color:var(--r);padding:8px 12px;border-radius:8px;margin-bottom:12px}
+.chartbox{height:340px}
+</style></head><body>
+<header><div><h1 style="display:inline">Paper Trading Dashboard</h1><span class="badge" id="mode">—</span></div>
+<div class="mut"><a id="officelink" href="#" style="color:#58a6ff;margin-right:14px;text-decoration:none">🎮 Trading floor view →</a>Last updated: <span id="upd">—</span> <span id="stale" style="display:none;color:#d29922">· stale (box asleep — showing last snapshot)</span> · auto-refresh 60s</div></header>
+<main>
+<div id="err"></div>
+<div class="kpis">
+ <div class="card"><div class="kl">Account value</div><div class="kv" id="k-val">—</div><div class="ks" id="k-val-s"></div></div>
+ <div class="card"><div class="kl">Total return</div><div class="kv" id="k-ret">—</div><div class="ks" id="k-ret-s"></div></div>
+ <div class="card"><div class="kl">Cash</div><div class="kv" id="k-cash">—</div><div class="ks" id="k-cash-s"></div></div>
+ <div class="card"><div class="kl">Drawdown from peak</div><div class="kv" id="k-dd">—</div><div class="ks" id="k-dd-s"></div></div>
+ <div class="card"><div class="kl">Progress to goal</div><div class="kv" id="k-goal">—</div><div class="ks" id="k-goal-s"></div><div class="bar"><div id="k-goal-bar" style="width:0"></div></div></div>
+</div>
+<section class="card"><h2>Equity curve vs. 10x-in-a-year pace</h2><div class="chartbox"><canvas id="chart"></canvas></div></section>
+<section class="card"><h2>Open positions</h2><div class="scroll"><table id="pos"></table></div></section>
+<section class="card"><h2>Trades log <span class="mut" id="tcount"></span></h2><div class="scroll"><table id="trades"></table></div></section>
+<section class="card"><h2>Decision <span class="mut" id="ddate"></span></h2><pre id="dec">—</pre></section>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+document.getElementById('officelink').href='office.html';
+const usd=v=>v==null||isNaN(v)?'—':Number(v).toLocaleString('en-US',{style:'currency',currency:'USD'});
+const pct=v=>v==null||isNaN(v)?'—':(v>=0?'+':'')+(v*100).toFixed(2)+'%';
+const num=v=>v==null||v===''?'—':(isNaN(v)?String(v):Number(v).toLocaleString('en-US',{maximumFractionDigits:4}));
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const cls=v=>v>0?'pos':v<0?'neg':'';
+const det=d=>d==null?'':typeof d==='object'?JSON.stringify(d):String(d);
+let chart;
+function render(d){
+ $('err').style.display=d.error?'block':'none';$('err').textContent=d.error||'';
+ $('mode').textContent=(d.mode||'unknown').toUpperCase();
+ $('k-val').textContent=usd(d.account_value);$('k-val-s').textContent='Positions '+usd(d.positions_value)+' · start '+usd(d.starting_cash);
+ $('k-ret').textContent=pct(d.total_return);$('k-ret').className='kv '+cls(d.total_return);$('k-ret-s').textContent=usd(d.account_value-d.starting_cash)+' P/L';
+ $('k-cash').textContent=usd(d.cash);$('k-cash-s').textContent=d.account_value?((d.cash/d.account_value*100).toFixed(1)+'% of account'):'';
+ $('k-dd').textContent=pct(d.drawdown);$('k-dd').className='kv '+(d.drawdown<0?'neg':'');$('k-dd-s').textContent='Peak '+usd(d.peak_value);
+ const gp=Math.max(0,d.goal_progress||0);$('k-goal').textContent=(gp*100).toFixed(2)+'%';$('k-goal-s').textContent='Target '+usd(d.goal_target);$('k-goal-bar').style.width=Math.min(100,gp*100)+'%';
+ // chart
+ const hist=(d.history||[]).filter(h=>h.date).map(h=>({x:String(h.date).slice(0,10),y:Number(h.value)}));
+ const start=d.start_date?new Date(String(d.start_date).slice(0,10)+'T00:00:00'):(hist[0]?new Date(hist[0].x+'T00:00:00'):new Date());
+ const s0=d.starting_cash||10000, mult=(d.goal_target||s0*10)/s0;
+ const lastH=hist.length?new Date(hist[hist.length-1].x+'T00:00:00'):start;
+ const end=new Date(Math.max(lastH, new Date())); end.setDate(end.getDate()+14);
+ const labels=[];for(let t=new Date(start);t<=end;t.setDate(t.getDate()+1))labels.push(t.toISOString().slice(0,10));
+ const hmap={};hist.forEach(h=>hmap[h.x]=h.y);
+ const eq=labels.map(l=>hmap[l]??null);
+ const pace=labels.map(l=>{const days=(new Date(l+'T00:00:00')-start)/864e5;return +(s0*Math.pow(mult,days/365)).toFixed(2)});
+ const ds=[{label:'Account value',data:eq,borderColor:'#3fb950',backgroundColor:'#3fb95033',spanGaps:true,pointRadius:3,tension:.15,fill:false},
+  {label:'Pace for '+mult.toFixed(0)+'x in 1 year',data:pace,borderColor:'#8b949e',borderDash:[6,4],pointRadius:0}];
+ if(chart){chart.data.labels=labels;chart.data.datasets.forEach((x,i)=>{x.data=ds[i].data;x.label=ds[i].label});chart.update('none')}
+ else if(window.Chart){chart=new Chart($('chart'),{type:'line',data:{labels,datasets:ds},options:{responsive:true,maintainAspectRatio:false,animation:false,
+  interaction:{mode:'index',intersect:false},plugins:{legend:{labels:{color:'#e6edf3'}},tooltip:{callbacks:{label:c=>c.dataset.label+': '+usd(c.parsed.y)}}},
+  scales:{x:{ticks:{color:'#8b949e',maxTicksLimit:10},grid:{color:'#21262d'}},y:{ticks:{color:'#8b949e',callback:v=>usd(v)},grid:{color:'#21262d'}}}}})}
+ // positions
+ const P=d.positions||[];
+ $('pos').innerHTML=P.length?'<tr><th>Symbol</th><th>Type</th><th class="n">Qty</th><th class="n">Entry</th><th class="n">Last</th><th class="n">Mkt value</th><th class="n">Unrealized P/L</th><th>Detail</th></tr>'+P.map(p=>{
+  const m=/option|call|put/i.test(p.type||'')?100:1,q=+p.qty||0,e=+p.entry||0,l=p.last!=null?+p.last:e,mv=q*l*m,pl=q*(l-e)*m,plp=e?(l/e-1):0;
+  return `<tr><td>${esc(p.symbol)}</td><td>${esc(p.type)}</td><td class="n">${num(p.qty)}</td><td class="n">${usd(p.entry)}</td><td class="n">${usd(p.last)}</td><td class="n">${usd(mv)}</td><td class="n ${cls(pl)}">${usd(pl)} (${pct(plp)})</td><td class="d">${esc(det(p.detail))}</td></tr>`}).join(''):'<tr><td class="mut">No open positions</td></tr>';
+ // trades newest first
+ const T=(d.trades||[]).slice().reverse().sort((a,b)=>String(b.time||'').localeCompare(String(a.time||'')));
+ $('tcount').textContent='('+T.length+')';
+ $('trades').innerHTML=T.length?'<tr><th>Time</th><th>Action</th><th>Symbol</th><th class="n">Qty</th><th class="n">Price</th><th>Detail</th></tr>'+T.map(t=>
+  `<tr><td>${esc(t.time)}</td><td class="${/buy/i.test(t.action||'')?'pos':/sell/i.test(t.action||'')?'neg':''}">${esc(t.action)}</td><td>${esc(t.symbol)}</td><td class="n">${num(t.qty)}</td><td class="n">${usd(t.price)}</td><td class="d">${esc(det(t.detail))}</td></tr>`).join(''):'<tr><td class="mut">No trades yet</td></tr>';
+ $('dec').textContent=d.decision||'No decision.md for today yet.';
+ $('ddate').textContent=d.decision_date?('('+d.decision_date+(d.decision_date!==d.today?' — latest available, not today':'')+')'):'';
+}
+const STALE_MS=30*60*1000;let pubAt=null;
+function ago(ms){const m=Math.round(ms/60000);return m<1?'just now':m<60?m+' min ago':m<1440?Math.round(m/60)+' h ago':Math.round(m/1440)+' d ago'}
+function showAge(){if(!pubAt)return;const a=Date.now()-pubAt;
+ $('upd').textContent=new Date(pubAt).toLocaleString('en-US',{timeZone:'America/New_York',dateStyle:'medium',timeStyle:'short'})+' ET ('+ago(a)+')';
+ $('stale').style.display=a>STALE_MS?'inline':'none'}
+async function load(){
+ try{const r=await fetch('data.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);
+  const d=await r.json();render(d);pubAt=d.published_epoch_ms||null;showAge();
+ }catch(e){$('err').style.display='block';$('err').textContent='Fetch failed: '+e.message+' (showing last loaded data)'}
+}
+load();setInterval(load,60000);setInterval(showAge,30000);
+</script></body></html>
