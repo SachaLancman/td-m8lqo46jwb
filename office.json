@@ -7,8 +7,8 @@
  "goal_target": 100000.0,
  "mode": "paper",
  "positions": 0,
- "published_at": "2026-10-21 10:05:02 AM EDT",
- "published_epoch_ms": 1792591502155,
+ "published_at": "2026-10-21 10:06:03 AM EDT",
+ "published_epoch_ms": 1792591563615,
  "roles": {
   "coordinator": {
    "note": "kicked off 2026-10-21 run; waiting on Decider",
@@ -16,32 +16,32 @@
    "state": "done"
   },
   "decider": {
-   "note": null,
-   "source": "default",
+   "note": "waiting for all four reports (have risk only)",
+   "source": "status.json",
    "state": "idle"
   },
   "fundamentals": {
-   "note": null,
-   "source": "default",
-   "state": "idle"
+   "note": "checking earnings calendar and macro dates",
+   "source": "status.json",
+   "state": "researching"
   },
   "risk": {
-   "note": null,
-   "source": "default",
-   "state": "idle"
+   "note": "risk.md ready: no vetoes, $2,500 max position",
+   "source": "status.json",
+   "state": "done"
   },
   "sentiment": {
-   "note": null,
-   "source": "default",
-   "state": "idle"
+   "note": "regime check SPY/QQQ/VIX",
+   "source": "status.json",
+   "state": "researching"
   },
   "technical": {
-   "note": null,
-   "source": "default",
-   "state": "idle"
+   "note": "pulling Webull daily bars for SPY/QQQ + candidates",
+   "source": "status.json",
+   "state": "researching"
   }
  },
- "server_time": "2026-10-21 10:05:02 AM EDT",
+ "server_time": "2026-10-21 10:06:03 AM EDT",
  "starting_cash": 10000.0,
  "status_json_error": null,
  "today": "2026-10-21",
