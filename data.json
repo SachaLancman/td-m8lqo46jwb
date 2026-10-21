@@ -1,26 +1,80 @@
 {
- "account_value": 10000.0,
- "cash": 10000.0,
- "decision": null,
- "decision_date": null,
- "drawdown": 0.0,
+ "account_value": 9573.05,
+ "cash": 9570.0,
+ "decision": "# Decision \u2014 2026-10-21 (Wednesday)\n\n**Mode: PAPER** (no real orders placed, modified or cancelled). Written 2026-10-21 ~10:12 ET.\n\n## Market regime\n- SPY ~769.6, just above its 50-day (~767-768; Sentiment notes the 50-day is flat and the margin is thin).\n- QQQ ~722, below its 50-day (~726).\n- VIX 16.91 (Yahoo, 09:50 ET).\n- Verdict: **normal sizing**. No halving rule triggered, long premium allowed. **No Risk Manager vetoes.**\n\n## Calls (one per ticker)\n\n| Ticker | Action | Size | Stop / max loss | Reason |\n|---|---|---|---|---|\n| TSM | **BUY** Dec 18 2026 440/450 call debit spread | 1 spread (debit $4.30 = $430, 4.3% of account) | Max loss $430 (debit). Stop: spread value \u2264 $2.15. Also exit on TSM close < $400; time exit 2026-12-11 | Beat and raise Oct 15 (Q4 guide $52.3-54.3B, ~+58% y/y). No earnings until ~Jan. ~12.6% off its high after a sector-wide semis selloff. Defined risk because QQQ is below its 50-day and Technical flags semis as a falling knife. Fundamentals 3/5 (top idea), Sentiment 3/5 risk-on AI hardware, Technical cautious (counter-signal), Risk no veto. Target: spread value $7.50 (take profits from $5.00) |\n| MSFT | Hold off / no trade | 0 | n/a | Only Technical is bullish. Earnings and FOMC on 10/28. Revisit 10/29 |\n| AAPL | No trade | 0 | n/a | 2/5. Overlaps MSFT. Thin R/R under 348 resistance |\n| IWM | No trade | 0 | n/a | 2/5 bearish, but it sits on rising 200-day support |\n| NVDA | No trade | 0 | n/a | Same AI-chip bet as TSM; only one allowed |\n| MU | No trade | 0 | n/a | Same AI-chip bet as TSM; only one allowed |\n| SMCI | No trade | 0 | n/a | Same AI-hardware bet. Below its 50-day, chase risk after the gap, earnings Nov 3 |\n| GOOGL | Wait | 0 | n/a | Earnings 10/28. Reassess after |\n| META | No trade | 0 | n/a | Earnings tonight (binary) |\n| TSLA | No trade | 0 | n/a | Earnings tonight (binary) |\n| NFLX | No trade | 0 | n/a | Put-spread condition (failed bounce under $65) not met; price ~$66.6 |\n\n## TSM fill details\n- **Source:** Nasdaq public option chain API (api.nasdaq.com), fetched **2026-10-21 10:11:49 ET**. Raw data: `reports/2026-10-21/raw_decider/TSM_2026-12-18_chain.json`. Chain last trade $425.675 (10:11 ET).\n- **Underlying:** Webull snapshot TSM $425.58 (bid 425.56 / ask 425.62), quote 10:11:56 ET.\n\n| Leg | Bid | Ask | Mid | Spread % of mid | Open interest | Fill |\n|---|---|---|---|---|---|---|\n| Long 440C 12/18/26 | 16.90 | 17.60 | 17.25 | 4.06% | 3,886 | **17.60 (ask)** |\n| Short 450C 12/18/26 | 13.30 | 13.85 | 13.575 | 4.05% | 6,699 | **13.30 (bid)** |\n\n- **Debit:** 17.60 \u2212 13.30 = **$4.30** \u2192 $430 per spread. Max loss $430, max value $1,000 (max gain $570).\n- **Guardrails:** debit \u00d7 100 = $430 \u2264 $500 \u2705. Both legs OI \u2265 500 \u2705. Both legs' bid-ask < 10% of mid \u2705. Size 4.3% < 5% per-trade cap \u2705. 1 of 6 positions \u2705.\n- **Exit plan:** stop at spread value \u2264 $2.15 (50% of debit). Take profit at spread value $5.00-$7.50 (target $7.50). Close by 2026-12-11 (7 DTE) unless deep ITM. Exit if TSM closes below $400.\n- **Current mark (liquidation value):** 440C bid 16.90 \u2212 450C ask 13.85 = $3.05 \u2192 **$305** (\u2212$125 vs cost, all from the bid-ask spread).\n\n## Weekly option budget\n**$430 of $1,500** used (15% of $10,000). $1,070 left.\n\n## Upcoming event risk\n- **Tonight (10/21):** META and TSLA earnings.\n- **10/28:** FOMC, plus MSFT and GOOGL earnings.\n- **10/29:** GDP, PCE, AMZN earnings.\n- **11/2:** AAPL earnings.\n- **11/3:** AMD earnings and Election Day (also SMCI earnings).\n\n## Ending portfolio (paper)\n- Cash: **$9,570.00**\n- Positions: TSM 12/18/26 440/450 call debit spread \u00d71, marked at $305.00 (liquidation value)\n- **Total value: $9,875.00**\n- Peak value: $10,000.00\n",
+ "decision_date": "2026-10-21",
+ "drawdown": -0.04269500000000004,
  "error": null,
  "goal": "Grow $10,000 to $100,000 within one year (by 2026-10-21 + 1 year)",
- "goal_progress": 0.0,
+ "goal_progress": -0.004743888888888897,
  "goal_target": 100000.0,
  "history": [
   {
    "date": "2026-10-21",
-   "value": 10000.0
+   "value": 9875.0
   }
  ],
  "mode": "paper",
  "peak_value": 10000.0,
- "positions": [],
- "positions_value": 0,
- "published_at": "2026-10-21 10:12:09 AM EDT",
- "published_epoch_ms": 1792591929982,
- "server_time": "2026-10-21 10:12:09 AM EDT",
+ "positions": [
+  {
+   "contracts": 1,
+   "cost": 430.0,
+   "detail": "12/18/26 440/450C",
+   "entry": 4.3,
+   "entry_debit": 4.3,
+   "id": "TSM-20261218-440-450C-1",
+   "last": 3.05,
+   "last_note": "liquidation mark = 440C bid 16.90 - 450C ask 13.85",
+   "last_updated": "2026-10-21T10:11:49-04:00",
+   "legs": [
+    {
+     "expiration": "2026-12-18",
+     "price": 17.6,
+     "right": "call",
+     "side": "long",
+     "strike": 440
+    },
+    {
+     "expiration": "2026-12-18",
+     "price": 13.3,
+     "right": "call",
+     "side": "short",
+     "strike": 450
+    }
+   ],
+   "max_loss": 430.0,
+   "max_value": 1000,
+   "multiplier": 100,
+   "opened": "2026-10-21T10:11:49-04:00",
+   "price_source": "Nasdaq public option chain API (api.nasdaq.com), fetched 2026-10-21 10:11:49 ET; raw: reports/2026-10-21/raw_decider/TSM_2026-12-18_chain.json",
+   "qty": 1,
+   "signals": {
+    "fundamentals": "bullish 3/5 (top idea)",
+    "risk": "no veto",
+    "sentiment": "3/5 risk-on AI-hardware tone (SMCI guide raise, NVDA up)",
+    "technical": "cautious on chips (counter-signal noted)"
+   },
+   "stop": 2.15,
+   "stop_note": "close if spread value <= $2.15 (50% of debit)",
+   "symbol": "TSM",
+   "target": 7.5,
+   "target_note": "take profit at spread value $5.00-$7.50 (50-75% of max value); target $7.50",
+   "thesis": "TSM beat and raised Oct 15 (Q4 guide $52.3-54.3B, ~+58% y/y), no earnings until ~Jan, ~12.6% off high after sector-wide semis selloff; defined-risk debit spread because QQQ below 50-day and Technical flags semis as falling knife.",
+   "time_exit": "2026-12-11",
+   "type": "call_debit_spread",
+   "underlying": "TSM",
+   "underlying_at_entry": {
+    "price": 425.58,
+    "source": "Webull get_stock_snapshot, quote 2026-10-21 10:11:56 ET (bid 425.56/ask 425.62)"
+   },
+   "underlying_exit": "TSM close < 400"
+  }
+ ],
+ "positions_value": 3.05,
+ "published_at": "2026-10-21 10:13:11 AM EDT",
+ "published_epoch_ms": 1792591991236,
+ "server_time": "2026-10-21 10:13:11 AM EDT",
  "start_date": "2026-10-21",
  "starting_cash": 10000.0,
  "strategy_b": {
@@ -65,6 +119,48 @@
   "win_rate": null
  },
  "today": "2026-10-21",
- "total_return": 0.0,
- "trades": []
+ "total_return": -0.04269500000000004,
+ "trades": [
+  {
+   "action": "BUY_TO_OPEN",
+   "contracts": 1,
+   "cost": 430.0,
+   "debit": 4.3,
+   "detail": "12/18/26 440/450C (440C@17.60 / 450C@13.30)",
+   "exit_plan": "stop at spread value $2.15; target $5.00-$7.50; time exit 2026-12-11; exit if TSM closes < $400",
+   "id": "TSM-20261218-440-450C-1",
+   "legs": [
+    {
+     "expiration": "2026-12-18",
+     "price": 17.6,
+     "right": "call",
+     "side": "long",
+     "strike": 440
+    },
+    {
+     "expiration": "2026-12-18",
+     "price": 13.3,
+     "right": "call",
+     "side": "short",
+     "strike": 450
+    }
+   ],
+   "multiplier": 100,
+   "price": 4.3,
+   "price_source": "Nasdaq public option chain API (api.nasdaq.com), fetched 2026-10-21 10:11:49 ET; raw: reports/2026-10-21/raw_decider/TSM_2026-12-18_chain.json",
+   "qty": 1,
+   "signals": {
+    "fundamentals": "bullish 3/5 (top idea)",
+    "risk": "no veto",
+    "sentiment": "3/5 risk-on AI-hardware tone (SMCI guide raise, NVDA up)",
+    "technical": "cautious on chips (counter-signal noted)"
+   },
+   "symbol": "TSM",
+   "thesis": "TSM beat and raised Oct 15 (Q4 guide $52.3-54.3B, ~+58% y/y), no earnings until ~Jan, ~12.6% off high after sector-wide semis selloff; defined-risk debit spread because QQQ below 50-day and Technical flags semis as falling knife.",
+   "time": "2026-10-21 10:11 ET",
+   "timestamp": "2026-10-21T10:11:49-04:00",
+   "type": "call_debit_spread",
+   "underlying": "TSM"
+  }
+ ]
 }
