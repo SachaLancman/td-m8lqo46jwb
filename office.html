@@ -49,6 +49,7 @@ const TEAM=[
  {id:'fundamentals',name:'Fundamentals Analyst',shirt:'#5dff7a',hair:'#d9a441',skin:'#e0ac69'},
  {id:'sentiment',name:'Sentiment Analyst',shirt:'#ff9f1c',hair:'#111',skin:'#8d5524'},
  {id:'risk',name:'Risk Manager',shirt:'#ff5d73',hair:'#7a7a7a',skin:'#ffdbac'},
+ {id:'flow_gamma',name:'Options Flow & Gamma Analyst',shirt:'#2ee6d6',hair:'#3b1f5e',skin:'#d9a066'},
  {id:'coordinator',name:'Grok Bot',role:'coordinator',shirt:'#b26bff',hair:null,skin:'#c9d1e0',bot:true},
  {id:'decider',name:'Decider',shirt:'#ffd23f',hair:'#5a2d0c',skin:'#c68642'},
 ];
@@ -63,6 +64,7 @@ const DEMO_DATA={mode:'paper',account_value:10427.35,starting_cash:10000,total_r
   fundamentals:{state:'writing',note:'Sample: drafting fundamentals.md'},
   sentiment:{state:'done',note:'Sample: sentiment.md filed'},
   risk:{state:'idle',note:null},
+  flow_gamma:{state:'researching',note:'Sample: reading the GEX heatmap'},
   decider:{state:'deciding',note:'Sample: buy, hold, or wait?'}},
  trades:[{time:'DEMO 09:41',action:'BUY',symbol:'FAKE',qty:10,price:123.45},{time:'DEMO 10:15',action:'SELL',symbol:'TEST',qty:5,price:67.80}]};
 
@@ -178,7 +180,7 @@ function bubble(x,y,text,t,ph,sleep){
 }
 function frame(t){
  ctx.imageSmoothingEnabled=false;floor(t);
- const cols=3,rows=2,top=P*24,gw=W/cols,gh=(H-top-P*4)/rows;
+ const cols=TEAM.length>6?4:3,rows=Math.ceil(TEAM.length/cols),top=P*24,gw=W/cols,gh=(H-top-P*4)/rows;
  const bubbles=[];
  TEAM.forEach((m,i)=>{const r=(state.roles||{})[m.id]||{state:'idle'};const st=String(r.state||'idle').toLowerCase();
   const x=gw*(i%cols+.5),y=top+gh*Math.floor(i/cols)+gh*.22,ph=i*1.7;
