@@ -5,6 +5,323 @@
  "decision_date": "2026-10-21",
  "drawdown": -0.04277500000000001,
  "error": null,
+ "gamma": {
+  "convention": "Dealer GEX approximation: call GEX = +gamma*OI*100*S^2*0.01, put GEX = -gamma*OI*100*S^2*0.01 ($ of delta hedging per 1% move; assumes dealers long calls / short puts, the common public convention). Positive total = dealers dampen moves (pinning); negative = dealers amplify moves.",
+  "date": "2026-10-21",
+  "disclaimer": "Free public data; estimate only; supporting signal for PAPER trading; never places orders.",
+  "error": null,
+  "generated_at": "2026-10-21 11:21:04 AM EDT",
+  "stale": false,
+  "tickers": [
+   {
+    "as_of": "2026-10-21 11:20 AM EDT",
+    "call_wall": 770.0,
+    "flip": 772.53,
+    "flip_note": null,
+    "net_gex": -3104445514,
+    "png": "gex_SPY.png",
+    "put_wall": 760.0,
+    "regime": "negative",
+    "regime_label": "negative gamma: dealers amplify moves -> trend / higher volatility, expect bigger ranges",
+    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
+    "spot": 771.08,
+    "spot_vs_flip": "below flip",
+    "ticker": "SPY",
+    "top_strikes": [
+     {
+      "call_gex": 203329022,
+      "net_gex": -1985178955,
+      "put_gex": -2188507977,
+      "strike": 760.0
+     },
+     {
+      "call_gex": 277645449,
+      "net_gex": -1087341306,
+      "put_gex": -1364986755,
+      "strike": 765.0
+     },
+     {
+      "call_gex": 634085262,
+      "net_gex": -962682504,
+      "put_gex": -1596767767,
+      "strike": 769.0
+     },
+     {
+      "call_gex": 196928403,
+      "net_gex": -958212481,
+      "put_gex": -1155140885,
+      "strike": 750.0
+     },
+     {
+      "call_gex": 1199641385,
+      "net_gex": 888921956,
+      "put_gex": -310719429,
+      "strike": 780.0
+     }
+    ],
+    "unusual_0dte_count": 42,
+    "unusual_count": 30,
+    "unusual_flow": [
+     {
+      "est_premium": 7526180,
+      "expiry": "2026-10-22",
+      "mid": 3.05,
+      "moneyness": -0.1,
+      "oi": 3901,
+      "strike": 770.0,
+      "type": "call",
+      "vol_oi": 6.3,
+      "volume": 24676
+     },
+     {
+      "est_premium": 4263844,
+      "expiry": "2026-10-22",
+      "mid": 2.46,
+      "moneyness": -0.0,
+      "oi": 1363,
+      "strike": 771.0,
+      "type": "call",
+      "vol_oi": 12.7,
+      "volume": 17368
+     },
+     {
+      "est_premium": 3610243,
+      "expiry": "2026-10-22",
+      "mid": 2.04,
+      "moneyness": -0.1,
+      "oi": 1834,
+      "strike": 770.0,
+      "type": "put",
+      "vol_oi": 9.6,
+      "volume": 17654
+     },
+     {
+      "est_premium": 3538146,
+      "expiry": "2026-10-22",
+      "mid": 2.46,
+      "moneyness": -0.0,
+      "oi": 1595,
+      "strike": 771.0,
+      "type": "put",
+      "vol_oi": 9.0,
+      "volume": 14412
+     },
+     {
+      "est_premium": 2990564,
+      "expiry": "2026-10-22",
+      "mid": 1.96,
+      "moneyness": 0.1,
+      "oi": 1609,
+      "strike": 772.0,
+      "type": "call",
+      "vol_oi": 9.5,
+      "volume": 15297
+     }
+    ]
+   },
+   {
+    "as_of": "2026-10-21 11:20 AM EDT",
+    "call_wall": 725.0,
+    "flip": 727.67,
+    "flip_note": null,
+    "net_gex": -2227231446,
+    "png": "gex_QQQ.png",
+    "put_wall": 720.0,
+    "regime": "negative",
+    "regime_label": "negative gamma: dealers amplify moves -> trend / higher volatility, expect bigger ranges",
+    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
+    "spot": 723.53,
+    "spot_vs_flip": "below flip",
+    "ticker": "QQQ",
+    "top_strikes": [
+     {
+      "call_gex": 107441917,
+      "net_gex": -994650941,
+      "put_gex": -1102092858,
+      "strike": 700.0
+     },
+     {
+      "call_gex": 86880985,
+      "net_gex": -838475072,
+      "put_gex": -925356057,
+      "strike": 710.0
+     },
+     {
+      "call_gex": 38455970,
+      "net_gex": -644592973,
+      "put_gex": -683048943,
+      "strike": 690.0
+     },
+     {
+      "call_gex": 610372408,
+      "net_gex": -493168315,
+      "put_gex": -1103540723,
+      "strike": 720.0
+     },
+     {
+      "call_gex": 108278816,
+      "net_gex": -464941528,
+      "put_gex": -573220344,
+      "strike": 715.0
+     }
+    ],
+    "unusual_0dte_count": 44,
+    "unusual_count": 81,
+    "unusual_flow": [
+     {
+      "est_premium": 11930310,
+      "expiry": "2026-11-20",
+      "mid": 16.33,
+      "moneyness": -0.1,
+      "oi": 1743,
+      "strike": 723.0,
+      "type": "put",
+      "vol_oi": 4.2,
+      "volume": 7308
+     },
+     {
+      "est_premium": 7159782,
+      "expiry": "2026-10-30",
+      "mid": 2.94,
+      "moneyness": -3.8,
+      "oi": 1638,
+      "strike": 696.0,
+      "type": "put",
+      "vol_oi": 14.9,
+      "volume": 24353
+     },
+     {
+      "est_premium": 4971542,
+      "expiry": "2026-10-22",
+      "mid": 4.25,
+      "moneyness": -0.1,
+      "oi": 788,
+      "strike": 723.0,
+      "type": "call",
+      "vol_oi": 14.8,
+      "volume": 11684
+     },
+     {
+      "est_premium": 4289440,
+      "expiry": "2026-10-26",
+      "mid": 7.6,
+      "moneyness": -0.2,
+      "oi": 275,
+      "strike": 722.0,
+      "type": "call",
+      "vol_oi": 20.5,
+      "volume": 5644
+     },
+     {
+      "est_premium": 3688713,
+      "expiry": "2026-10-22",
+      "mid": 6.09,
+      "moneyness": -0.5,
+      "oi": 1597,
+      "strike": 720.0,
+      "type": "call",
+      "vol_oi": 3.8,
+      "volume": 6057
+     }
+    ]
+   },
+   {
+    "as_of": "2026-10-21 11:21 AM EDT",
+    "call_wall": 430.0,
+    "flip": 424.67,
+    "flip_note": null,
+    "net_gex": 12829627,
+    "png": null,
+    "put_wall": 400.0,
+    "regime": "positive",
+    "regime_label": "positive gamma: dealers dampen moves -> mean-reverting / pinning toward big strikes",
+    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
+    "spot": 425.89,
+    "spot_vs_flip": "above flip",
+    "ticker": "TSM",
+    "top_strikes": [
+     {
+      "call_gex": 7945974,
+      "net_gex": -33176705,
+      "put_gex": -41122679,
+      "strike": 400.0
+     },
+     {
+      "call_gex": 29672793,
+      "net_gex": 20706573,
+      "put_gex": -8966219,
+      "strike": 460.0
+     },
+     {
+      "call_gex": 6450149,
+      "net_gex": -18706181,
+      "put_gex": -25156330,
+      "strike": 410.0
+     },
+     {
+      "call_gex": 35017124,
+      "net_gex": 15271548,
+      "put_gex": -19745576,
+      "strike": 450.0
+     },
+     {
+      "call_gex": 1563960,
+      "net_gex": -15111039,
+      "put_gex": -16674999,
+      "strike": 360.0
+     }
+    ],
+    "unusual_0dte_count": 0,
+    "unusual_count": 4,
+    "unusual_flow": [
+     {
+      "est_premium": 1008800,
+      "expiry": "2026-10-23",
+      "mid": 48.5,
+      "moneyness": 11.5,
+      "oi": 0,
+      "strike": 475.0,
+      "type": "put",
+      "vol_oi": null,
+      "volume": 208
+     },
+     {
+      "est_premium": 976762,
+      "expiry": "2026-10-23",
+      "mid": 53.38,
+      "moneyness": 12.7,
+      "oi": 0,
+      "strike": 480.0,
+      "type": "put",
+      "vol_oi": null,
+      "volume": 183
+     },
+     {
+      "est_premium": 517270,
+      "expiry": "2026-10-30",
+      "mid": 14.95,
+      "moneyness": 2.7,
+      "oi": 74,
+      "strike": 437.5,
+      "type": "put",
+      "vol_oi": 4.7,
+      "volume": 346
+     },
+     {
+      "est_premium": 445200,
+      "expiry": "2026-10-23",
+      "mid": 55.65,
+      "moneyness": 13.3,
+      "oi": 0,
+      "strike": 482.5,
+      "type": "put",
+      "vol_oi": null,
+      "volume": 80
+     }
+    ]
+   }
+  ]
+ },
  "goal": "Grow $10,000 to $100,000 within one year (by 2026-10-21 + 1 year)",
  "goal_progress": -0.004752777777777778,
  "goal_target": 100000.0,
@@ -73,9 +390,9 @@
   }
  ],
  "positions_value": 2.25,
- "published_at": "2026-10-21 11:16:21 AM EDT",
- "published_epoch_ms": 1792595781611,
- "server_time": "2026-10-21 11:16:21 AM EDT",
+ "published_at": "2026-10-21 11:22:14 AM EDT",
+ "published_epoch_ms": 1792596134966,
+ "server_time": "2026-10-21 11:22:14 AM EDT",
  "start_date": "2026-10-21",
  "starting_cash": 10000.0,
  "strategy_b": {

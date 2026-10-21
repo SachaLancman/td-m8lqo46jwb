@@ -33,6 +33,13 @@ th{color:var(--mut);font-weight:500}td.n,th.n{text-align:right;font-variant-nume
 </div>
 <section class="card"><h2>Equity curve vs. 10x-in-a-year pace</h2><div class="chartbox"><canvas id="chart"></canvas></div></section>
 <section class="card"><h2>Open positions</h2><div class="scroll"><table id="pos"></table></div></section>
+<section class="card" id="gamma"><h2>Gamma levels <span class="mut" id="g-asof"></span></h2>
+<div id="g-err" style="display:none;color:var(--r);margin-bottom:8px"></div>
+<div class="scroll"><table id="g-tab"></table></div>
+<div id="g-flow" style="margin-top:10px"></div>
+<div id="g-img" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px"></div>
+<div class="mut" style="margin-top:8px;font-size:12px">Dealer GEX estimate from free public option chains (calls +, puts −; $ per 1% move). Positive = pinning/mean-reverting, negative = trend/bigger moves. Supporting context only. Unusual flow = vol ≥ 3× OI (may be hedging/spreads; direction unknown).</div>
+</section>
 <section class="card"><h2>Trades log <span class="mut" id="tcount"></span></h2><div class="scroll"><table id="trades"></table></div></section>
 <section class="card" id="sb" style="display:none"><h2>Strategy B: EMA9 x VWAP (QQQ, paper) <span class="badge">SEPARATE $10K PAPER ACCOUNT</span> <span class="mut" id="sb-start"></span></h2>
 <div id="sb-err" style="display:none;color:var(--r);margin-bottom:8px"></div>
@@ -58,6 +65,23 @@ const num=v=>v==null||v===''?'—':(isNaN(v)?String(v):Number(v).toLocaleString(
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const cls=v=>v>0?'pos':v<0?'neg':'';
 const det=d=>d==null?'':typeof d==='object'?JSON.stringify(d):String(d);
+let GV='';
+const IMG=f=>f+'?v='+encodeURIComponent(GV);
+const bn=v=>v==null||isNaN(v)?'—':(Math.abs(v)>=1e8?(v>=0?'+':'')+(v/1e9).toFixed(2)+'B':(v>=0?'+':'')+(v/1e6).toFixed(1)+'M');
+function renderGamma(g){
+ if(!g)return;
+ $('g-err').style.display=g.error?'block':'none';$('g-err').textContent=g.error||'';
+ $('g-asof').textContent=g.generated_at?('(as of '+g.generated_at+(g.stale?' — not today':'')+')'):'';
+ const T=g.tickers||[];
+ $('g-tab').innerHTML=T.length?'<tr><th>Ticker</th><th class="n">Spot</th><th class="n">Net GEX /1%</th><th class="n">Call wall</th><th class="n">Put wall</th><th class="n">Zero-γ flip</th><th>Regime</th><th>As of</th></tr>'+T.map(t=>t.error?
+  `<tr><td>${esc(t.ticker)}</td><td colspan="7" class="d neg">${esc(t.error)}</td></tr>`:
+  `<tr><td>${esc(t.ticker)}</td><td class="n">${num(t.spot)}</td><td class="n ${cls(t.net_gex)}">${bn(t.net_gex)}</td><td class="n">${num(t.call_wall)}</td><td class="n">${num(t.put_wall)}</td><td class="n">${t.flip==null?'none ±15%':num(t.flip)}</td><td class="${t.regime==='positive'?'pos':'neg'}" title="${esc(t.regime_label)}">${esc(t.regime)}${t.spot_vs_flip?' <span class="mut">('+esc(t.spot_vs_flip)+')</span>':''}</td><td class="mut">${esc(t.as_of)}</td></tr>`).join(''):'<tr><td class="mut">No gamma data</td></tr>';
+ const F=[];T.forEach(t=>(t.unusual_flow||[]).slice(0,3).forEach(u=>F.push({t:t.ticker,...u})));
+ $('g-flow').innerHTML=F.length?'<b>Top unusual flow</b> <span class="mut">(excl. 0DTE; top 3 per ticker by est. premium)</span><table><tr><th>Ticker</th><th>Expiry</th><th>C/P</th><th class="n">Strike</th><th class="n">Vol</th><th class="n">OI</th><th class="n">Mid</th><th class="n">Est. premium</th></tr>'+F.map(u=>
+  `<tr><td>${esc(u.t)}</td><td>${esc(u.expiry)}</td><td class="${u.type==='call'?'pos':'neg'}">${esc(u.type)}</td><td class="n">${num(u.strike)}</td><td class="n">${num(u.volume)}</td><td class="n">${num(u.oi)}</td><td class="n">${num(u.mid)}</td><td class="n">${usd(u.est_premium)}</td></tr>`).join('')+'</table>':'';
+ const imgs=T.filter(t=>t.png).map(t=>`<a href="${IMG(t.png)}" target="_blank"><img src="${IMG(t.png)}" alt="${esc(t.ticker)} GEX by strike" style="max-width:560px;width:100%;border:1px solid #30363d;border-radius:6px;background:#fff"></a>`).join('');
+ if($('g-img').dataset.k!==imgs){$('g-img').innerHTML=imgs;$('g-img').dataset.k=imgs}
+}
 let sbChart;
 function renderB(b){
  if(!b){$('sb').style.display='none';return}
@@ -117,6 +141,7 @@ function render(d){
  $('trades').innerHTML=T.length?'<tr><th>Time</th><th>Action</th><th>Symbol</th><th class="n">Qty</th><th class="n">Price</th><th>Detail</th></tr>'+T.map(t=>
   `<tr><td>${esc(t.time)}</td><td class="${/buy/i.test(t.action||'')?'pos':/sell/i.test(t.action||'')?'neg':''}">${esc(t.action)}</td><td>${esc(t.symbol)}</td><td class="n">${num(t.qty)}</td><td class="n">${usd(t.price)}</td><td class="d">${esc(det(t.detail))}</td></tr>`).join(''):'<tr><td class="mut">No trades yet</td></tr>';
  try{renderB(d.strategy_b)}catch(e){console.error(e)}
+ try{GV=(d.gamma&&d.gamma.generated_at)||'';renderGamma(d.gamma)}catch(e){console.error(e)}
  $('dec').textContent=d.decision||'No decision.md for today yet.';
  $('ddate').textContent=d.decision_date?('('+d.decision_date+(d.decision_date!==d.today?' — latest available, not today':'')+')'):'';
 }
