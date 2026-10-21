@@ -34,6 +34,19 @@ th{color:var(--mut);font-weight:500}td.n,th.n{text-align:right;font-variant-nume
 <section class="card"><h2>Equity curve vs. 10x-in-a-year pace</h2><div class="chartbox"><canvas id="chart"></canvas></div></section>
 <section class="card"><h2>Open positions</h2><div class="scroll"><table id="pos"></table></div></section>
 <section class="card"><h2>Trades log <span class="mut" id="tcount"></span></h2><div class="scroll"><table id="trades"></table></div></section>
+<section class="card" id="sb"><h2>Strategy B: EMA9 x VWAP (QQQ, paper) <span class="badge">SEPARATE $10K PAPER ACCOUNT</span> <span class="mut" id="sb-start"></span></h2>
+<div id="sb-err" style="display:none;color:var(--r);margin-bottom:8px"></div>
+<div class="kpis" style="margin-bottom:10px">
+ <div class="card"><div class="kl">Value</div><div class="kv" id="sb-val">—</div><div class="ks" id="sb-val-s"></div></div>
+ <div class="card"><div class="kl">P/L</div><div class="kv" id="sb-ret">—</div><div class="ks" id="sb-ret-s"></div></div>
+ <div class="card"><div class="kl">Closed trades</div><div class="kv" id="sb-n">—</div><div class="ks" id="sb-n-s"></div></div>
+ <div class="card"><div class="kl">Drawdown from peak</div><div class="kv" id="sb-dd">—</div><div class="ks" id="sb-dd-s"></div></div>
+</div>
+<div style="margin-bottom:10px"><b>Open position:</b> <span id="sb-pos">—</span></div>
+<div class="chartbox" style="height:240px"><canvas id="sb-chart"></canvas></div>
+<h2 style="margin-top:12px">Last 10 trades</h2><div class="scroll"><table id="sb-trades"></table></div>
+<div class="mut" style="margin-top:8px;font-size:12px">Rules: 3-min QQQ bars, EMA(9) vs session VWAP; EMA crosses above VWAP = long shares ("calls" signal), below = short shares ("puts" signal); stop-and-reverse, 0.5% hard stop, entries 09:45–15:30 ET, flat by 15:55 ET; 1% risk sizing capped at 100% notional; 0.02%/side slippage. Simulation only, no real orders. Backtest (123 days) was negative after costs; see strategy_b/backtest.md.<br>Last run: <span id="sb-run">—</span></div>
+</section>
 <section class="card"><h2>Decision <span class="mut" id="ddate"></span></h2><pre id="dec">—</pre></section>
 </main>
 <script>
@@ -45,6 +58,29 @@ const num=v=>v==null||v===''?'—':(isNaN(v)?String(v):Number(v).toLocaleString(
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const cls=v=>v>0?'pos':v<0?'neg':'';
 const det=d=>d==null?'':typeof d==='object'?JSON.stringify(d):String(d);
+let sbChart;
+function renderB(b){
+ if(!b){$('sb').style.display='none';return}
+ $('sb-err').style.display=b.error?'block':'none';$('sb-err').textContent=b.error||'';
+ if(b.error&&b.value==null)return;
+ $('sb-start').textContent=b.start_date?('(started '+b.start_date+')'):'';
+ $('sb-val').textContent=usd(b.value);$('sb-val-s').textContent='Cash '+usd(b.cash)+' · start '+usd(b.starting_cash);
+ $('sb-ret').textContent=pct(b.pnl_pct);$('sb-ret').className='kv '+cls(b.pnl_pct);$('sb-ret-s').textContent=usd(b.pnl)+' total · realized '+usd(b.realized_pnl);
+ $('sb-n').textContent=b.closed_trades??0;$('sb-n-s').textContent=b.win_rate==null?'win rate —':('win rate '+(b.win_rate*100).toFixed(1)+'%');
+ $('sb-dd').textContent=pct(b.drawdown);$('sb-dd').className='kv '+(b.drawdown<0?'neg':'');$('sb-dd-s').textContent='Peak '+usd(b.peak_value);
+ const p=b.position;
+ $('sb-pos').innerHTML=p?`<span class="${p.side==='long'?'pos':'neg'}">${esc(String(p.side).toUpperCase())}</span> ${num(p.qty)} ${esc(p.symbol)} @ ${usd(p.entry)} · last ${usd(p.last)} · stop ${usd(p.stop)} · unrealized <span class="${cls(p.unrealized)}">${usd(p.unrealized)}</span> <span class="mut">(since ${esc(p.entry_time)})</span>`:'<span class="mut">Flat</span>';
+ const H=(b.history||[]).filter(h=>h.time);
+ const labels=H.map(h=>String(h.time).replace('T',' ').slice(5,16)), vals=H.map(h=>Number(h.value));
+ if(sbChart){sbChart.data.labels=labels;sbChart.data.datasets[0].data=vals;sbChart.update('none')}
+ else if(window.Chart){sbChart=new Chart($('sb-chart'),{type:'line',data:{labels,datasets:[{label:'Strategy B value',data:vals,borderColor:'#d2a8ff',backgroundColor:'#d2a8ff33',pointRadius:1.5,tension:.1,fill:false},
+  ]},options:{responsive:true,maintainAspectRatio:false,animation:false,interaction:{mode:'index',intersect:false},plugins:{legend:{labels:{color:'#e6edf3'}},tooltip:{callbacks:{label:c=>usd(c.parsed.y)}}},
+  scales:{x:{ticks:{color:'#8b949e',maxTicksLimit:8},grid:{color:'#21262d'}},y:{ticks:{color:'#8b949e',callback:v=>usd(v)},grid:{color:'#21262d'}}}}})}
+ const T=(b.trades||[]).slice().reverse();
+ $('sb-trades').innerHTML=T.length?'<tr><th>Time (ET)</th><th>Action</th><th>Symbol</th><th class="n">Qty</th><th class="n">Price</th><th class="n">P/L</th><th>Reason</th></tr>'+T.map(t=>
+  `<tr><td>${esc(t.time)}</td><td class="${/^buy/i.test(t.action||'')?'pos':'neg'}">${esc(t.action)}</td><td>${esc(t.symbol)}</td><td class="n">${num(t.qty)}</td><td class="n">${usd(t.price)}</td><td class="n ${cls(t.pnl)}">${t.pnl==null?'':usd(t.pnl)}</td><td class="d">${esc(t.reason)}${t.fill?' · '+esc(t.fill):''}</td></tr>`).join(''):'<tr><td class="mut">No trades yet (paper trading starts '+esc(b.start_date||'')+')</td></tr>';
+ $('sb-run').textContent=b.last_run&&b.last_run.summary?b.last_run.summary:'not run yet';
+}
 let chart;
 function render(d){
  $('err').style.display=d.error?'block':'none';$('err').textContent=d.error||'';
@@ -80,6 +116,7 @@ function render(d){
  $('tcount').textContent='('+T.length+')';
  $('trades').innerHTML=T.length?'<tr><th>Time</th><th>Action</th><th>Symbol</th><th class="n">Qty</th><th class="n">Price</th><th>Detail</th></tr>'+T.map(t=>
   `<tr><td>${esc(t.time)}</td><td class="${/buy/i.test(t.action||'')?'pos':/sell/i.test(t.action||'')?'neg':''}">${esc(t.action)}</td><td>${esc(t.symbol)}</td><td class="n">${num(t.qty)}</td><td class="n">${usd(t.price)}</td><td class="d">${esc(det(t.detail))}</td></tr>`).join(''):'<tr><td class="mut">No trades yet</td></tr>';
+ try{renderB(d.strategy_b)}catch(e){console.error(e)}
  $('dec').textContent=d.decision||'No decision.md for today yet.';
  $('ddate').textContent=d.decision_date?('('+d.decision_date+(d.decision_date!==d.today?' — latest available, not today':'')+')'):'';
 }
