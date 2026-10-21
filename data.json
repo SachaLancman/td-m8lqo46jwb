@@ -1,9 +1,9 @@
 {
- "account_value": 9940.0,
+ "account_value": 9945.0,
  "cash": 9570.0,
  "decision": "# Decision \u2014 2026-10-21 (Wednesday)\n\n**Mode: PAPER** (no real orders placed, modified or cancelled). Written 2026-10-21 ~10:12 ET.\n\n## Market regime\n- SPY ~769.6, just above its 50-day (~767-768; Sentiment notes the 50-day is flat and the margin is thin).\n- QQQ ~722, below its 50-day (~726).\n- VIX 16.91 (Yahoo, 09:50 ET).\n- Verdict: **normal sizing**. No halving rule triggered, long premium allowed. **No Risk Manager vetoes.**\n\n## Calls (one per ticker)\n\n| Ticker | Action | Size | Stop / max loss | Reason |\n|---|---|---|---|---|\n| TSM | **BUY** Dec 18 2026 440/450 call debit spread | 1 spread (debit $4.30 = $430, 4.3% of account) | Max loss $430 (debit). Stop: spread value \u2264 $2.15. Also exit on TSM close < $400; time exit 2026-12-11 | Beat and raise Oct 15 (Q4 guide $52.3-54.3B, ~+58% y/y). No earnings until ~Jan. ~12.6% off its high after a sector-wide semis selloff. Defined risk because QQQ is below its 50-day and Technical flags semis as a falling knife. Fundamentals 3/5 (top idea), Sentiment 3/5 risk-on AI hardware, Technical cautious (counter-signal), Risk no veto. Target: spread value $7.50 (take profits from $5.00) |\n| MSFT | Hold off / no trade | 0 | n/a | Only Technical is bullish. Earnings and FOMC on 10/28. Revisit 10/29 |\n| AAPL | No trade | 0 | n/a | 2/5. Overlaps MSFT. Thin R/R under 348 resistance |\n| IWM | No trade | 0 | n/a | 2/5 bearish, but it sits on rising 200-day support |\n| NVDA | No trade | 0 | n/a | Same AI-chip bet as TSM; only one allowed |\n| MU | No trade | 0 | n/a | Same AI-chip bet as TSM; only one allowed |\n| SMCI | No trade | 0 | n/a | Same AI-hardware bet. Below its 50-day, chase risk after the gap, earnings Nov 3 |\n| GOOGL | Wait | 0 | n/a | Earnings 10/28. Reassess after |\n| META | No trade | 0 | n/a | Earnings tonight (binary) |\n| TSLA | No trade | 0 | n/a | Earnings tonight (binary) |\n| NFLX | No trade | 0 | n/a | Put-spread condition (failed bounce under $65) not met; price ~$66.6 |\n\n## TSM fill details\n- **Source:** Nasdaq public option chain API (api.nasdaq.com), fetched **2026-10-21 10:11:49 ET**. Raw data: `reports/2026-10-21/raw_decider/TSM_2026-12-18_chain.json`. Chain last trade $425.675 (10:11 ET).\n- **Underlying:** Webull snapshot TSM $425.58 (bid 425.56 / ask 425.62), quote 10:11:56 ET.\n\n| Leg | Bid | Ask | Mid | Spread % of mid | Open interest | Fill |\n|---|---|---|---|---|---|---|\n| Long 440C 12/18/26 | 16.90 | 17.60 | 17.25 | 4.06% | 3,886 | **17.60 (ask)** |\n| Short 450C 12/18/26 | 13.30 | 13.85 | 13.575 | 4.05% | 6,699 | **13.30 (bid)** |\n\n- **Debit:** 17.60 \u2212 13.30 = **$4.30** \u2192 $430 per spread. Max loss $430, max value $1,000 (max gain $570).\n- **Guardrails:** debit \u00d7 100 = $430 \u2264 $500 \u2705. Both legs OI \u2265 500 \u2705. Both legs' bid-ask < 10% of mid \u2705. Size 4.3% < 5% per-trade cap \u2705. 1 of 6 positions \u2705.\n- **Exit plan:** stop at spread value \u2264 $2.15 (50% of debit). Take profit at spread value $5.00-$7.50 (target $7.50). Close by 2026-12-11 (7 DTE) unless deep ITM. Exit if TSM closes below $400.\n- **Current mark (liquidation value):** 440C bid 16.90 \u2212 450C ask 13.85 = $3.05 \u2192 **$305** (\u2212$125 vs cost, all from the bid-ask spread).\n\n## Weekly option budget\n**$430 of $1,500** used (15% of $10,000). $1,070 left.\n\n## Upcoming event risk\n- **Tonight (10/21):** META and TSLA earnings.\n- **10/28:** FOMC, plus MSFT and GOOGL earnings.\n- **10/29:** GDP, PCE, AMZN earnings.\n- **11/2:** AAPL earnings.\n- **11/3:** AMD earnings and Election Day (also SMCI earnings).\n\n## Ending portfolio (paper)\n- Cash: **$9,570.00**\n- Positions: TSM 12/18/26 440/450 call debit spread \u00d71, marked at $305.00 (liquidation value)\n- **Total value: $9,875.00**\n- Peak value: $10,000.00\n\n---\n\n## 12:33 intraday scan: no trade (on-demand scan for Sacha, written 12:35 PM ET)\n\n**Mode: PAPER.** No Webull orders were placed, modified or cancelled.\n\n**Data sources:**\n- **Quotes:** Webull `get_stock_snapshot`, quote time 12:33:04 PM ET.\n- **Gamma and flow:** fresh `gex.py` run, 12:32 PM ET (Yahoo via yfinance; ~15 min delay possible). See `reports/2026-10-21/gex.md` / `gex.json`.\n- **TSM chain:** Nasdaq public option chain, 12:33:42 PM ET. Raw file: `reports/2026-10-21/raw_scan_1232/TSM_2026-12-18_chain.json`.\n\n### Intraday read\n| Ticker | Px 12:33 | Day | vs morning levels | Gamma (flip / call wall / put wall) | Notable flow |\n|---|---|---|---|---|---|\n| SPY | 772.25 | +0.42% | Above the 50-day (767.3), under 779.4/781.6 resistance. Range today 768.40\u2013772.93 | **Negative**, just under the flip 772.71. Call wall 773 (0DTE king node), put wall 760 | Oct 22 770/772 calls 28\u201331k vs 1.6\u20133.9k OI (~$8\u201311M), short-term positioning |\n| QQQ | 725.21 | +1.06% | Rallied back to its 50-day (726.2) from below, still under it | **Negative**, below the 727.86 flip. Call wall 725, put wall 700 | Nov 20 723 put 7.4k vs 1.7k OI (~$11.5M), hedging |\n| TSM | 427.90 | +0.66% | Faded from the 435.16 high; above 400 | **Positive** (flip 424.66). Pinned under the 430 call wall; 400 is the king node and put wall | Nothing material |\n| MSFT | 532.04 | +0.03% | In the 522\u2013532 entry zone | Positive; put wall 530 | **On hold until after 10/28 earnings and FOMC (revisit 10/29)** |\n| AAPL | 343.52 | +1.18% | Up toward 345.3/348.2 resistance | Positive; pinned at the 342.5 wall | Dec 18 315 put 18k vs 5.8k OI (~$7.2M), hedge |\n| IWM | 276.61 | +0.30% | Sitting on its 200-day (276.8); inside Technical's 276\u2013280 short zone | **Negative** (below the 279.61 flip). Put wall 270 | Small 0DTE/1DTE 277 activity |\n| NVDA | 219.89 | +1.58% | Still below its 50-day (222.8) | Positive, pinned at 220 | Oct 28 197.5/200 calls (likely closing or ITM rolls) |\n| MU | 910.16 | +1.57% | Off the 889 low | Positive, pinned at 910 | Oct 23 910 call 7.2k vs 1.2k OI (~$13.9M), aggressive short-dated upside |\n| AMD | 549.35 | +2.73% | Holding above its 50-day (539.5) | Positive, pinned at 550 | Small |\n| SMH | 554.80 | +1.54% | Still below its 50-day (577.9) | **Negative**, far below the 594 flip. Call wall 570, put wall 530 | Small puts |\n| NFLX | 65.04 | \u22125.32% | Back near the 65 level and the 52-week low (64.10 low today) | Negative; the put wall at 65 is support | 1DTE 65/66 calls 10\u201326k (bounce bets) |\n\n### Why nothing qualifies (rules as written)\n- **Analysts-agree rule** (\u22652 of the four analysts leaning the same way; Flow & Gamma doesn't count). No new idea has two analysts behind it:\n  - **IWM** bearish: Technical only (2/5). Sentiment and Fundamentals are silent. Negative gamma supports it, but that is context only. \u2192 no.\n  - **AAPL** bullish: Technical only (2/5). R/R is thin under 345\u2013348, and earnings 11/2 fall inside any 30\u201390 DTE expiry. \u2192 no.\n  - **NFLX** bearish: Sentiment only (2/5). Its own trigger (\"failed bounce back under ~$65\") is not cleanly met at $65.04, and it is sitting on the 65 put wall (support) in negative gamma. \u2192 no.\n  - **SMCI** bullish: Sentiment only. It is also the same AI-hardware bet as the open TSM spread, and below its 50-day. \u2192 no.\n- **Same-bet rule:** NVDA, MU, AMD and SMH would duplicate the TSM AI-chip position. \u2192 no.\n- **Event rule:** MSFT is on hold until after 10/28 (earnings plus FOMC). META and TSLA report tonight, so no long premium into a binary print. GOOGL waits for 10/28.\n- **Trend rule:** QQQ is still below its 50-day, so no index long.\n- **Gamma context:** SPY and QQQ are both just below their flips (negative gamma, pinned at the 773/725 0DTE nodes). That argues against chasing intraday.\n- **Gamma check:** n/a for new trades (none proposed). For the open TSM spread, see below.\n- **Risk check:**\n  - Account $9,920 (cash $9,570 + TSM spread liquidation $350); drawdown \u22120.8% from the $10,000 peak.\n  - 1 of 6 positions; option premium used this week $430 of $1,500; 1 of 3 entries used today.\n  - VIX was not re-pulled. The morning reading was 16.91, nowhere near the 25/35 triggers.\n  - No limit would block a trade; the block is the missing analyst agreement.\n\n### Open TSM Dec 18 2026 440/450C debit spread: re-check\n- **Mark (Nasdaq 12:33:42 PM ET):**\n  - 440C 17.50 bid / 17.80 ask (OI 3,886); 450C 13.70 bid / 14.00 ask (OI 6,699).\n  - Liquidation value 17.50 \u2212 14.00 = **$3.50** ($350); mid $3.80. Versus the $4.30 debit: **\u2212$80**.\n- **Stop:** spread \u2264 $2.15, not hit. **Target:** $5.00\u2013$7.50, not hit. **Underlying exit:** TSM close < 400, not hit (TSM 427.90). **Time exit:** 2026-12-11.\n- **Gamma check** (`gex.py --check \"TSM call 440/450 2026-12-18 target=450 stop=400\"`, 12:33 PM ET):\n  - Positive gamma at spot 427.90 (net +$34M per 1%; flip 424.66, spot above).\n  - King node **400** (Dec 18, \u2212$23M) = put wall = our close-basis exit.\n  - Call wall **430** (+0.5%) is below both strikes. Next positive nodes are 450/460.\n  - VEX +$27M per vol point (VEX king 400): calming IV is supportive, a vol spike adds selling.\n  - Read: TSM is pinned under 430, and the spread needs a break through 430 to work. The stop and walls are aligned. **Hold, no change.** Do not add size under the 430 wall. If TSM stalls at 430\u2013435 into December, take the $5.00+ profit range.\n- **Risk check:** within all limits (4.3% of the account at entry, defined risk). No veto conditions triggered. Hold.\n\n**Account (paper, 12:33 PM ET):** cash $9,570.00 + TSM spread $350.00 = **$9,920.00** (\u22120.80% vs $10,000 start).\n",
  "decision_date": "2026-10-21",
- "drawdown": -0.006000000000000005,
+ "drawdown": -0.005499999999999949,
  "error": null,
  "gamma": {
   "convention": "Dealer GEX approximation: call GEX = +gamma*OI*100*S^2*0.01, put GEX = -gamma*OI*100*S^2*0.01 ($ of delta hedging per 1% move; assumes dealers long calls / short puts, the common public convention). Positive total = dealers dampen moves (pinning); negative = dealers amplify moves.",
@@ -2633,12 +2633,12 @@
   ]
  },
  "goal": "Grow $10,000 to $100,000 within one year (by 2026-10-21 + 1 year)",
- "goal_progress": -0.0006666666666666666,
+ "goal_progress": -0.0006111111111111111,
  "goal_target": 100000.0,
  "history": [
   {
    "date": "2026-10-21",
-   "value": 9940.0
+   "value": 9945.0
   }
  ],
  "mode": "paper",
@@ -2651,9 +2651,9 @@
    "entry": 4.3,
    "entry_debit": 4.3,
    "id": "TSM-20261218-440-450C-1",
-   "last": 3.7,
+   "last": 3.75,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-21T13:34:19-04:00",
+   "last_updated": "2026-10-21T13:54:46-04:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -2672,7 +2672,7 @@
    ],
    "max_loss": 430.0,
    "max_value": 1000,
-   "mid": 3.92,
+   "mid": 4.0,
    "multiplier": 100,
    "opened": "2026-10-21T10:11:49-04:00",
    "price_source": "Nasdaq public option chain API (api.nasdaq.com), fetched 2026-10-21 10:11:49 ET; raw: reports/2026-10-21/raw_decider/TSM_2026-12-18_chain.json",
@@ -2699,10 +2699,10 @@
    "underlying_exit": "TSM close < 400"
   }
  ],
- "positions_value": 370.0,
- "published_at": "2026-10-21 01:54:41 PM EDT",
- "published_epoch_ms": 1792605281927,
- "server_time": "2026-10-21 01:54:41 PM EDT",
+ "positions_value": 375.0,
+ "published_at": "2026-10-21 01:54:47 PM EDT",
+ "published_epoch_ms": 1792605287616,
+ "server_time": "2026-10-21 01:54:47 PM EDT",
  "start_date": "2026-10-21",
  "starting_cash": 10000.0,
  "strategy_b": {
@@ -2747,7 +2747,7 @@
   "win_rate": null
  },
  "today": "2026-10-21",
- "total_return": -0.006000000000000005,
+ "total_return": -0.005499999999999949,
  "trades": [
   {
    "action": "BUY_TO_OPEN",
