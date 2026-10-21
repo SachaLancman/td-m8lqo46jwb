@@ -7,8 +7,8 @@
  "goal_target": 100000.0,
  "mode": "paper",
  "positions": 0,
- "published_at": "2026-10-21 10:09:07 AM EDT",
- "published_epoch_ms": 1792591747476,
+ "published_at": "2026-10-21 10:11:08 AM EDT",
+ "published_epoch_ms": 1792591868789,
  "roles": {
   "coordinator": {
    "note": "kicked off 2026-10-21 run; waiting on Decider",
@@ -16,14 +16,14 @@
    "state": "done"
   },
   "decider": {
-   "note": "waiting for all four reports (have risk, sentiment, technical)",
+   "note": "all four reports in; weighing calls",
    "source": "status.json",
-   "state": "idle"
+   "state": "deciding"
   },
   "fundamentals": {
-   "note": "checking earnings calendar and macro dates",
+   "note": "2026-10-21 report ready; top idea TSM call spread (3/5)",
    "source": "status.json",
-   "state": "researching"
+   "state": "done"
   },
   "risk": {
    "note": "risk.md ready: no vetoes, $2,500 max position",
@@ -31,7 +31,7 @@
    "state": "done"
   },
   "sentiment": {
-   "note": "writing fundamentals report",
+   "note": "sentiment status was overwritten in error by a shared /tmp script; sentiment agent to refresh",
    "source": "status.json",
    "state": "writing"
   },
@@ -41,7 +41,7 @@
    "state": "done"
   }
  },
- "server_time": "2026-10-21 10:09:07 AM EDT",
+ "server_time": "2026-10-21 10:11:08 AM EDT",
  "starting_cash": 10000.0,
  "status_json_error": null,
  "today": "2026-10-21",
