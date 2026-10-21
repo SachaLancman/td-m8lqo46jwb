@@ -19,6 +19,7 @@ th{color:var(--mut);font-weight:500}td.n,th.n{text-align:right;font-variant-nume
 .scroll{max-height:420px;overflow:auto}pre{white-space:pre-wrap;word-wrap:break-word;margin:0;font:13px/1.5 ui-monospace,Menlo,Consolas,monospace;max-height:600px;overflow:auto}
 #err{display:none;background:#f8514922;border:1px solid var(--r);color:var(--r);padding:8px 12px;border-radius:8px;margin-bottom:12px}
 .chartbox{height:340px}
+.tbtn{background:#21262d;color:var(--fg);border:1px solid var(--bd);border-radius:6px;padding:3px 10px;font-size:12px;cursor:pointer}.tbtn.on{background:#1f6feb;border-color:#1f6feb;color:#fff}
 </style></head><body>
 <header><div><h1 style="display:inline">Paper Trading Dashboard</h1><span class="badge" id="mode">—</span></div>
 <div class="mut"><a id="officelink" href="#" style="color:#58a6ff;margin-right:14px;text-decoration:none">🎮 Trading floor view →</a>Last updated: <span id="upd">—</span> <span id="stale" style="display:none;color:#d29922">· stale (box asleep — showing last snapshot)</span> · auto-refresh 60s</div></header>
@@ -38,6 +39,11 @@ th{color:var(--mut);font-weight:500}td.n,th.n{text-align:right;font-variant-nume
 <div class="scroll"><table id="g-tab"></table></div>
 <div id="g-flow" style="margin-top:10px"></div>
 <div id="g-img" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px"></div>
+<div id="g-hm" style="margin-top:12px"><b>Heatmap</b> <span class="mut">(strike × expiry, nearest 8 expiries, ±10% of spot; king node outlined)</span>
+<div style="display:flex;gap:6px;flex-wrap:wrap;margin:8px 0" id="g-hm-tk"></div>
+<div style="display:flex;gap:6px;margin-bottom:8px" id="g-hm-kind"></div>
+<div id="g-hm-nodes" class="mut" style="font-size:12px;margin-bottom:8px;white-space:normal"></div>
+<div id="g-hm-img"></div></div>
 <div class="mut" style="margin-top:8px;font-size:12px">Dealer GEX estimate from free public option chains (calls +, puts −; $ per 1% move). Positive = pinning/mean-reverting, negative = trend/bigger moves. Supporting context only. Unusual flow = vol ≥ 3× OI (may be hedging/spreads; direction unknown).</div>
 </section>
 <section class="card"><h2>Trades log <span class="mut" id="tcount"></span></h2><div class="scroll"><table id="trades"></table></div></section>
@@ -68,6 +74,22 @@ const det=d=>d==null?'':typeof d==='object'?JSON.stringify(d):String(d);
 let GV='';
 const IMG=f=>f+'?v='+encodeURIComponent(GV);
 const bn=v=>v==null||isNaN(v)?'—':(Math.abs(v)>=1e8?(v>=0?'+':'')+(v/1e9).toFixed(2)+'B':(v>=0?'+':'')+(v/1e6).toFixed(1)+'M');
+let HMT=null,HMK='gex',GLAST=null;
+const cell=v=>v==null?'—':bn(v);
+function nd(x,l){return x?`${l} <b>${num(x.strike)}</b> (${cell(x.net_gex)}, ${x.dist_pct>=0?'+':''}${x.dist_pct}%)`:`${l} none`}
+function renderHM(){
+ const g=GLAST;if(!g)return;const T=(g.tickers||[]).filter(t=>t.gex_heatmap_png||t.vex_heatmap_png);
+ if(!T.length){$('g-hm').style.display='none';return}$('g-hm').style.display='block';
+ if(!HMT||!T.find(t=>t.ticker===HMT))HMT=T[0].ticker;
+ $('g-hm-tk').innerHTML=T.map(t=>`<button class="tbtn${t.ticker===HMT?' on':''}" data-t="${esc(t.ticker)}">${esc(t.ticker)}</button>`).join('');
+ $('g-hm-kind').innerHTML=['gex','vex'].map(k=>`<button class="tbtn${k===HMK?' on':''}" data-k="${k}">${k.toUpperCase()}</button>`).join('');
+ const t=T.find(x=>x.ticker===HMT),h=t.heatmap,n=h&&h.nodes;
+ $('g-hm-nodes').innerHTML=n?`<b>${esc(t.ticker)}</b> spot ${num(t.spot)} · ${esc(t.regime)} gamma · King node <b>${num(n.king.strike)}</b> ${esc(n.king.expiry)} (${cell(n.king.value)}) · strongest strike ${num(n.king_strike.strike)} (${cell(n.king_strike.net_gex)}) · ${nd(n.pos_above,'+node above')} · ${nd(n.pos_below,'+node below')} · ${nd(n.neg_above,'−node above')} · ${nd(n.neg_below,'−node below')} · VEX king <b>${num(n.vex_king.strike)}</b> ${esc(n.vex_king.expiry)} (${cell(n.vex_king.value)})<br>${esc(h.vex_read)}`:'';
+ const f=HMK==='gex'?t.gex_heatmap_png:t.vex_heatmap_png;
+ const html=f?`<a href="${IMG(f)}" target="_blank"><img src="${IMG(f)}" alt="${esc(t.ticker)} ${HMK} heatmap" style="max-width:100%;border:1px solid #30363d;border-radius:6px;background:#fff"></a>`:'<span class="mut">no image</span>';
+ if($('g-hm-img').dataset.k!==html){$('g-hm-img').innerHTML=html;$('g-hm-img').dataset.k=html}
+}
+document.addEventListener('click',e=>{const b=e.target.closest('.tbtn');if(!b)return;if(b.dataset.t)HMT=b.dataset.t;if(b.dataset.k)HMK=b.dataset.k;renderHM()});
 function renderGamma(g){
  if(!g)return;
  $('g-err').style.display=g.error?'block':'none';$('g-err').textContent=g.error||'';
@@ -81,6 +103,7 @@ function renderGamma(g){
   `<tr><td>${esc(u.t)}</td><td>${esc(u.expiry)}</td><td class="${u.type==='call'?'pos':'neg'}">${esc(u.type)}</td><td class="n">${num(u.strike)}</td><td class="n">${num(u.volume)}</td><td class="n">${num(u.oi)}</td><td class="n">${num(u.mid)}</td><td class="n">${usd(u.est_premium)}</td></tr>`).join('')+'</table>':'';
  const imgs=T.filter(t=>t.png).map(t=>`<a href="${IMG(t.png)}" target="_blank"><img src="${IMG(t.png)}" alt="${esc(t.ticker)} GEX by strike" style="max-width:560px;width:100%;border:1px solid #30363d;border-radius:6px;background:#fff"></a>`).join('');
  if($('g-img').dataset.k!==imgs){$('g-img').innerHTML=imgs;$('g-img').dataset.k=imgs}
+ GLAST=g;renderHM();
 }
 let sbChart;
 function renderB(b){
