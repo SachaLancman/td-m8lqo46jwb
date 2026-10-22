@@ -22,7 +22,7 @@ th{color:var(--mut);font-weight:500}td.n,th.n{text-align:right;font-variant-nume
 .tbtn{background:#21262d;color:var(--fg);border:1px solid var(--bd);border-radius:6px;padding:3px 10px;font-size:12px;cursor:pointer}.tbtn.on{background:#1f6feb;border-color:#1f6feb;color:#fff}
 </style></head><body>
 <header><div><h1 style="display:inline">Paper Trading Dashboard</h1><span class="badge" id="mode">—</span></div>
-<div class="mut"><a id="officelink" href="#" style="color:#58a6ff;margin-right:14px;text-decoration:none">🎮 Trading floor view →</a>Last updated: <span id="upd">—</span> <span id="stale" style="display:none;color:#d29922">· stale (box asleep — showing last snapshot)</span> · auto-refresh 60s</div></header>
+<div class="mut"><a id="officelink" href="#" style="color:#58a6ff;margin-right:14px;text-decoration:none">🎮 Trading floor view →</a><a id="crazylink" href="#" style="color:#ff7a3d;margin-right:14px;text-decoration:none">🔥 Crazy $1K →</a>Last updated: <span id="upd">—</span> <span id="stale" style="display:none;color:#d29922">· stale (box asleep — showing last snapshot)</span> · auto-refresh 60s</div></header>
 <main>
 <div id="err"></div>
 <div class="kpis">
@@ -65,7 +65,7 @@ th{color:var(--mut);font-weight:500}td.n,th.n{text-align:right;font-variant-nume
 </main>
 <script>
 const $=id=>document.getElementById(id);
-document.getElementById('officelink').href='office.html';
+document.getElementById('officelink').href='office.html';document.getElementById('crazylink').href='crazy.html';
 const usd=v=>v==null||isNaN(v)?'—':Number(v).toLocaleString('en-US',{style:'currency',currency:'USD'});
 const pct=v=>v==null||isNaN(v)?'—':(v>=0?'+':'')+(v*100).toFixed(2)+'%';
 const num=v=>v==null||v===''?'—':(isNaN(v)?String(v):Number(v).toLocaleString('en-US',{maximumFractionDigits:4}));
