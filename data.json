@@ -748,13 +748,15 @@
     "price": 425.58,
     "source": "Webull get_stock_snapshot, quote 2026-10-21 10:11:56 ET (bid 425.56/ask 425.62)"
    },
-   "underlying_exit": "TSM close < 400"
+   "underlying_exit": "TSM close < 400",
+   "underlying_target": 450,
+   "underlying_target_note": "TSM 450 = short strike / max spread value; added 2026-10-22 per Flow & Gamma request. Consider taking profit at spread $5.00+ if TSM stalls at the 430-435 call wall."
   }
  ],
  "positions_value": 282.0,
- "published_at": "2026-10-22 09:50:12 AM EDT",
- "published_epoch_ms": 1792677012188,
- "server_time": "2026-10-22 09:50:12 AM EDT",
+ "published_at": "2026-10-22 09:51:13 AM EDT",
+ "published_epoch_ms": 1792677073451,
+ "server_time": "2026-10-22 09:51:13 AM EDT",
  "start_date": "2026-10-21",
  "starting_cash": 10000.0,
  "strategy_b": {
