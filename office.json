@@ -7,8 +7,8 @@
  "goal_target": 100000.0,
  "mode": "paper",
  "positions": 1,
- "published_at": "2026-10-22 10:04:24 AM EDT",
- "published_epoch_ms": 1792677864996,
+ "published_at": "2026-10-22 10:05:26 AM EDT",
+ "published_epoch_ms": 1792677926204,
  "roles": {
   "coordinator": {
    "note": "10:00 daily run kicked off; waiting on Decider",
@@ -21,7 +21,7 @@
    "state": "idle"
   },
   "flow_gamma": {
-   "note": "10AM daily run: GEX + checks",
+   "note": "INTC/NBIS whale leads + spread checks",
    "source": "status.json",
    "state": "researching"
   },
@@ -31,14 +31,14 @@
    "state": "researching"
   },
   "risk": {
-   "note": "marking TSM spread, checking regime",
+   "note": "risk.md ready: TSM .75 (stop .15), no exits, INTC bull veto",
    "source": "status.json",
-   "state": "researching"
+   "state": "done"
   },
   "sentiment": {
-   "note": "regime check: SPY/QQQ vs 50d, VIX",
+   "note": "drafting sentiment.md (regime: SPY < 50d, VIX ~18)",
    "source": "status.json",
-   "state": "researching"
+   "state": "writing"
   },
   "skeptic": {
    "note": "waiting for a trade idea",
@@ -51,7 +51,7 @@
    "state": "researching"
   }
  },
- "server_time": "2026-10-22 10:04:24 AM EDT",
+ "server_time": "2026-10-22 10:05:26 AM EDT",
  "starting_cash": 10000.0,
  "status_json_error": null,
  "today": "2026-10-22",
