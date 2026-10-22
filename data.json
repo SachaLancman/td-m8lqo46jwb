@@ -1,9 +1,9 @@
 {
- "account_value": 9830.0,
+ "account_value": 9850.0,
  "cash": 9570.0,
  "decision": "# Decisions, 2026-10-22\n\n## 09:45 ET scan (30-minute scan, 9:30 slot)\n- **Exits first:** TSM 12/18 440/450 call spread marked $2.82 (mid; quotes wide; mark_valid true, Cboe ~09:39 ET). Stop $2.15 not hit (stop_watch 0/2). TSM ~421 vs underlying exit 400. **Hold.**\n- **Gamma refresh (gex.py 09:45):** SPY 766.6 negative gamma below flip 769.8 (CW 765 / PW 766); QQQ 713.8 negative below flip 719.2; TSM 421.1 positive gamma above flip 418.4, CW 425. Bullflow cross-check ok.\n- **X whale lead:** @FlowbyBobby 09:34 ET, ~$1.6M META 705C 11/27/26 (lead only, no vote). META ~651 after last night's earnings (from 708.5): negative gamma below flip 654.7, on the 650 put wall, call wall 700, so the 705 strike sits above the call wall. Our free chain still shows yesterday's volume (705C vol 64 / OI 72): print not yet confirmed. Sent to Options Flow & Gamma and Technical Analysts for the 10:00 run.\n- **New entries:** none. No idea has two analysts behind it yet; the 10:00 daily run is the next decision point.\n- Account value $9,852 (cash $9,570 + TSM spread $282).\n\n## 10:00 daily run (decided 10:09 ET)\nAll five inputs read: technical.md, fundamentals.md, sentiment.md, risk.md, flow_gamma.md (plus gex.md / bullflow_check.md).\n\n**Regime:** SPY ~767 on/just under its 50-day (767-768), QQQ ~715, about 1.5% under its 50-day (~726). VIX ~18.1 (Yahoo), so normal sizing, no halving. Both SPY and QQQ are in negative gamma (flips 772.75 / 726.6; SPY walls 760 put / 770 call, QQQ 710 put + king node / 720 call), so expect wider swings. The selloff is concentrated in semis and AI-spend names.\n\n**Exits first:** TSM 12/18 440/450 call spread was marked by mark.py at 10:08 ET: $2.60 liquidation (mid $3.10), mark valid, so the $2.15 stop is not hit and not confirmed. TSM ~$420.7 vs the $400 close exit. Risk shows no forced exit. **HOLD**, no add.\n\n| Ticker | Call | Size | Stop / max loss | Reason |\n|---|---|---|---|---|\n| TSM (440/450C 12/18) | HOLD | 1 spread, no add | $2.15 spread value (2 valid marks) or TSM close < $400; max loss $430 | Thesis intact per Fundamentals (guide unchanged, sector selloff, not company news); Sentiment hold; Technical 1-2/5, warning line a close < 407. Exits decide it. |\n| META | NO TRADE | - | - | Technical long only on a close > 661.2 (not triggered); Fundamentals neutral 2/5; Sentiment mixed/bearish 2/5. The 705C whale print is direction-unknown. Flow's 690/700 spread idea lacks two analysts. |\n| INTC | NO TRADE | - | - | Bullish is vetoed by Risk (same chip bet as TSM; stock fails the 50-day rule). Bearish lean (Sentiment 3/5, Technical 2/5), but the Technical put trigger (failed bounce at 92-95 or a close < 85.1) is not met, and earnings on 10/29 AMC would mean holding long premium through the print. The $3.1M 115C print is unconfirmed. |\n| NBIS | NO TRADE | - | - | Technical bearish only on a close < 159 (not triggered); Sentiment mixed/high-hype; Fundamentals avoid (disputed earnings date, overlaps the TSM AI-spend bet). The 260C Apr-27 whale buy (Bullflow-confirmed, $13.6M, buyer down ~20%) is context only. |\n| MSFT | NO TRADE | - | - | Wait, 2/5; earnings + FOMC 10/28. |\n| AAPL | NO TRADE | - | - | Only a buy on a close > 348.15 (not met), 2/5. |\n| IWM | NO TRADE | - | - | In the short zone but no rejection yet, 2/5 (puts only). |\n\n**Skeptic:** not required. There's no new entry or add today.\n**Gamma check (TSM hold, context):** TSM ~420.5 in negative gamma below its ~423 flip; call wall 420, put wall + king node 400. The 400 close stop sits at the put wall (support) and the 450 short strike is the cap, so there's no gamma reason to change the plan. A hold is not an exit, so no new --check was run.\n**INTC / NBIS whale findings:** INTC 115C 12/18 is unconfirmed (no prior-day OI, not on Bullflow) and the same bet as TSM, so it's blocked. NBIS 260C 4/16/27 is confirmed opening flow but could be a hedge; there's no analyst pair behind a trade and it partly overlaps TSM. Both are logged as context and not traded.\n\n**Portfolio (10:08 ET mark):** cash $9,570.00 + TSM spread $260 = **$9,830.00**; peak $10,000. Option budget used this week: $430 of $1,500.\n",
  "decision_date": "2026-10-22",
- "drawdown": -0.017000000000000015,
+ "drawdown": -0.015000000000000013,
  "error": null,
  "gamma": {
   "convention": "Dealer GEX approximation: call GEX = +gamma*OI*100*S^2*0.01, put GEX = -gamma*OI*100*S^2*0.01 ($ of delta hedging per 1% move; assumes dealers long calls / short puts, the common public convention). Positive total = dealers dampen moves (pinning); negative = dealers amplify moves.",
@@ -1332,7 +1332,7 @@
   ]
  },
  "goal": "Grow $10,000 to $100,000 within one year (by 2026-10-21 + 1 year)",
- "goal_progress": -0.001888888888888889,
+ "goal_progress": -0.0016666666666666668,
  "goal_target": 100000.0,
  "history": [
   {
@@ -1341,7 +1341,7 @@
   },
   {
    "date": "2026-10-22",
-   "value": 9830.0
+   "value": 9850.0
   }
  ],
  "mode": "paper",
@@ -1354,9 +1354,9 @@
    "entry": 4.3,
    "entry_debit": 4.3,
    "id": "TSM-20261218-440-450C-1",
-   "last": 2.6,
+   "last": 2.8,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-22T10:08:36-04:00",
+   "last_updated": "2026-10-22T10:11:13-04:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1375,31 +1375,31 @@
    ],
    "mark_method": "liq",
    "mark_quotes": {
-    "fetched": "2026-10-22T10:08:36-04:00",
+    "fetched": "2026-10-22T10:11:13-04:00",
     "intrinsic_floor": 0.0,
     "legs": [
      {
-      "ask": 13.8,
-      "bid": 13.25,
+      "ask": 14.5,
+      "bid": 14.05,
       "leg": "long 440C",
-      "mid": 13.525
+      "mid": 14.275
      },
      {
-      "ask": 10.65,
-      "bid": 10.2,
+      "ask": 11.25,
+      "bid": 11.0,
       "leg": "short 450C",
-      "mid": 10.425
+      "mid": 11.125
      }
     ],
-    "liq_raw": 2.6,
-    "mid_raw": 3.1,
+    "liq_raw": 2.8,
+    "mid_raw": 3.15,
     "source": "Nasdaq public option chain",
-    "underlying": 419.07
+    "underlying": 418.24
    },
    "mark_valid": true,
    "max_loss": 430.0,
    "max_value": 1000,
-   "mid": 3.1,
+   "mid": 3.15,
    "multiplier": 100,
    "opened": "2026-10-21T10:11:49-04:00",
    "price_source": "Nasdaq public option chain API (api.nasdaq.com), fetched 2026-10-21 10:11:49 ET; raw: reports/2026-10-21/raw_decider/TSM_2026-12-18_chain.json",
@@ -1416,7 +1416,7 @@
     "consecutive_valid_at_or_below_stop": 0,
     "rule": "stop is hit only after 2 consecutive VALID marks (from 09:35 ET on; mid if quotes wide) at/below stop",
     "stop_confirmed": false,
-    "updated": "2026-10-22T10:08:36-04:00"
+    "updated": "2026-10-22T10:11:13-04:00"
    },
    "symbol": "TSM",
    "target": 7.5,
@@ -1434,10 +1434,10 @@
    "underlying_target_note": "TSM 450 = short strike / max spread value; added 2026-10-22 per Flow & Gamma request. Consider taking profit at spread $5.00+ if TSM stalls at the 430-435 call wall."
   }
  ],
- "positions_value": 260.0,
- "published_at": "2026-10-22 10:09:33 AM EDT",
- "published_epoch_ms": 1792678173140,
- "server_time": "2026-10-22 10:09:33 AM EDT",
+ "positions_value": 280.0,
+ "published_at": "2026-10-22 10:11:13 AM EDT",
+ "published_epoch_ms": 1792678273867,
+ "server_time": "2026-10-22 10:11:13 AM EDT",
  "start_date": "2026-10-21",
  "starting_cash": 10000.0,
  "strategy_b": {
@@ -1482,7 +1482,7 @@
   "win_rate": null
  },
  "today": "2026-10-22",
- "total_return": -0.017000000000000015,
+ "total_return": -0.015000000000000013,
  "trades": [
   {
    "action": "BUY_TO_OPEN",
