@@ -1,7 +1,7 @@
 {
  "account_value": 9815.0,
  "cash": 9570.0,
- "decision": "# Decisions, 2026-10-22\n\n## 09:45 ET scan (30-minute scan, 9:30 slot)\n- **Exits first:** TSM 12/18 440/450 call spread marked $2.82 (mid; quotes wide; mark_valid true, Cboe ~09:39 ET). Stop $2.15 not hit (stop_watch 0/2). TSM ~421 vs underlying exit 400. **Hold.**\n- **Gamma refresh (gex.py 09:45):** SPY 766.6 negative gamma below flip 769.8 (CW 765 / PW 766); QQQ 713.8 negative below flip 719.2; TSM 421.1 positive gamma above flip 418.4, CW 425. Bullflow cross-check ok.\n- **X whale lead:** @FlowbyBobby 09:34 ET, ~$1.6M META 705C 11/27/26 (lead only, no vote). META ~651 after last night's earnings (from 708.5): negative gamma below flip 654.7, on the 650 put wall, call wall 700, so the 705 strike sits above the call wall. Our free chain still shows yesterday's volume (705C vol 64 / OI 72): print not yet confirmed. Sent to Options Flow & Gamma and Technical Analysts for the 10:00 run.\n- **New entries:** none. No idea has two analysts behind it yet; the 10:00 daily run is the next decision point.\n- Account value $9,852 (cash $9,570 + TSM spread $282).\n\n## 10:00 daily run (decided 10:09 ET)\nAll five inputs read: technical.md, fundamentals.md, sentiment.md, risk.md, flow_gamma.md (plus gex.md / bullflow_check.md).\n\n**Regime:** SPY ~767 on/just under its 50-day (767-768), QQQ ~715, about 1.5% under its 50-day (~726). VIX ~18.1 (Yahoo), so normal sizing, no halving. Both SPY and QQQ are in negative gamma (flips 772.75 / 726.6; SPY walls 760 put / 770 call, QQQ 710 put + king node / 720 call), so expect wider swings. The selloff is concentrated in semis and AI-spend names.\n\n**Exits first:** TSM 12/18 440/450 call spread was marked by mark.py at 10:08 ET: $2.60 liquidation (mid $3.10), mark valid, so the $2.15 stop is not hit and not confirmed. TSM ~$420.7 vs the $400 close exit. Risk shows no forced exit. **HOLD**, no add.\n\n| Ticker | Call | Size | Stop / max loss | Reason |\n|---|---|---|---|---|\n| TSM (440/450C 12/18) | HOLD | 1 spread, no add | $2.15 spread value (2 valid marks) or TSM close < $400; max loss $430 | Thesis intact per Fundamentals (guide unchanged, sector selloff, not company news); Sentiment hold; Technical 1-2/5, warning line a close < 407. Exits decide it. |\n| META | NO TRADE | - | - | Technical long only on a close > 661.2 (not triggered); Fundamentals neutral 2/5; Sentiment mixed/bearish 2/5. The 705C whale print is direction-unknown. Flow's 690/700 spread idea lacks two analysts. |\n| INTC | NO TRADE | - | - | Bullish is vetoed by Risk (same chip bet as TSM; stock fails the 50-day rule). Bearish lean (Sentiment 3/5, Technical 2/5), but the Technical put trigger (failed bounce at 92-95 or a close < 85.1) is not met, and earnings on 10/29 AMC would mean holding long premium through the print. The $3.1M 115C print is unconfirmed. |\n| NBIS | NO TRADE | - | - | Technical bearish only on a close < 159 (not triggered); Sentiment mixed/high-hype; Fundamentals avoid (disputed earnings date, overlaps the TSM AI-spend bet). The 260C Apr-27 whale buy (Bullflow-confirmed, $13.6M, buyer down ~20%) is context only. |\n| MSFT | NO TRADE | - | - | Wait, 2/5; earnings + FOMC 10/28. |\n| AAPL | NO TRADE | - | - | Only a buy on a close > 348.15 (not met), 2/5. |\n| IWM | NO TRADE | - | - | In the short zone but no rejection yet, 2/5 (puts only). |\n\n**Skeptic:** not required. There's no new entry or add today.\n**Gamma check (TSM hold, context):** TSM ~420.5 in negative gamma below its ~423 flip; call wall 420, put wall + king node 400. The 400 close stop sits at the put wall (support) and the 450 short strike is the cap, so there's no gamma reason to change the plan. A hold is not an exit, so no new --check was run.\n**INTC / NBIS whale findings:** INTC 115C 12/18 is unconfirmed (no prior-day OI, not on Bullflow) and the same bet as TSM, so it's blocked. NBIS 260C 4/16/27 is confirmed opening flow but could be a hedge; there's no analyst pair behind a trade and it partly overlaps TSM. Both are logged as context and not traded.\n\n**Portfolio (10:08 ET mark):** cash $9,570.00 + TSM spread $260 = **$9,830.00**; peak $10,000. Option budget used this week: $430 of $1,500.\n\n## 10:15 ET scan (30-minute scan, 10:00 slot)\n- Ran right after the 10:00 daily run (decided 10:09), so the analysts' 10:00 reads are the intraday update for this slot; no new messages sent to keep usage low.\n- **Gamma refresh (gex.py ~10:15):** SPY 766.1 negative gamma below flip 772.1 (CW 770 / PW 765); QQQ 713.0 negative below flip 725.6 (CW 720 / PW 710); TSM 418.2 negative below flip 424.0 (CW/PW 420); META 657.1 negative below flip 679.7 (PW 650 / CW 700). Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread last valid mark $2.80 liquidation (mid $3.15, 10:11 ET); stop $2.15 not hit (stop_watch 0/2). TSM ~418 vs $400 close exit. **Hold.**\n- **X whale check (since 09:35 ET):** only an @FlowbyBobby SPX recap post (no trade details). Nothing new logged.\n- **Triggers:** none met (META needs a close > 661.2, INTC puts need a close < 85.1 or failed 92-95 bounce, NBIS close < 159, AAPL close > 348.15). **No trade.**\n- Account value ~$9,850 (cash $9,570 + TSM spread $280).\n\n## 10:47 ET scan (30-minute scan, 10:30 slot)\n- **Gamma refresh (gex.py 10:47):** market sliding. SPY 762.5 negative gamma below flip 772.1 (CW 770 / PW 760); QQQ 707.9 negative, under its 710 put wall (flip 724.9); TSM 415.4 negative below flip 423.6 (CW 420 / PW 400); META 652.8 negative (PW 650 / CW 700); INTC 86.9 negative (PW 85); NBIS 159.7 negative. Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread re-marked 10:48 ET: $2.65 liquidation (mid $3.03), mark valid; stop $2.15 not hit (stop_watch 0/2). TSM 415.4 vs $400 close exit. **Hold.**\n- **X whale check (since 10:07 ET):** only a @BullflowIO \"$META 1000 \ud83d\udc40\" image post with no expiry/premium (context, logged), plus SPX banter/heatmaps. No new notable print.\n- **Triggers:** none met (all close-based: INTC puts close < 85.1, NBIS close < 159, META long close > 661.2, AAPL close > 348.15, TSM exit close < 400). Technical and Flow & Gamma asked for a short 10:48 update in their reports; they message the Decider only if a setup qualifies. **No trade.**\n- Account value $9,835 (cash $9,570 + TSM spread $265).\n\n## 10:49 ET update (Technical 10:48 update)\n- **TSM exit check:** mark.py 10:49 ET gave a $2.60 valid liquidation mark (Nasdaq: 440C 13.10/13.55, 450C 10.15/10.50; mid $3.00) with TSM at 414.75. The $2.15 stop is not hit (stop_watch 0/2), and TSM is above the 400 close exit. **HOLD.**\n- **IWM put debit spread:** **NO TRADE.** Only the Technical Analyst is bearish on IWM (2/5). Sentiment and Fundamentals don't cover it, so it fails the two-analyst rule. The Skeptic and gamma check weren't run because no entry was picked. It gets revisited if a second analyst agrees.\n- INTC (close < 85.1) and NBIS (close < 159) put triggers are close-based, so they're not confirmed before 4 PM; still no trade. The META long setup failed at the 50-day.\n- Value $9,830 (cash $9,570 + spread $260).\n\n## 11:18 ET scan (30-minute scan, 11:00 slot)\n- **Gamma refresh (gex.py 11:17):** SPY 763.4 negative gamma below flip 773.1 (CW 770 / PW 760); QQQ 708.2 negative, under its 710 put wall (flip 725.8); TSM 414.1 negative below flip 423.8 (CW 420 / PW 400); META 656.6 negative (PW 650 / CW 700); INTC 87.1 negative (PW 90 / CW 110); NBIS 160.0 negative; MSFT/AAPL positive. Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread marked 11:18 ET: $2.40 liquidation (mid $2.90), mark valid; stop $2.15 not hit. TSM 414.1 vs $400 close exit. **Hold.**\n- **X whale lead:** @WhalesFlowRadar 11:04 ET, ~$6.3M MA 640C 9/17/27. Confirmed on the free chain (vol 1,026 vs OI 62, ~$63.6/contract). MA 627.6 in positive gamma (flip 590.7), call wall 645 just above the strike, put wall 620. Lead only, no vote: MA is not on our watchlist, no analyst covers it, earnings 10/29 (we'd hold premium through the print), and one outright contract costs ~$6,400, far over the 25% cap. Passed to Flow & Gamma for context. **No trade.**\n- **Triggers:** none met (all close-based). Flow & Gamma and Technical asked for a short 11:18 update; they message the Decider only if a setup qualifies. **No trade.**\n- Account value $9,810 (cash $9,570 + TSM spread $240).\n\n## 11:43 ET scan (30-minute scan, 11:30 slot)\n- **Gamma refresh (gex.py 11:42):** SPY 763.2 negative gamma below flip 771.0 (CW 770 / PW 760); QQQ 707.8 negative, under its 710 put wall (flip 724.3); TSM 413.3 negative below flip 421.8 (CW 420 / PW 400); META 657.8 negative (PW 650 / CW 700); INTC 86.9 negative (PW 85 / CW 110); NBIS 160.1 negative (PW 165); IWM 275.8 negative (PW 270 / CW 280); MSFT/AAPL positive. Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread marked 11:43 ET: $2.50 liquidation (mid $2.95), mark valid; stop $2.15 not hit. TSM 413.3 vs $400 close exit. **Hold.**\n- **X whale check (since 11:05 ET):** only @FlowbyBobby SPX heatmap/promo posts and a @BullflowIO reply. No new prints.\n- **Triggers:** none met (all close-based). Flow & Gamma and Technical asked for a short 11:45 update; they message the Decider only if a setup qualifies. **No trade.**\n- Account value $9,820 (cash $9,570 + TSM spread $250).\n\n## 12:08 ET: bearish idea review (Grok Bot asked, after Sacha's question about puts)\n- **Exits first:** TSM 12/18 440/450C marked 12:06:53 ET at $2.55 liquidation (mid $2.85). Mark is valid, stop_watch 0/2, TSM 413.68. **Hold.** Account $9,825.\n- **Candidate picked: QQQ 2026-12-18 710/700 put debit spread, 1 contract.** Buy 710P at the $24.87 ask, sell 700P at the $20.94 bid, so the debit is **$3.93 ($393, 4.0% of the account)**. Prices from the Nasdaq public API at 12:06:06\u201312:06:11 ET with QQQ at $708.73. Both legs' bid-ask is under 1% of mid; OI is 30,309 and 77,447. Max value $1,000, breakeven 706.07, reward/risk 1.54. Raw data: dec_nasdaq_QQQ_*.json.\n  - **Exit plan:** target QQQ 700, taking profit at a $7.50 mark or better. Close-basis stop if QQQ closes above 725. Premium stop at a valid confirmed mark of $1.97 or less (\u221250%). Close by 7 DTE (12/11).\n  - **Two analysts:** Technical has QQQ \"bearish below the 50-day\", 3/5. Sentiment calls SPY/QQQ \"risk-off (semis/AI)\", 4/5. Fundamentals and Risk have no QQQ view. Flow & Gamma and the Skeptic don't count toward the two.\n  - **Not the same bet as TSM:** it is a bearish index position that partly hedges the TSM call spread. Risk's note says a bearish semi trade isn't the same bet as TSM.\n  - **Sizing:** $393 is under the 5% cap (~$491). Option premium opened this week would be $430 + $393 = $823, under the 15% cap (~$1,473). This would be position 2 of 6. VIX is ~18, so no halving.\n- **Gamma check:** gex.py --check \"QQQ put 710/700 2026-12-18 target=700 stop=725\" ran at 12:07 ET on today's data (gex.md 12:07:26).\n  - (1) QQQ 709.15 is in negative gamma, below the 726.94 flip. Momentum is favored and swings should be wider, so we keep size at 1 contract.\n  - (2) The king node is 710 (10/23, \u2212893M), right at spot. The nearest negative node below is 705; 700 (\u22121.3B) and 690 are the next big strikes. There are no positive nodes nearby.\n  - (3) Our put wall is 710, at spot and on our long strike. The 700 target and short strike are below it, so the trade needs 710 to break. Negative gamma is why that can happen; if it holds, the premium stop limits the loss. The call wall is 720, and the 725 stop is placed beyond it, not just inside it.\n  - (4) VEX is +$300M per vol point. A vol crush after FOMC or earnings (10/28\u201329) would bring dealer buying, a headwind. An IV spike is a tailwind.\n  - **Bullflow:** it agrees on the regime and flip (728.7). It differs on the put wall and king node, which it puts at 700, exactly our target and short strike. So we take profit at 700 and don't aim beyond it. Its call wall is 740 vs our 720, and the 725 stop sits between the two.\n- **Status:** PROPOSED, NOT ENTERED. Sent to the Skeptic; next steps are the \"Skeptic:\" line, then Risk Manager approval. Not in ledger.json yet.\n- **Skeptic (12:09, moderate objection; skeptic.md):** I accept it. There are two problems. First, at QQQ 700 with about a month left, this spread is worth only about $4.60, not $7.50. So the real exit at 700 is to take profit at $5.00 or more (the low end of the playbook's take-profit range) if it reaches that, otherwise hold toward 685\u2013690 or until the 12/11 time exit. Second, entering now means selling into support (707.23/706.63) that held twice today, and Technical's own line is \"defense until QQQ holds 707.\" Both analysts lean bearish for the same reason (today's semis/AI selloff), so the edge is thinner than two votes suggest.\n- **Decision: NO ENTRY NOW. The QQQ 710/700 put spread stays on watch with a trigger.** I'll enter only if either (a) QQQ closes below 707 (confirmed at 4 PM), or (b) it fails a retest of 714\u2013720 and rolls back under VWAP. At that point I'll re-price from a live chain, re-run gex --check if any terms change, and send it to Risk for approval. The exit plan changes to: take profit at a $5.00+ mark (or more if it's late in the trade and QQQ is near or below 700), stop if QQQ closes above 725 or at a confirmed $1.97 mark, time exit 12/11.\n- Nothing entered. Ledger unchanged except the 12:07 TSM mark (hold, $2.55). Account $9,825.\n\n## 12:15 ET scan (30-minute scan, 12:00 slot)\n- **Gamma refresh (gex.py 12:14):** SPY 765.0 negative gamma below flip 773.2 (CW 765 / PW 765); QQQ 709.7 negative, at its 710 put wall (flip 727.0, CW 720); TSM 414.5 negative below flip 422.3 (CW 420 / PW 400); META 653.7 negative (PW 650 / CW 700); INTC 87.7 negative (PW 90 / CW 110); NBIS 160.3 negative (PW 165 / CW 180); IWM 276.4 negative (PW 270 / CW 280); MSFT/AAPL positive. Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread last marked 12:09 ET at $2.45 liquidation (mid $2.85), mark valid; stop $2.15 not hit. TSM 414.5 vs $400 close exit. **Hold.**\n- **X whale lead:** @WhalesFlowRadar 11:54 ET, ~$3M NKE 40C 3/19/27. Confirmed on the free chain (vol 10,188 vs OI 8,829, ~$3.13/contract). NKE 38.26 in positive gamma (flip 36.79); the 40 strike is the call wall, put wall 35. Lead only, no vote: NKE isn't on our watchlist, no analyst covers it, and earnings 12/17 fall inside the expiry. If ever considered, a cheap 40/45 March call spread (~$1.40-1.60 debit) beats the outright. Passed to Flow & Gamma for context. **No trade.**\n- **QQQ 710/700 put spread watch (from 12:08 review):** triggers (close < 707, or a failed 714-720 retest back under VWAP) not met; QQQ 709.7. **No entry.**\n- **Triggers:** none met. Flow & Gamma and Technical asked for a short 12:15 update; they message the Decider only if a setup qualifies. **No trade.**\n- Account value $9,815 (cash $9,570 + TSM spread $245).\n\n## 12:48 ET scan (30-minute scan, 12:30 slot)\n- **Gamma refresh (gex.py 12:48):** SPY 762.5 negative gamma below flip 770.7 (CW 770 / PW 760); QQQ 705.6 negative, now below its 710 put wall (flip 722.5, CW 720); TSM 411.9 negative below flip 421.8 (CW 420 / PW 400); META 646.3 negative, under its 650 put wall (CW 700); INTC 86.5 (PW 85); NBIS 158.9 (PW 165). Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread last marked 12:35 ET at $2.60 liquidation (mid $3.00), stop $2.15 not hit; TSM 411.9 vs $400 close exit. **Hold.**\n- **X whale lead:** @FlowbyBobby 12:28 ET ~$1.9M AMZN 250C 10/26, confirmed on the free chain (vol 4,660 vs OI 318). AMZN 251.1 positive gamma; the 250 strike is the put wall and 255 the call wall/king node, so dealers pin it in a 250-255 box and a 4-day call has little room. Lead only, no vote, AMZN not on our watchlist and no analyst covers it. **No trade.** Smaller prints (WMT 124C 11/20 $512k, ABT 103C 11/6 $320k) logged only.\n- **QQQ 710/700 put spread watch:** QQQ 705.6 is below 707 intraday, but trigger (a) needs a 4 PM close < 707 and (b) a failed 714-720 retest; neither met yet. **No entry now**; re-check at the close.\n- Flow & Gamma and Technical asked for a short 12:45 update; they message the Decider only if a setup qualifies. **No trade.**\n- Account value about $9,830 (cash $9,570 + TSM spread $260 at the 12:35 mark).\n\n## 12:50 ET update (Technical 12:45 warning)\n- **TSM exit check:** mark.py marked the spread at $2.60 at 12:50 ET (valid liquidation mark, mid $2.88) with TSM around 411.6, near its 411.50 low. The $2.15 stop is not hit (stop_watch 0/2), and TSM is still above the 400 close exit. **HOLD.**\n- **QQQ put spread:** QQQ is at 705.2, below 707 intraday. The trigger is a 4 PM close below 707, so there's no entry yet. I'll re-check at the close.\n- META long is off for today (it broke 648.26). Account $9,830.\n\n## 13:13 ET scan (30-minute scan, 13:00 slot)\n- **Gamma refresh (gex.py 13:13):** SPY 762.5 negative gamma below flip 771.0 (CW 770 / PW 760); QQQ 705.6 negative (flip 724.4, CW 720, PW now 700); TSM 411.3 negative below flip 422.7 (CW 420 / PW 400); META 647.9 negative, under its 650 put wall; INTC 86.2 (PW 85); NBIS 158.8 (PW 165); MSFT/AAPL positive. Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread last marked 13:05 ET at $2.35 liquidation (mid $2.78), mark valid, stop $2.15 not hit (stop_watch 0/2); TSM 411.3 vs $400 close exit. **Hold.**\n- **X whale check (since 12:35 ET):** only ABT 103C Nov ~$316k (@WhalesFlowRadar, same print as earlier), logged. No $1M+ prints. @FlowbyBobby flags QQQ 705 / SPY 762 as new floors, which lines up with our QQQ put-spread watch (a break below would support it). **No trade.**\n- **QQQ 710/700 put spread watch:** QQQ 705.6, below 707 intraday, but trigger (a) is a 4 PM close < 707 and (b) a failed 714-720 retest; neither confirmed. **No entry now**; re-check at the close.\n- Flow & Gamma and Technical asked for a short 13:15 update; they message the Decider only if a setup qualifies. **No trade.**\n- Account value about $9,805 (cash $9,570 + TSM spread $235 at the 13:05 mark).\n\n## 13:42 ET scan (30-minute scan, 13:30 slot)\n- **Gamma refresh (gex.py 13:42):** SPY 763.4 negative gamma below flip 773.3 (CW 770 / PW 760); QQQ 706.2 negative (flip 727.3, CW 720, PW 700); TSM 411.7 negative below flip 422.8 (CW 420 / PW 400); META 646.5 negative, under its 650 put wall (CW 700); INTC 86.4 (PW 85); NBIS 157.5 (PW 160); MSFT/AAPL positive; IWM 275.9 negative. Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread last marked 13:36 ET at $2.45 liquidation (mid $2.78), mark valid, stop $2.15 not hit (stop_watch 0/2); TSM 411.7 vs $400 close exit. **Hold.**\n- **X whale check (since 13:05 ET):** only @FlowbyBobby bounce-zone recaps and a promo post. No new prints. **No trade.**\n- **QQQ 710/700 put spread watch:** QQQ 706.2, below 707 intraday, but trigger (a) is a 4 PM close < 707 and (b) a failed 714-720 retest; neither confirmed. **No entry now**; re-check at the close.\n- Flow & Gamma and Technical asked for a short 13:45 update; they message the Decider only if a setup qualifies. **No trade.**\n- Account value about $9,815 (cash $9,570 + TSM spread $245 at the 13:36 mark).\n\n## 14:08 ET scan (30-minute scan, 14:00 slot)\n- **Gamma refresh (gex.py 14:08):** SPY 762.3 negative gamma below flip 771.1 (CW 770 / PW 760); QQQ 704.3 negative (flip 723.5, CW 720, PW 700), now just under @FlowbyBobby's 705 floor; TSM 411.2 negative below flip 421.2 (CW 420 / PW 400); META 644.4 negative, under its 650 put wall; INTC 86.0 (PW 85); NBIS 156.6 (PW 150); MSFT/AAPL positive; IWM 275.6 negative. Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread marked 14:08 ET at $2.45 liquidation (mid $2.82), mark valid, stop $2.15 not hit (stop_watch 0/2); TSM 411.2 vs $400 close exit. **Hold.**\n- **X whale check (since 13:30 ET):** only a generic @BullflowIO MRNA put-alerts post (no strike/size) and @FlowbyBobby promo/class posts. No new prints. **No trade.**\n- **QQQ 710/700 put spread watch:** QQQ 704.3, below 707 intraday, but trigger (a) is a 4 PM close < 707 and (b) a failed 714-720 retest; neither confirmed. **No entry now**; re-check at the close.\n- Flow & Gamma and Technical asked for a short 14:15 update; they message the Decider only if a setup qualifies. **No trade.**\n- Account value about $9,815 (cash $9,570 + TSM spread $245 at the 14:08 mark).\n\n## 14:48 ET scan (30-minute scan, 14:30 slot)\n- **Gamma refresh (gex.py 14:48, Yahoo source):** SPY 762.1 negative gamma below flip 773.5 (CW 770 / PW 762); QQQ 703.6 negative (flip 727.3, CW 720, PW 700); TSM 411.3 negative below flip 423.7 (CW 420 / PW 400); META 641.5 negative, under its 650 put wall; INTC 86.1 (PW 85); NBIS 157.4 (PW 150); MSFT/AAPL positive; IWM 275.8 negative. Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread marked 14:39 ET at $2.40 liquidation (mid $2.82), mark valid, stop $2.15 not hit (stop_watch 0/2); TSM 411.3 vs $400 close exit. **Hold.**\n- **X whale lead:** @WhalesFlowRadar 14:33 ET, ~$1M RDDT 157.5C October (free chain: 10/30 157.5C vol 1,375 vs OI 132, ~$6.40). RDDT 148.3 in negative gamma below flip 153.3, call wall 155 sits below the strike. Lead only, no vote: RDDT isn't on our watchlist, no analyst covers it, and earnings 10/29 fall inside the expiry, so it's a pure earnings bet against our earnings rule. Passed to Flow & Gamma for context. **No trade.**\n- **QQQ 710/700 put spread watch:** QQQ 703.6, below 707 intraday, but trigger (a) is a 4 PM close < 707 and (b) a failed 714-720 retest; neither confirmed. **No entry now**; re-check at the close.\n- Flow & Gamma and Technical asked for a short 14:45 update; they message the Decider only if a setup qualifies. **No trade.**\n- Account value about $9,810 (cash $9,570 + TSM spread $240 at the 14:39 mark).\n",
+ "decision": "# Decisions, 2026-10-22\n\n## 09:45 ET scan (30-minute scan, 9:30 slot)\n- **Exits first:** TSM 12/18 440/450 call spread marked $2.82 (mid; quotes wide; mark_valid true, Cboe ~09:39 ET). Stop $2.15 not hit (stop_watch 0/2). TSM ~421 vs underlying exit 400. **Hold.**\n- **Gamma refresh (gex.py 09:45):** SPY 766.6 negative gamma below flip 769.8 (CW 765 / PW 766); QQQ 713.8 negative below flip 719.2; TSM 421.1 positive gamma above flip 418.4, CW 425. Bullflow cross-check ok.\n- **X whale lead:** @FlowbyBobby 09:34 ET, ~$1.6M META 705C 11/27/26 (lead only, no vote). META ~651 after last night's earnings (from 708.5): negative gamma below flip 654.7, on the 650 put wall, call wall 700, so the 705 strike sits above the call wall. Our free chain still shows yesterday's volume (705C vol 64 / OI 72): print not yet confirmed. Sent to Options Flow & Gamma and Technical Analysts for the 10:00 run.\n- **New entries:** none. No idea has two analysts behind it yet; the 10:00 daily run is the next decision point.\n- Account value $9,852 (cash $9,570 + TSM spread $282).\n\n## 10:00 daily run (decided 10:09 ET)\nAll five inputs read: technical.md, fundamentals.md, sentiment.md, risk.md, flow_gamma.md (plus gex.md / bullflow_check.md).\n\n**Regime:** SPY ~767 on/just under its 50-day (767-768), QQQ ~715, about 1.5% under its 50-day (~726). VIX ~18.1 (Yahoo), so normal sizing, no halving. Both SPY and QQQ are in negative gamma (flips 772.75 / 726.6; SPY walls 760 put / 770 call, QQQ 710 put + king node / 720 call), so expect wider swings. The selloff is concentrated in semis and AI-spend names.\n\n**Exits first:** TSM 12/18 440/450 call spread was marked by mark.py at 10:08 ET: $2.60 liquidation (mid $3.10), mark valid, so the $2.15 stop is not hit and not confirmed. TSM ~$420.7 vs the $400 close exit. Risk shows no forced exit. **HOLD**, no add.\n\n| Ticker | Call | Size | Stop / max loss | Reason |\n|---|---|---|---|---|\n| TSM (440/450C 12/18) | HOLD | 1 spread, no add | $2.15 spread value (2 valid marks) or TSM close < $400; max loss $430 | Thesis intact per Fundamentals (guide unchanged, sector selloff, not company news); Sentiment hold; Technical 1-2/5, warning line a close < 407. Exits decide it. |\n| META | NO TRADE | - | - | Technical long only on a close > 661.2 (not triggered); Fundamentals neutral 2/5; Sentiment mixed/bearish 2/5. The 705C whale print is direction-unknown. Flow's 690/700 spread idea lacks two analysts. |\n| INTC | NO TRADE | - | - | Bullish is vetoed by Risk (same chip bet as TSM; stock fails the 50-day rule). Bearish lean (Sentiment 3/5, Technical 2/5), but the Technical put trigger (failed bounce at 92-95 or a close < 85.1) is not met, and earnings on 10/29 AMC would mean holding long premium through the print. The $3.1M 115C print is unconfirmed. |\n| NBIS | NO TRADE | - | - | Technical bearish only on a close < 159 (not triggered); Sentiment mixed/high-hype; Fundamentals avoid (disputed earnings date, overlaps the TSM AI-spend bet). The 260C Apr-27 whale buy (Bullflow-confirmed, $13.6M, buyer down ~20%) is context only. |\n| MSFT | NO TRADE | - | - | Wait, 2/5; earnings + FOMC 10/28. |\n| AAPL | NO TRADE | - | - | Only a buy on a close > 348.15 (not met), 2/5. |\n| IWM | NO TRADE | - | - | In the short zone but no rejection yet, 2/5 (puts only). |\n\n**Skeptic:** not required. There's no new entry or add today.\n**Gamma check (TSM hold, context):** TSM ~420.5 in negative gamma below its ~423 flip; call wall 420, put wall + king node 400. The 400 close stop sits at the put wall (support) and the 450 short strike is the cap, so there's no gamma reason to change the plan. A hold is not an exit, so no new --check was run.\n**INTC / NBIS whale findings:** INTC 115C 12/18 is unconfirmed (no prior-day OI, not on Bullflow) and the same bet as TSM, so it's blocked. NBIS 260C 4/16/27 is confirmed opening flow but could be a hedge; there's no analyst pair behind a trade and it partly overlaps TSM. Both are logged as context and not traded.\n\n**Portfolio (10:08 ET mark):** cash $9,570.00 + TSM spread $260 = **$9,830.00**; peak $10,000. Option budget used this week: $430 of $1,500.\n\n## 10:15 ET scan (30-minute scan, 10:00 slot)\n- Ran right after the 10:00 daily run (decided 10:09), so the analysts' 10:00 reads are the intraday update for this slot; no new messages sent to keep usage low.\n- **Gamma refresh (gex.py ~10:15):** SPY 766.1 negative gamma below flip 772.1 (CW 770 / PW 765); QQQ 713.0 negative below flip 725.6 (CW 720 / PW 710); TSM 418.2 negative below flip 424.0 (CW/PW 420); META 657.1 negative below flip 679.7 (PW 650 / CW 700). Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread last valid mark $2.80 liquidation (mid $3.15, 10:11 ET); stop $2.15 not hit (stop_watch 0/2). TSM ~418 vs $400 close exit. **Hold.**\n- **X whale check (since 09:35 ET):** only an @FlowbyBobby SPX recap post (no trade details). Nothing new logged.\n- **Triggers:** none met (META needs a close > 661.2, INTC puts need a close < 85.1 or failed 92-95 bounce, NBIS close < 159, AAPL close > 348.15). **No trade.**\n- Account value ~$9,850 (cash $9,570 + TSM spread $280).\n\n## 10:47 ET scan (30-minute scan, 10:30 slot)\n- **Gamma refresh (gex.py 10:47):** market sliding. SPY 762.5 negative gamma below flip 772.1 (CW 770 / PW 760); QQQ 707.9 negative, under its 710 put wall (flip 724.9); TSM 415.4 negative below flip 423.6 (CW 420 / PW 400); META 652.8 negative (PW 650 / CW 700); INTC 86.9 negative (PW 85); NBIS 159.7 negative. Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread re-marked 10:48 ET: $2.65 liquidation (mid $3.03), mark valid; stop $2.15 not hit (stop_watch 0/2). TSM 415.4 vs $400 close exit. **Hold.**\n- **X whale check (since 10:07 ET):** only a @BullflowIO \"$META 1000 \ud83d\udc40\" image post with no expiry/premium (context, logged), plus SPX banter/heatmaps. No new notable print.\n- **Triggers:** none met (all close-based: INTC puts close < 85.1, NBIS close < 159, META long close > 661.2, AAPL close > 348.15, TSM exit close < 400). Technical and Flow & Gamma asked for a short 10:48 update in their reports; they message the Decider only if a setup qualifies. **No trade.**\n- Account value $9,835 (cash $9,570 + TSM spread $265).\n\n## 10:49 ET update (Technical 10:48 update)\n- **TSM exit check:** mark.py 10:49 ET gave a $2.60 valid liquidation mark (Nasdaq: 440C 13.10/13.55, 450C 10.15/10.50; mid $3.00) with TSM at 414.75. The $2.15 stop is not hit (stop_watch 0/2), and TSM is above the 400 close exit. **HOLD.**\n- **IWM put debit spread:** **NO TRADE.** Only the Technical Analyst is bearish on IWM (2/5). Sentiment and Fundamentals don't cover it, so it fails the two-analyst rule. The Skeptic and gamma check weren't run because no entry was picked. It gets revisited if a second analyst agrees.\n- INTC (close < 85.1) and NBIS (close < 159) put triggers are close-based, so they're not confirmed before 4 PM; still no trade. The META long setup failed at the 50-day.\n- Value $9,830 (cash $9,570 + spread $260).\n\n## 11:18 ET scan (30-minute scan, 11:00 slot)\n- **Gamma refresh (gex.py 11:17):** SPY 763.4 negative gamma below flip 773.1 (CW 770 / PW 760); QQQ 708.2 negative, under its 710 put wall (flip 725.8); TSM 414.1 negative below flip 423.8 (CW 420 / PW 400); META 656.6 negative (PW 650 / CW 700); INTC 87.1 negative (PW 90 / CW 110); NBIS 160.0 negative; MSFT/AAPL positive. Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread marked 11:18 ET: $2.40 liquidation (mid $2.90), mark valid; stop $2.15 not hit. TSM 414.1 vs $400 close exit. **Hold.**\n- **X whale lead:** @WhalesFlowRadar 11:04 ET, ~$6.3M MA 640C 9/17/27. Confirmed on the free chain (vol 1,026 vs OI 62, ~$63.6/contract). MA 627.6 in positive gamma (flip 590.7), call wall 645 just above the strike, put wall 620. Lead only, no vote: MA is not on our watchlist, no analyst covers it, earnings 10/29 (we'd hold premium through the print), and one outright contract costs ~$6,400, far over the 25% cap. Passed to Flow & Gamma for context. **No trade.**\n- **Triggers:** none met (all close-based). Flow & Gamma and Technical asked for a short 11:18 update; they message the Decider only if a setup qualifies. **No trade.**\n- Account value $9,810 (cash $9,570 + TSM spread $240).\n\n## 11:43 ET scan (30-minute scan, 11:30 slot)\n- **Gamma refresh (gex.py 11:42):** SPY 763.2 negative gamma below flip 771.0 (CW 770 / PW 760); QQQ 707.8 negative, under its 710 put wall (flip 724.3); TSM 413.3 negative below flip 421.8 (CW 420 / PW 400); META 657.8 negative (PW 650 / CW 700); INTC 86.9 negative (PW 85 / CW 110); NBIS 160.1 negative (PW 165); IWM 275.8 negative (PW 270 / CW 280); MSFT/AAPL positive. Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread marked 11:43 ET: $2.50 liquidation (mid $2.95), mark valid; stop $2.15 not hit. TSM 413.3 vs $400 close exit. **Hold.**\n- **X whale check (since 11:05 ET):** only @FlowbyBobby SPX heatmap/promo posts and a @BullflowIO reply. No new prints.\n- **Triggers:** none met (all close-based). Flow & Gamma and Technical asked for a short 11:45 update; they message the Decider only if a setup qualifies. **No trade.**\n- Account value $9,820 (cash $9,570 + TSM spread $250).\n\n## 12:08 ET: bearish idea review (Grok Bot asked, after Sacha's question about puts)\n- **Exits first:** TSM 12/18 440/450C marked 12:06:53 ET at $2.55 liquidation (mid $2.85). Mark is valid, stop_watch 0/2, TSM 413.68. **Hold.** Account $9,825.\n- **Candidate picked: QQQ 2026-12-18 710/700 put debit spread, 1 contract.** Buy 710P at the $24.87 ask, sell 700P at the $20.94 bid, so the debit is **$3.93 ($393, 4.0% of the account)**. Prices from the Nasdaq public API at 12:06:06\u201312:06:11 ET with QQQ at $708.73. Both legs' bid-ask is under 1% of mid; OI is 30,309 and 77,447. Max value $1,000, breakeven 706.07, reward/risk 1.54. Raw data: dec_nasdaq_QQQ_*.json.\n  - **Exit plan:** target QQQ 700, taking profit at a $7.50 mark or better. Close-basis stop if QQQ closes above 725. Premium stop at a valid confirmed mark of $1.97 or less (\u221250%). Close by 7 DTE (12/11).\n  - **Two analysts:** Technical has QQQ \"bearish below the 50-day\", 3/5. Sentiment calls SPY/QQQ \"risk-off (semis/AI)\", 4/5. Fundamentals and Risk have no QQQ view. Flow & Gamma and the Skeptic don't count toward the two.\n  - **Not the same bet as TSM:** it is a bearish index position that partly hedges the TSM call spread. Risk's note says a bearish semi trade isn't the same bet as TSM.\n  - **Sizing:** $393 is under the 5% cap (~$491). Option premium opened this week would be $430 + $393 = $823, under the 15% cap (~$1,473). This would be position 2 of 6. VIX is ~18, so no halving.\n- **Gamma check:** gex.py --check \"QQQ put 710/700 2026-12-18 target=700 stop=725\" ran at 12:07 ET on today's data (gex.md 12:07:26).\n  - (1) QQQ 709.15 is in negative gamma, below the 726.94 flip. Momentum is favored and swings should be wider, so we keep size at 1 contract.\n  - (2) The king node is 710 (10/23, \u2212893M), right at spot. The nearest negative node below is 705; 700 (\u22121.3B) and 690 are the next big strikes. There are no positive nodes nearby.\n  - (3) Our put wall is 710, at spot and on our long strike. The 700 target and short strike are below it, so the trade needs 710 to break. Negative gamma is why that can happen; if it holds, the premium stop limits the loss. The call wall is 720, and the 725 stop is placed beyond it, not just inside it.\n  - (4) VEX is +$300M per vol point. A vol crush after FOMC or earnings (10/28\u201329) would bring dealer buying, a headwind. An IV spike is a tailwind.\n  - **Bullflow:** it agrees on the regime and flip (728.7). It differs on the put wall and king node, which it puts at 700, exactly our target and short strike. So we take profit at 700 and don't aim beyond it. Its call wall is 740 vs our 720, and the 725 stop sits between the two.\n- **Status:** PROPOSED, NOT ENTERED. Sent to the Skeptic; next steps are the \"Skeptic:\" line, then Risk Manager approval. Not in ledger.json yet.\n- **Skeptic (12:09, moderate objection; skeptic.md):** I accept it. There are two problems. First, at QQQ 700 with about a month left, this spread is worth only about $4.60, not $7.50. So the real exit at 700 is to take profit at $5.00 or more (the low end of the playbook's take-profit range) if it reaches that, otherwise hold toward 685\u2013690 or until the 12/11 time exit. Second, entering now means selling into support (707.23/706.63) that held twice today, and Technical's own line is \"defense until QQQ holds 707.\" Both analysts lean bearish for the same reason (today's semis/AI selloff), so the edge is thinner than two votes suggest.\n- **Decision: NO ENTRY NOW. The QQQ 710/700 put spread stays on watch with a trigger.** I'll enter only if either (a) QQQ closes below 707 (confirmed at 4 PM), or (b) it fails a retest of 714\u2013720 and rolls back under VWAP. At that point I'll re-price from a live chain, re-run gex --check if any terms change, and send it to Risk for approval. The exit plan changes to: take profit at a $5.00+ mark (or more if it's late in the trade and QQQ is near or below 700), stop if QQQ closes above 725 or at a confirmed $1.97 mark, time exit 12/11.\n- Nothing entered. Ledger unchanged except the 12:07 TSM mark (hold, $2.55). Account $9,825.\n\n## 12:15 ET scan (30-minute scan, 12:00 slot)\n- **Gamma refresh (gex.py 12:14):** SPY 765.0 negative gamma below flip 773.2 (CW 765 / PW 765); QQQ 709.7 negative, at its 710 put wall (flip 727.0, CW 720); TSM 414.5 negative below flip 422.3 (CW 420 / PW 400); META 653.7 negative (PW 650 / CW 700); INTC 87.7 negative (PW 90 / CW 110); NBIS 160.3 negative (PW 165 / CW 180); IWM 276.4 negative (PW 270 / CW 280); MSFT/AAPL positive. Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread last marked 12:09 ET at $2.45 liquidation (mid $2.85), mark valid; stop $2.15 not hit. TSM 414.5 vs $400 close exit. **Hold.**\n- **X whale lead:** @WhalesFlowRadar 11:54 ET, ~$3M NKE 40C 3/19/27. Confirmed on the free chain (vol 10,188 vs OI 8,829, ~$3.13/contract). NKE 38.26 in positive gamma (flip 36.79); the 40 strike is the call wall, put wall 35. Lead only, no vote: NKE isn't on our watchlist, no analyst covers it, and earnings 12/17 fall inside the expiry. If ever considered, a cheap 40/45 March call spread (~$1.40-1.60 debit) beats the outright. Passed to Flow & Gamma for context. **No trade.**\n- **QQQ 710/700 put spread watch (from 12:08 review):** triggers (close < 707, or a failed 714-720 retest back under VWAP) not met; QQQ 709.7. **No entry.**\n- **Triggers:** none met. Flow & Gamma and Technical asked for a short 12:15 update; they message the Decider only if a setup qualifies. **No trade.**\n- Account value $9,815 (cash $9,570 + TSM spread $245).\n\n## 12:48 ET scan (30-minute scan, 12:30 slot)\n- **Gamma refresh (gex.py 12:48):** SPY 762.5 negative gamma below flip 770.7 (CW 770 / PW 760); QQQ 705.6 negative, now below its 710 put wall (flip 722.5, CW 720); TSM 411.9 negative below flip 421.8 (CW 420 / PW 400); META 646.3 negative, under its 650 put wall (CW 700); INTC 86.5 (PW 85); NBIS 158.9 (PW 165). Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread last marked 12:35 ET at $2.60 liquidation (mid $3.00), stop $2.15 not hit; TSM 411.9 vs $400 close exit. **Hold.**\n- **X whale lead:** @FlowbyBobby 12:28 ET ~$1.9M AMZN 250C 10/26, confirmed on the free chain (vol 4,660 vs OI 318). AMZN 251.1 positive gamma; the 250 strike is the put wall and 255 the call wall/king node, so dealers pin it in a 250-255 box and a 4-day call has little room. Lead only, no vote, AMZN not on our watchlist and no analyst covers it. **No trade.** Smaller prints (WMT 124C 11/20 $512k, ABT 103C 11/6 $320k) logged only.\n- **QQQ 710/700 put spread watch:** QQQ 705.6 is below 707 intraday, but trigger (a) needs a 4 PM close < 707 and (b) a failed 714-720 retest; neither met yet. **No entry now**; re-check at the close.\n- Flow & Gamma and Technical asked for a short 12:45 update; they message the Decider only if a setup qualifies. **No trade.**\n- Account value about $9,830 (cash $9,570 + TSM spread $260 at the 12:35 mark).\n\n## 12:50 ET update (Technical 12:45 warning)\n- **TSM exit check:** mark.py marked the spread at $2.60 at 12:50 ET (valid liquidation mark, mid $2.88) with TSM around 411.6, near its 411.50 low. The $2.15 stop is not hit (stop_watch 0/2), and TSM is still above the 400 close exit. **HOLD.**\n- **QQQ put spread:** QQQ is at 705.2, below 707 intraday. The trigger is a 4 PM close below 707, so there's no entry yet. I'll re-check at the close.\n- META long is off for today (it broke 648.26). Account $9,830.\n\n## 13:13 ET scan (30-minute scan, 13:00 slot)\n- **Gamma refresh (gex.py 13:13):** SPY 762.5 negative gamma below flip 771.0 (CW 770 / PW 760); QQQ 705.6 negative (flip 724.4, CW 720, PW now 700); TSM 411.3 negative below flip 422.7 (CW 420 / PW 400); META 647.9 negative, under its 650 put wall; INTC 86.2 (PW 85); NBIS 158.8 (PW 165); MSFT/AAPL positive. Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread last marked 13:05 ET at $2.35 liquidation (mid $2.78), mark valid, stop $2.15 not hit (stop_watch 0/2); TSM 411.3 vs $400 close exit. **Hold.**\n- **X whale check (since 12:35 ET):** only ABT 103C Nov ~$316k (@WhalesFlowRadar, same print as earlier), logged. No $1M+ prints. @FlowbyBobby flags QQQ 705 / SPY 762 as new floors, which lines up with our QQQ put-spread watch (a break below would support it). **No trade.**\n- **QQQ 710/700 put spread watch:** QQQ 705.6, below 707 intraday, but trigger (a) is a 4 PM close < 707 and (b) a failed 714-720 retest; neither confirmed. **No entry now**; re-check at the close.\n- Flow & Gamma and Technical asked for a short 13:15 update; they message the Decider only if a setup qualifies. **No trade.**\n- Account value about $9,805 (cash $9,570 + TSM spread $235 at the 13:05 mark).\n\n## 13:42 ET scan (30-minute scan, 13:30 slot)\n- **Gamma refresh (gex.py 13:42):** SPY 763.4 negative gamma below flip 773.3 (CW 770 / PW 760); QQQ 706.2 negative (flip 727.3, CW 720, PW 700); TSM 411.7 negative below flip 422.8 (CW 420 / PW 400); META 646.5 negative, under its 650 put wall (CW 700); INTC 86.4 (PW 85); NBIS 157.5 (PW 160); MSFT/AAPL positive; IWM 275.9 negative. Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread last marked 13:36 ET at $2.45 liquidation (mid $2.78), mark valid, stop $2.15 not hit (stop_watch 0/2); TSM 411.7 vs $400 close exit. **Hold.**\n- **X whale check (since 13:05 ET):** only @FlowbyBobby bounce-zone recaps and a promo post. No new prints. **No trade.**\n- **QQQ 710/700 put spread watch:** QQQ 706.2, below 707 intraday, but trigger (a) is a 4 PM close < 707 and (b) a failed 714-720 retest; neither confirmed. **No entry now**; re-check at the close.\n- Flow & Gamma and Technical asked for a short 13:45 update; they message the Decider only if a setup qualifies. **No trade.**\n- Account value about $9,815 (cash $9,570 + TSM spread $245 at the 13:36 mark).\n\n## 14:08 ET scan (30-minute scan, 14:00 slot)\n- **Gamma refresh (gex.py 14:08):** SPY 762.3 negative gamma below flip 771.1 (CW 770 / PW 760); QQQ 704.3 negative (flip 723.5, CW 720, PW 700), now just under @FlowbyBobby's 705 floor; TSM 411.2 negative below flip 421.2 (CW 420 / PW 400); META 644.4 negative, under its 650 put wall; INTC 86.0 (PW 85); NBIS 156.6 (PW 150); MSFT/AAPL positive; IWM 275.6 negative. Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread marked 14:08 ET at $2.45 liquidation (mid $2.82), mark valid, stop $2.15 not hit (stop_watch 0/2); TSM 411.2 vs $400 close exit. **Hold.**\n- **X whale check (since 13:30 ET):** only a generic @BullflowIO MRNA put-alerts post (no strike/size) and @FlowbyBobby promo/class posts. No new prints. **No trade.**\n- **QQQ 710/700 put spread watch:** QQQ 704.3, below 707 intraday, but trigger (a) is a 4 PM close < 707 and (b) a failed 714-720 retest; neither confirmed. **No entry now**; re-check at the close.\n- Flow & Gamma and Technical asked for a short 14:15 update; they message the Decider only if a setup qualifies. **No trade.**\n- Account value about $9,815 (cash $9,570 + TSM spread $245 at the 14:08 mark).\n\n## 14:48 ET scan (30-minute scan, 14:30 slot)\n- **Gamma refresh (gex.py 14:48, Yahoo source):** SPY 762.1 negative gamma below flip 773.5 (CW 770 / PW 762); QQQ 703.6 negative (flip 727.3, CW 720, PW 700); TSM 411.3 negative below flip 423.7 (CW 420 / PW 400); META 641.5 negative, under its 650 put wall; INTC 86.1 (PW 85); NBIS 157.4 (PW 150); MSFT/AAPL positive; IWM 275.8 negative. Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread marked 14:39 ET at $2.40 liquidation (mid $2.82), mark valid, stop $2.15 not hit (stop_watch 0/2); TSM 411.3 vs $400 close exit. **Hold.**\n- **X whale lead:** @WhalesFlowRadar 14:33 ET, ~$1M RDDT 157.5C October (free chain: 10/30 157.5C vol 1,375 vs OI 132, ~$6.40). RDDT 148.3 in negative gamma below flip 153.3, call wall 155 sits below the strike. Lead only, no vote: RDDT isn't on our watchlist, no analyst covers it, and earnings 10/29 fall inside the expiry, so it's a pure earnings bet against our earnings rule. Passed to Flow & Gamma for context. **No trade.**\n- **QQQ 710/700 put spread watch:** QQQ 703.6, below 707 intraday, but trigger (a) is a 4 PM close < 707 and (b) a failed 714-720 retest; neither confirmed. **No entry now**; re-check at the close.\n- Flow & Gamma and Technical asked for a short 14:45 update; they message the Decider only if a setup qualifies. **No trade.**\n- Account value about $9,810 (cash $9,570 + TSM spread $240 at the 14:39 mark).\n\n## 15:10 ET scan (30-minute scan, 15:00 slot)\n- **Gamma refresh (gex.py 15:10, Yahoo source):** SPY 762.0 negative gamma below flip 773.6 (CW 770 / PW 762); QQQ 703.0 negative (flip 726.1, CW 720, PW 700); TSM 411.3 negative below flip 422.9 (CW 420 / PW 400); META 642.5 negative, under its 650 put wall; INTC 85.6 (PW 85); NBIS 157.6 (PW 160); MSFT/AAPL positive; IWM 275.9 negative. Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread marked 15:01 ET at $2.45 liquidation (mid $2.82), mark valid, stop $2.15 not hit (stop_watch 0/2); TSM 411.3 vs $400 close exit. **Hold.**\n- **X whale check (since 14:30 ET):** @FlowbyBobby JAZZ 240C 12/18 ~$846k, HTZ 2.5C 11/20 ~$500k, AAOI 320C 6/17/27 ~$595k. All under $1M and off our watchlist; logged only. **No trade.**\n- **QQQ 710/700 put spread watch:** QQQ 703.0, below 707 intraday, but trigger (a) is a 4 PM close < 707 and (b) a failed 714-720 retest; neither confirmed. **No entry now**; re-check at the close.\n- Flow & Gamma and Technical asked for a short 15:10 update; they message the Decider only if a setup qualifies. **No trade.**\n- Account value about $9,815 (cash $9,570 + TSM spread $245 at the 15:01 mark).\n",
  "decision_date": "2026-10-22",
  "drawdown": -0.01849999999999996,
  "error": null,
@@ -10,15 +10,331 @@
   "date": "2026-10-22",
   "disclaimer": "Free public data; estimate only; supporting signal for PAPER trading; never places orders.",
   "error": null,
-  "generated_at": "2026-10-22 02:48:49 PM EDT",
+  "generated_at": "2026-10-22 03:10:30 PM EDT",
   "stale": false,
   "tickers": [
    {
-    "as_of": "2026-10-22 02:48 PM EDT",
-    "call_wall": 155.0,
-    "flip": 153.31,
+    "as_of": "2026-10-22 03:10 PM EDT",
+    "call_wall": 770.0,
+    "flip": 773.58,
     "flip_note": null,
-    "gex_heatmap_png": "gex_heatmap_RDDT.png",
+    "gex_heatmap_png": "gex_heatmap_SPY.png",
+    "heatmap": {
+     "expiries": [
+      "2026-10-22",
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-06"
+     ],
+     "nodes": {
+      "king": {
+       "dist_pct": -0.01,
+       "expiry": "2026-10-22",
+       "row_total": -2630493348,
+       "strike": 762.0,
+       "value": -1774913321
+      },
+      "king_strike": {
+       "dist_pct": -0.01,
+       "net_gex": -2630493348,
+       "strike": 762.0
+      },
+      "neg_above": {
+       "dist_pct": 0.39,
+       "net_gex": -1181196413,
+       "net_vex": -30329287,
+       "strike": 765.0
+      },
+      "neg_below": {
+       "dist_pct": -0.01,
+       "net_gex": -2630493348,
+       "net_vex": 4553081,
+       "strike": 762.0
+      },
+      "node_threshold": 394574002,
+      "pos_above": null,
+      "pos_below": null,
+      "vex_king": {
+       "dist_pct": -2.24,
+       "expiry": "2026-10-30",
+       "strike": 745.0,
+       "value": 74222782
+      }
+     },
+     "total_gex": -12826532243,
+     "total_vex": 823332026,
+     "vex_read": "net VEX +$823.3M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
+    },
+    "net_gex": -15911516297,
+    "png": "gex_SPY.png",
+    "put_wall": 762.0,
+    "regime": "negative",
+    "regime_label": "negative gamma: dealers amplify moves -> trend / higher volatility, expect bigger ranges",
+    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
+    "spot": 762.04,
+    "spot_vs_flip": "below flip",
+    "ticker": "SPY",
+    "top_strikes": [
+     {
+      "call_gex": 324684825,
+      "net_gex": -2655502618,
+      "put_gex": -2980187443,
+      "strike": 762.0
+     },
+     {
+      "call_gex": 253758033,
+      "net_gex": -2077606162,
+      "put_gex": -2331364195,
+      "strike": 760.0
+     },
+     {
+      "call_gex": 219681178,
+      "net_gex": -1381471891,
+      "put_gex": -1601153070,
+      "strike": 750.0
+     },
+     {
+      "call_gex": 311209731,
+      "net_gex": -1322149718,
+      "put_gex": -1633359449,
+      "strike": 765.0
+     },
+     {
+      "call_gex": 186071640,
+      "net_gex": -1065372282,
+      "put_gex": -1251443921,
+      "strike": 767.0
+     }
+    ],
+    "unusual_0dte_count": 62,
+    "unusual_count": 104,
+    "unusual_flow": [
+     {
+      "est_premium": 20777089,
+      "expiry": "2026-11-20",
+      "mid": 4.9,
+      "moneyness": -4.5,
+      "oi": 13572,
+      "strike": 728.0,
+      "type": "put",
+      "vol_oi": 3.1,
+      "volume": 42359
+     },
+     {
+      "est_premium": 14631644,
+      "expiry": "2026-10-23",
+      "mid": 2.95,
+      "moneyness": -0.0,
+      "oi": 8898,
+      "strike": 762.0,
+      "type": "put",
+      "vol_oi": 5.6,
+      "volume": 49683
+     },
+     {
+      "est_premium": 13639168,
+      "expiry": "2026-10-23",
+      "mid": 3.42,
+      "moneyness": 0.1,
+      "oi": 5205,
+      "strike": 763.0,
+      "type": "put",
+      "vol_oi": 7.7,
+      "volume": 39939
+     },
+     {
+      "est_premium": 13416774,
+      "expiry": "2026-10-23",
+      "mid": 2.19,
+      "moneyness": -0.3,
+      "oi": 16829,
+      "strike": 760.0,
+      "type": "put",
+      "vol_oi": 3.6,
+      "volume": 61404
+     },
+     {
+      "est_premium": 13136154,
+      "expiry": "2026-10-23",
+      "mid": 4.02,
+      "moneyness": 0.3,
+      "oi": 4646,
+      "strike": 764.0,
+      "type": "put",
+      "vol_oi": 7.0,
+      "volume": 32677
+     }
+    ],
+    "vex_heatmap_png": "vex_heatmap_SPY.png"
+   },
+   {
+    "as_of": "2026-10-22 03:10 PM EDT",
+    "call_wall": 720.0,
+    "flip": 726.11,
+    "flip_note": null,
+    "gex_heatmap_png": "gex_heatmap_QQQ.png",
+    "heatmap": {
+     "expiries": [
+      "2026-10-22",
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-06"
+     ],
+     "nodes": {
+      "king": {
+       "dist_pct": 0.99,
+       "expiry": "2026-10-23",
+       "row_total": -1049426813,
+       "strike": 710.0,
+       "value": -747858487
+      },
+      "king_strike": {
+       "dist_pct": 0.99,
+       "net_gex": -1049426813,
+       "strike": 710.0
+      },
+      "neg_above": {
+       "dist_pct": 0.28,
+       "net_gex": -388522929,
+       "net_vex": -4013973,
+       "strike": 705.0
+      },
+      "neg_below": {
+       "dist_pct": -0.43,
+       "net_gex": -1030621175,
+       "net_vex": 16367162,
+       "strike": 700.0
+      },
+      "node_threshold": 157414022,
+      "pos_above": null,
+      "pos_below": null,
+      "vex_king": {
+       "dist_pct": 0.99,
+       "expiry": "2026-10-23",
+       "strike": 710.0,
+       "value": -31410208
+      }
+     },
+     "total_gex": -6743671034,
+     "total_vex": 127971881,
+     "vex_read": "net VEX +$128.0M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
+    },
+    "net_gex": -9211381552,
+    "png": "gex_QQQ.png",
+    "put_wall": 700.0,
+    "regime": "negative",
+    "regime_label": "negative gamma: dealers amplify moves -> trend / higher volatility, expect bigger ranges",
+    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
+    "spot": 703.01,
+    "spot_vs_flip": "below flip",
+    "ticker": "QQQ",
+    "top_strikes": [
+     {
+      "call_gex": 124351237,
+      "net_gex": -1433283531,
+      "put_gex": -1557634769,
+      "strike": 700.0
+     },
+     {
+      "call_gex": 93597467,
+      "net_gex": -1186074319,
+      "put_gex": -1279671786,
+      "strike": 710.0
+     },
+     {
+      "call_gex": 42836720,
+      "net_gex": -938964193,
+      "put_gex": -981800913,
+      "strike": 690.0
+     },
+     {
+      "call_gex": 42742592,
+      "net_gex": -591234004,
+      "put_gex": -633976596,
+      "strike": 711.0
+     },
+     {
+      "call_gex": 36582583,
+      "net_gex": -522214387,
+      "put_gex": -558796970,
+      "strike": 680.0
+     }
+    ],
+    "unusual_0dte_count": 38,
+    "unusual_count": 222,
+    "unusual_flow": [
+     {
+      "est_premium": 33485556,
+      "expiry": "2026-10-23",
+      "mid": 3.99,
+      "moneyness": -0.4,
+      "oi": 20161,
+      "strike": 700.0,
+      "type": "put",
+      "vol_oi": 4.2,
+      "volume": 84029
+     },
+     {
+      "est_premium": 31159968,
+      "expiry": "2026-10-23",
+      "mid": 6.23,
+      "moneyness": 0.3,
+      "oi": 8221,
+      "strike": 705.0,
+      "type": "put",
+      "vol_oi": 6.1,
+      "volume": 50016
+     },
+     {
+      "est_premium": 24450434,
+      "expiry": "2026-11-06",
+      "mid": 12.16,
+      "moneyness": -1.4,
+      "oi": 168,
+      "strike": 693.0,
+      "type": "put",
+      "vol_oi": 119.6,
+      "volume": 20099
+     },
+     {
+      "est_premium": 24423610,
+      "expiry": "2026-10-23",
+      "mid": 7.3,
+      "moneyness": 0.6,
+      "oi": 3217,
+      "strike": 707.0,
+      "type": "put",
+      "vol_oi": 10.4,
+      "volume": 33457
+     },
+     {
+      "est_premium": 19158644,
+      "expiry": "2026-10-23",
+      "mid": 7.88,
+      "moneyness": 0.7,
+      "oi": 1647,
+      "strike": 708.0,
+      "type": "put",
+      "vol_oi": 14.8,
+      "volume": 24313
+     }
+    ],
+    "vex_heatmap_png": "vex_heatmap_QQQ.png"
+   },
+   {
+    "as_of": "2026-10-22 03:10 PM EDT",
+    "call_wall": 420.0,
+    "flip": 422.85,
+    "flip_note": null,
+    "gex_heatmap_png": "gex_heatmap_TSM.png",
     "heatmap": {
      "expiries": [
       "2026-10-23",
@@ -31,127 +347,1093 @@
      ],
      "nodes": {
       "king": {
-       "dist_pct": -1.56,
-       "expiry": "2026-10-23",
-       "row_total": -2612504,
-       "strike": 146.0,
-       "value": -2566914
+       "dist_pct": -2.76,
+       "expiry": "2026-12-18",
+       "row_total": -40376826,
+       "strike": 400.0,
+       "value": -24555472
       },
       "king_strike": {
-       "dist_pct": -2.23,
-       "net_gex": -2683019,
-       "strike": 145.0
+       "dist_pct": -2.76,
+       "net_gex": -40376826,
+       "strike": 400.0
       },
       "neg_above": {
-       "dist_pct": 1.14,
-       "net_gex": -1709316,
-       "net_vex": -31976,
-       "strike": 150.0
+       "dist_pct": 0.28,
+       "net_gex": -7108175,
+       "net_vex": -60293,
+       "strike": 412.5
       },
       "neg_below": {
-       "dist_pct": -0.21,
-       "net_gex": -1192208,
-       "net_vex": 3108,
-       "strike": 148.0
+       "dist_pct": -0.32,
+       "net_gex": -22056515,
+       "net_vex": 163506,
+       "strike": 410.0
       },
-      "node_threshold": 402453,
+      "node_threshold": 6056524,
       "pos_above": {
-       "dist_pct": 7.88,
-       "net_gex": 659571,
-       "net_vex": 73272,
-       "strike": 160.0
+       "dist_pct": 9.4,
+       "net_gex": 11503722,
+       "net_vex": 2884783,
+       "strike": 450.0
       },
       "pos_below": null,
       "vex_king": {
-       "dist_pct": -2.23,
-       "expiry": "2026-10-23",
-       "strike": 145.0,
-       "value": 83321
+       "dist_pct": 9.4,
+       "expiry": "2026-11-20",
+       "strike": 450.0,
+       "value": 2054126
       }
      },
-     "total_gex": -12289126,
-     "total_vex": 451533,
-     "vex_read": "net VEX +$0.5M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
+     "total_gex": -130530688,
+     "total_vex": 12613071,
+     "vex_read": "net VEX +$12.6M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
     },
-    "net_gex": -10228977,
+    "net_gex": -140809396,
     "png": null,
-    "put_wall": 150.0,
+    "put_wall": 400.0,
     "regime": "negative",
     "regime_label": "negative gamma: dealers amplify moves -> trend / higher volatility, expect bigger ranges",
     "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
-    "spot": 148.31,
+    "spot": 411.33,
     "spot_vs_flip": "below flip",
-    "ticker": "RDDT",
+    "ticker": "TSM",
     "top_strikes": [
      {
-      "call_gex": 289809,
-      "net_gex": -2683019,
-      "put_gex": -2972827,
-      "strike": 145.0
+      "call_gex": 9709655,
+      "net_gex": -40376826,
+      "put_gex": -50086481,
+      "strike": 400.0
      },
      {
-      "call_gex": 58910,
-      "net_gex": -2612504,
-      "put_gex": -2671414,
-      "strike": 146.0
+      "call_gex": 10148711,
+      "net_gex": -22056515,
+      "put_gex": -32205226,
+      "strike": 410.0
      },
      {
-      "call_gex": 1463255,
-      "net_gex": -1709316,
-      "put_gex": -3172571,
-      "strike": 150.0
+      "call_gex": 1949480,
+      "net_gex": -21612817,
+      "put_gex": -23562297,
+      "strike": 360.0
      },
      {
-      "call_gex": 90424,
-      "net_gex": -1192208,
-      "put_gex": -1282632,
-      "strike": 148.0
+      "call_gex": 5933816,
+      "net_gex": -17706821,
+      "put_gex": -23640637,
+      "strike": 415.0
      },
      {
-      "call_gex": 242272,
-      "net_gex": -938829,
-      "put_gex": -1181101,
-      "strike": 140.0
+      "call_gex": 2841407,
+      "net_gex": -15571460,
+      "put_gex": -18412867,
+      "strike": 390.0
      }
     ],
     "unusual_0dte_count": 0,
     "unusual_count": 3,
     "unusual_flow": [
      {
-      "est_premium": 866250,
+      "est_premium": 2207630,
+      "expiry": "2026-11-27",
+      "mid": 21.48,
+      "moneyness": 2.1,
+      "oi": 305,
+      "strike": 420.0,
+      "type": "put",
+      "vol_oi": 3.4,
+      "volume": 1028
+     },
+     {
+      "est_premium": 297908,
+      "expiry": "2026-11-13",
+      "mid": 18.98,
+      "moneyness": -1.5,
+      "oi": 51,
+      "strike": 405.0,
+      "type": "call",
+      "vol_oi": 3.1,
+      "volume": 157
+     },
+     {
+      "est_premium": 171990,
       "expiry": "2026-10-30",
-      "mid": 6.3,
-      "moneyness": 6.2,
-      "oi": 132,
-      "strike": 157.5,
-      "type": "call",
-      "vol_oi": 10.4,
-      "volume": 1375
-     },
-     {
-      "est_premium": 106914,
-      "expiry": "2026-10-23",
-      "mid": 2.06,
-      "moneyness": 0.5,
-      "oi": 126,
-      "strike": 149.0,
-      "type": "call",
-      "vol_oi": 4.1,
-      "volume": 519
-     },
-     {
-      "est_premium": 49335,
-      "expiry": "2026-10-23",
-      "mid": 0.82,
-      "moneyness": 2.8,
-      "oi": 186,
-      "strike": 152.5,
-      "type": "call",
-      "vol_oi": 3.2,
-      "volume": 598
+      "mid": 0.98,
+      "moneyness": -10.0,
+      "oi": 503,
+      "strike": 370.0,
+      "type": "put",
+      "vol_oi": 3.5,
+      "volume": 1755
      }
     ],
-    "vex_heatmap_png": "vex_heatmap_RDDT.png"
+    "vex_heatmap_png": "vex_heatmap_TSM.png"
+   },
+   {
+    "as_of": "2026-10-22 03:10 PM EDT",
+    "call_wall": 700.0,
+    "flip": 680.36,
+    "flip_note": null,
+    "gex_heatmap_png": "gex_heatmap_META.png",
+    "heatmap": {
+     "expiries": [
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-28",
+      "2026-10-30",
+      "2026-11-06",
+      "2026-11-13",
+      "2026-11-20",
+      "2026-11-27"
+     ],
+     "nodes": {
+      "king": {
+       "dist_pct": 1.17,
+       "expiry": "2026-10-23",
+       "row_total": -83364377,
+       "strike": 650.0,
+       "value": -72389964
+      },
+      "king_strike": {
+       "dist_pct": 1.17,
+       "net_gex": -83364377,
+       "strike": 650.0
+      },
+      "neg_above": {
+       "dist_pct": 0.4,
+       "net_gex": -27252830,
+       "net_vex": -252969,
+       "strike": 645.0
+      },
+      "neg_below": {
+       "dist_pct": -0.38,
+       "net_gex": -27840850,
+       "net_vex": 189916,
+       "strike": 640.0
+      },
+      "node_threshold": 12504657,
+      "pos_above": {
+       "dist_pct": 8.96,
+       "net_gex": 24144659,
+       "net_vex": 6086769,
+       "strike": 700.0
+      },
+      "pos_below": null,
+      "vex_king": {
+       "dist_pct": 8.96,
+       "expiry": "2026-11-20",
+       "strike": 700.0,
+       "value": 5737594
+      }
+     },
+     "total_gex": -407694271,
+     "total_vex": 9830285,
+     "vex_read": "net VEX +$9.8M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
+    },
+    "net_gex": -341173416,
+    "png": null,
+    "put_wall": 650.0,
+    "regime": "negative",
+    "regime_label": "negative gamma: dealers amplify moves -> trend / higher volatility, expect bigger ranges",
+    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
+    "spot": 642.46,
+    "spot_vs_flip": "below flip",
+    "ticker": "META",
+    "top_strikes": [
+     {
+      "call_gex": 26350014,
+      "net_gex": -81892866,
+      "put_gex": -108242880,
+      "strike": 650.0
+     },
+     {
+      "call_gex": 10263928,
+      "net_gex": -37926470,
+      "put_gex": -48190398,
+      "strike": 630.0
+     },
+     {
+      "call_gex": 3502767,
+      "net_gex": -35859535,
+      "put_gex": -39362302,
+      "strike": 625.0
+     },
+     {
+      "call_gex": 10117152,
+      "net_gex": -33352918,
+      "put_gex": -43470069,
+      "strike": 640.0
+     },
+     {
+      "call_gex": 5609799,
+      "net_gex": -28126970,
+      "put_gex": -33736769,
+      "strike": 645.0
+     }
+    ],
+    "unusual_0dte_count": 0,
+    "unusual_count": 97,
+    "unusual_flow": [
+     {
+      "est_premium": 8385300,
+      "expiry": "2026-10-23",
+      "mid": 10.5,
+      "moneyness": 0.4,
+      "oi": 2635,
+      "strike": 645.0,
+      "type": "put",
+      "vol_oi": 3.0,
+      "volume": 7986
+     },
+     {
+      "est_premium": 8043742,
+      "expiry": "2026-10-23",
+      "mid": 17.48,
+      "moneyness": 2.0,
+      "oi": 1276,
+      "strike": 655.0,
+      "type": "put",
+      "vol_oi": 3.6,
+      "volume": 4603
+     },
+     {
+      "est_premium": 7269100,
+      "expiry": "2026-10-23",
+      "mid": 7.85,
+      "moneyness": -0.4,
+      "oi": 2207,
+      "strike": 640.0,
+      "type": "put",
+      "vol_oi": 4.2,
+      "volume": 9260
+     },
+     {
+      "est_premium": 6942074,
+      "expiry": "2026-10-23",
+      "mid": 2.54,
+      "moneyness": 2.7,
+      "oi": 506,
+      "strike": 660.0,
+      "type": "call",
+      "vol_oi": 54.0,
+      "volume": 27331
+     },
+     {
+      "est_premium": 6748328,
+      "expiry": "2026-10-23",
+      "mid": 25.48,
+      "moneyness": 3.5,
+      "oi": 865,
+      "strike": 665.0,
+      "type": "put",
+      "vol_oi": 3.1,
+      "volume": 2649
+     }
+    ],
+    "vex_heatmap_png": "vex_heatmap_META.png"
+   },
+   {
+    "as_of": "2026-10-22 03:10 PM EDT",
+    "call_wall": 70.0,
+    "flip": 88.98,
+    "flip_note": null,
+    "gex_heatmap_png": "gex_heatmap_INTC.png",
+    "heatmap": {
+     "expiries": [
+      "2026-10-23",
+      "2026-10-30",
+      "2026-11-06",
+      "2026-11-13",
+      "2026-11-20",
+      "2026-11-27",
+      "2026-12-18"
+     ],
+     "nodes": {
+      "king": {
+       "dist_pct": -0.67,
+       "expiry": "2026-10-23",
+       "row_total": -15125073,
+       "strike": 85.0,
+       "value": -6327428
+      },
+      "king_strike": {
+       "dist_pct": -0.67,
+       "net_gex": -15125073,
+       "strike": 85.0
+      },
+      "neg_above": {
+       "dist_pct": 0.5,
+       "net_gex": -6652213,
+       "net_vex": -73234,
+       "strike": 86.0
+      },
+      "neg_below": {
+       "dist_pct": -0.67,
+       "net_gex": -15125073,
+       "net_vex": 16179,
+       "strike": 85.0
+      },
+      "node_threshold": 2268761,
+      "pos_above": null,
+      "pos_below": null,
+      "vex_king": {
+       "dist_pct": 5.18,
+       "expiry": "2026-11-20",
+       "strike": 90.0,
+       "value": -355090
+      }
+     },
+     "total_gex": -55466569,
+     "total_vex": -225024,
+     "vex_read": "net VEX -$0.2M per vol point: if IV rises dealers buy (cushions selloffs); if IV falls dealers sell -> vol crush is NOT a tailwind"
+    },
+    "net_gex": -26055185,
+    "png": null,
+    "put_wall": 85.0,
+    "regime": "negative",
+    "regime_label": "negative gamma: dealers amplify moves -> trend / higher volatility, expect bigger ranges",
+    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
+    "spot": 85.57,
+    "spot_vs_flip": "below flip",
+    "ticker": "INTC",
+    "top_strikes": [
+     {
+      "call_gex": 2185362,
+      "net_gex": -15125073,
+      "put_gex": -17310435,
+      "strike": 85.0
+     },
+     {
+      "call_gex": 3343757,
+      "net_gex": -7541284,
+      "put_gex": -10885041,
+      "strike": 80.0
+     },
+     {
+      "call_gex": 270621,
+      "net_gex": -6652213,
+      "put_gex": -6922834,
+      "strike": 86.0
+     },
+     {
+      "call_gex": 4551625,
+      "net_gex": -6020728,
+      "put_gex": -10572353,
+      "strike": 90.0
+     },
+     {
+      "call_gex": 721299,
+      "net_gex": -5298562,
+      "put_gex": -6019861,
+      "strike": 88.0
+     }
+    ],
+    "unusual_0dte_count": 0,
+    "unusual_count": 19,
+    "unusual_flow": [
+     {
+      "est_premium": 7763795,
+      "expiry": "2026-10-23",
+      "mid": 10.07,
+      "moneyness": -11.2,
+      "oi": 53,
+      "strike": 76.0,
+      "type": "call",
+      "vol_oi": 145.4,
+      "volume": 7706
+     },
+     {
+      "est_premium": 6941940,
+      "expiry": "2026-10-23",
+      "mid": 11.1,
+      "moneyness": -12.4,
+      "oi": 97,
+      "strike": 75.0,
+      "type": "call",
+      "vol_oi": 64.5,
+      "volume": 6254
+     },
+     {
+      "est_premium": 3450320,
+      "expiry": "2026-10-23",
+      "mid": 2.72,
+      "moneyness": 2.8,
+      "oi": 4116,
+      "strike": 88.0,
+      "type": "put",
+      "vol_oi": 3.1,
+      "volume": 12685
+     },
+     {
+      "est_premium": 3063876,
+      "expiry": "2026-10-23",
+      "mid": 2.04,
+      "moneyness": 1.7,
+      "oi": 3707,
+      "strike": 87.0,
+      "type": "put",
+      "vol_oi": 4.1,
+      "volume": 15019
+     },
+     {
+      "est_premium": 2149075,
+      "expiry": "2026-10-30",
+      "mid": 3.88,
+      "moneyness": 2.8,
+      "oi": 148,
+      "strike": 88.0,
+      "type": "call",
+      "vol_oi": 37.5,
+      "volume": 5546
+     }
+    ],
+    "vex_heatmap_png": "vex_heatmap_INTC.png"
+   },
+   {
+    "as_of": "2026-10-22 03:10 PM EDT",
+    "call_wall": 180.0,
+    "flip": 173.74,
+    "flip_note": null,
+    "gex_heatmap_png": "gex_heatmap_NBIS.png",
+    "heatmap": {
+     "expiries": [
+      "2026-10-23",
+      "2026-10-30",
+      "2026-11-06",
+      "2026-11-13",
+      "2026-11-20",
+      "2026-11-27",
+      "2026-12-18"
+     ],
+     "nodes": {
+      "king": {
+       "dist_pct": -1.66,
+       "expiry": "2026-10-23",
+       "row_total": -6236120,
+       "strike": 155.0,
+       "value": -4891966
+      },
+      "king_strike": {
+       "dist_pct": -1.66,
+       "net_gex": -6236120,
+       "strike": 155.0
+      },
+      "neg_above": {
+       "dist_pct": 1.52,
+       "net_gex": -5767991,
+       "net_vex": -176544,
+       "strike": 160.0
+      },
+      "neg_below": {
+       "dist_pct": -0.07,
+       "net_gex": -1532107,
+       "net_vex": -1564,
+       "strike": 157.5
+      },
+      "node_threshold": 935418,
+      "pos_above": null,
+      "pos_below": null,
+      "vex_king": {
+       "dist_pct": 4.69,
+       "expiry": "2026-10-23",
+       "strike": 165.0,
+       "value": -200169
+      }
+     },
+     "total_gex": -34092880,
+     "total_vex": -257698,
+     "vex_read": "net VEX -$0.3M per vol point: if IV rises dealers buy (cushions selloffs); if IV falls dealers sell -> vol crush is NOT a tailwind"
+    },
+    "net_gex": -34632423,
+    "png": null,
+    "put_wall": 160.0,
+    "regime": "negative",
+    "regime_label": "negative gamma: dealers amplify moves -> trend / higher volatility, expect bigger ranges",
+    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
+    "spot": 157.61,
+    "spot_vs_flip": "below flip",
+    "ticker": "NBIS",
+    "top_strikes": [
+     {
+      "call_gex": 390541,
+      "net_gex": -6236120,
+      "put_gex": -6626661,
+      "strike": 155.0
+     },
+     {
+      "call_gex": 597409,
+      "net_gex": -6001529,
+      "put_gex": -6598938,
+      "strike": 150.0
+     },
+     {
+      "call_gex": 1178244,
+      "net_gex": -5767991,
+      "put_gex": -6946235,
+      "strike": 160.0
+     },
+     {
+      "call_gex": 1332169,
+      "net_gex": -5234197,
+      "put_gex": -6566366,
+      "strike": 165.0
+     },
+     {
+      "call_gex": 96962,
+      "net_gex": -2844134,
+      "put_gex": -2941096,
+      "strike": 140.0
+     }
+    ],
+    "unusual_0dte_count": 0,
+    "unusual_count": 17,
+    "unusual_flow": [
+     {
+      "est_premium": 2023530,
+      "expiry": "2026-10-23",
+      "mid": 3.7,
+      "moneyness": -0.1,
+      "oi": 1101,
+      "strike": 157.5,
+      "type": "put",
+      "vol_oi": 5.0,
+      "volume": 5469
+     },
+     {
+      "est_premium": 1615680,
+      "expiry": "2026-10-23",
+      "mid": 3.2,
+      "moneyness": 1.5,
+      "oi": 747,
+      "strike": 160.0,
+      "type": "call",
+      "vol_oi": 6.8,
+      "volume": 5049
+     },
+     {
+      "est_premium": 1294754,
+      "expiry": "2026-10-23",
+      "mid": 2.26,
+      "moneyness": 3.1,
+      "oi": 494,
+      "strike": 162.5,
+      "type": "call",
+      "vol_oi": 11.6,
+      "volume": 5729
+     },
+     {
+      "est_premium": 1147545,
+      "expiry": "2026-10-23",
+      "mid": 1.58,
+      "moneyness": 4.7,
+      "oi": 1099,
+      "strike": 165.0,
+      "type": "call",
+      "vol_oi": 6.6,
+      "volume": 7286
+     },
+     {
+      "est_premium": 1067500,
+      "expiry": "2026-10-30",
+      "mid": 8.75,
+      "moneyness": 1.5,
+      "oi": 55,
+      "strike": 160.0,
+      "type": "call",
+      "vol_oi": 22.2,
+      "volume": 1220
+     }
+    ],
+    "vex_heatmap_png": "vex_heatmap_NBIS.png"
+   },
+   {
+    "as_of": "2026-10-22 03:10 PM EDT",
+    "call_wall": 575.0,
+    "flip": 457.14,
+    "flip_note": null,
+    "gex_heatmap_png": "gex_heatmap_MSFT.png",
+    "heatmap": {
+     "expiries": [
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-30",
+      "2026-11-06",
+      "2026-11-13",
+      "2026-11-20",
+      "2026-11-27",
+      "2026-12-18"
+     ],
+     "nodes": {
+      "king": {
+       "dist_pct": 0.76,
+       "expiry": "2026-12-18",
+       "row_total": 70183936,
+       "strike": 525.0,
+       "value": 81841917
+      },
+      "king_strike": {
+       "dist_pct": 5.56,
+       "net_gex": 75282869,
+       "strike": 550.0
+      },
+      "neg_above": {
+       "dist_pct": 0.28,
+       "net_gex": -65023429,
+       "net_vex": -911644,
+       "strike": 522.5
+      },
+      "neg_below": {
+       "dist_pct": -0.2,
+       "net_gex": -21691143,
+       "net_vex": 475248,
+       "strike": 520.0
+      },
+      "node_threshold": 11292430,
+      "pos_above": {
+       "dist_pct": 0.76,
+       "net_gex": 70183936,
+       "net_vex": 616684,
+       "strike": 525.0
+      },
+      "pos_below": null,
+      "vex_king": {
+       "dist_pct": 6.52,
+       "expiry": "2026-10-30",
+       "strike": 555.0,
+       "value": 5299807
+      }
+     },
+     "total_gex": 200859877,
+     "total_vex": 70878113,
+     "vex_read": "net VEX +$70.9M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
+    },
+    "net_gex": 593884636,
+    "png": null,
+    "put_wall": 525.0,
+    "regime": "positive",
+    "regime_label": "positive gamma: dealers dampen moves -> mean-reverting / pinning toward big strikes",
+    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
+    "spot": 521.03,
+    "spot_vs_flip": "above flip",
+    "ticker": "MSFT",
+    "top_strikes": [
+     {
+      "call_gex": 196431973,
+      "net_gex": 196271784,
+      "put_gex": -160190,
+      "strike": 575.0
+     },
+     {
+      "call_gex": 80193612,
+      "net_gex": 75282869,
+      "put_gex": -4910743,
+      "strike": 550.0
+     },
+     {
+      "call_gex": 162021161,
+      "net_gex": 70183936,
+      "put_gex": -91837225,
+      "strike": 525.0
+     },
+     {
+      "call_gex": 4465246,
+      "net_gex": -65023429,
+      "put_gex": -69488675,
+      "strike": 522.5
+     },
+     {
+      "call_gex": 64481154,
+      "net_gex": 64479818,
+      "put_gex": -1336,
+      "strike": 625.0
+     }
+    ],
+    "unusual_0dte_count": 0,
+    "unusual_count": 21,
+    "unusual_flow": [
+     {
+      "est_premium": 2692312,
+      "expiry": "2026-10-23",
+      "mid": 2.59,
+      "moneyness": -0.2,
+      "oi": 2644,
+      "strike": 520.0,
+      "type": "put",
+      "vol_oi": 3.9,
+      "volume": 10375
+     },
+     {
+      "est_premium": 1632172,
+      "expiry": "2026-10-30",
+      "mid": 67.72,
+      "moneyness": -12.7,
+      "oi": 80,
+      "strike": 455.0,
+      "type": "call",
+      "vol_oi": 3.0,
+      "volume": 241
+     },
+     {
+      "est_premium": 1253538,
+      "expiry": "2026-10-23",
+      "mid": 2.12,
+      "moneyness": 0.8,
+      "oi": 1143,
+      "strike": 525.0,
+      "type": "call",
+      "vol_oi": 5.2,
+      "volume": 5899
+     },
+     {
+      "est_premium": 1152800,
+      "expiry": "2026-11-13",
+      "mid": 65.5,
+      "moneyness": -11.7,
+      "oi": 38,
+      "strike": 460.0,
+      "type": "call",
+      "vol_oi": 4.6,
+      "volume": 176
+     },
+     {
+      "est_premium": 1045440,
+      "expiry": "2026-10-23",
+      "mid": 1.76,
+      "moneyness": -0.7,
+      "oi": 1138,
+      "strike": 517.5,
+      "type": "put",
+      "vol_oi": 5.2,
+      "volume": 5940
+     }
+    ],
+    "vex_heatmap_png": "vex_heatmap_MSFT.png"
+   },
+   {
+    "as_of": "2026-10-22 03:10 PM EDT",
+    "call_wall": 350.0,
+    "flip": 338.07,
+    "flip_note": null,
+    "gex_heatmap_png": "gex_heatmap_AAPL.png",
+    "heatmap": {
+     "expiries": [
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-28",
+      "2026-10-30",
+      "2026-11-06",
+      "2026-11-13",
+      "2026-11-20",
+      "2026-11-27"
+     ],
+     "nodes": {
+      "king": {
+       "dist_pct": 0.94,
+       "expiry": "2026-10-23",
+       "row_total": 299695187,
+       "strike": 350.0,
+       "value": 175000908
+      },
+      "king_strike": {
+       "dist_pct": 0.94,
+       "net_gex": 299695187,
+       "strike": 350.0
+      },
+      "neg_above": null,
+      "neg_below": {
+       "dist_pct": -1.94,
+       "net_gex": -51310748,
+       "net_vex": 4282516,
+       "strike": 340.0
+      },
+      "node_threshold": 44954278,
+      "pos_above": {
+       "dist_pct": 0.22,
+       "net_gex": 151432483,
+       "net_vex": 1660397,
+       "strike": 347.5
+      },
+      "pos_below": {
+       "dist_pct": -0.5,
+       "net_gex": 169772248,
+       "net_vex": -4310228,
+       "strike": 345.0
+      },
+      "vex_king": {
+       "dist_pct": 0.94,
+       "expiry": "2026-10-23",
+       "strike": 350.0,
+       "value": 8724679
+      }
+     },
+     "total_gex": 798321702,
+     "total_vex": 90940782,
+     "vex_read": "net VEX +$90.9M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
+    },
+    "net_gex": 951249169,
+    "png": null,
+    "put_wall": 340.0,
+    "regime": "positive",
+    "regime_label": "positive gamma: dealers dampen moves -> mean-reverting / pinning toward big strikes",
+    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
+    "spot": 346.74,
+    "spot_vs_flip": "above flip",
+    "ticker": "AAPL",
+    "top_strikes": [
+     {
+      "call_gex": 380600570,
+      "net_gex": 335441075,
+      "put_gex": -45159495,
+      "strike": 350.0
+     },
+     {
+      "call_gex": 249934456,
+      "net_gex": 174212208,
+      "put_gex": -75722248,
+      "strike": 345.0
+     },
+     {
+      "call_gex": 170811970,
+      "net_gex": 151432483,
+      "put_gex": -19379487,
+      "strike": 347.5
+     },
+     {
+      "call_gex": 119390671,
+      "net_gex": 115258108,
+      "put_gex": -4132563,
+      "strike": 360.0
+     },
+     {
+      "call_gex": 85599289,
+      "net_gex": 70234957,
+      "put_gex": -15364332,
+      "strike": 355.0
+     }
+    ],
+    "unusual_0dte_count": 0,
+    "unusual_count": 35,
+    "unusual_flow": [
+     {
+      "est_premium": 17014310,
+      "expiry": "2026-10-23",
+      "mid": 3.0,
+      "moneyness": -0.5,
+      "oi": 16293,
+      "strike": 345.0,
+      "type": "call",
+      "vol_oi": 3.5,
+      "volume": 56620
+     },
+     {
+      "est_premium": 14028984,
+      "expiry": "2026-10-23",
+      "mid": 1.6,
+      "moneyness": 0.2,
+      "oi": 11795,
+      "strike": 347.5,
+      "type": "call",
+      "vol_oi": 7.4,
+      "volume": 87408
+     },
+     {
+      "est_premium": 9108018,
+      "expiry": "2026-10-23",
+      "mid": 1.51,
+      "moneyness": -0.5,
+      "oi": 3325,
+      "strike": 345.0,
+      "type": "put",
+      "vol_oi": 18.1,
+      "volume": 60318
+     },
+     {
+      "est_premium": 7421988,
+      "expiry": "2026-10-23",
+      "mid": 0.74,
+      "moneyness": 0.9,
+      "oi": 22637,
+      "strike": 350.0,
+      "type": "call",
+      "vol_oi": 4.4,
+      "volume": 99624
+     },
+     {
+      "est_premium": 4545156,
+      "expiry": "2026-10-23",
+      "mid": 0.84,
+      "moneyness": -1.2,
+      "oi": 5015,
+      "strike": 342.5,
+      "type": "put",
+      "vol_oi": 10.8,
+      "volume": 54109
+     }
+    ],
+    "vex_heatmap_png": "vex_heatmap_AAPL.png"
+   },
+   {
+    "as_of": "2026-10-22 03:10 PM EDT",
+    "call_wall": 276.0,
+    "flip": 279.7,
+    "flip_note": null,
+    "gex_heatmap_png": "gex_heatmap_IWM.png",
+    "heatmap": {
+     "expiries": [
+      "2026-10-22",
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-06"
+     ],
+     "nodes": {
+      "king": {
+       "dist_pct": 0.4,
+       "expiry": "2026-10-23",
+       "row_total": -200156736,
+       "strike": 277.0,
+       "value": -210016583
+      },
+      "king_strike": {
+       "dist_pct": 0.4,
+       "net_gex": -200156736,
+       "strike": 277.0
+      },
+      "neg_above": {
+       "dist_pct": 0.4,
+       "net_gex": -200156736,
+       "net_vex": -4756507,
+       "strike": 277.0
+      },
+      "neg_below": {
+       "dist_pct": -0.33,
+       "net_gex": -68945700,
+       "net_vex": 1406365,
+       "strike": 275.0
+      },
+      "node_threshold": 30023510,
+      "pos_above": {
+       "dist_pct": 0.76,
+       "net_gex": 52630677,
+       "net_vex": 2025295,
+       "strike": 278.0
+      },
+      "pos_below": null,
+      "vex_king": {
+       "dist_pct": -5.76,
+       "expiry": "2026-10-30",
+       "strike": 260.0,
+       "value": 14833239
+      }
+     },
+     "total_gex": -613358504,
+     "total_vex": 191870260,
+     "vex_read": "net VEX +$191.9M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
+    },
+    "net_gex": -2064559349,
+    "png": null,
+    "put_wall": 270.0,
+    "regime": "negative",
+    "regime_label": "negative gamma: dealers amplify moves -> trend / higher volatility, expect bigger ranges",
+    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
+    "spot": 275.9,
+    "spot_vs_flip": "below flip",
+    "ticker": "IWM",
+    "top_strikes": [
+     {
+      "call_gex": 39120098,
+      "net_gex": -492523309,
+      "put_gex": -531643407,
+      "strike": 270.0
+     },
+     {
+      "call_gex": 14765363,
+      "net_gex": -291190801,
+      "put_gex": -305956164,
+      "strike": 260.0
+     },
+     {
+      "call_gex": 22715127,
+      "net_gex": -281890137,
+      "put_gex": -304605264,
+      "strike": 265.0
+     },
+     {
+      "call_gex": 80037021,
+      "net_gex": -213018145,
+      "put_gex": -293055166,
+      "strike": 277.0
+     },
+     {
+      "call_gex": 145690808,
+      "net_gex": -207732814,
+      "put_gex": -353423621,
+      "strike": 275.0
+     }
+    ],
+    "unusual_0dte_count": 13,
+    "unusual_count": 21,
+    "unusual_flow": [
+     {
+      "est_premium": 1043500,
+      "expiry": "2026-10-23",
+      "mid": 0.62,
+      "moneyness": -0.7,
+      "oi": 4003,
+      "strike": 274.0,
+      "type": "put",
+      "vol_oi": 4.2,
+      "volume": 16696
+     },
+     {
+      "est_premium": 869316,
+      "expiry": "2026-11-06",
+      "mid": 2.46,
+      "moneyness": -2.5,
+      "oi": 625,
+      "strike": 269.0,
+      "type": "put",
+      "vol_oi": 5.7,
+      "volume": 3541
+     },
+     {
+      "est_premium": 842286,
+      "expiry": "2026-10-26",
+      "mid": 1.08,
+      "moneyness": 0.8,
+      "oi": 2180,
+      "strike": 278.0,
+      "type": "call",
+      "vol_oi": 3.6,
+      "volume": 7763
+     },
+     {
+      "est_premium": 818388,
+      "expiry": "2026-11-06",
+      "mid": 7.62,
+      "moneyness": -1.4,
+      "oi": 186,
+      "strike": 272.0,
+      "type": "call",
+      "vol_oi": 5.8,
+      "volume": 1074
+     },
+     {
+      "est_premium": 777398,
+      "expiry": "2026-10-26",
+      "mid": 2.02,
+      "moneyness": 0.0,
+      "oi": 477,
+      "strike": 276.0,
+      "type": "put",
+      "vol_oi": 8.0,
+      "volume": 3839
+     }
+    ],
+    "vex_heatmap_png": "vex_heatmap_IWM.png"
    }
   ]
  },
@@ -259,9 +1541,9 @@
   }
  ],
  "positions_value": 245.00000000000003,
- "published_at": "2026-10-22 03:01:48 PM EDT",
- "published_epoch_ms": 1792695708998,
- "server_time": "2026-10-22 03:01:48 PM EDT",
+ "published_at": "2026-10-22 03:11:04 PM EDT",
+ "published_epoch_ms": 1792696264503,
+ "server_time": "2026-10-22 03:11:04 PM EDT",
  "start_date": "2026-10-21",
  "starting_cash": 10000.0,
  "strategy_b": {
