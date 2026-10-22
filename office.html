@@ -117,8 +117,8 @@ function resize(){const top=$('hud').offsetHeight+4;cv.style.top=top+'px';W=cv.w
  const need=(p,l)=>{const fs=Math.max(7,p*1.4),above=l*1.6*fs+p*13,below=p*42,pitch=above+below+p*2,y0=p*14+above;
   return {tot:y0+(ROWS-1)*pitch+below,y0,pitch,below}};
  let pick=null;
- for(let p=7;p>=3&&!pick;p--){if(W/COLS<p*(NARROW?34:46))continue;for(const l of [3,2]){const n=need(p,l);if(n.tot<=H){pick={p,l,...n};break}}}
- if(!pick){const n=need(3,2);pick={p:3,l:2,...n}}
+ for(let p=7;p>=2&&!pick;p-=.5){if(W/COLS<p*(NARROW?34:46))continue;for(const l of [3,2]){const n=need(p,l);if(n.tot<=H){pick={p,l,...n};break}}}
+ if(!pick){const n=need(2,2);pick={p:2,l:2,...n}}
  P=pick.p;BL=pick.l;Y0=pick.y0;STEP=Math.max(pick.pitch,(H-pick.y0-pick.below)/(ROWS-1));}
 addEventListener('resize',resize);resize();setTimeout(resize,800);
 const R=(x,y,w,h,c)=>{ctx.fillStyle=c;ctx.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h))};
