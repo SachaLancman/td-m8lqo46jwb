@@ -23,7 +23,7 @@ th{color:var(--mut);font-weight:500}td.n,th.n{text-align:right;font-variant-nume
 #bust{font-size:16px;font-weight:700;text-align:center}
 .chartbox{height:340px}
 .prog{position:relative;height:26px;background:#2a1a15;border-radius:13px;overflow:hidden;margin:10px 0 4px;border:1px solid var(--bd)}
-.prog>div{height:100%;background:linear-gradient(90deg,var(--y),var(--o),var(--r));box-shadow:0 0 14px #ff7a1a88;transition:width .6s}
+.prog>div{height:100%;min-width:6px;background:linear-gradient(90deg,var(--y),var(--o),var(--r));box-shadow:0 0 14px #ff7a1a88;transition:width .6s}
 .ticks{position:relative;height:18px;font-size:11px;color:var(--mut)}.ticks span{position:absolute;transform:translateX(-50%)}
 .ticks span:first-child{transform:none}.ticks span:last-child{transform:translateX(-100%)}
 .tag{display:inline-block;font-size:11px;border-radius:6px;padding:0 6px;margin-left:4px;border:1px solid var(--bd)}
@@ -45,7 +45,7 @@ th{color:var(--mut);font-weight:500}td.n,th.n{text-align:right;font-variant-nume
 </div>
 <section class="card hot"><h2>Progress to $100,000 <span class="mut" style="font-weight:400">(log scale: each 10× is half the bar)</span></h2>
 <div class="prog"><div id="pbar" style="width:0"></div></div>
-<div class="ticks"><span style="left:0">$1K</span><span style="left:15.05%">$2K</span><span style="left:34.95%">$5K</span><span style="left:50%">$10K</span><span style="left:65.05%">$20K</span><span style="left:84.95%">$50K</span><span style="left:100%">$100K 🎯</span></div>
+<div class="ticks"><span style="left:0">$1K</span><span style="left:15.05%">$2K</span><span style="left:34.95%">$5K</span><span style="left:50%">$10K</span><span style="left:65.05%">$20K</span><span style="left:84.95%">$50K</span><span style="left:100%">$100K</span></div>
 <div class="ks" id="p-txt" style="margin-top:6px"></div></section>
 <section class="card"><h2>Equity curve <span class="mut" style="font-weight:400">(log scale)</span> <button class="tbtn on" id="b-int">Intraday</button> <button class="tbtn" id="b-day">Daily</button></h2><div class="chartbox"><canvas id="chart"></canvas></div></section>
 <section class="card"><h2>Open positions <span class="mut" id="p-cnt"></span></h2><div id="alerts"></div><div class="scroll"><table id="pos"></table></div></section>
