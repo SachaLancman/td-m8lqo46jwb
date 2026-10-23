@@ -16,8 +16,8 @@
  "goal_target": 100000.0,
  "mode": "paper",
  "positions": 1,
- "published_at": "2026-10-23 10:14:12 AM EDT",
- "published_epoch_ms": 1792764852815,
+ "published_at": "2026-10-23 10:15:14 AM EDT",
+ "published_epoch_ms": 1792764914508,
  "roles": {
   "coordinator": {
    "note": "daily run kicked off; waiting on the Decider",
@@ -30,9 +30,9 @@
    "state": "idle"
   },
   "decider": {
-   "note": "AAPL long to Skeptic; TSM hold",
+   "note": "AAPL conditional: \u2265350 at 15:50 ET; TSM hold",
    "source": "status.json",
-   "state": "deciding"
+   "state": "waiting"
   },
   "flow_gamma": {
    "note": "Daily report 10:12: neg gamma SPY/QQQ/TSM on put walls; TSM spread hold ($2.45/$3.00 vs $2.15 stop); QQQ 700/690 and AAPL 355/365 not qualif",
@@ -45,7 +45,7 @@
    "state": "done"
   },
   "risk": {
-   "note": "risk.md ready: TSM $2.35 valid (stop $2.15), no exits",
+   "note": "AAPL pre-approved with conditions (25% cap may mean 6 shares)",
    "source": "status.json",
    "state": "done"
   },
@@ -65,7 +65,7 @@
    "state": "done"
   }
  },
- "server_time": "2026-10-23 10:14:12 AM EDT",
+ "server_time": "2026-10-23 10:15:14 AM EDT",
  "starting_cash": 10000.0,
  "status_json_error": null,
  "today": "2026-10-23",
