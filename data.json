@@ -1,9 +1,9 @@
 {
- "account_value": 9815.0,
+ "account_value": 9825.0,
  "cash": 9570.0,
  "decision": "# Decision log \u2014 2026-10-23\n\n## 09:40 ET scan (30-minute scan, 09:30 slot, fired 09:40)\n- **Gamma refresh (gex.py 09:41, Yahoo):** SPY 759.7 negative gamma below flip 767.6, sitting on the 760 put wall (CW 800); QQQ 703.1 negative (flip 720.3, PW 700, CW 760); TSM 416.0 negative just below flip 417.7 (CW 420 / PW 400). Bullflow cross-check ok.\n- **Exits first:** TSM 12/18 440/450 call spread last mark $2.30 (09:33, pre-09:35 so not valid); stop $2.15 not hit (stop_watch 0/2); TSM ~416, up from 412.38 close and well above the 400 close exit. **Hold.**\n- **X whale check:** no specific big prints since 09:00 ET; @BullflowIO flags SPY 760 put wall (context only). **No lead.**\n- **QQQ / AAPL ideas from yesterday:** left for the 10:00 daily run (needs full reports, gex --check, Skeptic and Risk). Flow & Gamma and Technical asked for a short update; they message the Decider only if a setup qualifies. **No trade this scan.**\n- Account about $9,800 (cash $9,570 + TSM spread ~$230 at last mark).\n\n## 10:15 ET daily decision (all 5 reports in: technical, fundamentals, sentiment, risk, flow_gamma)\n- **Exits first, TSM 12/18 440/450C spread: HOLD.** Valid marks: Risk $2.35 (10:07, Nasdaq) and Fundamentals $2.45 (10:06). Stop is $2.15 (0/2, not hit). TSM is about 418, above the 400 close exit. No add (same semis bet; Taiwan is closed Fri and Mon, so there's two-way gap risk).\n- **AAPL: candidate, long stock (pending Skeptic + Risk).** Two analysts align: Technical bullish 3/5 and Sentiment bullish lean 3/5. Fundamentals has no AAPL view. Risk has sized it (capped at 7 shares).\n  - Plan: 7 shares at the live Webull ask (about 348.00), roughly $2,436, under the $2,451 cap.\n  - Stop 337.90 (Technical's level, below the 347.5 put wall), risk about $71, under the $294 cap.\n  - Targets 360/370. Kill switch: a 4 PM close below 348.15.\n  - Thesis: a relative-strength refuge (AI-capex-light) at a record high, uncorrelated with TSM. Earnings 11/2 AMC fall inside the hold; decide before then whether to hold through.\n  - No options, so no Gamma check needed.\n- **QQQ 700/690 put spread: NO ENTRY.** Technical's condition isn't met (QQQ 705.5, the 700 put wall held). Sentiment flags squeeze risk from crowded shorts.\n- **LMT stock / XLE 69/75C: NO.** Only Fundamentals supports them (3/5 and 2/5), so there's no second analyst.\n- **No trade:** META, INTC (earnings 10/29), NBIS, MSFT (stop reference broke), NVDA, SPY, AMZN, IWM.\n- **10:14 Flow & Gamma context (not a vote):** no options setup qualifies. AAPL is pinned in positive gamma under the 350 call wall/king node (flip 343.8), so I'm using stock rather than a call spread, and the 360 target has to clear 350. My 337.90 stop sits below the 343.8 flip. TSM's Gamma check line (10:08) is in gex.md: HOLD.\n- **Skeptic (AAPL, moderate objection):** Accepted. I'm not buying at 348 under my own kill switch. The answer to its question: entry now needs confirmation. At the 15:50 ET check, AAPL must be at or above 350.00 (above today's expiring 350 call wall/king node), and then I buy 7 shares at the live Webull ask, with the same stop (337.90) and targets (360/370). Otherwise there's no entry today, and I re-check Monday only on a close of 350 or higher.\n  - **Earnings rule:** close the position by 15:50 ET Mon 11/2 (before the AMC report) whatever the P&L. No holding through the earnings gap.\n  - Payoff is admittedly modest (about +$84 at 360), so this is a small, low-risk trade, not a core bet. Its correlation with QQQ is noted; no QQQ puts are open, so there's no conflict.\n  - Status: **CONDITIONAL, not entered.** Risk pre-approval requested.\n- **10:14 Risk:** AAPL conditional entry APPROVED WITH CONDITIONS (risk.md): shares = min(7, 25% cap / ask), halve if SPY < 50d and VIX > 25, stop 337.90 never widened, 11/2 15:50 exit mandatory, no trade below 350.00.\n\n## 10:17 ET 30-minute scan\n- Gamma refreshed (gex.py, 10:16). X whale check: no new trade posts since the 10:00 @FL0WG0D AMZN 252.5C 10/30 (~$3.1M) already logged; AMZN reports 10/29 AMC, so the earnings rule blocks it for the main account, and it's a lead only.\n- This slot overlaps the 10:15 daily decision written minutes ago (fresh Technical and Flow & Gamma reads), so no separate analyst poll. TSM spread HOLD; AAPL stays CONDITIONAL (15:50 ET check, \u2265350.00). **No new main-account trade this scan.**\n",
  "decision_date": "2026-10-23",
- "drawdown": -0.01849999999999996,
+ "drawdown": -0.01749999999999996,
  "error": null,
  "gamma": {
   "convention": "Dealer GEX approximation: call GEX = +gamma*OI*100*S^2*0.01, put GEX = -gamma*OI*100*S^2*0.01 ($ of delta hedging per 1% move; assumes dealers long calls / short puts, the common public convention). Positive total = dealers dampen moves (pinning); negative = dealers amplify moves.",
@@ -1769,7 +1769,7 @@
   ]
  },
  "goal": "Grow $10,000 to $100,000 within one year (by 2026-10-21 + 1 year)",
- "goal_progress": -0.0020555555555555557,
+ "goal_progress": -0.0019444444444444444,
  "goal_target": 100000.0,
  "history": [
   {
@@ -1782,7 +1782,7 @@
   },
   {
    "date": "2026-10-23",
-   "value": 9815.0
+   "value": 9825.0
   }
  ],
  "mode": "paper",
@@ -1795,9 +1795,9 @@
    "entry": 4.3,
    "entry_debit": 4.3,
    "id": "TSM-20261218-440-450C-1",
-   "last": 2.45,
+   "last": 2.55,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-23T10:06:00-04:00",
+   "last_updated": "2026-10-23T10:26:15-04:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1816,31 +1816,31 @@
    ],
    "mark_method": "liq",
    "mark_quotes": {
-    "fetched": "2026-10-23T10:06:00-04:00",
+    "fetched": "2026-10-23T10:26:15-04:00",
     "intrinsic_floor": 0.0,
     "legs": [
      {
-      "ask": 13.85,
-      "bid": 13.35,
+      "ask": 14.0,
+      "bid": 13.4,
       "leg": "long 440C",
-      "mid": 13.6
+      "mid": 13.7
      },
      {
-      "ask": 10.9,
-      "bid": 10.35,
+      "ask": 10.85,
+      "bid": 10.25,
       "leg": "short 450C",
-      "mid": 10.625
+      "mid": 10.55
      }
     ],
-    "liq_raw": 2.45,
-    "mid_raw": 2.97,
+    "liq_raw": 2.55,
+    "mid_raw": 3.15,
     "source": "Nasdaq public option chain",
-    "underlying": 418.96
+    "underlying": 417.365
    },
    "mark_valid": true,
    "max_loss": 430.0,
    "max_value": 1000,
-   "mid": 2.97,
+   "mid": 3.15,
    "multiplier": 100,
    "opened": "2026-10-21T10:11:49-04:00",
    "price_source": "Nasdaq public option chain API (api.nasdaq.com), fetched 2026-10-21 10:11:49 ET; raw: reports/2026-10-21/raw_decider/TSM_2026-12-18_chain.json",
@@ -1857,7 +1857,7 @@
     "consecutive_valid_at_or_below_stop": 0,
     "rule": "stop is hit only after 2 consecutive VALID marks (from 09:35 ET on; mid if quotes wide) at/below stop",
     "stop_confirmed": false,
-    "updated": "2026-10-23T10:06:00-04:00"
+    "updated": "2026-10-23T10:26:15-04:00"
    },
    "symbol": "TSM",
    "target": 7.5,
@@ -1875,10 +1875,10 @@
    "underlying_target_note": "TSM 450 = short strike / max spread value; added 2026-10-22 per Flow & Gamma request. Consider taking profit at spread $5.00+ if TSM stalls at the 430-435 call wall."
   }
  ],
- "positions_value": 245.00000000000003,
- "published_at": "2026-10-23 10:19:19 AM EDT",
- "published_epoch_ms": 1792765159067,
- "server_time": "2026-10-23 10:19:19 AM EDT",
+ "positions_value": 254.99999999999997,
+ "published_at": "2026-10-23 10:26:16 AM EDT",
+ "published_epoch_ms": 1792765576982,
+ "server_time": "2026-10-23 10:26:16 AM EDT",
  "start_date": "2026-10-21",
  "starting_cash": 10000.0,
  "strategy_b": {
@@ -1923,7 +1923,7 @@
   "win_rate": null
  },
  "today": "2026-10-23",
- "total_return": -0.01849999999999996,
+ "total_return": -0.01749999999999996,
  "trades": [
   {
    "action": "BUY_TO_OPEN",
