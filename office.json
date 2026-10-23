@@ -16,18 +16,18 @@
  "goal_target": 100000.0,
  "mode": "paper",
  "positions": 1,
- "published_at": "2026-10-23 10:50:02 AM EDT",
- "published_epoch_ms": 1792767002279,
+ "published_at": "2026-10-23 10:51:04 AM EDT",
+ "published_epoch_ms": 1792767064731,
  "roles": {
   "coordinator": {
-   "note": "10:17 scan: no main trade; Crazy opened AMZN spread",
+   "note": "10:45 scan: no trades; NET whale lead logged",
    "source": "status.json",
    "state": "done"
   },
   "crazy": {
-   "note": "$1,000 (+0.0%) \u00b7 AMZN 10/30 252.5/265C spread on @FL0WG0D whale",
+   "note": "$945 (-5.5%) \u00b7 holding AMZN call spread",
    "source": "status.json",
-   "state": "working"
+   "state": "idle"
   },
   "decider": {
    "note": "AAPL conditional: \u2265350 at 15:50 ET; TSM hold",
@@ -35,7 +35,7 @@
    "state": "waiting"
   },
   "flow_gamma": {
-   "note": "Daily report 10:12: neg gamma SPY/QQQ/TSM on put walls; TSM spread hold ($2.45/$3.00 vs $2.15 stop); QQQ 700/690 and AAPL 355/365 not qualif",
+   "note": "10:50: nothing qualifies; TSM now slightly positive gamma at 420 wall, hold; NET 360C lead fails 3x test",
    "source": "status.json",
    "state": "done"
   },
@@ -60,12 +60,12 @@
    "state": "done"
   },
   "technical": {
-   "note": "10:00 report done: TSM hold; AAPL long 3/5; QQQ put spread conditional 2/5; normal sizing (VIX 20.1)",
+   "note": "10:45 scan: positions + TSM/AAPL/QQQ",
    "source": "status.json",
-   "state": "done"
+   "state": "researching"
   }
  },
- "server_time": "2026-10-23 10:50:02 AM EDT",
+ "server_time": "2026-10-23 10:51:04 AM EDT",
  "starting_cash": 10000.0,
  "status_json_error": null,
  "today": "2026-10-23",
