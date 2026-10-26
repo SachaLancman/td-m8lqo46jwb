@@ -1632,7 +1632,7 @@
    "id": "TSM-20261218-440-450C-1",
    "last": 3.45,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-26T13:22:32-04:00",
+   "last_updated": "2026-10-26T13:39:12-04:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1651,31 +1651,31 @@
    ],
    "mark_method": "liq",
    "mark_quotes": {
-    "fetched": "2026-10-26T13:22:32-04:00",
+    "fetched": "2026-10-26T13:39:12-04:00",
     "intrinsic_floor": 0.0,
     "legs": [
      {
-      "ask": 17.4,
-      "bid": 17.05,
+      "ask": 17.8,
+      "bid": 17.45,
       "leg": "long 440C",
-      "mid": 17.225
+      "mid": 17.625
      },
      {
-      "ask": 13.6,
-      "bid": 13.05,
+      "ask": 14.0,
+      "bid": 13.7,
       "leg": "short 450C",
-      "mid": 13.325
+      "mid": 13.85
      }
     ],
     "liq_raw": 3.45,
-    "mid_raw": 3.9,
+    "mid_raw": 3.78,
     "source": "Nasdaq public option chain",
-    "underlying": 427.7825
+    "underlying": 427.1801
    },
    "mark_valid": true,
    "max_loss": 430.0,
    "max_value": 1000,
-   "mid": 3.9,
+   "mid": 3.78,
    "multiplier": 100,
    "opened": "2026-10-21T10:11:49-04:00",
    "price_source": "Nasdaq public option chain API (api.nasdaq.com), fetched 2026-10-21 10:11:49 ET; raw: reports/2026-10-21/raw_decider/TSM_2026-12-18_chain.json",
@@ -1692,7 +1692,7 @@
     "consecutive_valid_at_or_below_stop": 0,
     "rule": "stop is hit only after 2 consecutive VALID marks (from 09:35 ET on; mid if quotes wide) at/below stop",
     "stop_confirmed": false,
-    "updated": "2026-10-26T13:22:32-04:00"
+    "updated": "2026-10-26T13:39:12-04:00"
    },
    "symbol": "TSM",
    "target": 7.5,
@@ -1711,9 +1711,9 @@
   }
  ],
  "positions_value": 345.0,
- "published_at": "2026-10-26 01:32:15 PM EDT",
- "published_epoch_ms": 1793035935871,
- "server_time": "2026-10-26 01:32:15 PM EDT",
+ "published_at": "2026-10-26 01:39:14 PM EDT",
+ "published_epoch_ms": 1793036354026,
+ "server_time": "2026-10-26 01:39:14 PM EDT",
  "start_date": "2026-10-21",
  "starting_cash": 10000.0,
  "strategy_b": {
