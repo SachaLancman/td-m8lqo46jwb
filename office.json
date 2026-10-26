@@ -2,13 +2,13 @@
  "account_value": 9920.0,
  "cash": 9570.0,
  "crazy": {
-  "account_value": 950.0,
+  "account_value": 902.0,
   "busted": false,
   "error": null,
   "goal_target": 100000.0,
-  "positions": 1,
+  "positions": 3,
   "starting_cash": 1000.0,
-  "total_return": -0.050000000000000044
+  "total_return": -0.09799999999999998
  },
  "drawdown": -0.008000000000000007,
  "error": null,
@@ -16,18 +16,18 @@
  "goal_target": 100000.0,
  "mode": "paper",
  "positions": 1,
- "published_at": "2026-10-26 03:14:59 PM EDT",
- "published_epoch_ms": 1793042099226,
+ "published_at": "2026-10-26 03:16:01 PM EDT",
+ "published_epoch_ms": 1793042161510,
  "roles": {
   "coordinator": {
-   "note": "14:16 scan done, no trades",
+   "note": "15:13 scan done",
    "source": "status.json",
    "state": "done"
   },
   "crazy": {
-   "note": "$960 (\u22124.0%) \u00b7 holding AMZN 252.5/265C, no trade 14:41",
+   "note": "$902 (-9.8%) \u00b7 opened TSLA + FSLR call spreads, 3 open",
    "source": "status.json",
-   "state": "idle"
+   "state": "working"
   },
   "decider": {
    "note": "META put spread dropped (Skeptic: poor R/R at natural); wait post-FOMC",
@@ -35,7 +35,7 @@
    "state": "done"
   },
   "flow_gamma": {
-   "note": "14:41: META on 630 PW in neg gamma; TSM hold; nothing qualifies",
+   "note": "15:13 last scan: TSM hold above flip; nothing qualifies; FOMC Wed vanna note",
    "source": "status.json",
    "state": "done"
   },
@@ -60,12 +60,12 @@
    "state": "done"
   },
   "technical": {
-   "note": "14:40: META 631.4 just under 631.68 intraday; 615/605P re-priced 3.88 mid/4.45 nat (14:42) - close-only, prefer <629; TSM liq 3.55; no setup",
+   "note": "15:13 final scan",
    "source": "status.json",
-   "state": "done"
+   "state": "researching"
   }
  },
- "server_time": "2026-10-26 03:14:59 PM EDT",
+ "server_time": "2026-10-26 03:16:01 PM EDT",
  "starting_cash": 10000.0,
  "status_json_error": null,
  "today": "2026-10-26",
