@@ -1972,6 +1972,10 @@
   {
    "date": "2026-10-23",
    "value": 9840.0
+  },
+  {
+   "date": "2026-10-26",
+   "value": 9840.0
   }
  ],
  "mode": "paper",
@@ -1985,8 +1989,8 @@
    "entry_debit": 4.3,
    "id": "TSM-20261218-440-450C-1",
    "last": 2.7,
-   "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-23T15:55:28-04:00",
+   "last_note": "before 9:35 ET: opening quotes not used, previous mark kept",
+   "last_updated": "2026-10-26T09:24:56-04:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -2003,7 +2007,7 @@
      "strike": 450
     }
    ],
-   "mark_method": "liq",
+   "mark_method": "kept",
    "mark_quotes": {
     "eod_note": "EOD 2026-10-23: used last in-session mark (15:55 ET). A 16:34 ET post-close fetch gave liq 2.15 / mid 3.22 with widened after-hours quotes (440C 13.30/14.50, 450C 10.20/11.15; TSM 418.19); not used as close and not counted toward the stop.",
     "fetched": "2026-10-23T15:55:28-04:00",
@@ -2027,7 +2031,7 @@
     "source": "Nasdaq public option chain",
     "underlying": 416.65
    },
-   "mark_valid": true,
+   "mark_valid": false,
    "max_loss": 430.0,
    "max_value": 1000,
    "mid": 3.0,
@@ -2047,7 +2051,7 @@
     "consecutive_valid_at_or_below_stop": 0,
     "rule": "stop is hit only after 2 consecutive VALID marks (from 09:35 ET on; mid if quotes wide) at/below stop",
     "stop_confirmed": false,
-    "updated": "2026-10-23T16:35:00-04:00"
+    "updated": "2026-10-26T09:24:56-04:00"
    },
    "symbol": "TSM",
    "target": 7.5,
@@ -2066,9 +2070,9 @@
   }
  ],
  "positions_value": 270.0,
- "published_at": "2026-10-26 09:09:07 AM EDT",
- "published_epoch_ms": 1793020147647,
- "server_time": "2026-10-26 09:09:07 AM EDT",
+ "published_at": "2026-10-26 09:24:56 AM EDT",
+ "published_epoch_ms": 1793021096869,
+ "server_time": "2026-10-26 09:24:56 AM EDT",
  "start_date": "2026-10-21",
  "starting_cash": 10000.0,
  "strategy_b": {
