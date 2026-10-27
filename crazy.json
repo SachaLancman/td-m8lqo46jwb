@@ -1,16 +1,16 @@
 {
- "account_value": 1198.0,
+ "account_value": 1253.0,
  "alerts": [],
  "bust_threshold": 20.0,
  "busted": false,
  "buying_power": 8.0,
  "cash": 8.0,
  "closed_trades": 0,
- "drawdown": -0.018837018837018826,
+ "drawdown": 0.0,
  "error": null,
  "goal": "Grow $1,000 to $100,000 as fast as possible (paper).",
- "goal_progress_linear": 0.01198,
- "goal_progress_log": 0.039228409026646274,
+ "goal_progress_linear": 0.01253,
+ "goal_progress_log": 0.04897553549707497,
  "goal_target": 100000.0,
  "history": [
   {
@@ -27,7 +27,7 @@
   },
   {
    "date": "2026-10-27",
-   "value": 1198.0
+   "value": 1253.0
   }
  ],
  "intraday": [
@@ -402,15 +402,19 @@
   {
    "t": "2026-10-27T10:56-04:00",
    "value": 1198.0
+  },
+  {
+   "t": "2026-10-27T11:05-04:00",
+   "value": 1253.0
   }
  ],
- "marked_at": "2026-10-27T10:56:31-04:00",
+ "marked_at": "2026-10-27T11:05:08-04:00",
  "mode": "paper",
- "multiple": 1.198,
+ "multiple": 1.253,
  "name": "Crazy $1K (Grok Bot, paper)",
  "notes": "# Crazy $1K log \u2014 2026-10-27\n- 09:41 ET \u00b7 $900.00 (\u221210.0%) \u00b7 Holding C1 AMZN 10/30 252.5/265C, C2 TSLA 10/30 400/410C, C3 FSLR 10/30 175/185C (no ALERT; C1/C2 marks kept, no live quotes yet). TSLA 401.2 just over its 400 call wall with a fresh $11.5M TSLA call whale (@FL0WG0D) backing C2. Cash $8, so no room for a new position. No trade.\n- 10:15 ET \u00b7 $1,107.00 (+10.7%) \u00b7 Holding C1 AMZN, C2 TSLA, C3 FSLR (no ALERT). Cash $8, so no room for a new position even with the NBIS 165C 12/18 $2.7M whale (one contract ~$2,470). No trade. FSLR/AMZN earnings-binary decision still due before 10/29 close.\n- 10:45 ET \u00b7 $1,221.00 (+22.1%) \u00b7 Holding C1 AMZN, C2 TSLA, C3 FSLR (no ALERT). Cash $8, so no room for a new position. No trade. FSLR/AMZN earnings-binary decision still due before 10/29 close.\n",
  "notes_date": "2026-10-27",
- "peak_value": 1221.0,
+ "peak_value": 1253.0,
  "positions": [
   {
    "contracts": 1.0,
@@ -421,9 +425,9 @@
    "high_water": 4.65,
    "id": "C1",
    "kind": "option",
-   "last": 4.65,
+   "last": 4.55,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-27T10:56:31-04:00",
+   "last_updated": "2026-10-27T11:05:08-04:00",
    "legs": [
     {
      "expiration": "2026-10-30",
@@ -440,7 +444,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 4.77,
+   "mid": 4.72,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-23T10:18:18-04:00",
@@ -456,9 +460,9 @@
    "target_hit": false,
    "thesis": "Ride @FL0WG0D's $3.1M AMZN 252.5C 10/30 opening buy (vol 4.2K vs OI 640) into 10/29 AMC earnings via a cheaper defined-risk call spread; max loss $445, max gain $805 at 265+",
    "underlying": "AMZN",
-   "underlying_last": 251.5299,
-   "unrealized_pct": 0.0449,
-   "unrealized_pnl": 20.0
+   "underlying_last": 252.05,
+   "unrealized_pct": 0.0225,
+   "unrealized_pnl": 10.0
   },
   {
    "contracts": 1.0,
@@ -469,9 +473,9 @@
    "high_water": 4.35,
    "id": "C2",
    "kind": "option",
-   "last": 4.1,
+   "last": 4.3,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-27T10:56:31-04:00",
+   "last_updated": "2026-10-27T11:05:08-04:00",
    "legs": [
     {
      "expiration": "2026-10-30",
@@ -488,7 +492,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 4.23,
+   "mid": 4.38,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-26T15:15:29-04:00",
@@ -504,9 +508,9 @@
    "target_hit": false,
    "thesis": "Whale calls (cd /workspace/trading-team && P=.venv/bin/python; $P crazy/crazy_trade.py open opt TSLA 2026-10-30 +400C -410C --contracts 1 --stop 1.40 --target 7.0 --thesis \"Whale calls ($14.4M Jan 440C WhalesFlowRadar, $1.5M FL0WG0D); TSLA pinned at 395 0DTE wall that rolls off today; cheap 10-wide spread to put idle cash to work\" --source \"X whale flow 10/26 + Nasdaq chain\" --gamma \"positive gamma, spot 394.9 at 395 CW/king node (0DTE), PW 380, flip 372; needs push through 395; +VEX supportive on vol crush\"; $P crazy/crazy_trade.py open opt FSLR 2026-10-30 +175C -185C --contracts 1 --stop 1.30 --target 6.0 --thesis \"$860K FSLR 175C weekly calls (BullflowIO + FL0WG0D); negative gamma favors momentum; CW 195 far above; tight 10-wide spread fits cash\" --source \"X whale flow 10/26 + Nasdaq chain\" --gamma \"negative gamma, spot 168.2 under 170.2 flip, -node 170, CW 195, PW 180; momentum regime, wider swings\"; $P crazy/crazy_mark.py --quiet4.4M Jan 440C WhalesFlowRadar, cd /workspace/trading-team && P=.venv/bin/python; $P crazy/crazy_trade.py open opt TSLA 2026-10-30 +400C -410C --contracts 1 --stop 1.40 --target 7.0 --thesis \"Whale calls ($14.4M Jan 440C WhalesFlowRadar, $1.5M FL0WG0D); TSLA pinned at 395 0DTE wall that rolls off today; cheap 10-wide spread to put idle cash to work\" --source \"X whale flow 10/26 + Nasdaq chain\" --gamma \"positive gamma, spot 394.9 at 395 CW/king node (0DTE), PW 380, flip 372; needs push through 395; +VEX supportive on vol crush\"; $P crazy/crazy_trade.py open opt FSLR 2026-10-30 +175C -185C --contracts 1 --stop 1.30 --target 6.0 --thesis \"$860K FSLR 175C weekly calls (BullflowIO + FL0WG0D); negative gamma favors momentum; CW 195 far above; tight 10-wide spread fits cash\" --source \"X whale flow 10/26 + Nasdaq chain\" --gamma \"negative gamma, spot 168.2 under 170.2 flip, -node 170, CW 195, PW 180; momentum regime, wider swings\"; $P crazy/crazy_mark.py --quiet.5M FL0WG0D); TSLA pinned at 395 0DTE wall that rolls off today; cheap 10-wide spread to put idle cash to work",
    "underlying": "TSLA",
-   "underlying_last": 402.5,
-   "unrealized_pct": 0.4488,
-   "unrealized_pnl": 127.0
+   "underlying_last": 402.7,
+   "unrealized_pct": 0.5194,
+   "unrealized_pnl": 147.0
   },
   {
    "contracts": 1.0,
@@ -514,12 +518,12 @@
    "entry": 2.64,
    "expires_today": false,
    "gamma_check": "negative gamma, spot 168.2 under 170.2 flip, -node 170, CW 195, PW 180; momentum regime, wider swings",
-   "high_water": 3.58,
+   "high_water": 3.6,
    "id": "C3",
    "kind": "option",
-   "last": 3.15,
+   "last": 3.6,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-27T10:56:31-04:00",
+   "last_updated": "2026-10-27T11:05:08-04:00",
    "legs": [
     {
      "expiration": "2026-10-30",
@@ -536,7 +540,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 3.6,
+   "mid": 3.95,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-26T15:15:29-04:00",
@@ -552,21 +556,21 @@
    "target_hit": false,
    "thesis": "60K FSLR 175C weekly calls (BullflowIO + FL0WG0D); negative gamma favors momentum; CW 195 far above; tight 10-wide spread fits cash",
    "underlying": "FSLR",
-   "underlying_last": 174.34,
-   "unrealized_pct": 0.1932,
-   "unrealized_pnl": 51.0
+   "underlying_last": 174.9,
+   "unrealized_pct": 0.3636,
+   "unrealized_pnl": 96.0
   }
  ],
- "positions_value": 1190.0,
- "published_at": "2026-10-27 10:56:33 AM EDT",
- "published_epoch_ms": 1793112993399,
+ "positions_value": 1245.0,
+ "published_at": "2026-10-27 11:05:10 AM EDT",
+ "published_epoch_ms": 1793113510546,
  "realized_pnl": 0,
- "server_time": "2026-10-27 10:56:33 AM EDT",
+ "server_time": "2026-10-27 11:05:10 AM EDT",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
  "today": "2026-10-27",
- "total_return": 0.19799999999999995,
+ "total_return": 0.2529999999999999,
  "trades": [
   {
    "action": "OPEN",
