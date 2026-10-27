@@ -1,9 +1,9 @@
 {
- "account_value": 9950.0,
+ "account_value": 9960.0,
  "cash": 9570.0,
  "decision": "# Decision log \u2014 2026-10-27\n\n## 09:40 ET 30-minute scan (09:30 slot)\n- Gamma refreshed (gex.py 09:40): SPY 768.1 negative (flip 769.5, CW 770, PW 767); QQQ 717.9 negative just under flip 718.3 (CW 720, PW 700); TSM 431.7 positive (flip 419.9, CW 450, PW 400); TSLA 401.2 positive just above the 400 CW (flip 395.2, PW 390).\n- **TSM 12/18 440/450C spread: HOLD** (TSM ~431.7, well above the 400 close exit; 09:36 valid mid mark $3.85 vs $2.15 stop, 0/2).\n- X whale lead: TSLA $11.5M calls (@FL0WG0D 09:33, no strike; chain's top vol>OI line 11/27 395C ~$4.9M). Not a vote; no analyst read yet today; FOMC tomorrow. Lead sent to Flow & Gamma.\n- Flow & Gamma and Technical asked for a short intraday update (message Decider only if a setup qualifies). **No new main-account trade this scan**; the 10 AM daily run follows. Account about $9,955 (cash $9,570 + TSM ~$385).\n- 10:13 pre-decision note: Fundamentals flags FSLR earnings 10/29 AMC, so the crazy account's FSLR 175/185C 10/30 is an earnings binary like AMZN 252.5/265C. Decide on both with Risk before the 10/29 close.\n\n## 10:16 ET Daily decision (10/27), all 5 reports in\n- Inputs: Technical 3/5 (no new directional premium before FOMC), Fundamentals (no new ideas, too many events), Sentiment 3/5 (TSM bullish 3/5; no index/META bets until after the Fed; GOOGL 2/5 earnings idea), Risk 4/5 (no forced exits; limits $495/option, $1,487 weekly, $0 used; chip/TSM-stock veto stands), Flow & Gamma (nothing qualifies, TSM hold).\n- **TSM 12/18 440/450C: HOLD.** Valid mark $3.50-3.55 (mid ~$4.05-4.30) vs $2.15 stop, watch 0/2; TSM 430.6, 30.6 above the 400 close exit. Profit-taking allowed at $5.00+ if it stalls at the 430-435/450 wall.\n- Gamma check: (2026-10-27 10:10 ET, gex.py today, Flow & Gamma) TSM 12/18 440/450C. Positive gamma, spot 430.6 above 424.2 flip (pinning). King node 460 (11/06); strongest strike 450; nearest +440 above / +430 below, -420 below. Call wall 450 = short strike = target ceiling (target respects the wall; take profit in the $5.00-7.50 zone). Put wall moved up to 420, still above the close-below-400 exit. Bullflow agrees on CW 450, puts PW/king at 400. VEX +$26.0M: post-FOMC IV drop supportive, an IV spike adds selling. HOLD.\n- **New entries: NONE.** No idea has two of the four analysts aligned: GOOGL earnings spread is Sentiment 2/5 alone and Technical says no MSFT/GOOGL/AMZN trades before earnings. META puts are embargoed until after FOMC (Technical, Sentiment), and no compliant spread reaches 2:1. TSLA, AAPL and QQQ conditionals are all 2/5, unarmed. FOMC 10/28 2 PM is a binary.\n- Watch: TSLA 410/420C or 420/430C needs a close > 400 plus a post-FOMC hold of 396; AAPL close \u2265 350 (earnings 11/2); QQQ close < 698 (700/690P); META puts re-price post-FOMC only at \u2265 2:1; LMT 604-611; XLE after 10/30.\n- Crazy account: AMZN 252.5/265C 10/30 and FSLR 175/185C 10/30 are both 10/29 after-close earnings binaries. Decide with Risk before the 10/29 close.\n- Account: about $9,925 (cash $9,570 + TSM ~$355 liq). Positions 1 of 10.\n\n## 10:15 ET 30-minute scan (10:00 slot, running alongside the 10 AM daily run)\n- Gamma refreshed (gex.py 10:15). New X whale lead: NBIS 165C 12/18 $2.7M (@ThePupOfWallSt 10:11). Not on our watchlist, no analyst read, negative gamma under the flip, FOMC tomorrow; lead only, sent to Flow & Gamma.\n- Flow & Gamma and Technical asked for a short intraday update (message Decider only if a setup qualifies). **No new main-account trade from this scan**; the 10 AM daily run's Decider call (pending sentiment) is the one that counts for today's open trades, so nothing is opened twice. TSM 440/450C spread unchanged (hold).\n\n## 10:45 ET 30-minute scan (10:30 slot)\n- Gamma refreshed (gex.py 10:45): SPY 767.4 negative (flip 770), QQQ 716.95 negative (flip 723.9), TSM 431.7 positive (flip 424.4, CW 450, PW 420), TSLA 401.7 positive (CW 400, PW 390).\n- **TSM 12/18 440/450C: HOLD** (valid mark, stop watch 0/2; TSM 31.7 above the 400 close exit).\n- X leads: ASTS $35C LEAPs $902K, ANET calls $298K. Both small/off-list; not votes.\n- Flow & Gamma and Technical asked for a short intraday update (message Decider only if a setup qualifies). **No new main-account trade this scan**; pre-FOMC stance from the 10:16 daily decision stands. Account about $9,925, positions 1 of 10.\n",
  "decision_date": "2026-10-27",
- "drawdown": -0.0050000000000000044,
+ "drawdown": -0.0040000000000000036,
  "error": null,
  "gamma": {
   "convention": "Dealer GEX approximation: call GEX = +gamma*OI*100*S^2*0.01, put GEX = -gamma*OI*100*S^2*0.01 ($ of delta hedging per 1% move; assumes dealers long calls / short puts, the common public convention). Positive total = dealers dampen moves (pinning); negative = dealers amplify moves.",
@@ -1654,7 +1654,7 @@
   ]
  },
  "goal": "Grow $10,000 to $100,000 within one year (by 2026-10-21 + 1 year)",
- "goal_progress": -0.0005555555555555556,
+ "goal_progress": -0.00044444444444444447,
  "goal_target": 100000.0,
  "history": [
   {
@@ -1675,7 +1675,7 @@
   },
   {
    "date": "2026-10-27",
-   "value": 9950.0
+   "value": 9960.0
   }
  ],
  "mode": "paper",
@@ -1688,9 +1688,9 @@
    "entry": 4.3,
    "entry_debit": 4.3,
    "id": "TSM-20261218-440-450C-1",
-   "last": 3.8,
+   "last": 3.9,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-27T11:05:07-04:00",
+   "last_updated": "2026-10-27T11:23:41-04:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1709,31 +1709,31 @@
    ],
    "mark_method": "liq",
    "mark_quotes": {
-    "fetched": "2026-10-27T11:05:07-04:00",
+    "fetched": "2026-10-27T11:23:41-04:00",
     "intrinsic_floor": 0.0,
     "legs": [
      {
-      "ask": 20.3,
-      "bid": 19.95,
+      "ask": 21.35,
+      "bid": 20.9,
       "leg": "long 440C",
-      "mid": 20.125
+      "mid": 21.125
      },
      {
-      "ask": 16.15,
-      "bid": 15.7,
+      "ask": 17.0,
+      "bid": 16.65,
       "leg": "short 450C",
-      "mid": 15.925
+      "mid": 16.825
      }
     ],
-    "liq_raw": 3.8,
-    "mid_raw": 4.2,
+    "liq_raw": 3.9,
+    "mid_raw": 4.3,
     "source": "Nasdaq public option chain",
-    "underlying": 435.12
+    "underlying": 436.75
    },
    "mark_valid": true,
    "max_loss": 430.0,
    "max_value": 1000,
-   "mid": 4.2,
+   "mid": 4.3,
    "multiplier": 100,
    "opened": "2026-10-21T10:11:49-04:00",
    "price_source": "Nasdaq public option chain API (api.nasdaq.com), fetched 2026-10-21 10:11:49 ET; raw: reports/2026-10-21/raw_decider/TSM_2026-12-18_chain.json",
@@ -1750,7 +1750,7 @@
     "consecutive_valid_at_or_below_stop": 0,
     "rule": "stop is hit only after 2 consecutive VALID marks (from 09:35 ET on; mid if quotes wide) at/below stop",
     "stop_confirmed": false,
-    "updated": "2026-10-27T11:05:07-04:00"
+    "updated": "2026-10-27T11:23:41-04:00"
    },
    "symbol": "TSM",
    "target": 7.5,
@@ -1768,10 +1768,10 @@
    "underlying_target_note": "TSM 450 = short strike / max spread value; added 2026-10-22 per Flow & Gamma request. Consider taking profit at spread $5.00+ if TSM stalls at the 430-435 call wall."
   }
  ],
- "positions_value": 380.0,
- "published_at": "2026-10-27 11:23:36 AM EDT",
- "published_epoch_ms": 1793114616657,
- "server_time": "2026-10-27 11:23:36 AM EDT",
+ "positions_value": 390.0,
+ "published_at": "2026-10-27 11:23:47 AM EDT",
+ "published_epoch_ms": 1793114627381,
+ "server_time": "2026-10-27 11:23:47 AM EDT",
  "start_date": "2026-10-21",
  "starting_cash": 10000.0,
  "strategy_b": {
@@ -1816,7 +1816,7 @@
   "win_rate": null
  },
  "today": "2026-10-27",
- "total_return": -0.0050000000000000044,
+ "total_return": -0.0040000000000000036,
  "trades": [
   {
    "action": "BUY_TO_OPEN",
