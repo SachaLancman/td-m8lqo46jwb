@@ -16,8 +16,8 @@
  "goal_target": 100000.0,
  "mode": "paper",
  "positions": 1,
- "published_at": "2026-10-27 10:09:50 AM EDT",
- "published_epoch_ms": 1793110190143,
+ "published_at": "2026-10-27 10:10:51 AM EDT",
+ "published_epoch_ms": 1793110251670,
  "roles": {
   "coordinator": {
    "note": "Daily run kicked off; waiting for the Decider",
@@ -30,14 +30,14 @@
    "state": "working"
   },
   "decider": {
-   "note": "META put spread dropped (Skeptic: poor R/R at natural); wait post-FOMC",
+   "note": "10/27: waiting for fundamentals + sentiment reports; TSM hold (valid 3.45, 0/2)",
    "source": "status.json",
-   "state": "done"
+   "state": "idle"
   },
   "flow_gamma": {
-   "note": "09:41 scan: TSM spread HOLD (mid 3.85 vs stop 2.15); QQQ at flip, no 698 trigger; TSLA pinned at 400 CW, flow fails 3x; nothing qualifies",
+   "note": "daily report 10/27",
    "source": "status.json",
-   "state": "done"
+   "state": "working"
   },
   "fundamentals": {
    "note": "FOMC week calendar, TSM spread, ideas",
@@ -45,12 +45,12 @@
    "state": "researching"
   },
   "risk": {
-   "note": "Daily run 10/27",
+   "note": "10/27: acct $9,915, TSM spread $3.45 valid (stop 2.15, 0/2), no forced exit; FOMC Wed advisory; chip veto stands",
    "source": "status.json",
-   "state": "working"
+   "state": "done"
   },
   "sentiment": {
-   "note": "10-27 run: regime check + Taiwan reopen + pre-FOMC sentiment",
+   "note": "regime check + news",
    "source": "status.json",
    "state": "researching"
   },
@@ -65,7 +65,7 @@
    "state": "researching"
   }
  },
- "server_time": "2026-10-27 10:09:50 AM EDT",
+ "server_time": "2026-10-27 10:10:51 AM EDT",
  "starting_cash": 10000.0,
  "status_json_error": null,
  "today": "2026-10-27",
