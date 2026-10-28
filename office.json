@@ -16,8 +16,8 @@
  "goal_target": 100000.0,
  "mode": "paper",
  "positions": 1,
- "published_at": "2026-10-28 10:08:57 AM EDT",
- "published_epoch_ms": 1793196537216,
+ "published_at": "2026-10-28 10:10:00 AM EDT",
+ "published_epoch_ms": 1793196600424,
  "roles": {
   "coordinator": {
    "note": "waiting on analyst reports and the Decider",
@@ -30,19 +30,19 @@
    "state": "working"
   },
   "decider": {
-   "note": "10/27: TSM hold, no new entries (pre-FOMC)",
+   "note": "10/28: 3/5 reports in; waiting on fundamentals + sentiment",
+   "source": "status.json",
+   "state": "idle"
+  },
+  "flow_gamma": {
+   "note": "10/28: TSM 440/450C HOLD (mid 4.45/liq 4.00 vs stop 2.15; +gamma, CW450=short strike, PW 430>400 exit). SPY/QQQ negative gamma into FOMC. No",
    "source": "status.json",
    "state": "done"
   },
-  "flow_gamma": {
-   "note": "daily report 10/28",
-   "source": "status.json",
-   "state": "working"
-  },
   "fundamentals": {
-   "note": "FOMC day, GOOGL/MSFT preview, TSM spread",
+   "note": "10/28 report: TSM HOLD into FOMC+MSFT/GOOGL; GOOGL/MSFT previews, no pre-earnings bet; LMT nearing zone",
    "source": "status.json",
-   "state": "researching"
+   "state": "writing"
   },
   "risk": {
    "note": "daily read: TSM $4.05 valid, no exit; acct $9,975; FOMC 2pm, GOOGL ER tonight",
@@ -50,9 +50,9 @@
    "state": "done"
   },
   "sentiment": {
-   "note": "reading rules, regime check",
+   "note": "drafting sentiment.md (regime normal, FOMC 2pm)",
    "source": "status.json",
-   "state": "researching"
+   "state": "writing"
   },
   "skeptic": {
    "note": "META put spread: strong objection at natural (skeptic.md)",
@@ -65,7 +65,7 @@
    "state": "researching"
   }
  },
- "server_time": "2026-10-28 10:08:57 AM EDT",
+ "server_time": "2026-10-28 10:10:00 AM EDT",
  "starting_cash": 10000.0,
  "status_json_error": null,
  "today": "2026-10-28",
