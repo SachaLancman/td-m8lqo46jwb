@@ -1,14 +1,14 @@
 {
- "account_value": 8790.0,
+ "account_value": 8115.0,
  "alerts": [
-  "D2: CLOSE BY EOD (close at/before the 15:38 ET scan)"
+  "D2: CLOSE NOW (EOD, past 15:38 ET; never hold overnight)"
  ],
  "cash": 7350.0,
  "closed_trades": 1,
  "days": [
   {
    "date": "2026-10-29",
-   "end_value": 8790.0,
+   "end_value": 8115.0,
    "entries": 2,
    "idea": "up SPY 772.0c / down SPY 766.0p, VIX key 17.0 (patience)",
    "idea_url": "https://x.com/satymahajan/status/2115792037437902946",
@@ -33,12 +33,12 @@
    ]
   }
  ],
- "drawdown": -0.121,
+ "drawdown": -0.1885,
  "error": null,
  "history": [
   {
    "date": "2026-10-29",
-   "value": 8790.0
+   "value": 8115.0
   }
  ],
  "intraday": [
@@ -101,6 +101,10 @@
   {
    "t": "2026-10-29T15:31-04:00",
    "value": 8790.0
+  },
+  {
+   "t": "2026-10-29T15:46-04:00",
+   "value": 8115.0
   }
  ],
  "last_signals": {
@@ -151,7 +155,7 @@
    "vote": "neutral"
   }
  },
- "marked_at": "2026-10-29T15:31:58-04:00",
+ "marked_at": "2026-10-29T15:46:48-04:00",
  "mode": "PAPER",
  "name": "Day Trade $10K (PAPER)",
  "notes": "e** (bull: vix | bear: technicals, gamma) | VWAP 716.2 OR30 711.62-716.99 PDH/PDL 726.14/720.3 PMH/PML 726.154/714.98 H200 720.8\n  - technicals: bear -- <VWAP 716.2; EMA9 715.25 vs 21 715.74; inside OR30 711.62-716.99\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 714.7 < flip 725.58, walls P715.0/C720.0\n  - crowd: neutral -- 0-0 (FlowbyBobby 'QQQ did bounce but will it continue?')\n\n12:49 ET: waiting for trigger \u2014 SPY 768.9 just under the 770 call wall in negative gamma (flip 772.4), still below Saty's 770.67 trigger and above 768.48 PML; QQQ under VWAP at its 715 put wall (techs/gamma bear vs VIX bull, crowd silent); no 2-source setup\n\n### 13:15 ET source read\n- VIX 16.23 (falling, key 17.0) -> bull; events: 08:30 Q3 GDP adv + Sept PCE + jobless claims (released; GDP 3.4% vs 3.2%, core PCE in line); 10:30 EIA nat gas storage; 13:00 7-year note auction\n- **SPY 768.22** setup: **none** (bull: vix | bear: technicals, gamma, crowd) | VWAP 768.72 OR30 767.27-769.41 PDH/PDL 773.36/769.24 PMH/PML 771.39/768.48 H200 768.55\n  - technicals: bear -- <VWAP 768.72; EMA9 768.78 vs 21 769.08; inside OR30 767.27-769.41\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 768.75 < flip 772.39, walls P765.0/C770.0\n  - saty: neutral -- below short trigger 770.67 and below PML/H200 768.48 (put GG 769.66->768.02); idea downside SPY 766.0; PATIENCE day: needs the same read next scan\n  - crowd: bear -- 2-0 (FlowbyBobby 'rug kept you away rightfully, SPX sitting lower'; uga1018 below 771.64 pivot = bears) lv 771.64\n- **QQQ 713.71** setup: **none** (bull: vix | bear: technicals, gamma, crowd) | VWAP 716.1 OR30 711.62-716.99 PDH/PDL 726.14/720.3 PMH/PML 726.154/714.98 H200 720.78\n  - technicals: bear -- <VWAP 716.1; EMA9 714.75 vs 21 715.34; inside OR30 711.62-716.99\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 714.7 < flip 725.58, walls P715.0/C720.0\n  - crowd: bear -- 1-0 (uga1018 below 724.02 pivot) lv 724.02\n- **META 630.58** setup: **bull** (bull: technicals, crowd | bear: -) | VWAP 625.65 OR30 616.8-623.75 PDH/PDL 624.42/609.0 PMH/PML 622.5/614.75 H200 664.89\n  - technicals: bull -- >VWAP 625.65; EMA9 631.83 vs 21 630.8; above OR30 high 623.75\n  - vix: neutral -- \n  - crowd: bull -- 1-0 (RedDogT3 'cleared and held 625', 630club)\n\n**PAPER OPEN D1** 13:15 ET: buy 2 META 630C 2026-10-30 @ 9.25 ($1,850); sources agreeing (bull): technicals, crowd; stop 5.55 (-40%, 2 valid marks) / hard 3.7 (-60%) / target 14.8 (+60%) / SPY target 640.0. Thesis: META above VWAP 625.7 and OR30 high 623.75, EMA9>21; RedDogT3 cleared/held 625; positive gamma above 621 flip, room to 650 call wall\n\n13:16 ET: OPENED D1 2x META 630C 10/30 @ 9.25 \u2014 technicals (above VWAP/OR30 high, EMA9>21) + crowd (RedDogT3 cleared/held 625) agree; positive gamma above 621 flip, CW 650; SPY/QQQ no setup (Saty patience day, SPY under 770.67 trigger)\n\n### 13:42 ET source read\n- VIX 16.52 (flat, key 17.0) -> bull; events: 08:30 Q3 GDP adv + Sept PCE + jobless claims (released; GDP 3.4% vs 3.2%, core PCE in line); 10:30 EIA nat gas storage; 13:00 7-year note auction\n- **SPY 767.93** setup: **none** (bull: vix | bear: technicals, gamma, saty, crowd) | VWAP 768.71 OR30 767.27-769.41 PDH/PDL 773.36/769.24 PMH/PML 771.39/768.48 H200 768.54\n  - technicals: bear -- <VWAP 768.71; EMA9 768.28 vs 21 768.68; inside OR30 767.27-769.41\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 767.99 < flip 771.49, walls P765.0/C770.0\n  - saty: bear -- below short trigger 770.67 and below PML/H200 768.48 (put GG 769.66->768.02); idea downside SPY 766.0\n  - crowd: bear -- 1-0 (FlowbyBobby SPX heatmaps all below ceilings; RealSPXSniper 'clear iron condor day' = chop) lv 770; QQQ:none; META:none\n- **QQQ 714.06** setup: **none** (bull: vix | bear: technicals, gamma) | VWAP 716.02 OR30 711.62-716.99 PDH/PDL 726.14/720.3 PMH/PML 726.154/714.98 H200 720.73\n  - technicals: bear -- <VWAP 716.02; EMA9 714.36 vs 21 714.88; inside OR30 711.62-716.99\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 714.14 < flip 725.07, walls P715.0/C715.0\n- **META 627.09** setup: **none** (bull: - | bear: -) | VWAP 625.81 OR30 616.8-623.75 PDH/PDL 624.42/609.0 PMH/PML 622.5/614.75 H200 664.47\n  - technicals: neutral -- >VWAP 625.81; EMA9 628.74 vs 21 629.55; above OR30 high 623.75\n  - vix: neutral --\n\n13:44 ET: in D1 META 630C (-29%, stop at -40% not hit); no new entry while in a position. SPY/QQQ no setup (bear technicals/gamma/Saty but chop, 'iron condor day'); META technicals faded to neutral near VWAP 625.8\n\n**PAPER CLOSE D1** 14:08 ET: sell 2 META 630C 2026-10-30 @ 4.85 (Nasdaq public option chain); P&L $-880.00 (-48%). Reason: STOP CONFIRMED (2 valid marks <= -40%)\n\n### 14:12 ET source read\n- VIX 16.95 (rising, key 17.0) -> neutral; events: 08:30 Q3 GDP adv + Sept PCE + jobless claims (released; GDP 3.4% vs 3.2%, core PCE in line); 10:30 EIA nat gas storage; 13:00 7-year note auction\n- **SPY 767.44** setup: **bear** (bull: - | bear: technicals, gamma, saty, crowd, flow) | VWAP 768.56 OR30 767.27-769.41 PDH/PDL 773.36/769.24 PMH/PML 771.39/768.48 H200 768.53\n  - technicals: bear -- <VWAP 768.56; EMA9 767.55 vs 21 768.05; inside OR30 767.27-769.41\n  - vix: neutral -- \n  - gamma: bear -- negative gamma, spot 767.99 < flip 771.49, walls P765.0/C770.0\n  - saty: bear -- below short trigger 770.67 and below PML/H200 768.48 (put GG 769.66->768.02); idea downside SPY 766.0\n  - crowd: bear -- 2-0 (RealSPXSniper long SPX 7680 puts, stop >7700, flush not happened yet, breakeven; spotgamma 7690 level) lv 768-770; QQQ:none\n  - flow: bear -- (FlowbyBobby SPX heatmaps all three below ceilings, SPX ~15 lower since triple ceilings)\n- **QQQ 713.15** setup: **bear** (bull: - | bear: technicals, gamma) | VWAP 715.85 OR30 711.62-716.99 PDH/PDL 726.14/720.3 PMH/PML 726.154/714.98 H200 720.71\n  - technicals: bear -- <VWAP 715.85; EMA9 713.35 vs 21 714.03; inside OR30 711.62-716.99\n  - vix: neutral -- \n  - gamma: bear -- negative gamma, spot 714.14 < flip 725.07, walls P715.0/C715.0\n\n**PAPER OPEN D2** 14:12 ET: buy 15 SPY 767P 2026-10-29 @ 1.18 ($1,770); sources agreeing (bear): technicals, gamma, saty, crowd, flow; stop 0.71 (-40%, 2 valid marks) / hard 0.47 (-60%) / target 1.89 (+60%) / SPY target 765.0. Thesis: SPY 767.4 below VWAP 768.6 and Saty short trigger 770.67, EMA9<21, negative gamma below 771.5 flip; RealSPXSniper long SPX puts (stop >7700), FlowbyBobby SPX heatmaps below triple ceilings; target 765 put wall\n\n14:14 ET: OPENED D2 15x SPY 767P 0DTE @ 1.18 \u2014 technicals, gamma, Saty, crowd (RealSPXSniper long puts) and flow (FlowbyBobby SPX below ceilings) all bear; SPY 767.4 under VWAP 768.6, target 765 put wall\n\n14:44 ET: holding D2 SPY 767P (liq 1.00 vs 1.18, -15%, stop 0.71 not hit); entries 2/2 and past 2:30 PM, no new entries; FlowbyBobby flags SPX 7690 bounce zone, so watch the stop\n\n15:12 ET: holding D2 SPY 767P (liq 0.93 vs 1.18, -21%, stop 0.71 not hit); entries 2/2 and past 2:30 PM, no new entries; close at the 3:38 PM scan if still open\n\n",
@@ -166,9 +170,9 @@
    "hard_stop": 0.47,
    "high_water": 1.3,
    "id": "D2",
-   "last": 0.96,
+   "last": 0.51,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-29T15:31:58-04:00",
+   "last_updated": "2026-10-29T15:46:48-04:00",
    "legs": [
     {
      "expiration": "2026-10-29",
@@ -179,7 +183,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 0.96,
+   "mid": 0.52,
    "opened": "2026-10-29T14:12:34-04:00",
    "sources": [
     "technicals",
@@ -191,8 +195,8 @@
    "stop": 0.71,
    "stop_watch": {
     "confirmed": false,
-    "count": 0,
-    "last_counted": null,
+    "count": 1,
+    "last_counted": "2026-10-29T15:46:48-04:00",
     "rule": "stop after 2 consecutive VALID marks <= -40% (>= 5 min apart); immediately on a VALID mark <= -60%"
    },
    "target": 1.89,
@@ -201,22 +205,22 @@
    "und_target": 765.0,
    "und_target_hit": false,
    "underlying": "SPY",
-   "underlying_last": 768.5101,
-   "unrealized_pct": -0.1864,
-   "unrealized_pnl": -330.0
+   "underlying_last": 768.04,
+   "unrealized_pct": -0.5678,
+   "unrealized_pnl": -1005.0
   }
  ],
- "positions_value": 1440.0,
- "published_at": "2026-10-29 03:32:06 PM EDT",
- "published_epoch_ms": 1793302326462,
+ "positions_value": 765.0,
+ "published_at": "2026-10-29 03:47:11 PM EDT",
+ "published_epoch_ms": 1793303231085,
  "realized_pnl": -880.0,
- "server_time": "2026-10-29 03:32:06 PM EDT",
+ "server_time": "2026-10-29 03:47:11 PM EDT",
  "start_date": "2026-10-29",
  "starting_cash": 10000.0,
  "status": "active",
  "today": "2026-10-29",
  "today_entries": 2,
- "total_return": -0.121,
+ "total_return": -0.1885,
  "trades": [
   {
    "action": "OPEN",
