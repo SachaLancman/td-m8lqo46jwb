@@ -25,8 +25,8 @@
  "goal_target": 100000.0,
  "mode": "paper",
  "positions": 1,
- "published_at": "2026-10-29 10:11:09 AM EDT",
- "published_epoch_ms": 1793283069268,
+ "published_at": "2026-10-29 10:12:11 AM EDT",
+ "published_epoch_ms": 1793283131396,
  "roles": {
   "coordinator": {
    "note": "10AM daily run: refreshing gamma levels, briefing analysts",
@@ -44,14 +44,14 @@
    "state": "idle"
   },
   "decider": {
-   "note": "10/28: TSM hold, no new entries pre-FOMC; scorecard written",
+   "note": "10/29: risk in; waiting on technical, fundamentals, sentiment, flow_gamma",
    "source": "status.json",
-   "state": "done"
+   "state": "waiting"
   },
   "flow_gamma": {
-   "note": "10/28: TSM 440/450C HOLD (mid 4.45/liq 4.00 vs stop 2.15; +gamma, CW450=short strike, PW 430>400 exit). SPY/QQQ negative gamma into FOMC. No",
+   "note": "daily report 10/29",
    "source": "status.json",
-   "state": "done"
+   "state": "working"
   },
   "fundamentals": {
    "note": "10/29 run: post-FOMC, MSFT/GOOGL results, AMZN/INTC/FSLR earnings tonight, TSM spread",
@@ -59,9 +59,9 @@
    "state": "researching"
   },
   "risk": {
-   "note": "daily risk read: pricing TSM, regime",
+   "note": "daily read: TSM $3.55 valid, no exit; acct $9,925; GOOGL long vetoed",
    "source": "status.json",
-   "state": "researching"
+   "state": "done"
   },
   "sentiment": {
    "note": "2026-10-29 daily sentiment read",
@@ -74,12 +74,12 @@
    "state": "done"
   },
   "technical": {
-   "note": "10AM daily 10/28: no entries pre-FOMC; TSM liq 4.15 valid (stop 2.15, target 5.00); TSLA armed -> 420/430C nat 3.70 1.70:1 post-FOMC if hold",
+   "note": "10 AM daily report 10/29",
    "source": "status.json",
-   "state": "done"
+   "state": "researching"
   }
  },
- "server_time": "2026-10-29 10:11:09 AM EDT",
+ "server_time": "2026-10-29 10:12:11 AM EDT",
  "starting_cash": 10000.0,
  "status_json_error": null,
  "today": "2026-10-29",
