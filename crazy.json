@@ -4,7 +4,7 @@
  "bust_threshold": 20.0,
  "busted": false,
  "buying_power": 12.0,
- "cash": 327.0,
+ "cash": 17.0,
  "closed_trades": 3,
  "drawdown": -0.3339780786589297,
  "error": null,
@@ -872,7 +872,7 @@
  "mode": "paper",
  "multiple": 1.033,
  "name": "Crazy $1K (Grok Bot, paper)",
- "notes": "/ask yet for the AMZN and TSLA legs (refused to price), so no valid marks and no closes this scan. No ALERT. Cash $8, no whale posts, so no new trade. Re-check TSLA (+75% line is about 4.95) and the AMZN/FSLR earnings decision on live quotes at the 10:00 scan.\n- 10:17 ET \u00b7 $1,220 (+22.0%) \u00b7 **Closed C2 TSLA 10/30 400/410C at 4.22 vs 2.83 (+$139, +49%)**: last trading day before expiry, TSLA ~402 on the 400 pin in negative gamma, so it could decay toward ~2 if pinned; took the solid gain under the take-profit discipline instead of waiting for the +75% line (4.95). **Opened C4 QQQ 11/06 710/700P for $2.88 ($288, stop 1.45, target 6.00)**: QQQ weakest tape, deep negative gamma (spot 715.1 vs flip 726.2, PW 710), idea from @FL0WG0D's $32.1M QQQ Jan 650P hedge; gex check in crazy_gex/. Holding C1 AMZN 252.5/265C (liq 3.70 vs 4.45) and C3 FSLR 175/185C (mid 4.20, liq 2.95 vs 2.64; wide quotes), both into earnings tonight; neither is at the +75% lock-in line on a valid liquidation mark. Cash $142.\n\n10:25 ET Grok Bot earnings decision (agrees with Decider + Fundamentals advice): CLOSE both C1 (AMZN 252.5/265C, now ~3.80 vs 4.45 paid) and C3 (FSLR 175/185C, liq 3.10 / mid 4.20 vs 2.64 paid) before today's close; do NOT hold through tonight's earnings. Quotes are wide now (FSLR bid far below mid), so each scan: close a leg once its liquidation mark is within ~10% of mid, and at the 3:08 PM ET scan at the latest close whatever remains at the available bid. Freed cash may fund new Crazy trades.\n- 10:44 ET \u00b7 $1,155 (+15.5%) \u00b7 **Closed C1 AMZN 10/30 252.5/265C at 3.90 vs 4.45 (\u2212$55, \u221212%)** per the 10:25 decision not to hold the earnings binary tonight (liq 3.90 within 10% of mid 4.02). **Opened C5 SPY 10/30 770/775C x1 at 1.71 ($171, stop 0.85, target 3.50)**: SPY back above OR30 high/VWAP, breadth at highs, X crowd bull 3-1; negative gamma below flip 772.4 can squeeze through the 770 wall, but king node 765 sits below so only 1 contract (gex check in crazy_gex/). Rotation pair vs C4 QQQ 710/700P (mark 2.91 vs 2.88). C3 FSLR 175/185C still to close before the bell (liq 3.35 vs mid 4.33, too wide yet). Cash $361.\n- 11:14 ET \u00b7 $1,176 (+17.6%) \u00b7 No ALERTs. C3 FSLR 175/185C liq 3.55 / mid 4.55 vs 2.64 (+34% on liq; still >10% gap to mid, so not closed yet; close before the bell per the 10:25 decision), C4 QQQ 710/700P 3.02 vs 2.88, C5 SPY 770/775C 1.58 vs 1.71. Ideas checked: META 11/06 635/645C (from @FL0WG0D's 637.5C flow) costs $385 > $361 cash and META is pinned on its 630 positive-gamma king node, so skip; RDDT 155C whale is an earnings-tonight lottery and $600/contract, skip. Cash $361.\n- 11:44 ET \u00b7 $1,215 (+21.5%) \u00b7 No ALERTs. C3 FSLR 175/185C liq 3.90 / mid 4.65 vs 2.64 (+48% on liq, just under the 50% half-sell line and single contract; gap to mid still 16%, so close later today per the 10:25 earnings decision, by 3:08 PM ET at the latest), C4 QQQ 710/700P 2.68 vs 2.88, C5 SPY 770/775C 1.96 vs 1.71 (+15%). No new entry: $361 cash and no fresh idea that fits (CRDO/DLR whale prints under $1M with no contract details; IWM pinned at its 285 call wall); FSLR exit will free cash for the next scan.\n- 12:14 ET \u00b7 $1,174 (+17.4%) \u00b7 No ALERTs. C3 FSLR 175/185C liq 3.65 / mid 4.55 vs 2.64 (+38% on liq; gap to mid ~20%, so still not closed; close before the bell per the 10:25 earnings decision, by 3:08 PM ET at the latest), C4 QQQ 710/700P 2.64 vs 2.88, C5 SPY 770/775C 1.84 vs 1.71. No new entry: $361 cash; COIN 140P $3M whale idea fights positive gamma above the 155.9 flip, and no other fresh idea fits.\n- 12:48 ET \u00b7 $1,170 (+17.0%) \u00b7 No ALERTs. C3 FSLR 175/185C liq 3.60 / mid 4.58 vs 2.64 (+36% on liq; gap to mid ~21%, still too wide; close before the bell per the 10:25 earnings decision, by 3:08 PM ET at the latest), C4 QQQ 710/700P 2.88 vs 2.88 (QQQ 714.9 on its 715 put wall), C5 SPY 770/775C 1.61 vs 1.71. No new entry: $361 cash and no fresh idea that fits (EMN $760K and XLV $2.5M LEAP-style calls are slow, off-theme; QQQ/SPY exposure already on).\n- 13:15 ET \u00b7 $1,181 (+18.1%) \u00b7 No ALERTs. C3 FSLR 175/185C liq 3.75 / mid 4.57 vs 2.64 (+42% on liq, below the 50% half-sell line and it's a single contract; still close before the bell per the 10:25 earnings decision, by 3:08 PM ET at the latest), C4 QQQ 710/700P 2.70 vs 2.88 (QQQ 713.9 slipping under the 715 put wall), C5 SPY 770/775C 1.75 vs 1.71. No new entry: $361 cash and no fresh whale idea this window; QQQ/SPY exposure already on.\n- 13:44 ET \u00b7 $1,173 (+17.3%) \u00b7 No ALERTs. C3 FSLR 175/185C liq 3.75 / mid 4.38 vs 2.64 (+42% on liq, under the 50% half-sell line; still close before the bell per the 10:25 earnings decision, by 3:08 PM ET at the latest), C4 QQQ 710/700P 2.90 vs 2.88, C5 SPY 770/775C 1.47 vs 1.71. **OPENED C6 CVNA 11/20 72/78C x1 @ 1.64 ($164)**: whale continuation calls (CVNA 74C 12/18 $680K @FlowbyBobby, $642K @FL0WG0D) a day after earnings, stock +16% to 68.7; gex: positive gamma above 60.9 flip, CW 70 first hurdle. Stop 0.80, target 3.50. Cash $197.\n- 14:14 ET \u00b7 $1,113 (+11.3%) \u00b7 No ALERTs. C3 FSLR 175/185C liq 3.50 / mid 4.45 vs 2.64 (+33% on liq; gap to mid ~21%; still close before the bell per the 10:25 earnings decision, by 3:08 PM ET at the latest), C4 QQQ 710/700P 3.16 vs 2.88, C5 SPY 770/775C 1.12 vs 1.71, C6 CVNA 72/78C 1.38 vs 1.64. **OPENED C7 CRWV 11/20 65/70C x1 @ 1.85 ($185, stop 0.90, target 4.00)**: fits @WhalesFlowRadar's $1.1M CRWV Apr 75C (new opening, vol > OI) into cash; positive gamma above 59.2 flip, king/CW 65 = long strike; earnings 11/10 inside, lock-in rule applies 11/9. Cash $12.\n- 14:44 ET \u00b7 $1,083 (+8.3%) \u00b7 No ALERTs. C3 FSLR 175/185C liq 3.55 / mid 4.12 vs 2.64 (+34% on liq; gap to mid ~14%; close at the 3:08 PM ET scan at the latest per the 10:25 earnings decision), C4 QQQ 710/700P 3.05 vs 2.88, C5 SPY 770/775C 1.24 vs 1.71, C6 CVNA 72/78C 1.42 vs 1.64, C7 CRWV 65/70C 1.45 vs 1.85. No position at the +50% half-sell line. No new entry: cash $12 (WULF $477K / NOW $280K whale calls noted, no cash to fund them).\n",
+ "notes": "95). **Opened C4 QQQ 11/06 710/700P for $2.88 ($288, stop 1.45, target 6.00)**: QQQ weakest tape, deep negative gamma (spot 715.1 vs flip 726.2, PW 710), idea from @FL0WG0D's $32.1M QQQ Jan 650P hedge; gex check in crazy_gex/. Holding C1 AMZN 252.5/265C (liq 3.70 vs 4.45) and C3 FSLR 175/185C (mid 4.20, liq 2.95 vs 2.64; wide quotes), both into earnings tonight; neither is at the +75% lock-in line on a valid liquidation mark. Cash $142.\n\n10:25 ET Grok Bot earnings decision (agrees with Decider + Fundamentals advice): CLOSE both C1 (AMZN 252.5/265C, now ~3.80 vs 4.45 paid) and C3 (FSLR 175/185C, liq 3.10 / mid 4.20 vs 2.64 paid) before today's close; do NOT hold through tonight's earnings. Quotes are wide now (FSLR bid far below mid), so each scan: close a leg once its liquidation mark is within ~10% of mid, and at the 3:08 PM ET scan at the latest close whatever remains at the available bid. Freed cash may fund new Crazy trades.\n- 10:44 ET \u00b7 $1,155 (+15.5%) \u00b7 **Closed C1 AMZN 10/30 252.5/265C at 3.90 vs 4.45 (\u2212$55, \u221212%)** per the 10:25 decision not to hold the earnings binary tonight (liq 3.90 within 10% of mid 4.02). **Opened C5 SPY 10/30 770/775C x1 at 1.71 ($171, stop 0.85, target 3.50)**: SPY back above OR30 high/VWAP, breadth at highs, X crowd bull 3-1; negative gamma below flip 772.4 can squeeze through the 770 wall, but king node 765 sits below so only 1 contract (gex check in crazy_gex/). Rotation pair vs C4 QQQ 710/700P (mark 2.91 vs 2.88). C3 FSLR 175/185C still to close before the bell (liq 3.35 vs mid 4.33, too wide yet). Cash $361.\n- 11:14 ET \u00b7 $1,176 (+17.6%) \u00b7 No ALERTs. C3 FSLR 175/185C liq 3.55 / mid 4.55 vs 2.64 (+34% on liq; still >10% gap to mid, so not closed yet; close before the bell per the 10:25 decision), C4 QQQ 710/700P 3.02 vs 2.88, C5 SPY 770/775C 1.58 vs 1.71. Ideas checked: META 11/06 635/645C (from @FL0WG0D's 637.5C flow) costs $385 > $361 cash and META is pinned on its 630 positive-gamma king node, so skip; RDDT 155C whale is an earnings-tonight lottery and $600/contract, skip. Cash $361.\n- 11:44 ET \u00b7 $1,215 (+21.5%) \u00b7 No ALERTs. C3 FSLR 175/185C liq 3.90 / mid 4.65 vs 2.64 (+48% on liq, just under the 50% half-sell line and single contract; gap to mid still 16%, so close later today per the 10:25 earnings decision, by 3:08 PM ET at the latest), C4 QQQ 710/700P 2.68 vs 2.88, C5 SPY 770/775C 1.96 vs 1.71 (+15%). No new entry: $361 cash and no fresh idea that fits (CRDO/DLR whale prints under $1M with no contract details; IWM pinned at its 285 call wall); FSLR exit will free cash for the next scan.\n- 12:14 ET \u00b7 $1,174 (+17.4%) \u00b7 No ALERTs. C3 FSLR 175/185C liq 3.65 / mid 4.55 vs 2.64 (+38% on liq; gap to mid ~20%, so still not closed; close before the bell per the 10:25 earnings decision, by 3:08 PM ET at the latest), C4 QQQ 710/700P 2.64 vs 2.88, C5 SPY 770/775C 1.84 vs 1.71. No new entry: $361 cash; COIN 140P $3M whale idea fights positive gamma above the 155.9 flip, and no other fresh idea fits.\n- 12:48 ET \u00b7 $1,170 (+17.0%) \u00b7 No ALERTs. C3 FSLR 175/185C liq 3.60 / mid 4.58 vs 2.64 (+36% on liq; gap to mid ~21%, still too wide; close before the bell per the 10:25 earnings decision, by 3:08 PM ET at the latest), C4 QQQ 710/700P 2.88 vs 2.88 (QQQ 714.9 on its 715 put wall), C5 SPY 770/775C 1.61 vs 1.71. No new entry: $361 cash and no fresh idea that fits (EMN $760K and XLV $2.5M LEAP-style calls are slow, off-theme; QQQ/SPY exposure already on).\n- 13:15 ET \u00b7 $1,181 (+18.1%) \u00b7 No ALERTs. C3 FSLR 175/185C liq 3.75 / mid 4.57 vs 2.64 (+42% on liq, below the 50% half-sell line and it's a single contract; still close before the bell per the 10:25 earnings decision, by 3:08 PM ET at the latest), C4 QQQ 710/700P 2.70 vs 2.88 (QQQ 713.9 slipping under the 715 put wall), C5 SPY 770/775C 1.75 vs 1.71. No new entry: $361 cash and no fresh whale idea this window; QQQ/SPY exposure already on.\n- 13:44 ET \u00b7 $1,173 (+17.3%) \u00b7 No ALERTs. C3 FSLR 175/185C liq 3.75 / mid 4.38 vs 2.64 (+42% on liq, under the 50% half-sell line; still close before the bell per the 10:25 earnings decision, by 3:08 PM ET at the latest), C4 QQQ 710/700P 2.90 vs 2.88, C5 SPY 770/775C 1.47 vs 1.71. **OPENED C6 CVNA 11/20 72/78C x1 @ 1.64 ($164)**: whale continuation calls (CVNA 74C 12/18 $680K @FlowbyBobby, $642K @FL0WG0D) a day after earnings, stock +16% to 68.7; gex: positive gamma above 60.9 flip, CW 70 first hurdle. Stop 0.80, target 3.50. Cash $197.\n- 14:14 ET \u00b7 $1,113 (+11.3%) \u00b7 No ALERTs. C3 FSLR 175/185C liq 3.50 / mid 4.45 vs 2.64 (+33% on liq; gap to mid ~21%; still close before the bell per the 10:25 earnings decision, by 3:08 PM ET at the latest), C4 QQQ 710/700P 3.16 vs 2.88, C5 SPY 770/775C 1.12 vs 1.71, C6 CVNA 72/78C 1.38 vs 1.64. **OPENED C7 CRWV 11/20 65/70C x1 @ 1.85 ($185, stop 0.90, target 4.00)**: fits @WhalesFlowRadar's $1.1M CRWV Apr 75C (new opening, vol > OI) into cash; positive gamma above 59.2 flip, king/CW 65 = long strike; earnings 11/10 inside, lock-in rule applies 11/9. Cash $12.\n- 14:44 ET \u00b7 $1,083 (+8.3%) \u00b7 No ALERTs. C3 FSLR 175/185C liq 3.55 / mid 4.12 vs 2.64 (+34% on liq; gap to mid ~14%; close at the 3:08 PM ET scan at the latest per the 10:25 earnings decision), C4 QQQ 710/700P 3.05 vs 2.88, C5 SPY 770/775C 1.24 vs 1.71, C6 CVNA 72/78C 1.42 vs 1.64, C7 CRWV 65/70C 1.45 vs 1.85. No position at the +50% half-sell line. No new entry: cash $12 (WULF $477K / NOW $280K whale calls noted, no cash to fund them).\n- 15:12 ET \u00b7 $1,033 (+3.3%) \u00b7 No ALERTs. **Closed C3 FSLR 10/30 175/185C at 3.15 vs 2.64 (+$51, +19%)** per the 10:25 decision not to hold tonight's earnings (3:08 PM deadline reached; bid still wide vs mid 4.20). **Opened C8 AAOI 11/20 85/95C x1 @ 3.10 ($310, stop 1.50, target 6.00)**: fits @FlowbyBobby's $850K AAOI 84C 11/20 whale buy into cash; positive gamma above 71.5 flip, CW/PW 80 pin is first hurdle; earnings 11/5 inside, lock-in rule applies 11/4. Holding C4 QQQ 710/700P 3.06, C5 SPY 770/775C 1.26, C6 CVNA 72/78C 1.39, C7 CRWV 65/70C 1.35. Cash $17.\n",
  "notes_date": "2026-10-29",
  "peak_value": 1551.0,
  "positions": [
@@ -1067,13 +1067,50 @@
    "underlying_last": 60.7312,
    "unrealized_pct": -0.2703,
    "unrealized_pnl": -50.0
+  },
+  {
+   "contracts": 1.0,
+   "detail": "AAOI +85C 2026-11-20 / -95C 2026-11-20",
+   "entry": 3.1,
+   "gamma_check": "gex.py 15:12: positive gamma, spot 79.4 > flip 71.5, CW=PW 80 pin is the first hurdle",
+   "high_water": 3.1,
+   "id": "C8",
+   "kind": "option",
+   "last": 3.1,
+   "legs": [
+    {
+     "expiration": "2026-11-20",
+     "right": "call",
+     "side": "long",
+     "strike": 85.0
+    },
+    {
+     "expiration": "2026-11-20",
+     "right": "call",
+     "side": "short",
+     "strike": 95.0
+    }
+   ],
+   "mark_method": "fill",
+   "mark_valid": true,
+   "multiplier": 100,
+   "opened": "2026-10-29T15:11:21-04:00",
+   "source": "@FlowbyBobby 15:01 ET https://x.com/FlowbyBobby/status/2115881723267633219",
+   "stop": 1.5,
+   "stop_watch": {
+    "consecutive_valid_at_or_below_stop": 0
+   },
+   "symbol": "AAOI",
+   "target": 6.0,
+   "thesis": "Fits @FlowbyBobby's $850K AAOI 84C 11/20 whale buy (6% OTM) into cash as a 85/95 call spread; earnings 11/5 inside, lock-in rule applies 11/4",
+   "underlying": "AAOI"
   }
  ],
- "positions_value": 706.0,
- "published_at": "2026-10-29 03:11:07 PM EDT",
- "published_epoch_ms": 1793301067189,
+ "positions_value": 1016.0,
+ "published_at": "2026-10-29 03:12:10 PM EDT",
+ "published_epoch_ms": 1793301130764,
  "realized_pnl": 135.0,
- "server_time": "2026-10-29 03:11:07 PM EDT",
+ "server_time": "2026-10-29 03:12:10 PM EDT",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
@@ -1269,6 +1306,20 @@
    "reason": "FSLR earnings tonight AMC: 10:25 decision to close before the bell, 3:08 PM ET deadline reached; closing at available bid",
    "symbol": "FSLR",
    "time": "2026-10-29T15:10:55-04:00",
+   "value_after": 1033.0
+  },
+  {
+   "action": "OPEN",
+   "cash_flow": -310.0,
+   "detail": "AAOI +85C 2026-11-20 / -95C 2026-11-20",
+   "gamma_check": "gex.py 15:12: positive gamma, spot 79.4 > flip 71.5, CW=PW 80 pin is the first hurdle",
+   "id": "C8",
+   "price": 3.1,
+   "qty": 1.0,
+   "source": "@FlowbyBobby 15:01 ET https://x.com/FlowbyBobby/status/2115881723267633219",
+   "symbol": "AAOI",
+   "thesis": "Fits @FlowbyBobby's $850K AAOI 84C 11/20 whale buy (6% OTM) into cash as a 85/95 call spread; earnings 11/5 inside, lock-in rule applies 11/4",
+   "time": "2026-10-29T15:11:21-04:00",
    "value_after": 1033.0
   }
  ],
