@@ -1,16 +1,16 @@
 {
- "account_value": 1158.0,
+ "account_value": 1155.0,
  "alerts": [],
  "bust_threshold": 20.0,
  "busted": false,
- "buying_power": 142.0,
- "cash": 532.0,
+ "buying_power": 361.0,
+ "cash": 361.0,
  "closed_trades": 2,
- "drawdown": -0.25338491295938104,
+ "drawdown": -0.25531914893617025,
  "error": null,
  "goal": "Grow $1,000 to $100,000 as fast as possible (paper).",
- "goal_progress_linear": 0.01158,
- "goal_progress_log": 0.03185427969570868,
+ "goal_progress_linear": 0.01155,
+ "goal_progress_log": 0.03129099211408155,
  "goal_target": 100000.0,
  "history": [
   {
@@ -35,7 +35,7 @@
   },
   {
    "date": "2026-10-29",
-   "value": 1158.0
+   "value": 1155.0
   }
  ],
  "intraday": [
@@ -754,13 +754,17 @@
   {
    "t": "2026-10-29T10:43-04:00",
    "value": 1158.0
+  },
+  {
+   "t": "2026-10-29T10:44-04:00",
+   "value": 1155.0
   }
  ],
- "marked_at": "2026-10-29T10:43:02-04:00",
+ "marked_at": "2026-10-29T10:44:05-04:00",
  "mode": "paper",
- "multiple": 1.158,
+ "multiple": 1.155,
  "name": "Crazy $1K (Grok Bot, paper)",
- "notes": "# Crazy $1K 2026-10-29\n- 09:43 ET \u00b7 $1,295 (+29.5%, marks partly stale) \u00b7 Holding C1 AMZN 252.5/265C (AMZN 244.6, -3.9% on the day, below the 250 put wall; positive gamma above flip 240.6; earnings tonight AMC), C2 TSLA 400/410C (TSLA 403.9 at the 400 pin, negative gamma below flip 406.2), C3 FSLR 175/185C (FSLR 175.3; liq 3.05 vs 2.64 entry, +16%; earnings tonight AMC). All expire 10/30, so the lock-in-gains rule applies today, but Nasdaq/Yahoo show no live bid/ask yet for the AMZN and TSLA legs (refused to price), so no valid marks and no closes this scan. No ALERT. Cash $8, no whale posts, so no new trade. Re-check TSLA (+75% line is about 4.95) and the AMZN/FSLR earnings decision on live quotes at the 10:00 scan.\n- 10:17 ET \u00b7 $1,220 (+22.0%) \u00b7 **Closed C2 TSLA 10/30 400/410C at 4.22 vs 2.83 (+$139, +49%)**: last trading day before expiry, TSLA ~402 on the 400 pin in negative gamma, so it could decay toward ~2 if pinned; took the solid gain under the take-profit discipline instead of waiting for the +75% line (4.95). **Opened C4 QQQ 11/06 710/700P for $2.88 ($288, stop 1.45, target 6.00)**: QQQ weakest tape, deep negative gamma (spot 715.1 vs flip 726.2, PW 710), idea from @FL0WG0D's $32.1M QQQ Jan 650P hedge; gex check in crazy_gex/. Holding C1 AMZN 252.5/265C (liq 3.70 vs 4.45) and C3 FSLR 175/185C (mid 4.20, liq 2.95 vs 2.64; wide quotes), both into earnings tonight; neither is at the +75% lock-in line on a valid liquidation mark. Cash $142.\n\n10:25 ET Grok Bot earnings decision (agrees with Decider + Fundamentals advice): CLOSE both C1 (AMZN 252.5/265C, now ~3.80 vs 4.45 paid) and C3 (FSLR 175/185C, liq 3.10 / mid 4.20 vs 2.64 paid) before today's close; do NOT hold through tonight's earnings. Quotes are wide now (FSLR bid far below mid), so each scan: close a leg once its liquidation mark is within ~10% of mid, and at the 3:08 PM ET scan at the latest close whatever remains at the available bid. Freed cash may fund new Crazy trades.\n",
+ "notes": "# Crazy $1K 2026-10-29\n- 09:43 ET \u00b7 $1,295 (+29.5%, marks partly stale) \u00b7 Holding C1 AMZN 252.5/265C (AMZN 244.6, -3.9% on the day, below the 250 put wall; positive gamma above flip 240.6; earnings tonight AMC), C2 TSLA 400/410C (TSLA 403.9 at the 400 pin, negative gamma below flip 406.2), C3 FSLR 175/185C (FSLR 175.3; liq 3.05 vs 2.64 entry, +16%; earnings tonight AMC). All expire 10/30, so the lock-in-gains rule applies today, but Nasdaq/Yahoo show no live bid/ask yet for the AMZN and TSLA legs (refused to price), so no valid marks and no closes this scan. No ALERT. Cash $8, no whale posts, so no new trade. Re-check TSLA (+75% line is about 4.95) and the AMZN/FSLR earnings decision on live quotes at the 10:00 scan.\n- 10:17 ET \u00b7 $1,220 (+22.0%) \u00b7 **Closed C2 TSLA 10/30 400/410C at 4.22 vs 2.83 (+$139, +49%)**: last trading day before expiry, TSLA ~402 on the 400 pin in negative gamma, so it could decay toward ~2 if pinned; took the solid gain under the take-profit discipline instead of waiting for the +75% line (4.95). **Opened C4 QQQ 11/06 710/700P for $2.88 ($288, stop 1.45, target 6.00)**: QQQ weakest tape, deep negative gamma (spot 715.1 vs flip 726.2, PW 710), idea from @FL0WG0D's $32.1M QQQ Jan 650P hedge; gex check in crazy_gex/. Holding C1 AMZN 252.5/265C (liq 3.70 vs 4.45) and C3 FSLR 175/185C (mid 4.20, liq 2.95 vs 2.64; wide quotes), both into earnings tonight; neither is at the +75% lock-in line on a valid liquidation mark. Cash $142.\n\n10:25 ET Grok Bot earnings decision (agrees with Decider + Fundamentals advice): CLOSE both C1 (AMZN 252.5/265C, now ~3.80 vs 4.45 paid) and C3 (FSLR 175/185C, liq 3.10 / mid 4.20 vs 2.64 paid) before today's close; do NOT hold through tonight's earnings. Quotes are wide now (FSLR bid far below mid), so each scan: close a leg once its liquidation mark is within ~10% of mid, and at the 3:08 PM ET scan at the latest close whatever remains at the available bid. Freed cash may fund new Crazy trades.\n- 10:44 ET \u00b7 $1,155 (+15.5%) \u00b7 **Closed C1 AMZN 10/30 252.5/265C at 3.90 vs 4.45 (\u2212$55, \u221212%)** per the 10:25 decision not to hold the earnings binary tonight (liq 3.90 within 10% of mid 4.02). **Opened C5 SPY 10/30 770/775C x1 at 1.71 ($171, stop 0.85, target 3.50)**: SPY back above OR30 high/VWAP, breadth at highs, X crowd bull 3-1; negative gamma below flip 772.4 can squeeze through the 770 wall, but king node 765 sits below so only 1 contract (gex check in crazy_gex/). Rotation pair vs C4 QQQ 710/700P (mark 2.91 vs 2.88). C3 FSLR 175/185C still to close before the bell (liq 3.35 vs mid 4.33, too wide yet). Cash $361.\n",
  "notes_date": "2026-10-29",
  "peak_value": 1551.0,
  "positions": [
@@ -775,7 +779,7 @@
    "kind": "option",
    "last": 3.35,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-29T10:43:02-04:00",
+   "last_updated": "2026-10-29T10:44:05-04:00",
    "legs": [
     {
      "expiration": "2026-10-30",
@@ -808,7 +812,7 @@
    "target_hit": false,
    "thesis": "60K FSLR 175C weekly calls (BullflowIO + FL0WG0D); negative gamma favors momentum; CW 195 far above; tight 10-wide spread fits cash",
    "underlying": "FSLR",
-   "underlying_last": 177.305,
+   "underlying_last": 177.85,
    "unrealized_pct": 0.2689,
    "unrealized_pnl": 71.0
   },
@@ -821,9 +825,9 @@
    "high_water": 2.91,
    "id": "C4",
    "kind": "option",
-   "last": 2.91,
+   "last": 2.9,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-29T10:43:02-04:00",
+   "last_updated": "2026-10-29T10:44:05-04:00",
    "legs": [
     {
      "expiration": "2026-11-06",
@@ -856,21 +860,69 @@
    "target_hit": false,
    "thesis": "QQQ weakest tape (-1.5%, GOOGL -12%) in deep negative gamma below the 726 flip; $32.1M QQQ Jan 650P whale hedge at the ask; X crowd bear on QQQ; break of the 710 put wall can run toward the 700 VEX king. 5-1 payoff, 8 DTE.",
    "underlying": "QQQ",
-   "underlying_last": 714.74,
-   "unrealized_pct": 0.0104,
-   "unrealized_pnl": 3.0
+   "underlying_last": 715.55,
+   "unrealized_pct": 0.0069,
+   "unrealized_pnl": 2.0
+  },
+  {
+   "contracts": 1.0,
+   "detail": "SPY +770C 2026-10-30 / -775C 2026-10-30",
+   "entry": 1.71,
+   "expires_today": false,
+   "gamma_check": "negative gamma, spot 769.6 < flip 772.4; CW 770, PW 765, king 765 below (fights it, so 1 contract); VEX +832M supportive on IV drop; scale out near 773-775",
+   "high_water": 1.71,
+   "id": "C5",
+   "kind": "option",
+   "last": 1.69,
+   "last_note": "liquidation mark (bid long / ask short); mid also stored",
+   "last_updated": "2026-10-29T10:44:05-04:00",
+   "legs": [
+    {
+     "expiration": "2026-10-30",
+     "right": "call",
+     "side": "long",
+     "strike": 770.0
+    },
+    {
+     "expiration": "2026-10-30",
+     "right": "call",
+     "side": "short",
+     "strike": 775.0
+    }
+   ],
+   "mark_method": "liq",
+   "mark_valid": true,
+   "mid": 1.7,
+   "multiplier": 100,
+   "must_close": false,
+   "opened": "2026-10-29T10:44:05-04:00",
+   "source": "X crowd (FlowbyBobby/RealSPXSniper/OptionsHawk) + intraday technicals",
+   "stop": 0.85,
+   "stop_watch": {
+    "consecutive_valid_at_or_below_stop": 0,
+    "rule": "stop hit only after 2 consecutive VALID marks (from 09:35 ET; mid if quotes wide) at/beyond stop",
+    "stop_confirmed": false
+   },
+   "symbol": "SPY",
+   "target": 3.5,
+   "target_hit": false,
+   "thesis": "SPY back above OR30 high/VWAP with breadth at highs and soft VIX; crowd bull 3-1 (FlowbyBobby, RealSPXSniper SPX 7730 target, OptionsHawk). A push through the 770 call wall/772 flip in negative gamma can squeeze. Rotation pair vs C4 QQQ puts (equal-weight strong, tech weak). Sized 1 because king node 765 is below.",
+   "underlying": "SPY",
+   "underlying_last": 769.605,
+   "unrealized_pct": -0.0117,
+   "unrealized_pnl": -2.0
   }
  ],
- "positions_value": 626.0,
- "published_at": "2026-10-29 10:43:44 AM EDT",
- "published_epoch_ms": 1793285024322,
+ "positions_value": 794.0,
+ "published_at": "2026-10-29 10:44:47 AM EDT",
+ "published_epoch_ms": 1793285087375,
  "realized_pnl": 84.0,
- "server_time": "2026-10-29 10:43:44 AM EDT",
+ "server_time": "2026-10-29 10:44:47 AM EDT",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
  "today": "2026-10-29",
- "total_return": 0.15799999999999992,
+ "total_return": 0.15500000000000003,
  "trades": [
   {
    "action": "OPEN",
@@ -988,6 +1040,20 @@
    "reason": "AMZN earnings tonight; 10:25 decision to not hold the binary; liq 3.90 within 10% of mid 4.02",
    "symbol": "AMZN",
    "time": "2026-10-29T10:43:13-04:00",
+   "value_after": 1158.0
+  },
+  {
+   "action": "OPEN",
+   "cash_flow": -171.0,
+   "detail": "SPY +770C 2026-10-30 / -775C 2026-10-30",
+   "gamma_check": "negative gamma, spot 769.6 < flip 772.4; CW 770, PW 765, king 765 below (fights it, so 1 contract); VEX +832M supportive on IV drop; scale out near 773-775",
+   "id": "C5",
+   "price": 1.71,
+   "qty": 1.0,
+   "source": "X crowd (FlowbyBobby/RealSPXSniper/OptionsHawk) + intraday technicals",
+   "symbol": "SPY",
+   "thesis": "SPY back above OR30 high/VWAP with breadth at highs and soft VIX; crowd bull 3-1 (FlowbyBobby, RealSPXSniper SPX 7730 target, OptionsHawk). A push through the 770 call wall/772 flip in negative gamma can squeeze. Rotation pair vs C4 QQQ puts (equal-weight strong, tech weak). Sized 1 because king node 765 is below.",
+   "time": "2026-10-29T10:44:05-04:00",
    "value_after": 1158.0
   }
  ],
