@@ -1909,6 +1909,10 @@
   {
    "date": "2026-10-28",
    "value": 9925.0
+  },
+  {
+   "date": "2026-10-29",
+   "value": 9925.0
   }
  ],
  "mode": "paper",
@@ -1922,8 +1926,8 @@
    "entry_debit": 4.3,
    "id": "TSM-20261218-440-450C-1",
    "last": 3.55,
-   "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-28T16:29:07-04:00",
+   "last_note": "before 9:35 ET: opening quotes not used, previous mark kept",
+   "last_updated": "2026-10-29T09:30:56-04:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1940,7 +1944,7 @@
      "strike": 450
     }
    ],
-   "mark_method": "liq",
+   "mark_method": "kept",
    "mark_quotes": {
     "fetched": "2026-10-28T16:29:07-04:00",
     "intrinsic_floor": 0.0,
@@ -1963,7 +1967,7 @@
     "source": "Nasdaq public option chain",
     "underlying": 439.66
    },
-   "mark_valid": true,
+   "mark_valid": false,
    "max_loss": 430.0,
    "max_value": 1000,
    "mid": 4.55,
@@ -1983,7 +1987,7 @@
     "consecutive_valid_at_or_below_stop": 0,
     "rule": "stop is hit only after 2 consecutive VALID marks (from 09:35 ET on; mid if quotes wide) at/below stop",
     "stop_confirmed": false,
-    "updated": "2026-10-28T16:29:07-04:00"
+    "updated": "2026-10-29T09:30:56-04:00"
    },
    "symbol": "TSM",
    "target": 7.5,
@@ -2002,9 +2006,9 @@
   }
  ],
  "positions_value": 355.0,
- "published_at": "2026-10-29 09:21:10 AM EDT",
- "published_epoch_ms": 1793280070906,
- "server_time": "2026-10-29 09:21:10 AM EDT",
+ "published_at": "2026-10-29 09:30:56 AM EDT",
+ "published_epoch_ms": 1793280656768,
+ "server_time": "2026-10-29 09:30:56 AM EDT",
  "start_date": "2026-10-21",
  "starting_cash": 10000.0,
  "strategy_b": {
