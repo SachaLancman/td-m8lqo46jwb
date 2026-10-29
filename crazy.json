@@ -1,16 +1,16 @@
 {
- "account_value": 1215.0,
+ "account_value": 1199.0,
  "alerts": [],
  "bust_threshold": 20.0,
  "busted": false,
  "buying_power": 361.0,
  "cash": 361.0,
  "closed_trades": 2,
- "drawdown": -0.2166344294003868,
+ "drawdown": -0.22695035460992907,
  "error": null,
  "goal": "Grow $1,000 to $100,000 as fast as possible (paper).",
- "goal_progress_linear": 0.01215,
- "goal_progress_log": 0.04228813896716551,
+ "goal_progress_linear": 0.01199,
+ "goal_progress_log": 0.03940959154942435,
  "goal_target": 100000.0,
  "history": [
   {
@@ -35,7 +35,7 @@
   },
   {
    "date": "2026-10-29",
-   "value": 1215.0
+   "value": 1199.0
   }
  ],
  "intraday": [
@@ -782,11 +782,15 @@
   {
    "t": "2026-10-29T11:43-04:00",
    "value": 1215.0
+  },
+  {
+   "t": "2026-10-29T11:50-04:00",
+   "value": 1199.0
   }
  ],
- "marked_at": "2026-10-29T11:43:23-04:00",
+ "marked_at": "2026-10-29T11:50:16-04:00",
  "mode": "paper",
- "multiple": 1.215,
+ "multiple": 1.199,
  "name": "Crazy $1K (Grok Bot, paper)",
  "notes": "# Crazy $1K 2026-10-29\n- 09:43 ET \u00b7 $1,295 (+29.5%, marks partly stale) \u00b7 Holding C1 AMZN 252.5/265C (AMZN 244.6, -3.9% on the day, below the 250 put wall; positive gamma above flip 240.6; earnings tonight AMC), C2 TSLA 400/410C (TSLA 403.9 at the 400 pin, negative gamma below flip 406.2), C3 FSLR 175/185C (FSLR 175.3; liq 3.05 vs 2.64 entry, +16%; earnings tonight AMC). All expire 10/30, so the lock-in-gains rule applies today, but Nasdaq/Yahoo show no live bid/ask yet for the AMZN and TSLA legs (refused to price), so no valid marks and no closes this scan. No ALERT. Cash $8, no whale posts, so no new trade. Re-check TSLA (+75% line is about 4.95) and the AMZN/FSLR earnings decision on live quotes at the 10:00 scan.\n- 10:17 ET \u00b7 $1,220 (+22.0%) \u00b7 **Closed C2 TSLA 10/30 400/410C at 4.22 vs 2.83 (+$139, +49%)**: last trading day before expiry, TSLA ~402 on the 400 pin in negative gamma, so it could decay toward ~2 if pinned; took the solid gain under the take-profit discipline instead of waiting for the +75% line (4.95). **Opened C4 QQQ 11/06 710/700P for $2.88 ($288, stop 1.45, target 6.00)**: QQQ weakest tape, deep negative gamma (spot 715.1 vs flip 726.2, PW 710), idea from @FL0WG0D's $32.1M QQQ Jan 650P hedge; gex check in crazy_gex/. Holding C1 AMZN 252.5/265C (liq 3.70 vs 4.45) and C3 FSLR 175/185C (mid 4.20, liq 2.95 vs 2.64; wide quotes), both into earnings tonight; neither is at the +75% lock-in line on a valid liquidation mark. Cash $142.\n\n10:25 ET Grok Bot earnings decision (agrees with Decider + Fundamentals advice): CLOSE both C1 (AMZN 252.5/265C, now ~3.80 vs 4.45 paid) and C3 (FSLR 175/185C, liq 3.10 / mid 4.20 vs 2.64 paid) before today's close; do NOT hold through tonight's earnings. Quotes are wide now (FSLR bid far below mid), so each scan: close a leg once its liquidation mark is within ~10% of mid, and at the 3:08 PM ET scan at the latest close whatever remains at the available bid. Freed cash may fund new Crazy trades.\n- 10:44 ET \u00b7 $1,155 (+15.5%) \u00b7 **Closed C1 AMZN 10/30 252.5/265C at 3.90 vs 4.45 (\u2212$55, \u221212%)** per the 10:25 decision not to hold the earnings binary tonight (liq 3.90 within 10% of mid 4.02). **Opened C5 SPY 10/30 770/775C x1 at 1.71 ($171, stop 0.85, target 3.50)**: SPY back above OR30 high/VWAP, breadth at highs, X crowd bull 3-1; negative gamma below flip 772.4 can squeeze through the 770 wall, but king node 765 sits below so only 1 contract (gex check in crazy_gex/). Rotation pair vs C4 QQQ 710/700P (mark 2.91 vs 2.88). C3 FSLR 175/185C still to close before the bell (liq 3.35 vs mid 4.33, too wide yet). Cash $361.\n- 11:14 ET \u00b7 $1,176 (+17.6%) \u00b7 No ALERTs. C3 FSLR 175/185C liq 3.55 / mid 4.55 vs 2.64 (+34% on liq; still >10% gap to mid, so not closed yet; close before the bell per the 10:25 decision), C4 QQQ 710/700P 3.02 vs 2.88, C5 SPY 770/775C 1.58 vs 1.71. Ideas checked: META 11/06 635/645C (from @FL0WG0D's 637.5C flow) costs $385 > $361 cash and META is pinned on its 630 positive-gamma king node, so skip; RDDT 155C whale is an earnings-tonight lottery and $600/contract, skip. Cash $361.\n- 11:44 ET \u00b7 $1,215 (+21.5%) \u00b7 No ALERTs. C3 FSLR 175/185C liq 3.90 / mid 4.65 vs 2.64 (+48% on liq, just under the 50% half-sell line and single contract; gap to mid still 16%, so close later today per the 10:25 earnings decision, by 3:08 PM ET at the latest), C4 QQQ 710/700P 2.68 vs 2.88, C5 SPY 770/775C 1.96 vs 1.71 (+15%). No new entry: $361 cash and no fresh idea that fits (CRDO/DLR whale prints under $1M with no contract details; IWM pinned at its 285 call wall); FSLR exit will free cash for the next scan.\n",
  "notes_date": "2026-10-29",
@@ -801,9 +805,9 @@
    "high_water": 4.2,
    "id": "C3",
    "kind": "option",
-   "last": 3.9,
+   "last": 3.75,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-29T11:43:23-04:00",
+   "last_updated": "2026-10-29T11:50:16-04:00",
    "legs": [
     {
      "expiration": "2026-10-30",
@@ -820,7 +824,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 4.65,
+   "mid": 4.7,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-26T15:15:29-04:00",
@@ -836,9 +840,9 @@
    "target_hit": false,
    "thesis": "60K FSLR 175C weekly calls (BullflowIO + FL0WG0D); negative gamma favors momentum; CW 195 far above; tight 10-wide spread fits cash",
    "underlying": "FSLR",
-   "underlying_last": 178.63,
-   "unrealized_pct": 0.4773,
-   "unrealized_pnl": 126.0
+   "underlying_last": 178.1312,
+   "unrealized_pct": 0.4205,
+   "unrealized_pnl": 111.0
   },
   {
    "contracts": 1.0,
@@ -849,9 +853,9 @@
    "high_water": 3.18,
    "id": "C4",
    "kind": "option",
-   "last": 2.68,
+   "last": 2.5,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-29T11:43:23-04:00",
+   "last_updated": "2026-10-29T11:50:16-04:00",
    "legs": [
     {
      "expiration": "2026-11-06",
@@ -868,7 +872,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 2.72,
+   "mid": 2.54,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-29T10:16:46-04:00",
@@ -884,9 +888,9 @@
    "target_hit": false,
    "thesis": "QQQ weakest tape (-1.5%, GOOGL -12%) in deep negative gamma below the 726 flip; $32.1M QQQ Jan 650P whale hedge at the ask; X crowd bear on QQQ; break of the 710 put wall can run toward the 700 VEX king. 5-1 payoff, 8 DTE.",
    "underlying": "QQQ",
-   "underlying_last": 717.233,
-   "unrealized_pct": -0.0694,
-   "unrealized_pnl": -20.0
+   "underlying_last": 716.385,
+   "unrealized_pct": -0.1319,
+   "unrealized_pnl": -38.0
   },
   {
    "contracts": 1.0,
@@ -894,12 +898,12 @@
    "entry": 1.71,
    "expires_today": false,
    "gamma_check": "negative gamma, spot 769.6 < flip 772.4; CW 770, PW 765, king 765 below (fights it, so 1 contract); VEX +832M supportive on IV drop; scale out near 773-775",
-   "high_water": 1.96,
+   "high_water": 2.13,
    "id": "C5",
    "kind": "option",
-   "last": 1.96,
+   "last": 2.13,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-29T11:43:23-04:00",
+   "last_updated": "2026-10-29T11:50:16-04:00",
    "legs": [
     {
      "expiration": "2026-10-30",
@@ -916,7 +920,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 1.97,
+   "mid": 2.14,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-29T10:44:05-04:00",
@@ -932,21 +936,21 @@
    "target_hit": false,
    "thesis": "SPY back above OR30 high/VWAP with breadth at highs and soft VIX; crowd bull 3-1 (FlowbyBobby, RealSPXSniper SPX 7730 target, OptionsHawk). A push through the 770 call wall/772 flip in negative gamma can squeeze. Rotation pair vs C4 QQQ puts (equal-weight strong, tech weak). Sized 1 because king node 765 is below.",
    "underlying": "SPY",
-   "underlying_last": 770.04,
-   "unrealized_pct": 0.1462,
-   "unrealized_pnl": 25.0
+   "underlying_last": 769.38,
+   "unrealized_pct": 0.2456,
+   "unrealized_pnl": 42.0
   }
  ],
- "positions_value": 854.0,
- "published_at": "2026-10-29 11:45:27 AM EDT",
- "published_epoch_ms": 1793288727810,
+ "positions_value": 838.0,
+ "published_at": "2026-10-29 11:50:22 AM EDT",
+ "published_epoch_ms": 1793289022378,
  "realized_pnl": 84.0,
- "server_time": "2026-10-29 11:45:27 AM EDT",
+ "server_time": "2026-10-29 11:50:22 AM EDT",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
  "today": "2026-10-29",
- "total_return": 0.21500000000000008,
+ "total_return": 0.19900000000000007,
  "trades": [
   {
    "action": "OPEN",
