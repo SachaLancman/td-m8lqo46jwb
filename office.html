@@ -16,7 +16,7 @@ html,body{margin:0;height:100%;background:#0b0a1a;color:#f4f0e0;font-family:var(
 #demo{display:none;background:#ff3fa4;color:#fff;animation:blink 1s steps(2) infinite;box-shadow:3px 3px 0 #000}
 #mode{background:#3fb6ff;color:#000}
 @keyframes blink{50%{opacity:.35}}
-#hud a{color:#9d97c9;font-size:8px;text-decoration:none}#hud a:hover{color:#ffd23f}#hud a#crazylink{color:#ff7a1a}#hud a#crazylink:hover{color:#ff3b30}
+#hud a{color:#9d97c9;font-size:8px;text-decoration:none}#hud a:hover{color:#ffd23f}#hud a#crazylink{color:#ff7a1a}#hud a#crazylink:hover{color:#ff3b30}#hud a#dtlink{color:#14d1c4}#hud a#dtlink:hover{color:#7fe6ff}
 #clock{font-size:9px;color:#9d97c9;white-space:nowrap}
 canvas{position:fixed;top:68px;left:0;image-rendering:pixelated}
 #ticker{position:fixed;bottom:0;left:0;right:0;height:38px;background:#000;border-top:4px solid #ffd23f;overflow:hidden;z-index:5;display:flex;align-items:center}
@@ -34,7 +34,7 @@ canvas{position:fixed;top:68px;left:0;image-rendering:pixelated}
  <div class="stat"><b>CASH</b><span id="hc">—</span></div>
  <div id="goalwrap"><b style="font-weight:normal;color:#9d97c9;font-size:8px">QUEST: REACH <span id="hg">$100,000</span></b><div id="goalbar"><div id="goalfill"></div><span id="goalpct">0%</span></div></div>
  <span class="badge" id="mode">PAPER</span><span class="badge" id="demo">DEMO DATA</span><span class="badge" id="stale" style="display:none;background:#ff9f1c;color:#000">STALE · BOX ASLEEP</span>
- <div class="stat"><span id="clock">—</span><span id="asof" style="font-size:7px;color:#9d97c9">DATA —</span><a id="back" href="#">◀ DASHBOARD</a><a id="crazylink" href="#">🔥 CRAZY $1K</a><a id="l3d" href="office3d.html">🧊 3D FLOOR</a></div>
+ <div class="stat"><span id="clock">—</span><span id="asof" style="font-size:7px;color:#9d97c9">DATA —</span><a id="back" href="#">◀ DASHBOARD</a><a id="crazylink" href="#">🔥 CRAZY $1K</a><a id="dtlink" href="#">⚡ DAY TRADE</a><a id="l3d" href="office3d.html">🧊 3D FLOOR</a></div>
 </div>
 <div id="err"></div>
 <canvas id="c"></canvas>
@@ -42,7 +42,7 @@ canvas{position:fixed;top:68px;left:0;image-rendering:pixelated}
 <script>
 const Q=new URLSearchParams(location.search),DEMO=Q.get('demo')==='1';
 const $=id=>document.getElementById(id);
-$('crazylink').href='crazy.html';
+$('crazylink').href='crazy.html';$('dtlink').href='daytrade.html';
 $('back').href='index.html';
 const usd=v=>v==null||isNaN(v)?'—':Number(v).toLocaleString('en-US',{style:'currency',currency:'USD'});
 const pct=v=>v==null||isNaN(v)?'—':(v>=0?'+':'')+(v*100).toFixed(2)+'%';
@@ -57,11 +57,12 @@ const TEAM=[
  {id:'coordinator',name:'Grok Bot',short:'Grok Bot',role:'coordinator',shirt:'#b26bff',hair:null,skin:'#c9d1e0',bot:true},
  {id:'decider',name:'Decider',short:'Decider',shirt:'#ffd23f',hair:'#5a2d0c',skin:'#c68642'},
  {id:'crazy',name:'Crazy $1K desk (Grok Bot)',short:'Crazy $1K',shirt:'#ff4a1a',hair:null,skin:'#c9d1e0',bot:true,plate:'#ff7a1a',hot:true},
+ {id:'daytrade',name:'Day Trade $10K desk (Grok Bot)',short:'Day Trade',shirt:'#14d1c4',hair:null,skin:'#c9d1e0',bot:true,plate:'#14d1c4',hot:true,rug:['#06263a','#14d1c4','#2f8cff','#7fe6ff']},
 ];
-// seating (9 desks): an even 3x3 grid. Top row: head table (Grok Bot + Decider, shared rug) + the Crazy $1K desk
+// seating (10 desks): top row of 4 = head table (Grok Bot + Decider, shared rug) + Crazy $1K desk + Day Trade $10K desk (teal rug)
 // (Grok Bot's separate high-risk paper account, on its own orange/red hazard rug). Two rows of 3 below.
 // Every row is centered on the floor with the SAME horizontal pitch (W/COLS), and rows are evenly spaced vertically.
-const SEATS={head:['coordinator','decider','crazy'],table:['coordinator','decider'],rows:[['technical','fundamentals','sentiment'],['flow_gamma','skeptic','risk']]};
+const SEATS={head:['coordinator','decider','crazy','daytrade'],table:['coordinator','decider'],rows:[['technical','fundamentals','sentiment'],['flow_gamma','skeptic','risk']]};
 const ALLROWS=[SEATS.head,...SEATS.rows],COLS=Math.max(...ALLROWS.map(r=>r.length));
 const DEFAULT_NOTE={idle:'zzz...',sleeping:'zzz...',researching:'Digging into data...',writing:'Writing report...',done:'Report filed!',deciding:'Weighing the calls...',coordinating:'Keeping everyone on track'};
 const ICON={idle:'💤',sleeping:'💤',researching:'🔍',writing:'📝',done:'✅',deciding:'🤔',coordinating:'📋'};
@@ -77,8 +78,10 @@ const DEMO_DATA={mode:'paper',account_value:10427.35,starting_cash:10000,total_r
   flow_gamma:{state:'researching',note:'Sample: reading the GEX heatmap'},
   skeptic:{state:'writing',note:'Sample: strongest case against the XYZ call spread'},
   decider:{state:'deciding',note:'Sample: buy, hold, or wait?'},
-  crazy:{state:'researching',note:'Sample: checking a whale post + gamma map'}},
+  crazy:{state:'researching',note:'Sample: checking a whale post + gamma map'},
+  daytrade:{state:'researching',note:'Sample: 2 of 6 sources agree on SPY puts'}},
  crazy:{account_value:1234.5,starting_cash:1000,total_return:.2345,goal_target:100000},
+ daytrade:{account_value:10180,starting_cash:10000,total_return:.018,today_entries:1,positions:1},
  trades:[{time:'DEMO 09:41',action:'BUY',symbol:'FAKE',qty:10,price:123.45},{time:'DEMO 10:15',action:'SELL',symbol:'TEST',qty:5,price:67.80}]};
 
 function applyData(d){
@@ -212,14 +215,15 @@ function frame(t){
  const hxs=(SEATS.table||SEATS.head).map(id=>pos[id][0]),rl=Math.min(...hxs)-P*25,rw=Math.max(...hxs)+P*25-rl;R(rl,y0-P*15,rw,P*54,'#000');R(rl+P,y0-P*14,rw-P*2,P*52,'#4a2340');
  for(let k=0;k<6;k++)R(rl+P*3,y0-P*12+k*P*8,rw-P*6,P,'#6b3358');
  // Crazy $1K desk: its own orange/red hazard-stripe rug, same size per desk as the head-table rug
- TEAM.filter(m=>m.hot&&pos[m.id]).forEach(m=>{const cx=pos[m.id][0],cl=cx-P*25,cw2=P*50;R(cl,y0-P*15,cw2,P*54,'#000');R(cl+P,y0-P*14,cw2-P*2,P*52,'#3a0f08');
-  for(let k=0;k<6;k++)for(let j=0;j<6;j++)R(cl+P*3+j*P*8,y0-P*12+k*P*8,P*4,P,(j+k)%2?'#ff3b30':'#ff7a1a');
-  const fl=(Math.floor(t/300)%2)?'#ffd23f':'#ff7a1a';R(cl+P*2,y0-P*13,P*2,P*2,fl);R(cl+cw2-P*4,y0-P*13,P*2,P*2,fl)});
+ TEAM.filter(m=>m.hot&&pos[m.id]).forEach(m=>{const cx=pos[m.id][0],cl=cx-P*25,cw2=P*50;R(cl,y0-P*15,cw2,P*54,'#000');const rg=m.rug||['#3a0f08','#ff3b30','#ff7a1a','#ffd23f'];R(cl+P,y0-P*14,cw2-P*2,P*52,rg[0]);
+  for(let k=0;k<6;k++)for(let j=0;j<6;j++)R(cl+P*3+j*P*8,y0-P*12+k*P*8,P*4,P,(j+k)%2?rg[1]:rg[2]);
+  const fl=(Math.floor(t/300)%2)?rg[3]:rg[2];R(cl+P*2,y0-P*13,P*2,P*2,fl);R(cl+cw2-P*4,y0-P*13,P*2,P*2,fl)});
  const bubbles=[];
  TEAM.forEach((m,i)=>{const r=(state.roles||{})[m.id]||{state:'idle'};const st=String(r.state||'idle').toLowerCase();
   const [x,y]=pos[m.id],ph=i*1.7;let note=r.note||DEFAULT_NOTE[st]||st;
   if(m.id==='crazy'&&state.crazy&&state.crazy.account_value!=null){const z=state.crazy;note=(z.busted?'BUSTED ':'')+usd(z.account_value)+' ('+pct(z.total_return)+') of $100K'+(r.note?' · '+r.note:'')}
-  const c=drawDesk(m,x,y,st,t,ph);bubbles.push([x,c.oy-P*2,note,ph,c.sleep&&!(m.id==='crazy')])});
+  if(m.id==='daytrade'&&state.daytrade&&state.daytrade.account_value!=null){const z=state.daytrade;note=usd(z.account_value)+' ('+pct(z.total_return)+') · '+(z.positions?'IN A TRADE':'flat')+' · '+(z.today_entries||0)+'/2 entries'+((z.alerts||[]).length?' · ⚠ '+z.alerts[0]:'')+(r.note?' · '+r.note:'')}
+  const c=drawDesk(m,x,y,st,t,ph);bubbles.push([x,c.oy-P*2,note,ph,c.sleep&&!(m.id==='crazy'||m.id==='daytrade')])});
  bubbles.forEach(([x,y,n,ph,s])=>bubble(x,y,n,t,ph,s));
  requestAnimationFrame(frame);
 }
