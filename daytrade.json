@@ -56,59 +56,55 @@
  "last_signals": {
   "blackout": false,
   "events": "08:30 Q3 GDP adv + Sept PCE + jobless claims (released; GDP 3.4% vs 3.2%, core PCE in line); 10:30 EIA nat gas storage; 13:00 7-year note auction",
-  "t": "13:15",
+  "t": "13:42",
   "tickers": {
    "META": {
-    "last": 630.58,
-    "setup": "bull",
+    "last": 627.09,
+    "setup": "none",
     "votes": {
-     "crowd": "bull",
-     "technicals": "bull",
+     "technicals": "neutral",
      "vix": "neutral"
     },
     "why": {
-     "crowd": "1-0 (RedDogT3 'cleared and held 625', 630club)",
-     "technicals": ">VWAP 625.65; EMA9 631.83 vs 21 630.8; above OR30 high 623.75"
+     "technicals": ">VWAP 625.81; EMA9 628.74 vs 21 629.55; above OR30 high 623.75"
     }
    },
    "QQQ": {
-    "last": 713.71,
+    "last": 714.06,
     "setup": "none",
     "votes": {
-     "crowd": "bear",
      "gamma": "bear",
      "technicals": "bear",
      "vix": "bull"
     },
     "why": {
-     "crowd": "1-0 (uga1018 below 724.02 pivot) lv 724.02",
-     "gamma": "negative gamma, spot 714.7 < flip 725.58, walls P715.0/C720.0",
-     "technicals": "<VWAP 716.1; EMA9 714.75 vs 21 715.34; inside OR30 711.62-716.99"
+     "gamma": "negative gamma, spot 714.14 < flip 725.07, walls P715.0/C715.0",
+     "technicals": "<VWAP 716.02; EMA9 714.36 vs 21 714.88; inside OR30 711.62-716.99"
     }
    },
    "SPY": {
-    "last": 768.22,
+    "last": 767.93,
     "setup": "none",
     "votes": {
      "crowd": "bear",
      "gamma": "bear",
-     "saty": "neutral",
+     "saty": "bear",
      "technicals": "bear",
      "vix": "bull"
     },
     "why": {
-     "crowd": "2-0 (FlowbyBobby 'rug kept you away rightfully, SPX sitting lower'; uga1018 below 771.64 pivot = bears) lv 771.64",
-     "gamma": "negative gamma, spot 768.75 < flip 772.39, walls P765.0/C770.0",
-     "saty": "below short trigger 770.67 and below PML/H200 768.48 (put GG 769.66->768.02); idea downside SPY 766.0; PATIENCE day: needs the same read next scan",
-     "technicals": "<VWAP 768.72; EMA9 768.78 vs 21 769.08; inside OR30 767.27-769.41"
+     "crowd": "1-0 (FlowbyBobby SPX heatmaps all below ceilings; RealSPXSniper 'clear iron condor day' = chop) lv 770; QQQ:none; META:none",
+     "gamma": "negative gamma, spot 767.99 < flip 771.49, walls P765.0/C770.0",
+     "saty": "below short trigger 770.67 and below PML/H200 768.48 (put GG 769.66->768.02); idea downside SPY 766.0",
+     "technicals": "<VWAP 768.71; EMA9 768.28 vs 21 768.68; inside OR30 767.27-769.41"
     }
    }
   },
   "vix": {
-   "chg_20m": -0.13,
-   "direction": "falling",
+   "chg_20m": 0.0,
+   "direction": "flat",
    "key": 17.0,
-   "last": 16.23,
+   "last": 16.52,
    "open": 17.15,
    "prev_close": 16.91,
    "vote": "bull"
@@ -117,7 +113,7 @@
  "marked_at": "2026-10-29T13:41:27-04:00",
  "mode": "PAPER",
  "name": "Day Trade $10K (PAPER)",
- "notes": "al -- 1-0 (TajVincent QQQ straddle at VWAP 715, \u00b14.6 expected move)\n\n11:14 ET: waiting for trigger \u2014 SPY 770.1 above VWAP/OR30 high with VIX falling and crowd bull 3-1, but still under Saty's 770.67 trigger, the 770 call wall and negative gamma below flip 772.2; QQQ inside OR30 under flip; no clean setup\n\n### 11:44 ET source read\n- VIX 16.36 (flat, key 17.0) -> bull; events: 08:30 Q3 GDP adv + Sept PCE + jobless claims (released; GDP 3.4% vs 3.2%, core PCE in line); 10:30 EIA nat gas storage; 13:00 7-year note auction\n- **SPY 769.95** setup: **none** (bull: technicals, vix, crowd | bear: gamma) | VWAP 768.68 OR30 767.27-769.41 PDH/PDL 773.36/769.24 PMH/PML 771.39/768.48 H200 768.58\n  - technicals: bull -- >VWAP 768.68; EMA9 769.9 vs 21 769.74; above OR30 high 769.41\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 770.0 < flip 772.65, walls P770.0/C770.0\n  - saty: neutral -- below short trigger 770.67 but above PML/H200 768.48: no breakdown yet\n  - crowd: bull -- 2-1 (FlowbyBobby 'SPX sitting higher finally'; spotgamma SPX fixed-strike vol sinking, rotation not risk-off; ripster: SPX chop inside 30m range) lv 770\n- **QQQ 716.93** setup: **none** (bull: vix | bear: gamma, crowd) | VWAP 716.13 OR30 711.62-716.99 PDH/PDL 726.14/720.3 PMH/PML 726.154/714.98 H200 720.9\n  - technicals: neutral -- >VWAP 716.13; EMA9 716.66 vs 21 716.66; inside OR30 711.62-716.99\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 717.06 < flip 725.48, walls P720.0/C720.0\n  - crowd: bear -- 1-0 (spotgamma GOOGL -11%, QQQ -1.3%, rotation out of tech)\n\n11:44 ET: waiting for trigger \u2014 SPY 770.0 pinned at the 770 call/put wall in negative gamma below flip 772.7, still under Saty's 770.67 trigger (techs/VIX/crowd bull but gamma bear); QQQ inside OR30 under flip; no clean setup\n\n### 12:13 ET source read\n- VIX 16.35 (falling, key 17.0) -> bull; events: 08:30 Q3 GDP adv + Sept PCE + jobless claims (released; GDP 3.4% vs 3.2%, core PCE in line); 10:30 EIA nat gas storage; 13:00 7-year note auction\n- **SPY 769.15** setup: **none** (bull: vix | bear: gamma) | VWAP 768.7 OR30 767.27-769.41 PDH/PDL 773.36/769.24 PMH/PML 771.39/768.48 H200 768.56\n  - technicals: neutral -- >VWAP 768.7; EMA9 769.49 vs 21 769.57; inside OR30 767.27-769.41\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 770.0 < flip 772.65, walls P770.0/C770.0\n  - saty: neutral -- below short trigger 770.67 but above PML/H200 768.48: no breakdown yet\n  - crowd: neutral -- 1-1 (FlowbyBobby 'bulls need a reshuffle for SPX floor to move higher, ideally 7710', 'be patient'; ripster MTF setups single names, MSFT MTF short) lv SPX7710\n- **QQQ 715.46** setup: **none** (bull: vix, crowd | bear: technicals, gamma) | VWAP 716.31 OR30 711.62-716.99 PDH/PDL 726.14/720.3 PMH/PML 726.154/714.98 H200 720.87\n  - technicals: bear -- <VWAP 716.31; EMA9 716.13 vs 21 716.39; inside OR30 711.62-716.99\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 717.06 < flip 725.48, walls P720.0/C720.0\n  - crowd: bull -- 1-0 (FlowbyBobby potential bounce zone QQQ 715) lv 715\n\n12:14 ET: waiting for trigger \u2014 SPY 769 pinned at the 770 wall in negative gamma under flip 772.1 and still below Saty's 770.67 trigger (only VIX bull); QQQ under VWAP near its 715 put wall with crowd eyeing a bounce but techs/gamma bear; no 2-source setup\n\n### 12:49 ET source read\n- VIX 16.41 (flat, key 17.0) -> bull; events: 08:30 Q3 GDP adv + Sept PCE + jobless claims (released; GDP 3.4% vs 3.2%, core PCE in line); 10:30 EIA nat gas storage; 13:00 7-year note auction\n- **SPY 768.85** setup: **none** (bull: vix | bear: gamma) | VWAP 768.71 OR30 767.27-769.41 PDH/PDL 773.36/769.24 PMH/PML 771.39/768.48 H200 768.56\n  - technicals: neutral -- >VWAP 768.71; EMA9 769.07 vs 21 769.29; inside OR30 767.27-769.41\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 768.75 < flip 772.39, walls P765.0/C770.0\n  - saty: neutral -- below short trigger 770.67 but above PML/H200 768.48: no breakdown yet\n  - crowd: neutral -- 1-0 bear (FlowbyBobby 'stubborn SPY rug keeping away from longs if sticking to map rules', 'MMs playing mind games')\n- **QQQ 714.85** setup: **none** (bull: vix | bear: technicals, gamma) | VWAP 716.2 OR30 711.62-716.99 PDH/PDL 726.14/720.3 PMH/PML 726.154/714.98 H200 720.8\n  - technicals: bear -- <VWAP 716.2; EMA9 715.25 vs 21 715.74; inside OR30 711.62-716.99\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 714.7 < flip 725.58, walls P715.0/C720.0\n  - crowd: neutral -- 0-0 (FlowbyBobby 'QQQ did bounce but will it continue?')\n\n12:49 ET: waiting for trigger \u2014 SPY 768.9 just under the 770 call wall in negative gamma (flip 772.4), still below Saty's 770.67 trigger and above 768.48 PML; QQQ under VWAP at its 715 put wall (techs/gamma bear vs VIX bull, crowd silent); no 2-source setup\n\n### 13:15 ET source read\n- VIX 16.23 (falling, key 17.0) -> bull; events: 08:30 Q3 GDP adv + Sept PCE + jobless claims (released; GDP 3.4% vs 3.2%, core PCE in line); 10:30 EIA nat gas storage; 13:00 7-year note auction\n- **SPY 768.22** setup: **none** (bull: vix | bear: technicals, gamma, crowd) | VWAP 768.72 OR30 767.27-769.41 PDH/PDL 773.36/769.24 PMH/PML 771.39/768.48 H200 768.55\n  - technicals: bear -- <VWAP 768.72; EMA9 768.78 vs 21 769.08; inside OR30 767.27-769.41\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 768.75 < flip 772.39, walls P765.0/C770.0\n  - saty: neutral -- below short trigger 770.67 and below PML/H200 768.48 (put GG 769.66->768.02); idea downside SPY 766.0; PATIENCE day: needs the same read next scan\n  - crowd: bear -- 2-0 (FlowbyBobby 'rug kept you away rightfully, SPX sitting lower'; uga1018 below 771.64 pivot = bears) lv 771.64\n- **QQQ 713.71** setup: **none** (bull: vix | bear: technicals, gamma, crowd) | VWAP 716.1 OR30 711.62-716.99 PDH/PDL 726.14/720.3 PMH/PML 726.154/714.98 H200 720.78\n  - technicals: bear -- <VWAP 716.1; EMA9 714.75 vs 21 715.34; inside OR30 711.62-716.99\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 714.7 < flip 725.58, walls P715.0/C720.0\n  - crowd: bear -- 1-0 (uga1018 below 724.02 pivot) lv 724.02\n- **META 630.58** setup: **bull** (bull: technicals, crowd | bear: -) | VWAP 625.65 OR30 616.8-623.75 PDH/PDL 624.42/609.0 PMH/PML 622.5/614.75 H200 664.89\n  - technicals: bull -- >VWAP 625.65; EMA9 631.83 vs 21 630.8; above OR30 high 623.75\n  - vix: neutral -- \n  - crowd: bull -- 1-0 (RedDogT3 'cleared and held 625', 630club)\n\n**PAPER OPEN D1** 13:15 ET: buy 2 META 630C 2026-10-30 @ 9.25 ($1,850); sources agreeing (bull): technicals, crowd; stop 5.55 (-40%, 2 valid marks) / hard 3.7 (-60%) / target 14.8 (+60%) / SPY target 640.0. Thesis: META above VWAP 625.7 and OR30 high 623.75, EMA9>21; RedDogT3 cleared/held 625; positive gamma above 621 flip, room to 650 call wall\n\n13:16 ET: OPENED D1 2x META 630C 10/30 @ 9.25 \u2014 technicals (above VWAP/OR30 high, EMA9>21) + crowd (RedDogT3 cleared/held 625) agree; positive gamma above 621 flip, CW 650; SPY/QQQ no setup (Saty patience day, SPY under 770.67 trigger)\n\n",
+ "notes": " 717.06 < flip 725.48, walls P720.0/C720.0\n  - crowd: bear -- 1-0 (spotgamma GOOGL -11%, QQQ -1.3%, rotation out of tech)\n\n11:44 ET: waiting for trigger \u2014 SPY 770.0 pinned at the 770 call/put wall in negative gamma below flip 772.7, still under Saty's 770.67 trigger (techs/VIX/crowd bull but gamma bear); QQQ inside OR30 under flip; no clean setup\n\n### 12:13 ET source read\n- VIX 16.35 (falling, key 17.0) -> bull; events: 08:30 Q3 GDP adv + Sept PCE + jobless claims (released; GDP 3.4% vs 3.2%, core PCE in line); 10:30 EIA nat gas storage; 13:00 7-year note auction\n- **SPY 769.15** setup: **none** (bull: vix | bear: gamma) | VWAP 768.7 OR30 767.27-769.41 PDH/PDL 773.36/769.24 PMH/PML 771.39/768.48 H200 768.56\n  - technicals: neutral -- >VWAP 768.7; EMA9 769.49 vs 21 769.57; inside OR30 767.27-769.41\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 770.0 < flip 772.65, walls P770.0/C770.0\n  - saty: neutral -- below short trigger 770.67 but above PML/H200 768.48: no breakdown yet\n  - crowd: neutral -- 1-1 (FlowbyBobby 'bulls need a reshuffle for SPX floor to move higher, ideally 7710', 'be patient'; ripster MTF setups single names, MSFT MTF short) lv SPX7710\n- **QQQ 715.46** setup: **none** (bull: vix, crowd | bear: technicals, gamma) | VWAP 716.31 OR30 711.62-716.99 PDH/PDL 726.14/720.3 PMH/PML 726.154/714.98 H200 720.87\n  - technicals: bear -- <VWAP 716.31; EMA9 716.13 vs 21 716.39; inside OR30 711.62-716.99\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 717.06 < flip 725.48, walls P720.0/C720.0\n  - crowd: bull -- 1-0 (FlowbyBobby potential bounce zone QQQ 715) lv 715\n\n12:14 ET: waiting for trigger \u2014 SPY 769 pinned at the 770 wall in negative gamma under flip 772.1 and still below Saty's 770.67 trigger (only VIX bull); QQQ under VWAP near its 715 put wall with crowd eyeing a bounce but techs/gamma bear; no 2-source setup\n\n### 12:49 ET source read\n- VIX 16.41 (flat, key 17.0) -> bull; events: 08:30 Q3 GDP adv + Sept PCE + jobless claims (released; GDP 3.4% vs 3.2%, core PCE in line); 10:30 EIA nat gas storage; 13:00 7-year note auction\n- **SPY 768.85** setup: **none** (bull: vix | bear: gamma) | VWAP 768.71 OR30 767.27-769.41 PDH/PDL 773.36/769.24 PMH/PML 771.39/768.48 H200 768.56\n  - technicals: neutral -- >VWAP 768.71; EMA9 769.07 vs 21 769.29; inside OR30 767.27-769.41\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 768.75 < flip 772.39, walls P765.0/C770.0\n  - saty: neutral -- below short trigger 770.67 but above PML/H200 768.48: no breakdown yet\n  - crowd: neutral -- 1-0 bear (FlowbyBobby 'stubborn SPY rug keeping away from longs if sticking to map rules', 'MMs playing mind games')\n- **QQQ 714.85** setup: **none** (bull: vix | bear: technicals, gamma) | VWAP 716.2 OR30 711.62-716.99 PDH/PDL 726.14/720.3 PMH/PML 726.154/714.98 H200 720.8\n  - technicals: bear -- <VWAP 716.2; EMA9 715.25 vs 21 715.74; inside OR30 711.62-716.99\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 714.7 < flip 725.58, walls P715.0/C720.0\n  - crowd: neutral -- 0-0 (FlowbyBobby 'QQQ did bounce but will it continue?')\n\n12:49 ET: waiting for trigger \u2014 SPY 768.9 just under the 770 call wall in negative gamma (flip 772.4), still below Saty's 770.67 trigger and above 768.48 PML; QQQ under VWAP at its 715 put wall (techs/gamma bear vs VIX bull, crowd silent); no 2-source setup\n\n### 13:15 ET source read\n- VIX 16.23 (falling, key 17.0) -> bull; events: 08:30 Q3 GDP adv + Sept PCE + jobless claims (released; GDP 3.4% vs 3.2%, core PCE in line); 10:30 EIA nat gas storage; 13:00 7-year note auction\n- **SPY 768.22** setup: **none** (bull: vix | bear: technicals, gamma, crowd) | VWAP 768.72 OR30 767.27-769.41 PDH/PDL 773.36/769.24 PMH/PML 771.39/768.48 H200 768.55\n  - technicals: bear -- <VWAP 768.72; EMA9 768.78 vs 21 769.08; inside OR30 767.27-769.41\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 768.75 < flip 772.39, walls P765.0/C770.0\n  - saty: neutral -- below short trigger 770.67 and below PML/H200 768.48 (put GG 769.66->768.02); idea downside SPY 766.0; PATIENCE day: needs the same read next scan\n  - crowd: bear -- 2-0 (FlowbyBobby 'rug kept you away rightfully, SPX sitting lower'; uga1018 below 771.64 pivot = bears) lv 771.64\n- **QQQ 713.71** setup: **none** (bull: vix | bear: technicals, gamma, crowd) | VWAP 716.1 OR30 711.62-716.99 PDH/PDL 726.14/720.3 PMH/PML 726.154/714.98 H200 720.78\n  - technicals: bear -- <VWAP 716.1; EMA9 714.75 vs 21 715.34; inside OR30 711.62-716.99\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 714.7 < flip 725.58, walls P715.0/C720.0\n  - crowd: bear -- 1-0 (uga1018 below 724.02 pivot) lv 724.02\n- **META 630.58** setup: **bull** (bull: technicals, crowd | bear: -) | VWAP 625.65 OR30 616.8-623.75 PDH/PDL 624.42/609.0 PMH/PML 622.5/614.75 H200 664.89\n  - technicals: bull -- >VWAP 625.65; EMA9 631.83 vs 21 630.8; above OR30 high 623.75\n  - vix: neutral -- \n  - crowd: bull -- 1-0 (RedDogT3 'cleared and held 625', 630club)\n\n**PAPER OPEN D1** 13:15 ET: buy 2 META 630C 2026-10-30 @ 9.25 ($1,850); sources agreeing (bull): technicals, crowd; stop 5.55 (-40%, 2 valid marks) / hard 3.7 (-60%) / target 14.8 (+60%) / SPY target 640.0. Thesis: META above VWAP 625.7 and OR30 high 623.75, EMA9>21; RedDogT3 cleared/held 625; positive gamma above 621 flip, room to 650 call wall\n\n13:16 ET: OPENED D1 2x META 630C 10/30 @ 9.25 \u2014 technicals (above VWAP/OR30 high, EMA9>21) + crowd (RedDogT3 cleared/held 625) agree; positive gamma above 621 flip, CW 650; SPY/QQQ no setup (Saty patience day, SPY under 770.67 trigger)\n\n### 13:42 ET source read\n- VIX 16.52 (flat, key 17.0) -> bull; events: 08:30 Q3 GDP adv + Sept PCE + jobless claims (released; GDP 3.4% vs 3.2%, core PCE in line); 10:30 EIA nat gas storage; 13:00 7-year note auction\n- **SPY 767.93** setup: **none** (bull: vix | bear: technicals, gamma, saty, crowd) | VWAP 768.71 OR30 767.27-769.41 PDH/PDL 773.36/769.24 PMH/PML 771.39/768.48 H200 768.54\n  - technicals: bear -- <VWAP 768.71; EMA9 768.28 vs 21 768.68; inside OR30 767.27-769.41\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 767.99 < flip 771.49, walls P765.0/C770.0\n  - saty: bear -- below short trigger 770.67 and below PML/H200 768.48 (put GG 769.66->768.02); idea downside SPY 766.0\n  - crowd: bear -- 1-0 (FlowbyBobby SPX heatmaps all below ceilings; RealSPXSniper 'clear iron condor day' = chop) lv 770; QQQ:none; META:none\n- **QQQ 714.06** setup: **none** (bull: vix | bear: technicals, gamma) | VWAP 716.02 OR30 711.62-716.99 PDH/PDL 726.14/720.3 PMH/PML 726.154/714.98 H200 720.73\n  - technicals: bear -- <VWAP 716.02; EMA9 714.36 vs 21 714.88; inside OR30 711.62-716.99\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 714.14 < flip 725.07, walls P715.0/C715.0\n- **META 627.09** setup: **none** (bull: - | bear: -) | VWAP 625.81 OR30 616.8-623.75 PDH/PDL 624.42/609.0 PMH/PML 622.5/614.75 H200 664.47\n  - technicals: neutral -- >VWAP 625.81; EMA9 628.74 vs 21 629.55; above OR30 high 623.75\n  - vix: neutral --\n\n",
  "notes_date": "2026-10-29",
  "peak_value": 10000.0,
  "positions": [
@@ -167,10 +163,10 @@
   }
  ],
  "positions_value": 1310.0,
- "published_at": "2026-10-29 01:41:53 PM EDT",
- "published_epoch_ms": 1793295713962,
+ "published_at": "2026-10-29 01:42:56 PM EDT",
+ "published_epoch_ms": 1793295776222,
  "realized_pnl": 0,
- "server_time": "2026-10-29 01:41:53 PM EDT",
+ "server_time": "2026-10-29 01:42:56 PM EDT",
  "start_date": "2026-10-29",
  "starting_cash": 10000.0,
  "status": "active",
