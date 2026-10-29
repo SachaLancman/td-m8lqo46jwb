@@ -4,8 +4,8 @@
  "bust_threshold": 20.0,
  "busted": false,
  "buying_power": 142.0,
- "cash": 142.0,
- "closed_trades": 1,
+ "cash": 532.0,
+ "closed_trades": 2,
  "drawdown": -0.25338491295938104,
  "error": null,
  "goal": "Grow $1,000 to $100,000 as fast as possible (paper).",
@@ -746,9 +746,17 @@
   {
    "t": "2026-10-29T10:33-04:00",
    "value": 1158.0
+  },
+  {
+   "t": "2026-10-29T10:42-04:00",
+   "value": 1158.0
+  },
+  {
+   "t": "2026-10-29T10:43-04:00",
+   "value": 1158.0
   }
  ],
- "marked_at": "2026-10-29T10:33:16-04:00",
+ "marked_at": "2026-10-29T10:43:02-04:00",
  "mode": "paper",
  "multiple": 1.158,
  "name": "Crazy $1K (Grok Bot, paper)",
@@ -758,54 +766,6 @@
  "positions": [
   {
    "contracts": 1.0,
-   "detail": "AMZN +252.5C 2026-10-30 / -265C 2026-10-30",
-   "entry": 4.45,
-   "expires_today": false,
-   "gamma_check": "Positive gamma, spot 247.8 above flip 246.1, pinned between put wall 247.5 and call wall 250 today; strikes above 250 wall need an earnings move through it. VEX +28M: vol crush after earnings makes dealers buy (supportive). Doesn't fight an earnings catalyst; today's pin is short-term.",
-   "high_water": 5.2,
-   "id": "C1",
-   "kind": "option",
-   "last": 3.85,
-   "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-29T10:33:16-04:00",
-   "legs": [
-    {
-     "expiration": "2026-10-30",
-     "right": "call",
-     "side": "long",
-     "strike": 252.5
-    },
-    {
-     "expiration": "2026-10-30",
-     "right": "call",
-     "side": "short",
-     "strike": 265.0
-    }
-   ],
-   "mark_method": "liq",
-   "mark_valid": true,
-   "mid": 4.03,
-   "multiplier": 100,
-   "must_close": false,
-   "opened": "2026-10-23T10:18:18-04:00",
-   "source": "@FL0WG0D post https://x.com/FL0WG0D/status/2113631578173718753",
-   "stop": 2.2,
-   "stop_watch": {
-    "consecutive_valid_at_or_below_stop": 0,
-    "rule": "stop hit only after 2 consecutive VALID marks (from 09:35 ET; mid if quotes wide) at/beyond stop",
-    "stop_confirmed": false
-   },
-   "symbol": "AMZN",
-   "target": 9.0,
-   "target_hit": false,
-   "thesis": "Ride @FL0WG0D's $3.1M AMZN 252.5C 10/30 opening buy (vol 4.2K vs OI 640) into 10/29 AMC earnings via a cheaper defined-risk call spread; max loss $445, max gain $805 at 265+",
-   "underlying": "AMZN",
-   "underlying_last": 247.5,
-   "unrealized_pct": -0.1348,
-   "unrealized_pnl": -60.0
-  },
-  {
-   "contracts": 1.0,
    "detail": "FSLR +175C 2026-10-30 / -185C 2026-10-30",
    "entry": 2.64,
    "expires_today": false,
@@ -813,9 +773,9 @@
    "high_water": 4.2,
    "id": "C3",
    "kind": "option",
-   "last": 3.55,
+   "last": 3.35,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-29T10:33:16-04:00",
+   "last_updated": "2026-10-29T10:43:02-04:00",
    "legs": [
     {
      "expiration": "2026-10-30",
@@ -832,7 +792,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 4.47,
+   "mid": 4.33,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-26T15:15:29-04:00",
@@ -848,9 +808,9 @@
    "target_hit": false,
    "thesis": "60K FSLR 175C weekly calls (BullflowIO + FL0WG0D); negative gamma favors momentum; CW 195 far above; tight 10-wide spread fits cash",
    "underlying": "FSLR",
-   "underlying_last": 178.34,
-   "unrealized_pct": 0.3447,
-   "unrealized_pnl": 91.0
+   "underlying_last": 177.305,
+   "unrealized_pct": 0.2689,
+   "unrealized_pnl": 71.0
   },
   {
    "contracts": 1.0,
@@ -858,12 +818,12 @@
    "entry": 2.88,
    "expires_today": false,
    "gamma_check": "negative gamma, spot 715.1 < flip 726.2, CW 720 / PW 710, VEX +406M (IV spike adds selling)",
-   "high_water": 2.88,
+   "high_water": 2.91,
    "id": "C4",
    "kind": "option",
-   "last": 2.76,
+   "last": 2.91,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-29T10:33:16-04:00",
+   "last_updated": "2026-10-29T10:43:02-04:00",
    "legs": [
     {
      "expiration": "2026-11-06",
@@ -880,7 +840,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 2.79,
+   "mid": 2.96,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-29T10:16:46-04:00",
@@ -896,16 +856,16 @@
    "target_hit": false,
    "thesis": "QQQ weakest tape (-1.5%, GOOGL -12%) in deep negative gamma below the 726 flip; $32.1M QQQ Jan 650P whale hedge at the ask; X crowd bear on QQQ; break of the 710 put wall can run toward the 700 VEX king. 5-1 payoff, 8 DTE.",
    "underlying": "QQQ",
-   "underlying_last": 716.565,
-   "unrealized_pct": -0.0417,
-   "unrealized_pnl": -12.0
+   "underlying_last": 714.74,
+   "unrealized_pct": 0.0104,
+   "unrealized_pnl": 3.0
   }
  ],
- "positions_value": 1016.0,
- "published_at": "2026-10-29 10:33:22 AM EDT",
- "published_epoch_ms": 1793284402393,
- "realized_pnl": 139.0,
- "server_time": "2026-10-29 10:33:22 AM EDT",
+ "positions_value": 626.0,
+ "published_at": "2026-10-29 10:43:44 AM EDT",
+ "published_epoch_ms": 1793285024322,
+ "realized_pnl": 84.0,
+ "server_time": "2026-10-29 10:43:44 AM EDT",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
@@ -998,7 +958,38 @@
    "thesis": "QQQ weakest tape (-1.5%, GOOGL -12%) in deep negative gamma below the 726 flip; $32.1M QQQ Jan 650P whale hedge at the ask; X crowd bear on QQQ; break of the 710 put wall can run toward the 700 VEX king. 5-1 payoff, 8 DTE.",
    "time": "2026-10-29T10:16:46-04:00",
    "value_after": 1220.0
+  },
+  {
+   "action": "CLOSE",
+   "cash_flow": 390.0,
+   "detail": "AMZN +252.5C 2026-10-30 / -265C 2026-10-30",
+   "entry": 4.45,
+   "exit_quotes": {
+    "legs": [
+     {
+      "ask": 7.5,
+      "bid": 7.35,
+      "leg": "long 252.5C 2026-10-30"
+     },
+     {
+      "ask": 3.45,
+      "bid": 3.35,
+      "leg": "short 265C 2026-10-30"
+     }
+    ],
+    "source": "Nasdaq public option chain",
+    "underlying": 246.4806
+   },
+   "id": "C1",
+   "pnl": -55.0,
+   "pnl_pct": -0.1236,
+   "price": 3.9,
+   "qty": 1.0,
+   "reason": "AMZN earnings tonight; 10:25 decision to not hold the binary; liq 3.90 within 10% of mid 4.02",
+   "symbol": "AMZN",
+   "time": "2026-10-29T10:43:13-04:00",
+   "value_after": 1158.0
   }
  ],
- "win_rate": 1.0
+ "win_rate": 0.5
 }
