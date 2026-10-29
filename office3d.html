@@ -47,8 +47,9 @@ html,body{margin:0;height:100%;overflow:hidden;color:#f4f0e0;font-family:var(--s
  <div class="st"><b>DAY</b><span id="hd">—</span></div>
  <div class="st"><b>TOTAL</b><span id="hr">—</span></div>
  <div class="st"><b>🔥 CRAZY $1K</b><span id="hz" class="hot">—</span></div>
+ <div class="st"><b>⚡ DAY TRADE</b><span id="hdt" style="color:#14d1c4">—</span></div>
  <span class="badge" id="mode">PAPER</span><span class="badge" id="demo">DEMO DATA</span><span class="badge" id="stale">STALE · BOX ASLEEP</span>
- <div id="links"><span id="asof">DATA —</span><a id="l2d" href="office.html">🎮 2D floor</a><a id="lmain" href="index.html">◀ Dashboard</a><a id="lcz" class="cz" href="crazy.html">🔥 Crazy $1K</a></div>
+ <div id="links"><span id="asof">DATA —</span><a id="l2d" href="office.html">🎮 2D floor</a><a id="lmain" href="index.html">◀ Dashboard</a><a id="lcz" class="cz" href="crazy.html">🔥 Crazy $1K</a><a id="ldt" href="daytrade.html" style="color:#14d1c4">⚡ Day Trade</a></div>
 </div>
 <div id="err"></div>
 <div id="legend"><span><i style="background:#ffd23f"></i>working</span><span><i style="background:#3ddc6a"></i>done</span><span><i style="background:#8a8aa0"></i>idle</span><span><i style="background:#ff3b30"></i>blocked</span><span class="hint">· drag to rotate · scroll/pinch to zoom · tap a desk for its note</span></div>
@@ -63,7 +64,7 @@ const $=id=>document.getElementById(id);
 const Q=new URLSearchParams(location.search),KEY=Q.get('key')||'',DEMO=Q.get('demo')==='1';
 // Local server (web/server.py, ?key=...) uses /api/*; GitHub Pages uses the published JSON snapshots.
 const qk=KEY?'?key='+encodeURIComponent(KEY):'';
-if(KEY){$('l2d').href='/office'+qk;$('lmain').href='/'+qk;$('lcz').href='/crazy'+qk}
+if(KEY){$('l2d').href='/office'+qk;$('lmain').href='/'+qk;$('lcz').href='/crazy'+qk;$('ldt').href='/daytrade'+qk}
 const usd=v=>v==null||v===''||isNaN(v)?'—':Number(v).toLocaleString('en-US',{style:'currency',currency:'USD'});
 const pct=v=>v==null||v===''||isNaN(v)?'—':(v>=0?'+':'')+(v*100).toFixed(2)+'%';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -79,6 +80,7 @@ const TEAM=[
  {id:'sentiment',name:'Sentiment',c:'#ffc8a2',p:[7,0.5]},
  {id:'flow_gamma',name:'Flow & Gamma',c:'#a0e7e5',p:[-2,6]},
  {id:'crazy',name:'Crazy $1K',c:'#ff7a1a',p:[10,-6.6],hot:true,bot:true},
+ {id:'daytrade',name:'Day Trade $10K',c:'#14d1c4',p:[4.5,5.6],bot:true,teal:true},
 ];
 const GAPS=[-4.25,4.75];
 function classify(s){s=String(s||'idle').toLowerCase();
@@ -282,6 +284,14 @@ function toggleLabel(id){Object.values(desks).forEach(d=>d.el.classList.toggle('
  plant(-2.2,-2.3,0.8,g);
 })();
 var crazyFx;
+// ---------- Day Trade $10K: teal rug under its desk ----------
+(()=>{const T=TEAM.find(t=>t.id==='daytrade');if(!T)return;const g=new THREE.Group();g.position.set(T.p[0],0,T.p[1]+0.3);scene.add(g);
+ const c=document.createElement('canvas');c.width=c.height=256;const x=c.getContext('2d');x.fillStyle='#06263a';x.fillRect(0,0,256,256);
+ for(let i=0;i<8;i++)for(let j=0;j<8;j++){x.fillStyle=(i+j)%2?'#14d1c4':'#2f8cff';x.fillRect(16+j*30,16+i*30,12,4)}
+ x.strokeStyle='#7fe6ff';x.lineWidth=6;x.strokeRect(6,6,244,244);
+ const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;
+ const rug=new THREE.Mesh(new THREE.BoxGeometry(3.6,0.04,3.4),new THREE.MeshStandardMaterial({map:t,roughness:.9}));rug.position.y=0.015;rug.receiveShadow=true;g.add(rug);
+ const lamp=new THREE.PointLight(0x14d1c4,3,5,1.6);lamp.position.set(0,2.4,-0.6);g.add(lamp);})();
 
 // ---------- messages between desks ----------
 const msgs=[];
@@ -323,7 +333,7 @@ function stepWalk(dt,now){const w=walker,ch=w.d.ch,path=w.legs[w.leg];
 
 // ---------- data ----------
 let office=null,dataJ=null,pubAt=null,haveData=false;
-const DEMO_DATA={mode:'paper',account_value:10427.35,total_return:.0427,today:'2099-01-02',roles:{coordinator:{state:'coordinating',note:'Sample: kicking off the research cycle'},decider:{state:'deciding',note:'Sample: weighing the calls'},risk:{state:'blocked',note:'Sample: waiting on a fresh quote'},skeptic:{state:'writing',note:'Sample: case against the trade'},technical:{state:'researching',note:'Sample: reading a chart'},fundamentals:{state:'done',note:'Sample: report filed'},sentiment:{state:'idle',note:null},flow_gamma:{state:'researching',note:'Sample: GEX map'},crazy:{state:'researching',note:'Sample: whale post check'}},crazy:{account_value:1234.5,total_return:.2345}};
+const DEMO_DATA={mode:'paper',account_value:10427.35,total_return:.0427,today:'2099-01-02',roles:{coordinator:{state:'coordinating',note:'Sample: kicking off the research cycle'},decider:{state:'deciding',note:'Sample: weighing the calls'},risk:{state:'blocked',note:'Sample: waiting on a fresh quote'},skeptic:{state:'writing',note:'Sample: case against the trade'},technical:{state:'researching',note:'Sample: reading a chart'},fundamentals:{state:'done',note:'Sample: report filed'},sentiment:{state:'idle',note:null},flow_gamma:{state:'researching',note:'Sample: GEX map'},crazy:{state:'researching',note:'Sample: whale post check'},daytrade:{state:'researching',note:'Sample: 2 sources agree, SPY puts'}},crazy:{account_value:1234.5,total_return:.2345},daytrade:{account_value:10180,total_return:.018,positions:1,today_entries:1}};
 const DEMO_HIST={history:[{date:'2099-01-01',value:10300},{date:'2099-01-02',value:10427.35}]};
 async function getJSON(rel,api){
  const tries=KEY?[api+qk,rel]:[rel,api];let last;
@@ -338,6 +348,7 @@ function applyData(){const d=office||{};
  $('hd').textContent=dc?(dc.abs>=0?'+':'−')+usd(Math.abs(dc.abs))+' ('+pct(dc.pct)+')':'—';$('hd').className=dc?(dc.abs>0?'up':dc.abs<0?'dn':''):'';
  $('hr').textContent=pct(d.total_return);$('hr').className=d.total_return>0?'up':d.total_return<0?'dn':'';
  $('hz').textContent=z.account_value==null?'—':usd(z.account_value)+' '+pct(z.total_return)+(z.busted?' BUSTED':'');
+ const zd=d.daytrade||{};$('hdt').textContent=zd.account_value==null?'—':usd(zd.account_value)+' '+pct(zd.total_return)+(zd.positions?' · IN TRADE':'');
  $('mode').textContent=d.mode?String(d.mode).toUpperCase():'—';
  const roles=d.roles||{};
  TEAM.forEach(T=>{const r=roles[T.id]||(T.alt&&roles[T.alt])||null;const dk=desks[T.id];
@@ -345,6 +356,7 @@ function applyData(){const d=office||{};
   dk.el.className='lbl s-'+dk.state+(dk.el.classList.contains('open')?' open':'');
   dk.el.querySelector('.nt em').textContent=dk.raw;
   let note=dk.note||'—';if(T.id==='crazy'&&!dk.note&&z.account_value!=null)note='Account '+usd(z.account_value)+' ('+pct(z.total_return)+')';
+  if(T.id==='daytrade'&&zd.account_value!=null)note='Account '+usd(zd.account_value)+' ('+pct(zd.total_return)+') · '+(zd.positions?'in a trade':'flat')+' · '+(zd.today_entries||0)+'/2 entries'+(dk.note?' · '+dk.note:'');
   dk.el.querySelector('.nt span').textContent=note;
   const col={working:0xffd23f,done:0x3ddc6a,blocked:0xff3b30,idle:0x8a8aa0}[dk.state];dk.rg.material.color.setHex(col);
   dk.chk.visible=dk.state==='done';dk.bang.visible=dk.state==='blocked';

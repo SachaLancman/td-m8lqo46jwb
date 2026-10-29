@@ -1,0 +1,115 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>⚡ Day Trade $10K — paper account</title>
+<meta name="robots" content="noindex,nofollow">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+:root{--bg:#06121a;--card:#0b1d28;--bd:#17394a;--fg:#e4f3f7;--mut:#86a7b3;--t:#14d1c4;--b:#2f8cff;--g:#3fd68a;--r:#ff5a6a;--y:#ffd23f}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#08324a 0,var(--bg) 55%);background-attachment:fixed;color:var(--fg);font:14px/1.45 -apple-system,Segoe UI,Roboto,sans-serif;min-height:100vh}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;border-bottom:2px solid var(--t);flex-wrap:wrap;gap:8px;background:linear-gradient(90deg,#062b3acc,#06121acc)}
+h1{font-size:19px;margin:0;background:linear-gradient(90deg,var(--t),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.badge{background:#14d1c422;color:var(--t);border:1px solid var(--t);border-radius:12px;padding:1px 9px;font-size:12px;margin-left:8px;font-weight:600}
+.tog{display:inline-flex;border:1px solid var(--bd);border-radius:8px;overflow:hidden;margin-right:12px}.tog a{padding:4px 11px;font-size:12px;text-decoration:none;color:var(--mut);background:#0a1a24}.tog a.on{background:linear-gradient(90deg,var(--t),var(--b));color:#fff;font-weight:600}
+.mut{color:var(--mut)}main{padding:18px 22px;max-width:1400px;margin:auto}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-bottom:16px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:14px 16px}
+.card.hot{border-color:var(--t);box-shadow:0 0 18px #14d1c422}
+.kl{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.05em}.kv{font-size:24px;font-weight:700;margin-top:4px}.ks{font-size:12px;color:var(--mut)}
+.pos{color:var(--g)}.neg{color:var(--r)}.tl{color:var(--t)}
+h2{font-size:15px;margin:0 0 10px;color:#7fe6ff}section{margin-bottom:16px}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:6px 8px;border-bottom:1px solid var(--bd);text-align:left;white-space:nowrap}
+th{color:var(--mut);font-weight:500}td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}td.d{white-space:normal;color:var(--mut);min-width:220px}
+.scroll{max-height:440px;overflow:auto}pre{white-space:pre-wrap;word-wrap:break-word;margin:0;font:13px/1.5 ui-monospace,Menlo,Consolas,monospace;max-height:520px;overflow:auto}
+#err{display:none;background:#ff5a6a22;border:1px solid var(--r);color:var(--r);padding:8px 12px;border-radius:8px;margin-bottom:12px}
+.chartbox{height:320px}
+.tag{display:inline-block;font-size:11px;border-radius:6px;padding:0 6px;margin-left:4px;border:1px solid var(--bd)}
+.v-bull{color:var(--g)}.v-bear{color:var(--r)}.v-neutral,.v-none{color:var(--mut)}
+.alert{color:var(--y);margin:2px 0;font-weight:600}
+.rules{font-size:12px;color:var(--mut)}
+.tbtn{background:#0c2230;color:var(--fg);border:1px solid var(--bd);border-radius:6px;padding:3px 10px;font-size:12px;cursor:pointer}.tbtn.on{background:var(--t);border-color:var(--t);color:#04161c}
+</style></head><body>
+<header><div><h1 style="display:inline">⚡ DAY TRADE $10K</h1><span class="badge" id="mode">PAPER</span> <span class="mut" style="font-size:12px">0DTE calls/puts · multi-source · flat by 3:38 PM ET · run by Grok Bot</span></div>
+<div class="mut"><span class="tog"><a id="mainlink" href="#">📈 Main $10K</a><a id="crazylink" href="#">🔥 Crazy $1K</a><a class="on" href="#">⚡ Day Trade</a><a id="floorlink" href="#">🎮 Floor</a></span>Last updated: <span id="upd">—</span> <span id="stale" style="display:none;color:#d29922">· stale (box asleep — showing last snapshot)</span> · auto-refresh <span id="rf">60s</span></div></header>
+<main>
+<div id="err"></div>
+<div class="kpis">
+ <div class="card hot"><div class="kl">Account value</div><div class="kv tl" id="k-val">—</div><div class="ks" id="k-val-s"></div></div>
+ <div class="card"><div class="kl">Total return</div><div class="kv" id="k-ret">—</div><div class="ks" id="k-ret-s"></div></div>
+ <div class="card"><div class="kl">Cash</div><div class="kv" id="k-cash">—</div><div class="ks" id="k-cash-s"></div></div>
+ <div class="card"><div class="kl">Today</div><div class="kv" id="k-today">—</div><div class="ks" id="k-today-s"></div></div>
+ <div class="card"><div class="kl">Closed trades</div><div class="kv" id="k-tr">—</div><div class="ks" id="k-tr-s"></div></div>
+</div>
+<section class="card hot"><h2>Open position <span class="mut" id="p-cnt"></span></h2><div id="alerts"></div><div class="scroll"><table id="pos"></table></div></section>
+<section class="card"><h2>Latest source read <span class="mut" id="sig-t"></span></h2><div class="ks" id="sig-vix" style="margin-bottom:6px"></div><div class="scroll"><table id="sig"></table></div></section>
+<section class="card"><h2>Equity curve <button class="tbtn on" id="b-int">Intraday</button> <button class="tbtn" id="b-day">Daily</button></h2><div class="chartbox"><canvas id="chart"></canvas></div></section>
+<section class="card"><h2>Per-day results vs ideas &amp; sources</h2><div class="scroll"><table id="days"></table></div></section>
+<section class="card"><h2>Trade history</h2><div class="scroll"><table id="trades"></table></div></section>
+<section class="card"><h2>Desk notes <span class="mut" id="ndate"></span></h2><pre id="notes" class="mut">No notes yet.</pre></section>
+<section class="card rules"><b class="tl">Rules (DAYTRADE.md):</b> paper only, never real orders · long calls/puts only on SPY/QQQ (+TSLA/NVDA/AAPL/AMZN/META), same-day expiry, strike within ~1 ATR · entry needs ≥2 independent sources agreeing (technicals, gamma, VIX, Saty, X-crowd consensus, whale flow) with none opposed; VIX contradiction or a major-event blackout (15 min before) = no trade · ≤20% of the account per trade, max 2 entries/day, one position at a time, no entries after 2:30 PM ET · stop −40% on 2 valid marks (≥5 min apart) or −60% at once · take profit +60% or SPY target · close by the 3:38 PM ET scan, never overnight · separate ledger from the main $10K and Crazy $1K accounts.</section>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+const KEY=new URLSearchParams(location.search).get('key');
+const LIVE=!!KEY,q=p=>LIVE?p+'?key='+encodeURIComponent(KEY):'';
+$('mainlink').href=LIVE?q('/'):'index.html';$('crazylink').href=LIVE?q('/crazy'):'crazy.html';$('floorlink').href=LIVE?q('/office'):'office.html';
+$('rf').textContent=LIVE?'15s':'60s';
+const usd=(v,d=2)=>v==null||isNaN(v)?'—':(v<0?'-':'')+'$'+Math.abs(+v).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
+const pct=v=>v==null||isNaN(v)?'—':(v>=0?'+':'')+(v*100).toFixed(1)+'%';
+const cls=v=>v>0?'pos':v<0?'neg':'';
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const vt=v=>'<span class="v-'+esc(v||'none')+'">'+esc(v||'—')+'</span>';
+let chart,mode='int',last=null;
+function drawChart(d){
+ const S=d.starting_cash||10000;
+ let pts=mode==='int'?(d.intraday||[]).map(h=>({x:h.t,y:h.value})):(d.history||[]).map(h=>({x:h.date,y:h.value}));
+ if(!pts.length)pts=[{x:d.start_date||d.today,y:S}];
+ const labels=pts.map(p=>mode==='int'?String(p.x).slice(5,16).replace('T',' '):p.x),ys=pts.map(p=>p.y);
+ const ds=[{label:'Account value',data:ys,borderColor:'#14d1c4',backgroundColor:'#14d1c433',fill:true,tension:.2,pointRadius:ys.length>40?0:3,borderWidth:2},
+  {label:'Start $10K',data:ys.map(()=>S),borderColor:'#86a7b3',borderDash:[4,4],pointRadius:0,borderWidth:1}];
+ const opt={responsive:true,maintainAspectRatio:false,animation:false,plugins:{legend:{labels:{color:'#86a7b3'}},tooltip:{callbacks:{label:c=>c.dataset.label+': '+usd(c.parsed.y)}}},
+  scales:{x:{ticks:{color:'#86a7b3',maxTicksLimit:10},grid:{color:'#12303e'}},y:{ticks:{color:'#86a7b3',callback:v=>usd(v,0)},grid:{color:'#12303e'}}}};
+ if(chart){chart.data.labels=labels;chart.data.datasets=ds;chart.options=opt;chart.update();}else chart=new Chart($('chart'),{type:'line',data:{labels,datasets:ds},options:opt});
+}
+$('b-int').onclick=()=>{mode='int';$('b-int').classList.add('on');$('b-day').classList.remove('on');last&&drawChart(last)};
+$('b-day').onclick=()=>{mode='day';$('b-day').classList.add('on');$('b-int').classList.remove('on');last&&drawChart(last)};
+function render(d){
+ last=d;
+ if(d.error){$('err').style.display='block';$('err').textContent=d.error}else $('err').style.display='none';
+ $('mode').textContent=(d.mode||'paper').toUpperCase();
+ const S=d.starting_cash||10000;
+ $('k-val').textContent=usd(d.account_value);$('k-val-s').textContent='start '+usd(S,0)+' on '+(d.start_date||'—')+(d.marked_at?' · marked '+String(d.marked_at).slice(11,16)+' ET':'');
+ $('k-ret').textContent=pct(d.total_return);$('k-ret').className='kv '+cls(d.total_return);$('k-ret-s').textContent='peak '+usd(d.peak_value)+' · drawdown '+pct(d.drawdown);
+ $('k-cash').textContent=usd(d.cash);$('k-cash-s').textContent='in positions '+usd(d.positions_value);
+ const td=(d.days||[]).find(x=>x.date===d.today)||{};
+ $('k-today').textContent=usd(td.realized_pnl||0);$('k-today').className='kv '+cls(td.realized_pnl);$('k-today-s').textContent='entries '+(d.today_entries||0)+'/2 · '+(td.result||'—');
+ $('k-tr').textContent=d.closed_trades??0;$('k-tr-s').textContent='realized '+usd(d.realized_pnl)+(d.win_rate!=null?' · win rate '+(d.win_rate*100).toFixed(0)+'%':'');
+ drawChart(d);
+ const P=d.positions||[];$('p-cnt').textContent=P.length?'('+P.length+')':'';
+ $('alerts').innerHTML=(d.alerts||[]).map(a=>'<div class="alert">⚠ '+esc(a)+'</div>').join('');
+ $('pos').innerHTML=P.length?'<tr><th>ID</th><th>Contract</th><th class="n">Qty</th><th class="n">Entry</th><th class="n">Mark</th><th class="n">Stop</th><th class="n">Target</th><th class="n">P&amp;L</th><th>Mark</th><th>Sources / thesis</th></tr>'+P.map(p=>{
+  const sw=p.stop_watch||{},tags=(p.target_hit||p.und_target_hit?'<span class="tag">TARGET</span>':'')+(sw.consecutive_valid_at_or_below_stop?'<span class="tag neg">stop '+sw.consecutive_valid_at_or_below_stop+'/2</span>':'');
+  return '<tr><td>'+esc(p.id)+'</td><td><b>'+esc(p.detail)+'</b>'+tags+'</td><td class="n">'+esc(p.contracts)+'</td><td class="n">'+(p.entry!=null?(+p.entry).toFixed(2):'—')+'</td><td class="n">'+(p.last!=null?(+p.last).toFixed(2):'—')+'</td><td class="n">'+(p.stop??'—')+'</td><td class="n">'+(p.target??'—')+(p.und_target?' / '+esc(p.underlying)+' '+p.und_target:'')+'</td><td class="n '+cls(p.unrealized_pnl)+'">'+usd(p.unrealized_pnl)+' '+(p.unrealized_pct!=null?pct(p.unrealized_pct):'')+'</td><td class="mut">'+esc(p.mark_method||'')+(p.mark_valid===false?' (not valid)':'')+'</td><td class="d">'+esc((p.sources||[]).join(' + '))+(p.thesis?' — '+esc(p.thesis):'')+'</td></tr>'}).join(''):'<tr><td class="mut">Flat — 100% cash, waiting for ≥2 sources to agree.</td></tr>';
+ const G=d.last_signals||{},TK=G.tickers||{},V=G.vix||{};
+ $('sig-t').textContent=G.t?'('+G.t+' ET)':'';
+ $('sig-vix').innerHTML=G.t?'VIX '+esc(V.last)+' '+esc(V.direction||'')+' (key '+esc(V.key)+') → '+vt(V.vote)+(G.blackout?' · <b class="neg">EVENT BLACKOUT</b>':'')+(G.events?' · events: '+esc(G.events):''):'';
+ const srcs=['technicals','gamma','vix','saty','crowd','flow','other'];
+ $('sig').innerHTML=Object.keys(TK).length?'<tr><th>Ticker</th><th class="n">Last</th><th>Setup</th>'+srcs.map(s=>'<th>'+s+'</th>').join('')+'</tr>'+Object.entries(TK).map(([t,r])=>'<tr><td><b>'+esc(t)+'</b></td><td class="n">'+esc(r.last)+'</td><td><b>'+vt(r.setup)+'</b></td>'+srcs.map(s=>'<td title="'+esc((r.why||{})[s]||'')+'">'+((r.votes||{})[s]?vt(r.votes[s]):'<span class="mut">·</span>')+'</td>').join('')+'</tr>').join(''):'<tr><td class="mut">No scan yet today.</td></tr>';
+ const D=(d.days||[]).slice().reverse();
+ $('days').innerHTML=D.length?'<tr><th>Date</th><th>Idea</th><th class="n">Entries</th><th>Sources used</th><th class="n">Realized P&amp;L</th><th class="n">End value</th><th>Result vs idea</th></tr>'+D.map(x=>'<tr><td>'+esc(x.date)+'</td><td class="d">'+(x.idea_url?'<a style="color:#7fe6ff" href="'+esc(x.idea_url)+'" target="_blank" rel="noopener">Saty</a>: ':'')+esc(x.idea||'—')+'</td><td class="n">'+esc(x.entries)+'</td><td class="d">'+esc((x.sources||[]).map(s=>(s||[]).join('+')).join(' · ')||'—')+'</td><td class="n '+cls(x.realized_pnl)+'">'+usd(x.realized_pnl)+'</td><td class="n">'+usd(x.end_value)+'</td><td class="d">'+esc(x.result||'')+'</td></tr>').join(''):'<tr><td class="mut">No days yet.</td></tr>';
+ const T=(d.trades||[]).slice().reverse();
+ $('trades').innerHTML=T.length?'<tr><th>Time (ET)</th><th>Action</th><th>ID</th><th>Contract</th><th class="n">Qty</th><th class="n">Price</th><th class="n">P&amp;L</th><th class="n">Acct after</th><th>Sources / why</th></tr>'+T.map(t=>'<tr><td>'+esc(String(t.time||'').slice(0,16).replace('T',' '))+'</td><td class="'+(t.action==='OPEN'?'tl':'')+'">'+esc(t.action)+'</td><td>'+esc(t.id)+'</td><td>'+esc(t.detail)+'</td><td class="n">'+esc(t.qty)+'</td><td class="n">'+(t.price!=null?(+t.price).toFixed(2):'—')+'</td><td class="n '+cls(t.pnl)+'">'+(t.pnl!=null?usd(t.pnl)+' '+pct(t.pnl_pct):'')+'</td><td class="n">'+usd(t.value_after)+'</td><td class="d">'+esc((t.sources||[]).join(' + '))+(t.reason?' — '+esc(t.reason):'')+(t.thesis?' — '+esc(t.thesis):'')+'</td></tr>').join(''):'<tr><td class="mut">No trades yet. The account started at $10,000 on '+esc(d.start_date||'')+'.</td></tr>';
+ $('notes').textContent=d.notes||'No desk notes yet.';$('ndate').textContent=d.notes_date?'('+d.notes_date+(d.notes_date!==d.today?' — latest available':'')+')':'';
+ if(LIVE)$('upd').textContent=d.server_time||'—';
+}
+const STALE_MS=30*60*1000;let pubAt=null;
+function ago(ms){const m=Math.round(ms/60000);return m<1?'just now':m<60?m+' min ago':m<1440?Math.round(m/60)+' h ago':Math.round(m/1440)+' d ago'}
+function showAge(){if(LIVE||!pubAt)return;const a=Date.now()-pubAt;
+ $('upd').textContent=new Date(pubAt).toLocaleString('en-US',{timeZone:'America/New_York',dateStyle:'medium',timeStyle:'short'})+' ET ('+ago(a)+')';
+ $('stale').style.display=a>STALE_MS?'inline':'none'}
+async function load(){
+ try{const u=LIVE?'/api/daytrade?key='+encodeURIComponent(KEY):'daytrade.json?t='+Date.now();
+  const r=await fetch(u,{cache:'no-store',headers:{'ngrok-skip-browser-warning':'1'}});if(!r.ok)throw new Error('HTTP '+r.status);
+  const d=await r.json();render(d);pubAt=d.published_epoch_ms||null;showAge();
+ }catch(e){$('err').style.display='block';$('err').textContent='Fetch failed: '+e.message+' (showing last loaded data)'}
+}
+load();setInterval(load,LIVE?15000:60000);setInterval(showAge,30000);
+</script></body></html>

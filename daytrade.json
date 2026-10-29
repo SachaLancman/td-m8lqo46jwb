@@ -1,0 +1,105 @@
+{
+ "account_value": 10000.0,
+ "alerts": [],
+ "cash": 10000.0,
+ "closed_trades": 0,
+ "days": [
+  {
+   "date": "2026-10-29",
+   "end_value": 10000.0,
+   "entries": 0,
+   "idea": "up SPY 772.0c / down SPY 766.0p, VIX key 17.0 (patience)",
+   "idea_url": "https://x.com/satymahajan/status/2115792037437902946",
+   "realized_pnl": 0.0,
+   "result": null,
+   "sources": [],
+   "trades": []
+  }
+ ],
+ "drawdown": 0.0,
+ "error": null,
+ "history": [
+  {
+   "date": "2026-10-29",
+   "value": 10000.0
+  }
+ ],
+ "intraday": [
+  {
+   "t": "2026-10-29T10:01-04:00",
+   "value": 10000.0
+  }
+ ],
+ "last_signals": {
+  "blackout": false,
+  "events": "08:30 Q3 GDP adv + Sept PCE + jobless claims (released; GDP 3.4% vs 3.2%, core PCE in line); 10:30 EIA nat gas storage; 13:00 7-year note auction",
+  "t": "10:05",
+  "tickers": {
+   "QQQ": {
+    "last": 716.82,
+    "setup": "bear",
+    "votes": {
+     "crowd": "bear",
+     "flow": "neutral",
+     "gamma": "bear",
+     "technicals": "neutral",
+     "vix": "neutral"
+    },
+    "why": {
+     "crowd": "3-0 (ripster47 716 key, TajVincent no longs < 719.24, uga1018 < 715 -> 713.6) lv 713.6/715/716/719.24",
+     "flow": "",
+     "gamma": "negative gamma, spot 713.3 < flip 725.86, walls P710.0/C720.0",
+     "technicals": ">VWAP 713.9; EMA9 716.55 vs 21 718.8; inside OR30 711.62-716.99"
+    }
+   },
+   "SPY": {
+    "last": 769.8,
+    "setup": "none",
+    "votes": {
+     "crowd": "neutral",
+     "flow": "neutral",
+     "gamma": "bear",
+     "saty": "neutral",
+     "technicals": "bull",
+     "vix": "neutral"
+    },
+    "why": {
+     "crowd": "2 bull (RealSPXSniper long SPX 7745C, SulkerTrades bounce) vs 2 bear (TheTradingChamp wants lower, uga1018 sellers < 769.25) + 4 conditional (ripster47 long only > PMH & VIX<17 / no long < PML; TajVincent long > 770.15, stand down < 768.41; RedDogT3 767 sup; ZeroGEX pin 769-772 under flip ~774) lv 767.5/768.4/769.25/770.15/772",
+     "flow": "no fresh whale read",
+     "gamma": "negative gamma, spot 767.88 < flip 772.69, walls P765.0/C770.0",
+     "saty": "below short trigger 770.67 but above PML/H200 768.48: no breakdown yet",
+     "technicals": ">VWAP 768.23; EMA9 769.34 vs 21 769.93; above OR30 high 769.41"
+    }
+   }
+  },
+  "vix": {
+   "chg_20m": -0.2,
+   "direction": "falling",
+   "key": 17.0,
+   "last": 17.07,
+   "open": 17.15,
+   "prev_close": 16.91,
+   "vote": "neutral"
+  }
+ },
+ "marked_at": "2026-10-29T10:01:25-04:00",
+ "mode": "PAPER",
+ "name": "Day Trade $10K (PAPER)",
+ "notes": "# Day Trade $10K (PAPER) -- 2026-10-29\n\nRules: DAYTRADE.md. Paper only, never real orders.\n\n**Saty idea** (https://x.com/satymahajan/status/2115792037437902946): upside SPY 772.0c / SPX 7740.0c; downside SPY 766.0p / SPX 7680.0p; VIX key 17.0; patience flag: True.\n> Day Trade Idea: $SPX | $SPY\n> Upside: SPX 7740c | SPY 772c\n> Downside: SPX 7680p | SPY 766p\n> VIX key level: 17\n> Muted reaction to PCE/GDP since they met expectations. We are in the overnight range. Good day to exercise patience.\n> - If we break overnight lows and the Hourly 200 (ETH), look for continuation down toward early week demand.\n> - If we recover the short trigger, can look for a move back to PDC and yesterday's supply.\n\n### 10:01 ET source read\n- VIX 16.92 (falling, key 17.0) -> bull; events: 08:30 Q3 GDP adv + Sept PCE + jobless claims (released; GDP 3.4% vs 3.2%, core PCE in line); 10:30 EIA nat gas storage; 13:00 7-year note auction\n- **SPY 769.22** setup: **none** (bull: vix | bear: gamma) | VWAP 768.16 OR30 767.27-769.4 PDH/PDL 773.36/769.24 PMH/PML 771.39/768.48 H200 768.54\n  - technicals: neutral -- >VWAP 768.16; EMA9 769.12 vs 21 769.83; inside OR30 767.27-769.40\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 767.88 < flip 772.69, walls P765.0/C770.0\n  - saty: neutral -- below short trigger 770.67 but above PML/H200 768.48: no breakdown yet\n  - crowd: neutral -- 2 bull (RealSPXSniper in SPX 7745C, SulkerTrades calls) vs 2 bear (TheTradingChamp 'wants lower', uga1018 under 769.25) / 4 conditional (ripster47 long only > PMH & VIX<17, no go < PML\n  - flow: neutral -- no fresh 0DTE whale sweep read this scan\n- **QQQ 715.68** setup: **none** (bull: vix | bear: gamma, crowd) | VWAP 713.71 OR30 711.62-716.99 PDH/PDL 726.14/720.3 PMH/PML 726.154/714.98 H200 720.97\n  - technicals: neutral -- >VWAP 713.71; EMA9 716.16 vs 21 718.61; inside OR30 711.62-716.99\n  - vix: bull -- \n  - gamma: bear -- negative gamma, spot 713.3 < flip 725.86, walls P710.0/C720.0\n  - crowd: bear -- 3-0 (ripster47 716 key level, TajVincent no QQQ longs < 719.24, uga1018 weaker, < 715 -> 713.6)\n  - flow: neutral --\n\n### 10:05 ET source read\n- VIX 17.07 (falling, key 17.0) -> neutral; events: 08:30 Q3 GDP adv + Sept PCE + jobless claims (released; GDP 3.4% vs 3.2%, core PCE in line); 10:30 EIA nat gas storage; 13:00 7-year note auction\n- **SPY 769.8** setup: **none** (bull: technicals | bear: gamma) | VWAP 768.23 OR30 767.27-769.41 PDH/PDL 773.36/769.24 PMH/PML 771.39/768.48 H200 768.55\n  - technicals: bull -- >VWAP 768.23; EMA9 769.34 vs 21 769.93; above OR30 high 769.41\n  - vix: neutral -- \n  - gamma: bear -- negative gamma, spot 767.88 < flip 772.69, walls P765.0/C770.0\n  - saty: neutral -- below short trigger 770.67 but above PML/H200 768.48: no breakdown yet\n  - crowd: neutral -- 2 bull (RealSPXSniper long SPX 7745C, SulkerTrades bounce) vs 2 bear (TheTradingChamp wants lower, uga1018 sellers < 769.25) + 4 conditional (ripster47 long only > PMH & VIX<17 / no long < PML; TajVincent long > 770.15, stand down < 768.41; RedDogT3 767 sup; ZeroGEX pin 769-772 under flip ~774) lv 767.5/768.4/769.25/770.15/772\n  - flow: neutral -- no fresh whale read\n- **QQQ 716.82** setup: **bear** (bull: - | bear: gamma, crowd) | VWAP 713.9 OR30 711.62-716.99 PDH/PDL 726.14/720.3 PMH/PML 726.154/714.98 H200 720.99\n  - technicals: neutral -- >VWAP 713.9; EMA9 716.55 vs 21 718.8; inside OR30 711.62-716.99\n  - vix: neutral -- \n  - gamma: bear -- negative gamma, spot 713.3 < flip 725.86, walls P710.0/C720.0\n  - crowd: bear -- 3-0 (ripster47 716 key, TajVincent no longs < 719.24, uga1018 < 715 -> 713.6) lv 713.6/715/716/719.24\n  - flow: neutral --\n\n",
+ "notes_date": "2026-10-29",
+ "peak_value": 10000.0,
+ "positions": [],
+ "positions_value": 0,
+ "published_at": "2026-10-29 10:06:02 AM EDT",
+ "published_epoch_ms": 1793282762679,
+ "realized_pnl": 0,
+ "server_time": "2026-10-29 10:06:02 AM EDT",
+ "start_date": "2026-10-29",
+ "starting_cash": 10000.0,
+ "status": "active",
+ "today": "2026-10-29",
+ "today_entries": 0,
+ "total_return": 0.0,
+ "trades": [],
+ "win_rate": null
+}
