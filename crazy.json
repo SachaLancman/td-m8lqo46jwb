@@ -714,9 +714,13 @@
   {
    "t": "2026-10-29T09:30-04:00",
    "value": 1295.0
+  },
+  {
+   "t": "2026-10-29T09:43-04:00",
+   "value": 1295.0
   }
  ],
- "marked_at": "2026-10-29T09:30:56-04:00",
+ "marked_at": "2026-10-29T09:43:09-04:00",
  "mode": "paper",
  "multiple": 1.295,
  "name": "Crazy $1K (Grok Bot, paper)",
@@ -734,8 +738,8 @@
    "id": "C1",
    "kind": "option",
    "last": 5.1,
-   "last_note": "before 09:35 ET: opening quotes not used, previous mark kept",
-   "last_updated": "2026-10-29T09:30:56-04:00",
+   "last_note": "no usable live quotes (no live bid/ask for 252.5C 2026-10-30); previous mark kept",
+   "last_updated": "2026-10-29T09:43:09-04:00",
    "legs": [
     {
      "expiration": "2026-10-30",
@@ -782,8 +786,8 @@
    "id": "C2",
    "kind": "option",
    "last": 4.72,
-   "last_note": "before 09:35 ET: opening quotes not used, previous mark kept",
-   "last_updated": "2026-10-29T09:30:56-04:00",
+   "last_note": "no usable live quotes (no live bid/ask for 400.0C 2026-10-30); previous mark kept",
+   "last_updated": "2026-10-29T09:43:09-04:00",
    "legs": [
     {
      "expiration": "2026-10-30",
@@ -830,8 +834,8 @@
    "id": "C3",
    "kind": "option",
    "last": 3.05,
-   "last_note": "before 09:35 ET: opening quotes not used, previous mark kept",
-   "last_updated": "2026-10-29T09:30:56-04:00",
+   "last_note": "liquidation mark (bid long / ask short); mid also stored",
+   "last_updated": "2026-10-29T09:43:09-04:00",
    "legs": [
     {
      "expiration": "2026-10-30",
@@ -846,8 +850,8 @@
      "strike": 185.0
     }
    ],
-   "mark_method": "kept",
-   "mark_valid": false,
+   "mark_method": "liq",
+   "mark_valid": true,
    "mid": 4.25,
    "multiplier": 100,
    "must_close": false,
@@ -864,16 +868,16 @@
    "target_hit": false,
    "thesis": "60K FSLR 175C weekly calls (BullflowIO + FL0WG0D); negative gamma favors momentum; CW 195 far above; tight 10-wide spread fits cash",
    "underlying": "FSLR",
-   "underlying_last": 176.3,
+   "underlying_last": 175.3,
    "unrealized_pct": 0.1553,
    "unrealized_pnl": 41.0
   }
  ],
  "positions_value": 1287.0,
- "published_at": "2026-10-29 09:30:56 AM EDT",
- "published_epoch_ms": 1793280656768,
+ "published_at": "2026-10-29 09:43:52 AM EDT",
+ "published_epoch_ms": 1793281432623,
  "realized_pnl": 0,
- "server_time": "2026-10-29 09:30:56 AM EDT",
+ "server_time": "2026-10-29 09:43:52 AM EDT",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
