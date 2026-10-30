@@ -1,19 +1,19 @@
 {
- "account_value": 959.0,
+ "account_value": 950.0,
  "alerts": [
-  "C5: STOP CONFIRMED (last 0.05, stop 0.85)",
-  "C5: expires today: close by 15:45 ET"
+  "C7: STOP CONFIRMED (last 0.83, stop 0.9)",
+  "C9: expires today: close by 15:45 ET"
  ],
  "bust_threshold": 20.0,
  "busted": false,
- "buying_power": 17.0,
+ "buying_power": 327.0,
  "cash": 327.0,
  "closed_trades": 5,
- "drawdown": -0.38168923275306255,
+ "drawdown": -0.38749194068343007,
  "error": null,
  "goal": "Grow $1,000 to $100,000 as fast as possible (paper).",
- "goal_progress_linear": 0.00959,
- "goal_progress_log": -0.009090696414668208,
+ "goal_progress_linear": 0.0095,
+ "goal_progress_log": -0.011138197355576125,
  "goal_target": 100000.0,
  "history": [
   {
@@ -42,7 +42,7 @@
   },
   {
    "date": "2026-10-30",
-   "value": 985.0
+   "value": 950.0
   }
  ],
  "intraday": [
@@ -909,11 +909,15 @@
   {
    "t": "2026-10-30T09:46-04:00",
    "value": 985.0
+  },
+  {
+   "t": "2026-10-30T09:52-04:00",
+   "value": 950.0
   }
  ],
- "marked_at": "2026-10-30T09:46:34-04:00",
+ "marked_at": "2026-10-30T09:52:50-04:00",
  "mode": "paper",
- "multiple": 0.959,
+ "multiple": 0.95,
  "name": "Crazy $1K (Grok Bot, paper)",
  "notes": "- 09:48 ET \u00b7 $959 \u2192 after open \u00b7 **Closed C4 QQQ 11/6 710/700P at 5.58 vs 2.88 (+$270, +94%)** \u2014 single contract up 75%+ after QQQ gapped to 695.8, take-profit rule. **Closed C5 SPY 10/30 770/775C at 0.04 vs 1.71 (\u2212$167)** \u2014 stop confirmed, expires today, SPY 760 far below 770. **Opened C9 SPY 10/30 760/755P x2 @ 1.26 ($252, stop 0.63, target 3.50)**: gap-down below PML/VWAP/Saty short trigger, negative gamma under the 768 flip; risk is the 760 king/put-wall pin. Kept ~$327 cash as dry powder (yesterday's lesson). C7 CRWV liq 0.83 under 0.90 stop (1 mark, not confirmed), C8 AAOI mid 1.73.\n",
  "notes_date": "2026-10-30",
@@ -928,9 +932,9 @@
    "high_water": 1.64,
    "id": "C6",
    "kind": "option",
-   "last": 1.24,
-   "last_note": "no usable live quotes (no live bid/ask for 72.0C 2026-11-20); previous mark kept",
-   "last_updated": "2026-10-30T09:46:34-04:00",
+   "last": 1.17,
+   "last_note": "liquidation mark (bid long / ask short); mid also stored",
+   "last_updated": "2026-10-30T09:52:50-04:00",
    "legs": [
     {
      "expiration": "2026-11-20",
@@ -945,9 +949,9 @@
      "strike": 78.0
     }
    ],
-   "mark_method": "kept",
-   "mark_valid": false,
-   "mid": 1.46,
+   "mark_method": "liq",
+   "mark_valid": true,
+   "mid": 1.35,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-29T13:43:02-04:00",
@@ -963,9 +967,9 @@
    "target_hit": false,
    "thesis": "Post-earnings gap +16% (59 to 68.7) with whale continuation calls (74C 12/18 $680K FlowbyBobby; $642K CVNA calls FL0WG0D); earnings already out so no event risk; fit to cash with a Nov 72/78 call spread",
    "underlying": "CVNA",
-   "underlying_last": 68.23,
-   "unrealized_pct": -0.2439,
-   "unrealized_pnl": -40.0
+   "underlying_last": 67.83,
+   "unrealized_pct": -0.2866,
+   "unrealized_pnl": -47.0
   },
   {
    "contracts": 1.0,
@@ -978,7 +982,7 @@
    "kind": "option",
    "last": 0.83,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-30T09:46:34-04:00",
+   "last_updated": "2026-10-30T09:52:50-04:00",
    "legs": [
     {
      "expiration": "2026-11-20",
@@ -995,23 +999,23 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 1.01,
+   "mid": 0.96,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-29T14:12:42-04:00",
    "source": "@WhalesFlowRadar 14:05 ET post",
    "stop": 0.9,
    "stop_watch": {
-    "consecutive_valid_at_or_below_stop": 1,
+    "consecutive_valid_at_or_below_stop": 2,
     "rule": "stop hit only after 2 consecutive VALID marks (from 09:35 ET; mid if quotes wide) at/beyond stop",
-    "stop_confirmed": false
+    "stop_confirmed": true
    },
    "symbol": "CRWV",
    "target": 4.0,
    "target_hit": false,
    "thesis": "Fits @WhalesFlowRadar $1.1M CRWV Apr 75C (vol 1,098 vs OI 732 = new opening) into cash; positive gamma above 59.2 flip, king node/call wall 65 = long strike; earnings 11/10 inside the hold (lock-in rule applies 11/9)",
    "underlying": "CRWV",
-   "underlying_last": 55.53,
+   "underlying_last": 55.55,
    "unrealized_pct": -0.5514,
    "unrealized_pnl": -102.0
   },
@@ -1024,9 +1028,9 @@
    "high_water": 3.1,
    "id": "C8",
    "kind": "option",
-   "last": 1.73,
-   "last_note": "wide quotes (95C 1.90/2.45 (25% of mid)): mid used, not liquidation",
-   "last_updated": "2026-10-30T09:46:34-04:00",
+   "last": 1.45,
+   "last_note": "liquidation mark (bid long / ask short); mid also stored",
+   "last_updated": "2026-10-30T09:52:50-04:00",
    "legs": [
     {
      "expiration": "2026-11-20",
@@ -1041,16 +1045,16 @@
      "strike": 95.0
     }
    ],
-   "mark_method": "mid",
+   "mark_method": "liq",
    "mark_valid": true,
-   "mid": 1.73,
+   "mid": 2.03,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-29T15:11:21-04:00",
    "source": "@FlowbyBobby 15:01 ET https://x.com/FlowbyBobby/status/2115881723267633219",
    "stop": 1.5,
    "stop_watch": {
-    "consecutive_valid_at_or_below_stop": 0,
+    "consecutive_valid_at_or_below_stop": 1,
     "rule": "stop hit only after 2 consecutive VALID marks (from 09:35 ET; mid if quotes wide) at/beyond stop",
     "stop_confirmed": false
    },
@@ -1059,19 +1063,22 @@
    "target_hit": false,
    "thesis": "Fits @FlowbyBobby's $850K AAOI 84C 11/20 whale buy (6% OTM) into cash as a 85/95 call spread; earnings 11/5 inside, lock-in rule applies 11/4",
    "underlying": "AAOI",
-   "underlying_last": 71.69,
-   "unrealized_pct": -0.4419,
-   "unrealized_pnl": -137.0
+   "underlying_last": 71.8,
+   "unrealized_pct": -0.5323,
+   "unrealized_pnl": -165.0
   },
   {
    "contracts": 2.0,
    "detail": "SPY +760P 2026-10-30 / -755P 2026-10-30",
    "entry": 1.26,
+   "expires_today": true,
    "gamma_check": "negative gamma, spot 760.4 < flip 768; king node/CW/PW all 760 (pin risk, needs a break); VEX +1.47B: IV spike adds downside; sized 2 (52) to keep cash",
-   "high_water": 1.26,
+   "high_water": 1.39,
    "id": "C9",
    "kind": "option",
-   "last": 1.26,
+   "last": 1.39,
+   "last_note": "liquidation mark (bid long / ask short); mid also stored",
+   "last_updated": "2026-10-30T09:52:50-04:00",
    "legs": [
     {
      "expiration": "2026-10-30",
@@ -1086,31 +1093,39 @@
      "strike": 755.0
     }
    ],
-   "mark_method": "fill",
+   "mark_method": "liq",
    "mark_valid": true,
+   "mid": 1.4,
    "multiplier": 100,
+   "must_close": false,
    "opened": "2026-10-30T09:47:15-04:00",
    "source": "own setup + Saty Day Trade Idea (758p) + FlowbyBobby lower SPX nodes",
    "stop": 0.63,
    "stop_watch": {
-    "consecutive_valid_at_or_below_stop": 0
+    "consecutive_valid_at_or_below_stop": 0,
+    "rule": "stop hit only after 2 consecutive VALID marks (from 09:35 ET; mid if quotes wide) at/beyond stop",
+    "stop_confirmed": false
    },
    "symbol": "SPY",
    "target": 3.5,
+   "target_hit": false,
    "thesis": "Gap-down Friday, SPY 760.4 below PML 760.9, VWAP and Saty short trigger, EMA9<21; Saty downside 758p, VIX 18.7 over 18.5 key. Negative gamma below 768 flip: a break of the 760 king/put wall can run toward 755 (Saty -2 ATR if VIX >20). Pays 3x on a 5-pt drop; close by 15:45.",
-   "underlying": "SPY"
+   "underlying": "SPY",
+   "underlying_last": 760.29,
+   "unrealized_pct": 0.1032,
+   "unrealized_pnl": 26.0
   }
  ],
- "positions_value": 632.0,
- "published_at": "2026-10-30 09:48:12 AM EDT",
- "published_epoch_ms": 1793368092571,
+ "positions_value": 623.0,
+ "published_at": "2026-10-30 09:52:56 AM EDT",
+ "published_epoch_ms": 1793368376647,
  "realized_pnl": 238.0,
- "server_time": "2026-10-30 09:48:12 AM EDT",
+ "server_time": "2026-10-30 09:52:56 AM EDT",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
  "today": "2026-10-30",
- "total_return": -0.041000000000000036,
+ "total_return": -0.050000000000000044,
  "trades": [
   {
    "action": "OPEN",
