@@ -1,0 +1,123 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🦜 Copycat $10K — paper account</title>
+<meta name="robots" content="noindex,nofollow">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+:root{--bg:#0f0a1c;--card:#1a1230;--bd:#33265a;--fg:#efe9ff;--mut:#a397c4;--t:#b06bff;--b:#ff5ce1;--g:#3fd68a;--r:#ff5a6a;--y:#ffd23f}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#2a1250 0,var(--bg) 55%);background-attachment:fixed;color:var(--fg);font:14px/1.45 -apple-system,Segoe UI,Roboto,sans-serif;min-height:100vh}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;border-bottom:2px solid var(--t);flex-wrap:wrap;gap:8px;background:linear-gradient(90deg,#24104acc,#0f0a1ccc)}
+h1{font-size:19px;margin:0;background:linear-gradient(90deg,var(--t),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.badge{background:#b06bff22;color:var(--t);border:1px solid var(--t);border-radius:12px;padding:1px 9px;font-size:12px;margin-left:8px;font-weight:600}
+.tog{display:inline-flex;border:1px solid var(--bd);border-radius:8px;overflow:hidden;margin-right:12px}.tog a{padding:4px 11px;font-size:12px;text-decoration:none;color:var(--mut);background:#160f2a}.tog a.on{background:linear-gradient(90deg,var(--t),var(--b));color:#fff;font-weight:600}
+.mut{color:var(--mut)}main{padding:18px 22px;max-width:1400px;margin:auto}a{color:#d6b4ff}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-bottom:16px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:14px 16px}
+.card.hot{border-color:var(--t);box-shadow:0 0 18px #b06bff33}
+.kl{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.05em}.kv{font-size:24px;font-weight:700;margin-top:4px}.ks{font-size:12px;color:var(--mut)}
+.pos{color:var(--g)}.neg{color:var(--r)}.tl{color:var(--t)}
+h2{font-size:15px;margin:0 0 10px;color:#d6b4ff}section{margin-bottom:16px}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:6px 8px;border-bottom:1px solid var(--bd);text-align:left;white-space:nowrap}
+th{color:var(--mut);font-weight:500}td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}td.d{white-space:normal;color:var(--mut);min-width:220px}
+.scroll{max-height:440px;overflow:auto}pre{white-space:pre-wrap;word-wrap:break-word;margin:0;font:13px/1.5 ui-monospace,Menlo,Consolas,monospace;max-height:520px;overflow:auto}
+#err{display:none;background:#ff5a6a22;border:1px solid var(--r);color:var(--r);padding:8px 12px;border-radius:8px;margin-bottom:12px}
+.chartbox{height:300px}.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:16px}
+.tag{display:inline-block;font-size:11px;border-radius:6px;padding:0 6px;margin-left:4px;border:1px solid var(--bd)}
+.alert{color:var(--y);margin:2px 0;font-weight:600}.rules{font-size:12px;color:var(--mut)}.rules li{margin:2px 0}
+.tbtn{background:#1f1538;color:var(--fg);border:1px solid var(--bd);border-radius:6px;padding:3px 10px;font-size:12px;cursor:pointer}.tbtn.on{background:var(--t);border-color:var(--t);color:#14082a}
+.buy{color:var(--g);font-weight:600}.sell{color:var(--r);font-weight:600}
+</style></head><body>
+<header><div><h1 style="display:inline">🦜 COPYCAT $10K</h1><span class="badge" id="mode">PAPER</span> <span class="mut" style="font-size:12px">copies fresh Congress (House PTR) &amp; 13F buys · stocks/ETFs only · run by Grok Bot</span></div>
+<div class="mut"><span class="tog"><a id="mainlink" href="#">📈 Main $10K</a><a id="crazylink" href="#">🔥 Crazy $1K</a><a class="on" href="#">🦜 Copycat</a><a id="floorlink" href="#">🎮 Floor</a><a id="dtlink" href="#" title="Archived 2026-10-30">⚡ Day Trade (archive)</a></span>Last updated: <span id="upd">—</span> <span id="stale" style="display:none;color:#d29922">· stale (box asleep — showing last snapshot)</span> · auto-refresh <span id="rf">60s</span></div></header>
+<main>
+<div id="err"></div>
+<div class="kpis">
+ <div class="card hot"><div class="kl">Account value</div><div class="kv tl" id="k-val">—</div><div class="ks" id="k-val-s"></div></div>
+ <div class="card"><div class="kl">Total return</div><div class="kv" id="k-ret">—</div><div class="ks" id="k-ret-s"></div></div>
+ <div class="card"><div class="kl">Cash</div><div class="kv" id="k-cash">—</div><div class="ks" id="k-cash-s"></div></div>
+ <div class="card"><div class="kl">Positions</div><div class="kv" id="k-pos">—</div><div class="ks" id="k-pos-s"></div></div>
+ <div class="card"><div class="kl">Closed trades</div><div class="kv" id="k-tr">—</div><div class="ks" id="k-tr-s"></div></div>
+</div>
+<section class="card hot"><h2>Open positions <span class="mut" id="p-cnt"></span></h2><div id="alerts"></div><div class="scroll"><table id="pos"></table></div></section>
+<div class="grid2">
+<section class="card"><h2>🏛️ Latest Congress signals <span class="mut" id="sig-t"></span></h2><div class="ks" style="margin-bottom:6px">Ranked buy candidates (filed ≤ ~10 days ago)</div><div class="scroll"><table id="cand"></table></div><div class="ks" style="margin:10px 0 6px">Recent House PTR stock trades</div><div class="scroll" style="max-height:300px"><table id="cong"></table></div></section>
+<section class="card"><h2>🐋 13F tracked investors</h2><div class="ks" id="f13s" style="margin-bottom:6px"></div><div class="scroll"><table id="f13"></table></div><h2 style="margin-top:14px">📰 News / 8-K on held tickers</h2><div class="scroll" style="max-height:300px"><table id="news"></table></div></section>
+</div>
+<section class="card"><h2>Equity curve <button class="tbtn on" id="b-int">Intraday</button> <button class="tbtn" id="b-day">Daily</button></h2><div class="chartbox"><canvas id="chart"></canvas></div></section>
+<section class="card"><h2>Closed trades</h2><div class="scroll"><table id="trades"></table></div></section>
+<section class="card"><h2>Scan report <span class="mut" id="ndate"></span></h2><pre id="notes" class="mut">No scan yet.</pre></section>
+<section class="card rules"><b class="tl">Rules (copycat/COPYCAT.md):</b><ul>
+<li><b>Paper only</b>, never real orders · US <b>stocks &amp; ETFs only</b> (no options, shorts or margin) · liquid names only (mcap ≥ $2B, ≥ $20M/day traded).</li>
+<li><b>Size:</b> up to 10 positions, ~10% each (max 15%), always ≥ 5% cash · up to 2 new positions per scan.</li>
+<li><b>Buy when</b> a House member's stock purchase was disclosed in the last ~10 days (bigger amounts, repeat buys, several members, or members with good records rank first) <b>or</b> a tracked investor (Buffett/Abel, Burry, Ackman, Druckenmiller, Tepper, Aschenbrenner) opened or grew a position ≥ 25% in a 13F filed in the last 30 days. Q3 2026 13Fs due by Nov 14.</li>
+<li>No buys within 3 trading days before earnings unless the signal is very strong.</li>
+<li><b>Sell:</b> −15% on a close → sell all · +25% → sell half · then trail: exit if it gives back half its peak gain · or when the copied member/fund discloses a sale.</li>
+</ul></section>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+const KEY=new URLSearchParams(location.search).get('key');
+const LIVE=!!KEY,q=p=>LIVE?p+'?key='+encodeURIComponent(KEY):'';
+$('mainlink').href=LIVE?q('/'):'index.html';$('crazylink').href=LIVE?q('/crazy'):'crazy.html';$('floorlink').href=LIVE?q('/office'):'office.html';$('dtlink').href=LIVE?q('/daytrade'):'daytrade.html';
+$('rf').textContent=LIVE?'15s':'60s';
+const usd=(v,d=2)=>v==null||isNaN(v)?'—':(v<0?'-':'')+'$'+Math.abs(+v).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
+const pct=v=>v==null||isNaN(v)?'—':(v>=0?'+':'')+(v*100).toFixed(1)+'%';
+const cls=v=>v>0?'pos':v<0?'neg':'';
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const lk=(t,u)=>u?'<a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(t)+'</a>':esc(t);
+let chart,mode='int',last=null;
+function drawChart(d){
+ const S=d.starting_cash||10000;
+ let pts=mode==='int'?(d.intraday||[]).map(h=>({x:h.t,y:h.value})):(d.history||[]).map(h=>({x:h.date,y:h.value}));
+ if(!pts.length)pts=[{x:d.start_date||d.today,y:S}];
+ const labels=pts.map(p=>mode==='int'?String(p.x).slice(5,16).replace('T',' '):p.x),ys=pts.map(p=>p.y);
+ const ds=[{label:'Account value',data:ys,borderColor:'#b06bff',backgroundColor:'#b06bff33',fill:true,tension:.2,pointRadius:ys.length>40?0:3,borderWidth:2},
+  {label:'Start $10K',data:ys.map(()=>S),borderColor:'#a397c4',borderDash:[4,4],pointRadius:0,borderWidth:1}];
+ const opt={responsive:true,maintainAspectRatio:false,animation:false,plugins:{legend:{labels:{color:'#a397c4'}},tooltip:{callbacks:{label:c=>c.dataset.label+': '+usd(c.parsed.y)}}},
+  scales:{x:{ticks:{color:'#a397c4',maxTicksLimit:10},grid:{color:'#2a1f48'}},y:{ticks:{color:'#a397c4',callback:v=>usd(v,0)},grid:{color:'#2a1f48'}}}};
+ if(chart){chart.data.labels=labels;chart.data.datasets=ds;chart.options=opt;chart.update();}else chart=new Chart($('chart'),{type:'line',data:{labels,datasets:ds},options:opt});
+}
+$('b-int').onclick=()=>{mode='int';$('b-int').classList.add('on');$('b-day').classList.remove('on');last&&drawChart(last)};
+$('b-day').onclick=()=>{mode='day';$('b-day').classList.add('on');$('b-int').classList.remove('on');last&&drawChart(last)};
+function render(d){
+ last=d;
+ if(d.error){$('err').style.display='block';$('err').textContent=d.error}else $('err').style.display='none';
+ $('mode').textContent=(d.mode||'paper').toUpperCase();
+ const S=d.starting_cash||10000,P=d.positions||[];
+ $('k-val').textContent=usd(d.account_value);$('k-val-s').textContent='start '+usd(S,0)+' on '+(d.start_date||'—')+(d.marked_at?' · marked '+String(d.marked_at).slice(11,16)+' ET':'');
+ $('k-ret').textContent=pct(d.total_return);$('k-ret').className='kv '+cls(d.total_return);$('k-ret-s').textContent='peak '+usd(d.peak_value)+' · drawdown '+pct(d.drawdown);
+ $('k-cash').textContent=usd(d.cash);$('k-cash-s').textContent=(d.account_value?((d.cash/d.account_value)*100).toFixed(0)+'% cash · ':'')+'in stocks '+usd(d.positions_value);
+ $('k-pos').textContent=P.length+'/10';$('k-pos-s').textContent=P.map(p=>p.symbol).join(' · ')||'all cash';
+ $('k-tr').textContent=d.closed_trades??0;$('k-tr-s').textContent='realized '+usd(d.realized_pnl)+(d.win_rate!=null?' · win rate '+(d.win_rate*100).toFixed(0)+'%':'');
+ drawChart(d);
+ $('p-cnt').textContent=P.length?'('+P.length+')':'';
+ $('alerts').innerHTML=(d.alerts||[]).map(a=>'<div class="alert">⚠ '+esc(a)+'</div>').join('');
+ $('pos').innerHTML=P.length?'<tr><th>ID</th><th>Ticker</th><th class="n">Shares</th><th class="n">Entry</th><th class="n">Last</th><th class="n">Value</th><th class="n">P&amp;L</th><th class="n">Stop −15%</th><th class="n">+25% (sell ½)</th><th>Copied from</th></tr>'+P.map(p=>'<tr><td>'+esc(p.id)+'</td><td><b>'+esc(p.symbol)+'</b>'+(p.tp1_done?'<span class="tag pos">½ sold · trail '+esc((p.trail||{}).level??'')+'</span>':'')+(p.source_sold?'<span class="tag neg">SOURCE SOLD</span>':'')+'</td><td class="n">'+esc(p.qty)+'</td><td class="n">'+(+p.entry).toFixed(2)+'</td><td class="n">'+(p.last!=null?(+p.last).toFixed(2):'—')+'</td><td class="n">'+usd((p.last??p.entry)*p.qty)+'</td><td class="n '+cls(p.unrealized_pnl)+'">'+usd(p.unrealized_pnl)+' '+(p.unrealized_pct!=null?pct(p.unrealized_pct):'')+'</td><td class="n">'+esc(p.stop)+'</td><td class="n">'+esc(p.tp1)+'</td><td class="d">'+lk(p.source,p.source_url)+(p.thesis?' — '+esc(p.thesis):'')+'</td></tr>').join(''):'<tr><td class="mut">All cash — waiting for a qualifying Congress or 13F buy.</td></tr>';
+ const G=d.last_signals||{};
+ $('sig-t').textContent=G.at?'('+String(G.at).slice(0,16).replace('T',' ')+' ET)':'';
+ const C=G.candidates||[];
+ $('cand').innerHTML=C.length?'<tr><th>Ticker</th><th class="n">Score</th><th>Members</th><th>Biggest</th><th class="n">Price</th><th>Earnings</th><th>OK?</th></tr>'+C.map(c=>'<tr><td><b>'+esc(c.ticker)+'</b></td><td class="n">'+esc(c.score)+'</td><td>'+(c.urls||[]).map((u,i)=>lk((c.members||[])[i]||(c.members||[]).join(', '),u)).join(', ')+(c.buys>1?' <span class="tag">'+c.buys+' buys</span>':'')+'</td><td>'+esc(c.best_amount)+'</td><td class="n">'+esc(c.price??'')+'</td><td class="d">'+esc(String(c.earnings||'').slice(0,60))+'</td><td>'+(c.qualifies?'<span class="pos">✔</span>':'<span class="mut">✖</span>')+'</td></tr>').join(''):'<tr><td class="mut">No fresh Congress buys.</td></tr>';
+ const K=G.congress||[];
+ $('cong').innerHTML=K.length?'<tr><th></th><th>Member</th><th>Ticker</th><th>Amount</th><th>Traded</th><th>Filed</th><th class="n">Delay</th></tr>'+K.map(t=>'<tr><td class="'+(t.kind==='buy'?'buy':'sell')+'">'+esc(t.kind==='buy'?'BUY':'SELL')+'</td><td>'+lk(t.member,t.url)+'</td><td><b>'+esc(t.ticker)+'</b>'+(t.held?'<span class="tag" title="'+esc((t.held||[]).join(', '))+'">held</span>':'')+'</td><td>'+esc(t.amount)+'</td><td>'+esc(t.trade_date)+'</td><td>'+esc(t.filed)+'</td><td class="n">'+esc(t.delay_days)+'d</td></tr>').join(''):'<tr><td class="mut">No scan yet.</td></tr>';
+ $('f13s').textContent=G.f13_status||'';
+ const F=G.f13||[];
+ $('f13').innerHTML=F.length?'<tr><th>Investor</th><th>Latest</th><th>Filed</th><th>Biggest changes</th></tr>'+F.map(x=>'<tr><td>'+lk(x.firm,x.url)+'<div class="ks">'+esc(x.person)+'</div></td><td>'+esc(x.quarter||'—')+(x.fresh?' <span class="tag pos">fresh</span>':'')+'</td><td>'+esc(x.filed||x.error||'')+'</td><td class="d">'+esc((x.changes||[]).join(' · '))+'</td></tr>').join(''):'<tr><td class="mut">No scan yet.</td></tr>';
+ const N=G.news||[];
+ $('news').innerHTML=N.length?N.map(n=>'<tr><td><b>'+esc(n.ticker)+'</b></td><td class="d">'+lk(n.title,n.link)+'</td><td class="mut">'+esc(String(n.time||'').slice(5,16).replace('T',' '))+'</td></tr>').join(''):'<tr><td class="mut">No new headlines.</td></tr>';
+ const T=(d.trades||[]).slice().reverse();
+ $('trades').innerHTML=T.length?'<tr><th>Closed (ET)</th><th>ID</th><th>Ticker</th><th class="n">Shares</th><th class="n">Entry</th><th class="n">Exit</th><th class="n">P&amp;L</th><th>Why</th></tr>'+T.map(t=>'<tr><td>'+esc(String(t.closed_at||'').slice(0,16).replace('T',' '))+'</td><td>'+esc(t.id)+'</td><td><b>'+esc(t.symbol)+'</b>'+(t.partial?'<span class="tag">partial</span>':'')+'</td><td class="n">'+esc(t.qty)+'</td><td class="n">'+(+t.entry).toFixed(2)+'</td><td class="n">'+(+t.exit).toFixed(2)+'</td><td class="n '+cls(t.pnl)+'">'+usd(t.pnl)+' '+pct(t.pnl_pct)+'</td><td class="d">'+esc(t.reason)+'</td></tr>').join(''):'<tr><td class="mut">No closed trades yet. The account started at $10,000 on '+esc(d.start_date||'')+'.</td></tr>';
+ $('notes').textContent=d.notes||'No scan report yet.';$('ndate').textContent=d.notes_date?'('+d.notes_date+(d.notes_date!==d.today?' — latest available':'')+')':'';
+ if(LIVE)$('upd').textContent=d.server_time||'—';
+}
+const STALE_MS=30*60*1000;let pubAt=null;
+function ago(ms){const m=Math.round(ms/60000);return m<1?'just now':m<60?m+' min ago':m<1440?Math.round(m/60)+' h ago':Math.round(m/1440)+' d ago'}
+function showAge(){if(LIVE||!pubAt)return;const a=Date.now()-pubAt;
+ $('upd').textContent=new Date(pubAt).toLocaleString('en-US',{timeZone:'America/New_York',dateStyle:'medium',timeStyle:'short'})+' ET ('+ago(a)+')';
+ $('stale').style.display=a>STALE_MS?'inline':'none'}
+async function load(){
+ try{const u=LIVE?'/api/copycat?key='+encodeURIComponent(KEY):'copycat.json?t='+Date.now();
+  const r=await fetch(u,{cache:'no-store',headers:{'ngrok-skip-browser-warning':'1'}});if(!r.ok)throw new Error('HTTP '+r.status);
+  const d=await r.json();render(d);pubAt=d.published_epoch_ms||null;showAge();
+ }catch(e){$('err').style.display='block';$('err').textContent='Fetch failed: '+e.message+' (showing last loaded data)'}
+}
+load();setInterval(load,LIVE?15000:60000);setInterval(showAge,30000);
+</script></body></html>
