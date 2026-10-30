@@ -1,18 +1,19 @@
 {
- "account_value": 909.0,
+ "account_value": 885.0,
  "alerts": [
-  "C9: expires today: close by 15:45 ET"
+  "C9: expires today: close by 15:45 ET",
+  "C10: expires today: close by 15:45 ET"
  ],
  "bust_threshold": 20.0,
  "busted": false,
- "buying_power": 457.0,
+ "buying_power": 237.0,
  "cash": 237.0,
  "closed_trades": 6,
- "drawdown": -0.41392649903288203,
+ "drawdown": -0.4294003868471954,
  "error": null,
  "goal": "Grow $1,000 to $100,000 as fast as possible (paper).",
- "goal_progress_linear": 0.00909,
- "goal_progress_log": -0.020718058389016265,
+ "goal_progress_linear": 0.00885,
+ "goal_progress_log": -0.02652836465108728,
  "goal_target": 100000.0,
  "history": [
   {
@@ -41,7 +42,7 @@
   },
   {
    "date": "2026-10-30",
-   "value": 909.0
+   "value": 885.0
   }
  ],
  "intraday": [
@@ -924,11 +925,15 @@
   {
    "t": "2026-10-30T10:18-04:00",
    "value": 909.0
+  },
+  {
+   "t": "2026-10-30T10:22-04:00",
+   "value": 885.0
   }
  ],
- "marked_at": "2026-10-30T10:18:55-04:00",
+ "marked_at": "2026-10-30T10:22:09-04:00",
  "mode": "paper",
- "multiple": 0.909,
+ "multiple": 0.885,
  "name": "Crazy $1K (Grok Bot, paper)",
  "notes": "- 09:48 ET \u00b7 $959 \u2192 after open \u00b7 **Closed C4 QQQ 11/6 710/700P at 5.58 vs 2.88 (+$270, +94%)** \u2014 single contract up 75%+ after QQQ gapped to 695.8, take-profit rule. **Closed C5 SPY 10/30 770/775C at 0.04 vs 1.71 (\u2212$167)** \u2014 stop confirmed, expires today, SPY 760 far below 770. **Opened C9 SPY 10/30 760/755P x2 @ 1.26 ($252, stop 0.63, target 3.50)**: gap-down below PML/VWAP/Saty short trigger, negative gamma under the 768 flip; risk is the 760 king/put-wall pin. Kept ~$327 cash as dry powder (yesterday's lesson). C7 CRWV liq 0.83 under 0.90 stop (1 mark, not confirmed), C8 AAOI mid 1.73.\n- 10:18 ET \u00b7 $909 \u00b7 **Closed C8 AAOI at 1.30 (\u2212$180)**, stop confirmed (2 valid marks under 1.50). C9 SPY 760/755P mark 1.30 (mid, liq below intrinsic) vs 1.26, holding, close by 15:45. **Opened C10 QQQ 10/30 692/687P x4 @ 0.55 ($220, stop 0.28, target 2.50)**: QQQ 694.4 on the 695 put wall in deep negative gamma (\u221210.4B, flip 715), below VWAP/EMAs; cheap 9:1 0DTE. Correlated with C9 (both index puts). Skipped TSLA calls: positive gamma pin at 400 fights a 400/405C. Cash $237.\n",
  "notes_date": "2026-10-30",
@@ -943,9 +948,9 @@
    "high_water": 1.64,
    "id": "C6",
    "kind": "option",
-   "last": 0.98,
+   "last": 0.97,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-30T10:18:55-04:00",
+   "last_updated": "2026-10-30T10:22:09-04:00",
    "legs": [
     {
      "expiration": "2026-11-20",
@@ -962,7 +967,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 1.1,
+   "mid": 1.08,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-29T13:43:02-04:00",
@@ -978,9 +983,9 @@
    "target_hit": false,
    "thesis": "Post-earnings gap +16% (59 to 68.7) with whale continuation calls (74C 12/18 $680K FlowbyBobby; $642K CVNA calls FL0WG0D); earnings already out so no event risk; fit to cash with a Nov 72/78 call spread",
    "underlying": "CVNA",
-   "underlying_last": 67.005,
-   "unrealized_pct": -0.4024,
-   "unrealized_pnl": -66.0
+   "underlying_last": 66.835,
+   "unrealized_pct": -0.4085,
+   "unrealized_pnl": -67.0
   },
   {
    "contracts": 1.0,
@@ -991,9 +996,9 @@
    "high_water": 1.85,
    "id": "C7",
    "kind": "option",
-   "last": 0.94,
+   "last": 0.95,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-30T10:18:55-04:00",
+   "last_updated": "2026-10-30T10:22:09-04:00",
    "legs": [
     {
      "expiration": "2026-11-20",
@@ -1010,7 +1015,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 1.01,
+   "mid": 1.02,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-29T14:12:42-04:00",
@@ -1026,9 +1031,9 @@
    "target_hit": false,
    "thesis": "Fits @WhalesFlowRadar $1.1M CRWV Apr 75C (vol 1,098 vs OI 732 = new opening) into cash; positive gamma above 59.2 flip, king node/call wall 65 = long strike; earnings 11/10 inside the hold (lock-in rule applies 11/9)",
    "underlying": "CRWV",
-   "underlying_last": 55.84,
-   "unrealized_pct": -0.4919,
-   "unrealized_pnl": -91.0
+   "underlying_last": 55.7301,
+   "unrealized_pct": -0.4865,
+   "unrealized_pnl": -90.0
   },
   {
    "contracts": 2.0,
@@ -1039,9 +1044,9 @@
    "high_water": 1.39,
    "id": "C9",
    "kind": "option",
-   "last": 1.3,
-   "last_note": "liquidation 1.29 below intrinsic floor 1.69: mid used",
-   "last_updated": "2026-10-30T10:18:55-04:00",
+   "last": 1.26,
+   "last_note": "liquidation 1.25 below intrinsic floor 2.00: mid used",
+   "last_updated": "2026-10-30T10:22:09-04:00",
    "legs": [
     {
      "expiration": "2026-10-30",
@@ -1058,7 +1063,7 @@
    ],
    "mark_method": "mid",
    "mark_valid": true,
-   "mid": 1.3,
+   "mid": 1.26,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-30T09:47:15-04:00",
@@ -1074,19 +1079,22 @@
    "target_hit": false,
    "thesis": "Gap-down Friday, SPY 760.4 below PML 760.9, VWAP and Saty short trigger, EMA9<21; Saty downside 758p, VIX 18.7 over 18.5 key. Negative gamma below 768 flip: a break of the 760 king/put wall can run toward 755 (Saty -2 ATR if VIX >20). Pays 3x on a 5-pt drop; close by 15:45.",
    "underlying": "SPY",
-   "underlying_last": 758.31,
-   "unrealized_pct": 0.0317,
-   "unrealized_pnl": 8.0
+   "underlying_last": 758.005,
+   "unrealized_pct": 0.0,
+   "unrealized_pnl": 0.0
   },
   {
    "contracts": 4.0,
    "detail": "QQQ +692P 2026-10-30 / -687P 2026-10-30",
    "entry": 0.55,
+   "expires_today": true,
    "gamma_check": "negative gamma -10.38B, spot 694.2 below flip 715.3, put wall 695 at spot, call wall 720",
    "high_water": 0.55,
    "id": "C10",
    "kind": "option",
-   "last": 0.55,
+   "last": 0.51,
+   "last_note": "liquidation mark (bid long / ask short); mid also stored",
+   "last_updated": "2026-10-30T10:22:09-04:00",
    "legs": [
     {
      "expiration": "2026-10-30",
@@ -1101,31 +1109,39 @@
      "strike": 687.0
     }
    ],
-   "mark_method": "fill",
+   "mark_method": "liq",
    "mark_valid": true,
+   "mid": 0.52,
    "multiplier": 100,
+   "must_close": false,
    "opened": "2026-10-30T10:19:21-04:00",
    "source": "own setup: daytrade_signals QQQ bear (technicals+gamma), gex.py 10:18",
    "stop": 0.28,
    "stop_watch": {
-    "consecutive_valid_at_or_below_stop": 0
+    "consecutive_valid_at_or_below_stop": 0,
+    "rule": "stop hit only after 2 consecutive VALID marks (from 09:35 ET; mid if quotes wide) at/beyond stop",
+    "stop_confirmed": false
    },
    "symbol": "QQQ",
    "target": 2.5,
+   "target_hit": false,
    "thesis": "QQQ 694.4 below VWAP 695.5 and OR30, EMA9<21, sitting on the 695 put wall in deep negative gamma (-10.4B, flip 715); a 695 break should run toward 690. Cheap 9:1 0DTE spread; correlated with C9 SPY puts",
-   "underlying": "QQQ"
+   "underlying": "QQQ",
+   "underlying_last": 693.65,
+   "unrealized_pct": -0.0727,
+   "unrealized_pnl": -16.0
   }
  ],
- "positions_value": 672.0,
- "published_at": "2026-10-30 10:20:41 AM EDT",
- "published_epoch_ms": 1793370041503,
+ "positions_value": 648.0,
+ "published_at": "2026-10-30 10:22:19 AM EDT",
+ "published_epoch_ms": 1793370139161,
  "realized_pnl": 58.0,
- "server_time": "2026-10-30 10:20:41 AM EDT",
+ "server_time": "2026-10-30 10:22:19 AM EDT",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
  "today": "2026-10-30",
- "total_return": -0.09099999999999997,
+ "total_return": -0.11499999999999999,
  "trades": [
   {
    "action": "OPEN",
