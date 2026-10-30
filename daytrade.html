@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>⚡ Day Trade $10K — paper account</title>
+<title>⚡ Day Trade $10K — ARCHIVED</title>
 <meta name="robots" content="noindex,nofollow">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <style>
@@ -30,6 +30,7 @@ th{color:var(--mut);font-weight:500}td.n,th.n{text-align:right;font-variant-nume
 <header><div><h1 style="display:inline">⚡ DAY TRADE $10K</h1><span class="badge" id="mode">PAPER</span> <span class="mut" style="font-size:12px">0DTE calls/puts &amp; debit spreads · multi-source · flat by 3:38 PM ET · run by Grok Bot</span></div>
 <div class="mut"><span class="tog"><a id="mainlink" href="#">📈 Main $10K</a><a id="crazylink" href="#">🔥 Crazy $1K</a><a class="on" href="#">⚡ Day Trade</a><a id="floorlink" href="#">🎮 Floor</a></span>Last updated: <span id="upd">—</span> <span id="stale" style="display:none;color:#d29922">· stale (box asleep — showing last snapshot)</span> · auto-refresh <span id="rf">60s</span></div></header>
 <main>
+<div style="background:#b06bff22;border:1px solid #b06bff;color:#e0c2ff;padding:10px 14px;border-radius:8px;margin-bottom:12px;font-weight:600">📦 ARCHIVED 2026-10-30 — read-only. Day Trade $10K finished at $7,131 (−28.7% from $10,000) and was replaced by the <a id="cclink" href="copycat.html" style="color:#ffd23f">🦜 Copycat $10K</a> paper account. Files: archive/daytrade-2026-10-30/.</div>
 <div id="err"></div>
 <div class="kpis">
  <div class="card hot"><div class="kl">Account value</div><div class="kv tl" id="k-val">—</div><div class="ks" id="k-val-s"></div></div>
@@ -51,7 +52,7 @@ const $=id=>document.getElementById(id);
 const KEY=new URLSearchParams(location.search).get('key');
 const LIVE=!!KEY,q=p=>LIVE?p+'?key='+encodeURIComponent(KEY):'';
 $('mainlink').href=LIVE?q('/'):'index.html';$('crazylink').href=LIVE?q('/crazy'):'crazy.html';$('floorlink').href=LIVE?q('/office'):'office.html';
-$('rf').textContent=LIVE?'15s':'60s';
+$('rf').textContent=LIVE?'15s':'60s';$('cclink').href=LIVE?q('/copycat'):'copycat.html';
 const usd=(v,d=2)=>v==null||isNaN(v)?'—':(v<0?'-':'')+'$'+Math.abs(+v).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
 const pct=v=>v==null||isNaN(v)?'—':(v>=0?'+':'')+(v*100).toFixed(1)+'%';
 const cls=v=>v>0?'pos':v<0?'neg':'';

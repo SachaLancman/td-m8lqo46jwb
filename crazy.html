@@ -33,7 +33,7 @@ th{color:var(--mut);font-weight:500}td.n,th.n{text-align:right;font-variant-nume
 .tbtn{background:#21160f;color:var(--fg);border:1px solid var(--bd);border-radius:6px;padding:3px 10px;font-size:12px;cursor:pointer}.tbtn.on{background:var(--o);border-color:var(--o);color:#fff}
 </style></head><body>
 <header><div><h1 style="display:inline">🔥 CRAZY $1K → $100K</h1><span class="badge" id="mode">PAPER</span> <span class="mut" style="font-size:12px">high-risk paper account run by Grok Bot</span></div>
-<div class="mut"><span class="tog"><a id="mainlink" href="#">📈 Main $10K team</a><a class="on" href="#">🔥 Crazy $1K</a><a id="floorlink" href="#">🎮 Floor</a></span>Last updated: <span id="upd">—</span> <span id="stale" style="display:none;color:#d29922">· stale (box asleep — showing last snapshot)</span> · auto-refresh <span id="rf">60s</span></div></header>
+<div class="mut"><span class="tog"><a id="mainlink" href="#">📈 Main $10K team</a><a class="on" href="#">🔥 Crazy $1K</a><a id="cclink" href="copycat.html">🦜 Copycat</a><a id="floorlink" href="#">🎮 Floor</a></span>Last updated: <span id="upd">—</span> <span id="stale" style="display:none;color:#d29922">· stale (box asleep — showing last snapshot)</span> · auto-refresh <span id="rf">60s</span></div></header>
 <main>
 <div id="err"></div><div id="bust">💥 ACCOUNT BUSTED — trading stopped, flagged for Sacha</div>
 <div class="kpis">
@@ -58,6 +58,7 @@ const $=id=>document.getElementById(id);
 const KEY=new URLSearchParams(location.search).get('key');   // local dashboard (via server.py) vs static GitHub Pages copy
 const LIVE=!!KEY;
 $('mainlink').href=LIVE?'/?key='+encodeURIComponent(KEY):'index.html';
+$('cclink').href=LIVE?'/copycat?key='+encodeURIComponent(KEY):'copycat.html';
 $('floorlink').href=LIVE?'/office?key='+encodeURIComponent(KEY):'office.html';
 $('rf').textContent=LIVE?'15s':'60s';
 const usd=(v,d=2)=>v==null||isNaN(v)?'—':(v<0?'-':'')+'$'+Math.abs(+v).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
