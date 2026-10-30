@@ -1,20 +1,19 @@
 {
- "account_value": 939.0,
+ "account_value": 909.0,
  "alerts": [
-  "C7: STOP CONFIRMED (last 0.88, stop 0.9)",
   "C8: STOP CONFIRMED (last 1.3, stop 1.5)",
   "C9: expires today: close by 15:45 ET"
  ],
  "bust_threshold": 20.0,
  "busted": false,
  "buying_power": 327.0,
- "cash": 327.0,
- "closed_trades": 5,
- "drawdown": -0.39458413926499036,
+ "cash": 457.0,
+ "closed_trades": 6,
+ "drawdown": -0.41392649903288203,
  "error": null,
  "goal": "Grow $1,000 to $100,000 as fast as possible (paper).",
- "goal_progress_linear": 0.00939,
- "goal_progress_log": -0.01366720386694455,
+ "goal_progress_linear": 0.00909,
+ "goal_progress_log": -0.020718058389016265,
  "goal_target": 100000.0,
  "history": [
   {
@@ -43,7 +42,7 @@
   },
   {
    "date": "2026-10-30",
-   "value": 939.0
+   "value": 909.0
   }
  ],
  "intraday": [
@@ -918,11 +917,15 @@
   {
    "t": "2026-10-30T10:02-04:00",
    "value": 939.0
+  },
+  {
+   "t": "2026-10-30T10:18-04:00",
+   "value": 909.0
   }
  ],
- "marked_at": "2026-10-30T10:02:58-04:00",
+ "marked_at": "2026-10-30T10:18:23-04:00",
  "mode": "paper",
- "multiple": 0.939,
+ "multiple": 0.909,
  "name": "Crazy $1K (Grok Bot, paper)",
  "notes": "- 09:48 ET \u00b7 $959 \u2192 after open \u00b7 **Closed C4 QQQ 11/6 710/700P at 5.58 vs 2.88 (+$270, +94%)** \u2014 single contract up 75%+ after QQQ gapped to 695.8, take-profit rule. **Closed C5 SPY 10/30 770/775C at 0.04 vs 1.71 (\u2212$167)** \u2014 stop confirmed, expires today, SPY 760 far below 770. **Opened C9 SPY 10/30 760/755P x2 @ 1.26 ($252, stop 0.63, target 3.50)**: gap-down below PML/VWAP/Saty short trigger, negative gamma under the 768 flip; risk is the 760 king/put-wall pin. Kept ~$327 cash as dry powder (yesterday's lesson). C7 CRWV liq 0.83 under 0.90 stop (1 mark, not confirmed), C8 AAOI mid 1.73.\n",
  "notes_date": "2026-10-30",
@@ -937,9 +940,9 @@
    "high_water": 1.64,
    "id": "C6",
    "kind": "option",
-   "last": 1.16,
+   "last": 0.98,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-30T10:02:58-04:00",
+   "last_updated": "2026-10-30T10:18:23-04:00",
    "legs": [
     {
      "expiration": "2026-11-20",
@@ -956,7 +959,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 1.29,
+   "mid": 1.1,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-29T13:43:02-04:00",
@@ -972,9 +975,9 @@
    "target_hit": false,
    "thesis": "Post-earnings gap +16% (59 to 68.7) with whale continuation calls (74C 12/18 $680K FlowbyBobby; $642K CVNA calls FL0WG0D); earnings already out so no event risk; fit to cash with a Nov 72/78 call spread",
    "underlying": "CVNA",
-   "underlying_last": 66.9305,
-   "unrealized_pct": -0.2927,
-   "unrealized_pnl": -48.0
+   "underlying_last": 67.005,
+   "unrealized_pct": -0.4024,
+   "unrealized_pnl": -66.0
   },
   {
    "contracts": 1.0,
@@ -985,9 +988,9 @@
    "high_water": 1.85,
    "id": "C7",
    "kind": "option",
-   "last": 0.88,
+   "last": 0.94,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-30T10:02:58-04:00",
+   "last_updated": "2026-10-30T10:18:23-04:00",
    "legs": [
     {
      "expiration": "2026-11-20",
@@ -1004,73 +1007,25 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 0.95,
+   "mid": 1.01,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-29T14:12:42-04:00",
    "source": "@WhalesFlowRadar 14:05 ET post",
    "stop": 0.9,
    "stop_watch": {
-    "consecutive_valid_at_or_below_stop": 3,
+    "consecutive_valid_at_or_below_stop": 0,
     "rule": "stop hit only after 2 consecutive VALID marks (from 09:35 ET; mid if quotes wide) at/beyond stop",
-    "stop_confirmed": true
+    "stop_confirmed": false
    },
    "symbol": "CRWV",
    "target": 4.0,
    "target_hit": false,
    "thesis": "Fits @WhalesFlowRadar $1.1M CRWV Apr 75C (vol 1,098 vs OI 732 = new opening) into cash; positive gamma above 59.2 flip, king node/call wall 65 = long strike; earnings 11/10 inside the hold (lock-in rule applies 11/9)",
    "underlying": "CRWV",
-   "underlying_last": 55.97,
-   "unrealized_pct": -0.5243,
-   "unrealized_pnl": -97.0
-  },
-  {
-   "contracts": 1.0,
-   "detail": "AAOI +85C 2026-11-20 / -95C 2026-11-20",
-   "entry": 3.1,
-   "expires_today": false,
-   "gamma_check": "gex.py 15:12: positive gamma, spot 79.4 > flip 71.5, CW=PW 80 pin is the first hurdle",
-   "high_water": 3.1,
-   "id": "C8",
-   "kind": "option",
-   "last": 1.3,
-   "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-30T10:02:58-04:00",
-   "legs": [
-    {
-     "expiration": "2026-11-20",
-     "right": "call",
-     "side": "long",
-     "strike": 85.0
-    },
-    {
-     "expiration": "2026-11-20",
-     "right": "call",
-     "side": "short",
-     "strike": 95.0
-    }
-   ],
-   "mark_method": "liq",
-   "mark_valid": true,
-   "mid": 1.75,
-   "multiplier": 100,
-   "must_close": false,
-   "opened": "2026-10-29T15:11:21-04:00",
-   "source": "@FlowbyBobby 15:01 ET https://x.com/FlowbyBobby/status/2115881723267633219",
-   "stop": 1.5,
-   "stop_watch": {
-    "consecutive_valid_at_or_below_stop": 2,
-    "rule": "stop hit only after 2 consecutive VALID marks (from 09:35 ET; mid if quotes wide) at/beyond stop",
-    "stop_confirmed": true
-   },
-   "symbol": "AAOI",
-   "target": 6.0,
-   "target_hit": false,
-   "thesis": "Fits @FlowbyBobby's $850K AAOI 84C 11/20 whale buy (6% OTM) into cash as a 85/95 call spread; earnings 11/5 inside, lock-in rule applies 11/4",
-   "underlying": "AAOI",
-   "underlying_last": 72.3375,
-   "unrealized_pct": -0.5806,
-   "unrealized_pnl": -180.0
+   "underlying_last": 55.84,
+   "unrealized_pct": -0.4919,
+   "unrealized_pnl": -91.0
   },
   {
    "contracts": 2.0,
@@ -1081,9 +1036,9 @@
    "high_water": 1.39,
    "id": "C9",
    "kind": "option",
-   "last": 1.39,
-   "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-30T10:02:58-04:00",
+   "last": 1.3,
+   "last_note": "liquidation 1.29 below intrinsic floor 1.69: mid used",
+   "last_updated": "2026-10-30T10:18:23-04:00",
    "legs": [
     {
      "expiration": "2026-10-30",
@@ -1098,9 +1053,9 @@
      "strike": 755.0
     }
    ],
-   "mark_method": "liq",
+   "mark_method": "mid",
    "mark_valid": true,
-   "mid": 1.4,
+   "mid": 1.3,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-30T09:47:15-04:00",
@@ -1116,21 +1071,21 @@
    "target_hit": false,
    "thesis": "Gap-down Friday, SPY 760.4 below PML 760.9, VWAP and Saty short trigger, EMA9<21; Saty downside 758p, VIX 18.7 over 18.5 key. Negative gamma below 768 flip: a break of the 760 king/put wall can run toward 755 (Saty -2 ATR if VIX >20). Pays 3x on a 5-pt drop; close by 15:45.",
    "underlying": "SPY",
-   "underlying_last": 760.29,
-   "unrealized_pct": 0.1032,
-   "unrealized_pnl": 26.0
+   "underlying_last": 758.31,
+   "unrealized_pct": 0.0317,
+   "unrealized_pnl": 8.0
   }
  ],
- "positions_value": 612.0,
- "published_at": "2026-10-30 10:17:35 AM EDT",
- "published_epoch_ms": 1793369855688,
- "realized_pnl": 238.0,
- "server_time": "2026-10-30 10:17:35 AM EDT",
+ "positions_value": 452.0,
+ "published_at": "2026-10-30 10:18:37 AM EDT",
+ "published_epoch_ms": 1793369917476,
+ "realized_pnl": 58.0,
+ "server_time": "2026-10-30 10:18:37 AM EDT",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
  "today": "2026-10-30",
- "total_return": -0.061000000000000054,
+ "total_return": -0.09099999999999997,
  "trades": [
   {
    "action": "OPEN",
@@ -1412,7 +1367,38 @@
    "thesis": "Gap-down Friday, SPY 760.4 below PML 760.9, VWAP and Saty short trigger, EMA9<21; Saty downside 758p, VIX 18.7 over 18.5 key. Negative gamma below 768 flip: a break of the 760 king/put wall can run toward 755 (Saty -2 ATR if VIX >20). Pays 3x on a 5-pt drop; close by 15:45.",
    "time": "2026-10-30T09:47:15-04:00",
    "value_after": 959.0
+  },
+  {
+   "action": "CLOSE",
+   "cash_flow": 130.0,
+   "detail": "AAOI +85C 2026-11-20 / -95C 2026-11-20",
+   "entry": 3.1,
+   "exit_quotes": {
+    "legs": [
+     {
+      "ask": 4.4,
+      "bid": 3.8,
+      "leg": "long 85C 2026-11-20"
+     },
+     {
+      "ask": 2.5,
+      "bid": 2.1,
+      "leg": "short 95C 2026-11-20"
+     }
+    ],
+    "source": "Nasdaq public option chain",
+    "underlying": 70.36
+   },
+   "id": "C8",
+   "pnl": -180.0,
+   "pnl_pct": -0.5806,
+   "price": 1.3,
+   "qty": 1.0,
+   "reason": "stop confirmed (2 valid marks, last 1.30 vs stop 1.50)",
+   "symbol": "AAOI",
+   "time": "2026-10-30T10:18:30-04:00",
+   "value_after": 909.0
   }
  ],
- "win_rate": 0.6
+ "win_rate": 0.5
 }
