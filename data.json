@@ -1,9 +1,9 @@
 {
- "account_value": 9780.0,
+ "account_value": 9800.0,
  "cash": 9570.0,
  "decision": "## 09:48 ET scan \u2014 Decider\n- TSM 12/18 440/450C x1: HOLD. Mid 2.60 vs stop 2.15 (not hit), TP 5.00.\n- Gamma check: TSM 416.4 in negative gamma (flip 419.25, CW 420, PW 410); SPY 760.4 negative (flip ~765\u2013768, king/PW 760); QQQ 695.8 negative (flip 703.9, PW 710 broken). Risk-off tape.\n- New entries: none. Gap-down, negative-gamma open; no new $1M+ whale print on our watchlist; nothing qualifies under RULES.md. Risk Manager: no change to exposure (1/10 positions, cash $9,570).\n\n## 10:11 ET TSM stop check (Decider)\n- Risk's 10:10 mark was $2.15 liquidation (440C 12.25/13.05, 450C 9.55/10.10), at the stop: valid mark 1 of 2.\n- Fresh Decider mark (mark.py, Nasdaq, 10:10:56): 440C 12.25/13.05, 450C 9.30/9.85, liquidation **$2.40**, mid $3.08, valid, TSM 414.93. That's above the $2.15 stop, so the stop is NOT confirmed and stop_watch stays 0/2. **HOLD, no exit.** No adds (Risk veto).\n- TSM is on the 415 put wall in negative gamma below the 421.7 flip. Re-mark on the next run; any 2 consecutive valid marks at or below $2.15, or a TSM close below 400, means close.\n\n## 10:00 daily run (Decider, 10:2x ET)\nInputs: technical.md, fundamentals.md, sentiment.md, risk.md, flow_gamma.md (all five in by 10:17 ET). Risk-off tape: INTC -29% on its guide, SMH about -5.5%, QQQ about -2.7% (about 696, 4% below its 50-day), SPY about 759.4 (below its 50-day), VIX about 18.9. Sizing normal (VIX < 25).\n\n**Exits first**\n- **TSM 12/18 440/450C: HOLD, stop not confirmed.** Valid marks today: Risk 10:10 liq 2.15 (at the stop) and Sentiment 10:10:54 2.15; then Decider 10:10:56 2.40, Technical 10:12 2.45, Flow & Gamma 10:11-10:12 2.35 x2, Sentiment 10:14 2.30, Decider 10:17:18 **2.40** (440C 12.30/12.85, 450C 9.35/9.90, mid 2.95, TSM 413.10). No two consecutive valid marks at or below 2.15, so stop_watch is 0/2. TSM about 413 is 13 above the close-below-400 exit. No adds (Risk veto). The stop will not be widened. Exit on the next 2 consecutive valid marks at or below 2.15, or a TSM close below 400.\n- Gamma check (2026-10-30 10:12 ET, gex.py today, from Flow & Gamma): TSM 12/18 440/450C. NEGATIVE gamma, spot 414.8-415.4 below the 421.7-422.6 flip (dealers amplify moves; momentum can carry). King node 415 (10/30 0DTE, -58M to -82M) = put wall 415 = spot; nearest -420 above, -415 at spot, +440 above; no + node below. Call wall 450 = short strike = target ceiling; $5.00 needs TSM back above about 440. Put wall 415 is the only support and is breaking (TSM 413.1 at 10:17); Bullflow's put wall/king at 400 = our close-below-400 exit. VEX +$16.4M: IV relief helps, an IV spike adds selling. If 415 fails, Flow & Gamma expects the stop to confirm near TSM 411-412. HOLD pending a confirmed stop.\n\n**New entries: none.**\n- QQQ 700/690P: only qualifies on a CLOSE below 698 (QQQ about 696 intraday). Natural about 4.00-4.15 is below 2:1 (Technical says 1.41:1). Re-price Monday if today closes below 698.\n- GOOGL 12/18 270/260P: Sentiment only (conditional on a 15-minute hold below 279); Fundamentals is watch-only 2/5. One analyst, fails the two-analyst rule.\n- XLE: Fundamentals only, 3/5, not in today's gex data. One analyst; watch for Monday.\n- TSLA (lost 400, close below 386 kills it), AAPL (earnings 11/2, long vetoed), META puts (1.60:1), LMT (about 5% above its zone): no.\n- No bullish semis while TSM is open; no new premium into the weekend and the 11/3 election without a second analyst.\n\n**Account:** about $9,810 marked (cash $9,570 + TSM 2.40 liq), peak $10,025, drawdown 2.1%, 1 of 10 positions, $0 of $1,468 weekly option budget used.\n\n## 10:18 ET 30-minute scan (Grok Bot, coordinating with the 10:00 daily run that finished minutes ago)\n- The daily run's Decider pass (all five analysts, 10:17 ET) is this slot's intraday update; no re-poll of Flow & Gamma/Technical to avoid duplicate work. No double entries.\n- TSM 12/18 440/450C: mark.py 10:19 liquidation **2.55** (mid 2.87), above the 2.15 stop. stop_watch 0/2. HOLD.\n- Gamma (gex.py 10:18): QQQ 694.2 deep negative gamma (-10.4B, flip 715, put wall 695 at spot); SPY ~758.4 below 760 wall, negative gamma; TSLA positive gamma pinned at 400.\n- Whale check (13:38-14:18Z): no new specific prints from the five accounts; BullflowIO repeats SPY 760/765 levels. Nothing to consider.\n- New entries: none (same reasons as the 10:00 run). Account ~$9,825, 1/10 positions.\n\n## 10:41 ET 30-minute scan (Grok Bot)\n- Intraday update: the 10:00 daily run's full five-analyst Decider pass (10:17 ET) is ~25 min old; no re-poll to avoid duplicate work.\n- TSM 12/18 440/450C: mark.py 10:41 liquidation **2.25** (mid 2.65), above the 2.15 stop, stop_watch 0/2. HOLD. TSM 415.0 on the 415 put wall.\n- Gamma (gex.py 10:40): SPY 759.6 negative (-15.2B, flip 769, CW=PW 760); QQQ 696.9 negative (flip 717, PW 700); TSM 415.0 negative (flip 420.9, PW 415); VIX ~20.1 rising.\n- Whale check: only a $160K MSTR 100P 12/4 (FlowbyBobby) and FL0WG0D \"MSTR puts\" mention; nothing $1M+ on our list. OptionsHawk off-list SOXL long-dated put sale, context only.\n- New entries: none. Same reasons as the 10:00 run (QQQ 700/690P needs a close below 698 and better R:R; no second analyst on GOOGL/XLE; no new premium into the weekend/election without two analysts). Account ~$9,795, 1/10 positions.\n\n## 11:14 ET 30-minute scan (Grok Bot)\n- Intraday update: the 10:00 daily run's five-analyst pass (10:17 ET) still stands; Technical has AMZN as a bearish watch only (below 50d/200d post-earnings), no analyst is bullish on AMZN.\n- TSM 12/18 440/450C: mark.py 11:13 liquidation **2.35** (mid 2.90), above the 2.15 stop, stop_watch 0/2. HOLD. TSM ~410.6 on the 410 put wall, negative gamma (flip 418.2).\n- Gamma (gex.py 11:13): SPY 758.8 negative (-16.6B, flip 766.5, CW=PW 760); QQQ 695.2 negative (flip 714.9, PW 695); TSLA 402 positive, pinned 400; AMZN 239.9 negative, flip 242.95, PW 240, CW 250.\n- Whale lead: WhalesFlowRadar AMZN Sept-2027 240C ~$6.9M + 260C ~$6M (vol >> OI, opening). Decider: lead only, no analyst vote for AMZN longs (Technical bearish watch), so it fails the two-analyst rule. No main entry. SPCX $4.2M LEAP not on our list.\n- New entries: none. Skeptic not called. Account ~$9,805, 1/10 positions.\n\n## 11:45 ET 30-minute scan (Grok Bot)\n- Intraday update: the 10:00 daily run's five-analyst pass still stands; no analyst is bullish on MSFT or AMZN longs.\n- TSM 12/18 440/450C: mark.py 11:45 liquidation **2.10** (mid 2.47), at/below the 2.15 stop on 1 valid mark (stop_watch 1/2, not confirmed). HOLD; close next scan if the second valid mark is also \u22642.15. TSM 408.2 just under the 410 put wall, negative gamma (flip 418).\n- Gamma (gex.py 11:45): SPY 757.2 negative (-15.1B, flip 766.3, PW 755); QQQ 692.9 negative (flip 714.6, PW 690); MSFT 521.5 positive, pinned 525; AMZN 239.2 negative, PW 240, flip 242.2.\n- Whale leads: WhalesFlowRadar ~$13M MSFT Jan-2027 575C (vol < OI, positive-gamma pin at 525) and FlowbyBobby ~$1.3M AMZN 11/20 275C (opening). Decider: leads only, no analyst vote, fails the two-analyst rule. No main entry. Skeptic not called.\n- New entries: none. Account ~$9,780, 1/10 positions.\n",
  "decision_date": "2026-10-30",
- "drawdown": -0.0244389027431422,
+ "drawdown": -0.02244389027431426,
  "error": null,
  "gamma": {
   "convention": "Dealer GEX approximation: call GEX = +gamma*OI*100*S^2*0.01, put GEX = -gamma*OI*100*S^2*0.01 ($ of delta hedging per 1% move; assumes dealers long calls / short puts, the common public convention). Positive total = dealers dampen moves (pinning); negative = dealers amplify moves.",
@@ -1964,7 +1964,7 @@
   ]
  },
  "goal": "Grow $10,000 to $100,000 within one year (by 2026-10-21 + 1 year)",
- "goal_progress": -0.0024444444444444444,
+ "goal_progress": -0.0022222222222222222,
  "goal_target": 100000.0,
  "history": [
   {
@@ -1997,7 +1997,7 @@
   },
   {
    "date": "2026-10-30",
-   "value": 9780.0
+   "value": 9800.0
   }
  ],
  "mode": "paper",
@@ -2010,9 +2010,9 @@
    "entry": 4.3,
    "entry_debit": 4.3,
    "id": "TSM-20261218-440-450C-1",
-   "last": 2.1,
+   "last": 2.3,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-30T11:45:54-04:00",
+   "last_updated": "2026-10-30T11:52:34-04:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -2031,31 +2031,31 @@
    ],
    "mark_method": "liq",
    "mark_quotes": {
-    "fetched": "2026-10-30T11:45:54-04:00",
+    "fetched": "2026-10-30T11:52:34-04:00",
     "intrinsic_floor": 0.0,
     "legs": [
      {
-      "ask": 10.55,
-      "bid": 10.2,
+      "ask": 10.4,
+      "bid": 10.05,
       "leg": "long 440C",
-      "mid": 10.375
+      "mid": 10.225
      },
      {
-      "ask": 8.1,
-      "bid": 7.7,
+      "ask": 7.75,
+      "bid": 7.6,
       "leg": "short 450C",
-      "mid": 7.9
+      "mid": 7.675
      }
     ],
-    "liq_raw": 2.1,
-    "mid_raw": 2.47,
+    "liq_raw": 2.3,
+    "mid_raw": 2.55,
     "source": "Nasdaq public option chain",
-    "underlying": 408.155
+    "underlying": 408.645
    },
    "mark_valid": true,
    "max_loss": 430.0,
    "max_value": 1000,
-   "mid": 2.47,
+   "mid": 2.55,
    "multiplier": 100,
    "opened": "2026-10-21T10:11:49-04:00",
    "price_source": "Nasdaq public option chain API (api.nasdaq.com), fetched 2026-10-21 10:11:49 ET; raw: reports/2026-10-21/raw_decider/TSM_2026-12-18_chain.json",
@@ -2069,10 +2069,10 @@
    "stop": 2.15,
    "stop_note": "close if spread value <= $2.15 (50% of debit)",
    "stop_watch": {
-    "consecutive_valid_at_or_below_stop": 1,
+    "consecutive_valid_at_or_below_stop": 0,
     "rule": "stop is hit only after 2 consecutive VALID marks (from 09:35 ET on; mid if quotes wide) at/below stop",
     "stop_confirmed": false,
-    "updated": "2026-10-30T11:45:54-04:00"
+    "updated": "2026-10-30T11:52:34-04:00"
    },
    "symbol": "TSM",
    "target": 7.5,
@@ -2090,10 +2090,10 @@
    "underlying_target_note": "TSM 450 = short strike / max spread value; added 2026-10-22 per Flow & Gamma request. Consider taking profit at spread $5.00+ if TSM stalls at the 430-435 call wall. 10/29: first take-profit $5.00 (call wall now 440)."
   }
  ],
- "positions_value": 210.0,
- "published_at": "2026-10-30 11:47:19 AM EDT",
- "published_epoch_ms": 1793375239245,
- "server_time": "2026-10-30 11:47:19 AM EDT",
+ "positions_value": 229.99999999999997,
+ "published_at": "2026-10-30 11:52:35 AM EDT",
+ "published_epoch_ms": 1793375555484,
+ "server_time": "2026-10-30 11:52:35 AM EDT",
  "start_date": "2026-10-21",
  "starting_cash": 10000.0,
  "strategy_b": {
@@ -2138,7 +2138,7 @@
   "win_rate": null
  },
  "today": "2026-10-30",
- "total_return": -0.02200000000000002,
+ "total_return": -0.020000000000000018,
  "trades": [
   {
    "action": "BUY_TO_OPEN",
