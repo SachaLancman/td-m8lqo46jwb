@@ -1,6 +1,6 @@
 {
  "account_value": 9780.0,
- "cash": 9570.0,
+ "cash": 9780.0,
  "crazy": {
   "account_value": 1362.0,
   "busted": false,
@@ -24,9 +24,9 @@
  "goal_progress": -0.0024444444444444444,
  "goal_target": 100000.0,
  "mode": "paper",
- "positions": 1,
- "published_at": "2026-10-30 12:12:36 PM EDT",
- "published_epoch_ms": 1793376756844,
+ "positions": 0,
+ "published_at": "2026-10-30 12:13:40 PM EDT",
+ "published_epoch_ms": 1793376820258,
  "roles": {
   "coordinator": {
    "note": "daily run kicked off; waiting on the Decider",
@@ -79,7 +79,7 @@
    "state": "done"
   }
  },
- "server_time": "2026-10-30 12:12:36 PM EDT",
+ "server_time": "2026-10-30 12:13:40 PM EDT",
  "starting_cash": 10000.0,
  "status_json_error": null,
  "today": "2026-10-30",
@@ -123,6 +123,41 @@
    "thesis": "TSM beat and raised Oct 15 (Q4 guide $52.3-54.3B, ~+58% y/y), no earnings until ~Jan, ~12.6% off high after sector-wide semis selloff; defined-risk debit spread because QQQ below 50-day and Technical flags semis as falling knife.",
    "time": "2026-10-21 10:11 ET",
    "timestamp": "2026-10-21T10:11:49-04:00",
+   "type": "call_debit_spread",
+   "underlying": "TSM"
+  },
+  {
+   "action": "SELL_TO_CLOSE",
+   "contracts": 1,
+   "credit": 2.1,
+   "detail": "12/18/26 440/450C",
+   "id": "TSM-20261218-440-450C-1",
+   "legs": [
+    {
+     "expiration": "2026-12-18",
+     "price": 9.9,
+     "right": "call",
+     "side": "sell",
+     "strike": 440
+    },
+    {
+     "expiration": "2026-12-18",
+     "price": 7.8,
+     "right": "call",
+     "side": "buy",
+     "strike": 450
+    }
+   ],
+   "multiplier": 100,
+   "pnl": -220.0,
+   "price": 2.1,
+   "price_source": "Nasdaq public option chain fetched 2026-10-30T12:11:55-04:00",
+   "proceeds": 210.0,
+   "qty": 1,
+   "reason": "stop confirmed: 2 consecutive valid liquidation marks at/below $2.15 (11:45 ET 2.10, 12:11 ET 2.10); TSM 406.4 in negative gamma below 418 flip, sitting on 400 put wall",
+   "symbol": "TSM",
+   "time": "2026-10-30 12:12 ET",
+   "timestamp": "2026-10-30T12:12:55-04:00",
    "type": "call_debit_spread",
    "underlying": "TSM"
   }
