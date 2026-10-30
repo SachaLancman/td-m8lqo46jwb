@@ -4,7 +4,7 @@
  "bust_threshold": 20.0,
  "busted": false,
  "buying_power": 700.0,
- "cash": 700.0,
+ "cash": 383.0,
  "closed_trades": 9,
  "drawdown": -0.11025145067698261,
  "error": null,
@@ -1103,13 +1103,50 @@
    "underlying_last": 132.305,
    "unrealized_pct": -0.1216,
    "unrealized_pnl": -45.0
+  },
+  {
+   "contracts": 1.0,
+   "detail": "AMZN +245C 2026-11-20 / -255C 2026-11-20",
+   "entry": 3.17,
+   "gamma_check": "gex.py 11:13: AMZN 239.9 negative gamma, flip 242.95, PW 240, CW 250; reclaim of flip = squeeze toward 250 wall; failure under 240 = stop",
+   "high_water": 3.17,
+   "id": "C13",
+   "kind": "option",
+   "last": 3.17,
+   "legs": [
+    {
+     "expiration": "2026-11-20",
+     "right": "call",
+     "side": "long",
+     "strike": 245.0
+    },
+    {
+     "expiration": "2026-11-20",
+     "right": "call",
+     "side": "short",
+     "strike": 255.0
+    }
+   ],
+   "mark_method": "fill",
+   "mark_valid": true,
+   "multiplier": 100,
+   "opened": "2026-10-30T11:14:33-04:00",
+   "source": "WhalesFlowRadar 11:08 ET https://x.com/WhalesFlowRadar/status/2116185542631284873; OptionsMike",
+   "stop": 1.5,
+   "stop_watch": {
+    "consecutive_valid_at_or_below_stop": 0
+   },
+   "symbol": "AMZN",
+   "target": 7.0,
+   "thesis": "Whale lead: WhalesFlowRadar AMZN Sept-2027 240C ~$6.9M + 260C ~$6M (Sept 240C vol 2068 vs OI 309 = opening). AMZN reclaimed 240 put wall from 232.5 post-earnings low; OptionsMike 4x AMZN call alerts, 'overdone this am'. Bullish hedge to the bearish C11/C12.",
+   "underlying": "AMZN"
   }
  ],
- "positions_value": 680.0,
- "published_at": "2026-10-30 11:13:48 AM EDT",
- "published_epoch_ms": 1793373228654,
+ "positions_value": 997.0,
+ "published_at": "2026-10-30 11:14:51 AM EDT",
+ "published_epoch_ms": 1793373291077,
  "realized_pnl": 500.0,
- "server_time": "2026-10-30 11:13:48 AM EDT",
+ "server_time": "2026-10-30 11:14:51 AM EDT",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
@@ -1562,6 +1599,20 @@
    "thesis": "Whale lead: MSTR put buying (FlowbyBobby 160k 100P 12/4, FL0WG0D 'Togi loading MSTR puts'); spot 129.7 below 138.6 flip, sitting on 130 put wall; spread fits cash and limits IV crush (earnings date unverified)",
    "time": "2026-10-30T10:42:34-04:00",
    "value_after": 1442.0
+  },
+  {
+   "action": "OPEN",
+   "cash_flow": -317.0,
+   "detail": "AMZN +245C 2026-11-20 / -255C 2026-11-20",
+   "gamma_check": "gex.py 11:13: AMZN 239.9 negative gamma, flip 242.95, PW 240, CW 250; reclaim of flip = squeeze toward 250 wall; failure under 240 = stop",
+   "id": "C13",
+   "price": 3.17,
+   "qty": 1.0,
+   "source": "WhalesFlowRadar 11:08 ET https://x.com/WhalesFlowRadar/status/2116185542631284873; OptionsMike",
+   "symbol": "AMZN",
+   "thesis": "Whale lead: WhalesFlowRadar AMZN Sept-2027 240C ~$6.9M + 260C ~$6M (Sept 240C vol 2068 vs OI 309 = opening). AMZN reclaimed 240 put wall from 232.5 post-earnings low; OptionsMike 4x AMZN call alerts, 'overdone this am'. Bullish hedge to the bearish C11/C12.",
+   "time": "2026-10-30T11:14:33-04:00",
+   "value_after": 1380.0
   }
  ],
  "win_rate": 0.5555555555555556
