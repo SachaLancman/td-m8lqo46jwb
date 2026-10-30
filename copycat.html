@@ -27,7 +27,7 @@ th{color:var(--mut);font-weight:500}td.n,th.n{text-align:right;font-variant-nume
 .buy{color:var(--g);font-weight:600}.sell{color:var(--r);font-weight:600}
 </style></head><body>
 <header><div><h1 style="display:inline">🦜 COPYCAT $10K</h1><span class="badge" id="mode">PAPER</span> <span class="mut" style="font-size:12px">copies fresh Congress (House PTR) &amp; 13F buys · stocks/ETFs only · run by Grok Bot</span></div>
-<div class="mut"><span class="tog"><a id="mainlink" href="#">📈 Main $10K</a><a id="crazylink" href="#">🔥 Crazy $1K</a><a class="on" href="#">🦜 Copycat</a><a id="floorlink" href="#">🎮 Floor</a><a id="dtlink" href="#" title="Archived 2026-10-30">⚡ Day Trade (archive)</a></span>Last updated: <span id="upd">—</span> <span id="stale" style="display:none;color:#d29922">· stale (box asleep — showing last snapshot)</span> · auto-refresh <span id="rf">60s</span></div></header>
+<div class="mut"><span class="tog"><a id="mainlink" href="#">📈 Main $10K</a><a id="crazylink" href="#">🔥 Crazy $1K</a><a class="on" href="#">🦜 Copycat</a></span>Last updated: <span id="upd">—</span> <span id="stale" style="display:none;color:#d29922">· stale (box asleep — showing last snapshot)</span> · auto-refresh <span id="rf">60s</span></div></header>
 <main>
 <div id="err"></div>
 <div class="kpis">
@@ -57,7 +57,7 @@ th{color:var(--mut);font-weight:500}td.n,th.n{text-align:right;font-variant-nume
 const $=id=>document.getElementById(id);
 const KEY=new URLSearchParams(location.search).get('key');
 const LIVE=!!KEY,q=p=>LIVE?p+'?key='+encodeURIComponent(KEY):'';
-$('mainlink').href=LIVE?q('/'):'index.html';$('crazylink').href=LIVE?q('/crazy'):'crazy.html';$('floorlink').href=LIVE?q('/office'):'office.html';$('dtlink').href=LIVE?q('/daytrade'):'daytrade.html';
+$('mainlink').href=LIVE?q('/'):'index.html';$('crazylink').href=LIVE?q('/crazy'):'crazy.html';
 $('rf').textContent=LIVE?'15s':'60s';
 const usd=(v,d=2)=>v==null||isNaN(v)?'—':(v<0?'-':'')+'$'+Math.abs(+v).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
 const pct=v=>v==null||isNaN(v)?'—':(v>=0?'+':'')+(v*100).toFixed(1)+'%';
