@@ -147,51 +147,57 @@
  "last_signals": {
   "blackout": false,
   "events": "08:30 Q3 Employment Cost Index (in line 0.8%); 09:30 Fed's Barkin speaks; 09:45 Chicago PMI (56.1 exp); 12:00 Fed's Daly speaks; 12:30 Fed's Musalem speaks",
-  "t": "09:45",
+  "t": "10:18",
   "tickers": {
    "QQQ": {
-    "last": 695.74,
-    "setup": "none",
+    "last": 694.48,
+    "setup": "bear",
     "votes": {
-     "crowd": "neutral",
-     "flow": "bear",
      "gamma": "bear",
-     "technicals": "neutral",
+     "technicals": "bear",
      "vix": "neutral"
     },
     "why": {
-     "crowd": "2-0 bear lean (TajVincent no QQQ longs under 713.24; spotgamma tech-contagion risk, NDX vol spiking) lv 696.3/701/713",
-     "flow": "lean (FL0WG0D: QQQ put whale ~$15M in profit, recap only)",
      "gamma": "negative gamma, spot 695.61 < flip 708.3, walls P700.0/C720.0",
-     "guard": "bear blocked: price 695.74 on wrong side of VWAP 695.7",
-     "technicals": ">VWAP 695.7; EMA9 701.83 vs 21 706.94"
+     "technicals": "<VWAP 695.5; EMA9 697.1 vs 21 702.08; inside OR30 694.05-698.63"
     }
    },
    "SPY": {
-    "last": 760.22,
-    "setup": "bear",
+    "last": 758.4,
+    "setup": "none",
     "votes": {
-     "crowd": "neutral",
-     "flow": "bear",
+     "crowd": "bull",
      "gamma": "bear",
      "saty": "bear",
      "technicals": "bear",
      "vix": "neutral"
     },
     "why": {
-     "crowd": "1-1 (SulkerTrades sees possible intraday recovery; RealSPXSniper took SPX 7600 puts then sold for loss; ripster47 'patient, no long under PM lows', VIX 19/20 key; TajVincent hold 760.90 = bounce watch to 766, lose it = stand down longs; ZeroGEX 760 put wall must absorb) lv 760.9/766",
-     "flow": "lean (FlowbyBobby: careful of lower SPX nodes at open, bulls need them to fade)",
+     "crowd": "1-0 (RealSPXSniper sold SPX 7580/7560 put spreads, took profit; FlowbyBobby 'air pocket' post, marked safe) lv 760/765",
      "gamma": "negative gamma, spot 760.2 < flip 765.46, walls P760.0/C800.0",
      "saty": "below short trigger 767.74 and below PML/H200 760.90 (put GG 766.74->765.13); idea downside SPY 758.0",
-     "technicals": "<VWAP 760.41; EMA9 762.97 vs 21 765.17"
+     "technicals": "<VWAP 760.19; EMA9 760.1 vs 21 762.62; below OR30 low 759.44"
+    }
+   },
+   "TSLA": {
+    "last": 396.93,
+    "setup": "bull",
+    "votes": {
+     "crowd": "bull",
+     "technicals": "bull",
+     "vix": "neutral"
+    },
+    "why": {
+     "crowd": "1-0 (RealSPXSniper long 400 0DTE calls, struggling)",
+     "technicals": ">VWAP 392.75; EMA9 396.56 vs 21 398.42; above OR30 high 396.19"
     }
    }
   },
   "vix": {
-   "chg_20m": 0.02,
+   "chg_20m": -0.03,
    "direction": "flat",
    "key": 18.5,
-   "last": 18.71,
+   "last": 18.78,
    "open": 18.43,
    "prev_close": 17.2,
    "vote": "neutral"
@@ -200,7 +206,7 @@
  "marked_at": "2026-10-30T10:18:26-04:00",
  "mode": "PAPER",
  "name": "Day Trade $10K (PAPER)",
- "notes": "# Day Trade $10K (PAPER) -- 2026-10-30\n\nRules: DAYTRADE.md. Paper only, never real orders.\n\n**Saty idea** (https://x.com/satymahajan/status/2116134861505249530): upside SPY 765.0c / SPX 7675.0c; downside SPY 758.0p / SPX 7600.0p; VIX key 18.5; patience flag: False.\n> Day Trade Idea: $SPX | $SPY\n> Upside: SPX 7675c | SPY 765c \n> Downside: SPX 7600p | SPY 758p \n> VIX key level: 18.5 \n> Retraced most of the week's upside move after running into 7760 resistance again on Wednesday. We're almost back to the weekly pivot. Now in clear overnight/pre-market range.\n> - If we break the range to the downside, looking to test the weekly pivot just below, then can head toward SPX 7600. If VIX breaks out over 20 we could see -2 ATR which represents approximately the Weekly 21.\n> - If we recover the overnight range highs, looking to a move back toward the 10m 200 and yesterday's -1 ATR.\n\n### 09:45 ET source read\n- VIX 18.71 (flat, key 18.5) -> neutral; events: 08:30 Q3 Employment Cost Index (in line 0.8%); 09:30 Fed's Barkin speaks; 09:45 Chicago PMI (56.1 exp); 12:00 Fed's Daly speaks; 12:30 Fed's Musalem speaks\n- **SPY 760.22** setup: **bear** (bull: - | bear: technicals, gamma, saty, flow) | VWAP 760.41 OR30 759.45-761.46 PDH/PDL 770.76/766.62 PMH/PML 769.36/760.9 H200 767.87\n  - technicals: bear -- <VWAP 760.41; EMA9 762.97 vs 21 765.17\n  - vix: neutral -- \n  - gamma: bear -- negative gamma, spot 760.2 < flip 765.46, walls P760.0/C800.0\n  - saty: bear -- below short trigger 767.74 and below PML/H200 760.90 (put GG 766.74->765.13); idea downside SPY 758.0\n  - crowd: neutral -- 1-1 (SulkerTrades sees possible intraday recovery; RealSPXSniper took SPX 7600 puts then sold for loss; ripster47 'patient, no long under PM lows', VIX 19/20 key; TajVincent hold 760.90 = bounce watch to 766, lose it = stand down longs; ZeroGEX 760 put wall must absorb) lv 760.9/766\n  - flow: bear -- lean (FlowbyBobby: careful of lower SPX nodes at open, bulls need them to fade)\n- **QQQ 695.74** setup: **none** (bull: - | bear: gamma, flow) | VWAP 695.7 OR30 694.05-697.41 PDH/PDL 718.07/711.62 PMH/PML 703.38/696.2 H200 718.32\n  - technicals: neutral -- >VWAP 695.7; EMA9 701.83 vs 21 706.94\n  - vix: neutral -- \n  - gamma: bear -- negative gamma, spot 695.61 < flip 708.3, walls P700.0/C720.0\n  - crowd: neutral -- 2-0 bear lean (TajVincent no QQQ longs under 713.24; spotgamma tech-contagion risk, NDX vol spiking) lv 696.3/701/713\n  - flow: bear -- lean (FL0WG0D: QQQ put whale ~$15M in profit, recap only)\n  - guard: bear blocked: price 695.74 on wrong side of VWAP 695.7\n\n**PAPER OPEN D3** 09:46 ET: buy 9 SPY 760P 2026-10-30 @ 1.71 ($1,539); sources agreeing (bear): technicals, gamma, saty; stop 1.03 (-40%, 2 valid marks) / hard 0.68 (-60%) / target 2.74 (+60%) / SPY target 758.0. Thesis: SPY 760.3 below PML 760.9/H200 and Saty short trigger, under VWAP with EMA9<21, negative gamma below 765.5 flip; Saty downside 758p, VIX 18.7 above 18.5 key; risk: 760 put wall right here, so stop discipline\n\n\n### 09:48 ET entry\n**Opened D3: 9 x SPY 10/30 760P @ 1.71 ($1,539, 19% of $8,115), stop 1.03, target 2.74, und-target 758.** Sources agreeing: technicals (below VWAP 760.41, PML 760.90, EMA9<21), gamma (negative, below 765.5 flip), Saty (short trigger, 758p idea). Flow lean bear (QQQ put-whale recap, FlowbyBobby lower nodes) noted but not counted. VIX 18.7 neutral; crowd 1-1. Main risk: 760 put wall/king node right at spot \u2014 respect the stop. Chicago PMI (09:45) has passed; next blackout 11:45 (Daly 12:00). Entries today 1/2.\n",
+ "notes": "# Day Trade $10K (PAPER) -- 2026-10-30\n\nRules: DAYTRADE.md. Paper only, never real orders.\n\n**Saty idea** (https://x.com/satymahajan/status/2116134861505249530): upside SPY 765.0c / SPX 7675.0c; downside SPY 758.0p / SPX 7600.0p; VIX key 18.5; patience flag: False.\n> Day Trade Idea: $SPX | $SPY\n> Upside: SPX 7675c | SPY 765c \n> Downside: SPX 7600p | SPY 758p \n> VIX key level: 18.5 \n> Retraced most of the week's upside move after running into 7760 resistance again on Wednesday. We're almost back to the weekly pivot. Now in clear overnight/pre-market range.\n> - If we break the range to the downside, looking to test the weekly pivot just below, then can head toward SPX 7600. If VIX breaks out over 20 we could see -2 ATR which represents approximately the Weekly 21.\n> - If we recover the overnight range highs, looking to a move back toward the 10m 200 and yesterday's -1 ATR.\n\n### 09:45 ET source read\n- VIX 18.71 (flat, key 18.5) -> neutral; events: 08:30 Q3 Employment Cost Index (in line 0.8%); 09:30 Fed's Barkin speaks; 09:45 Chicago PMI (56.1 exp); 12:00 Fed's Daly speaks; 12:30 Fed's Musalem speaks\n- **SPY 760.22** setup: **bear** (bull: - | bear: technicals, gamma, saty, flow) | VWAP 760.41 OR30 759.45-761.46 PDH/PDL 770.76/766.62 PMH/PML 769.36/760.9 H200 767.87\n  - technicals: bear -- <VWAP 760.41; EMA9 762.97 vs 21 765.17\n  - vix: neutral -- \n  - gamma: bear -- negative gamma, spot 760.2 < flip 765.46, walls P760.0/C800.0\n  - saty: bear -- below short trigger 767.74 and below PML/H200 760.90 (put GG 766.74->765.13); idea downside SPY 758.0\n  - crowd: neutral -- 1-1 (SulkerTrades sees possible intraday recovery; RealSPXSniper took SPX 7600 puts then sold for loss; ripster47 'patient, no long under PM lows', VIX 19/20 key; TajVincent hold 760.90 = bounce watch to 766, lose it = stand down longs; ZeroGEX 760 put wall must absorb) lv 760.9/766\n  - flow: bear -- lean (FlowbyBobby: careful of lower SPX nodes at open, bulls need them to fade)\n- **QQQ 695.74** setup: **none** (bull: - | bear: gamma, flow) | VWAP 695.7 OR30 694.05-697.41 PDH/PDL 718.07/711.62 PMH/PML 703.38/696.2 H200 718.32\n  - technicals: neutral -- >VWAP 695.7; EMA9 701.83 vs 21 706.94\n  - vix: neutral -- \n  - gamma: bear -- negative gamma, spot 695.61 < flip 708.3, walls P700.0/C720.0\n  - crowd: neutral -- 2-0 bear lean (TajVincent no QQQ longs under 713.24; spotgamma tech-contagion risk, NDX vol spiking) lv 696.3/701/713\n  - flow: bear -- lean (FL0WG0D: QQQ put whale ~$15M in profit, recap only)\n  - guard: bear blocked: price 695.74 on wrong side of VWAP 695.7\n\n**PAPER OPEN D3** 09:46 ET: buy 9 SPY 760P 2026-10-30 @ 1.71 ($1,539); sources agreeing (bear): technicals, gamma, saty; stop 1.03 (-40%, 2 valid marks) / hard 0.68 (-60%) / target 2.74 (+60%) / SPY target 758.0. Thesis: SPY 760.3 below PML 760.9/H200 and Saty short trigger, under VWAP with EMA9<21, negative gamma below 765.5 flip; Saty downside 758p, VIX 18.7 above 18.5 key; risk: 760 put wall right here, so stop discipline\n\n\n### 09:48 ET entry\n**Opened D3: 9 x SPY 10/30 760P @ 1.71 ($1,539, 19% of $8,115), stop 1.03, target 2.74, und-target 758.** Sources agreeing: technicals (below VWAP 760.41, PML 760.90, EMA9<21), gamma (negative, below 765.5 flip), Saty (short trigger, 758p idea). Flow lean bear (QQQ put-whale recap, FlowbyBobby lower nodes) noted but not counted. VIX 18.7 neutral; crowd 1-1. Main risk: 760 put wall/king node right at spot \u2014 respect the stop. Chicago PMI (09:45) has passed; next blackout 11:45 (Daly 12:00). Entries today 1/2.\n### 10:18 ET source read\n- VIX 18.78 (flat, key 18.5) -> neutral; events: 08:30 Q3 Employment Cost Index (in line 0.8%); 09:30 Fed's Barkin speaks; 09:45 Chicago PMI (56.1 exp); 12:00 Fed's Daly speaks; 12:30 Fed's Musalem speaks\n- **SPY 758.4** setup: **none** (bull: crowd | bear: technicals, gamma, saty) | VWAP 760.19 OR30 759.44-761.46 PDH/PDL 770.76/766.62 PMH/PML 769.36/760.9 H200 767.83\n  - technicals: bear -- <VWAP 760.19; EMA9 760.1 vs 21 762.62; below OR30 low 759.44\n  - vix: neutral -- \n  - gamma: bear -- negative gamma, spot 760.2 < flip 765.46, walls P760.0/C800.0\n  - saty: bear -- below short trigger 767.74 and below PML/H200 760.90 (put GG 766.74->765.13); idea downside SPY 758.0\n  - crowd: bull -- 1-0 (RealSPXSniper sold SPX 7580/7560 put spreads, took profit; FlowbyBobby 'air pocket' post, marked safe) lv 760/765\n- **QQQ 694.48** setup: **bear** (bull: - | bear: technicals, gamma) | VWAP 695.5 OR30 694.05-698.63 PDH/PDL 718.07/711.62 PMH/PML 703.38/696.2 H200 718.3\n  - technicals: bear -- <VWAP 695.5; EMA9 697.1 vs 21 702.08; inside OR30 694.05-698.63\n  - vix: neutral -- \n  - gamma: bear -- negative gamma, spot 695.61 < flip 708.3, walls P700.0/C720.0\n- **TSLA 396.93** setup: **bull** (bull: technicals, crowd | bear: -) | VWAP 392.75 OR30 387.52-396.19 PDH/PDL 406.98/400.5 PMH/PML 397.11/392.17 H200 386.8\n  - technicals: bull -- >VWAP 392.75; EMA9 396.56 vs 21 398.42; above OR30 high 396.19\n  - vix: neutral -- \n  - crowd: bull -- 1-0 (RealSPXSniper long 400 0DTE calls, struggling)\n\n",
  "notes_date": "2026-10-30",
  "peak_value": 10000.0,
  "positions": [
@@ -251,10 +257,10 @@
   }
  ],
  "positions_value": 1503.0,
- "published_at": "2026-10-30 10:18:37 AM EDT",
- "published_epoch_ms": 1793369917476,
+ "published_at": "2026-10-30 10:19:39 AM EDT",
+ "published_epoch_ms": 1793369979571,
  "realized_pnl": -1885.0,
- "server_time": "2026-10-30 10:18:37 AM EDT",
+ "server_time": "2026-10-30 10:19:39 AM EDT",
  "start_date": "2026-10-29",
  "starting_cash": 10000.0,
  "status": "active",
