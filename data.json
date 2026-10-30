@@ -1,9 +1,9 @@
 {
- "account_value": 9795.0,
+ "account_value": 9810.0,
  "cash": 9570.0,
- "decision": "## 09:48 ET scan \u2014 Decider\n- TSM 12/18 440/450C x1: HOLD. Mid 2.60 vs stop 2.15 (not hit), TP 5.00.\n- Gamma check: TSM 416.4 in negative gamma (flip 419.25, CW 420, PW 410); SPY 760.4 negative (flip ~765\u2013768, king/PW 760); QQQ 695.8 negative (flip 703.9, PW 710 broken). Risk-off tape.\n- New entries: none. Gap-down, negative-gamma open; no new $1M+ whale print on our watchlist; nothing qualifies under RULES.md. Risk Manager: no change to exposure (1/10 positions, cash $9,570).\n",
+ "decision": "## 09:48 ET scan \u2014 Decider\n- TSM 12/18 440/450C x1: HOLD. Mid 2.60 vs stop 2.15 (not hit), TP 5.00.\n- Gamma check: TSM 416.4 in negative gamma (flip 419.25, CW 420, PW 410); SPY 760.4 negative (flip ~765\u2013768, king/PW 760); QQQ 695.8 negative (flip 703.9, PW 710 broken). Risk-off tape.\n- New entries: none. Gap-down, negative-gamma open; no new $1M+ whale print on our watchlist; nothing qualifies under RULES.md. Risk Manager: no change to exposure (1/10 positions, cash $9,570).\n\n## 10:11 ET TSM stop check (Decider)\n- Risk's 10:10 mark was $2.15 liquidation (440C 12.25/13.05, 450C 9.55/10.10), at the stop: valid mark 1 of 2.\n- Fresh Decider mark (mark.py, Nasdaq, 10:10:56): 440C 12.25/13.05, 450C 9.30/9.85, liquidation **$2.40**, mid $3.08, valid, TSM 414.93. That's above the $2.15 stop, so the stop is NOT confirmed and stop_watch stays 0/2. **HOLD, no exit.** No adds (Risk veto).\n- TSM is on the 415 put wall in negative gamma below the 421.7 flip. Re-mark on the next run; any 2 consecutive valid marks at or below $2.15, or a TSM close below 400, means close.\n",
  "decision_date": "2026-10-30",
- "drawdown": -0.02294264339152119,
+ "drawdown": -0.02144638403990029,
  "error": null,
  "gamma": {
   "convention": "Dealer GEX approximation: call GEX = +gamma*OI*100*S^2*0.01, put GEX = -gamma*OI*100*S^2*0.01 ($ of delta hedging per 1% move; assumes dealers long calls / short puts, the common public convention). Positive total = dealers dampen moves (pinning); negative = dealers amplify moves.",
@@ -438,7 +438,7 @@
   ]
  },
  "goal": "Grow $10,000 to $100,000 within one year (by 2026-10-21 + 1 year)",
- "goal_progress": -0.002277777777777778,
+ "goal_progress": -0.002111111111111111,
  "goal_target": 100000.0,
  "history": [
   {
@@ -471,7 +471,7 @@
   },
   {
    "date": "2026-10-30",
-   "value": 9795.0
+   "value": 9810.0
   }
  ],
  "mode": "paper",
@@ -484,9 +484,9 @@
    "entry": 4.3,
    "entry_debit": 4.3,
    "id": "TSM-20261218-440-450C-1",
-   "last": 2.25,
+   "last": 2.4,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-10-30T10:02:58-04:00",
+   "last_updated": "2026-10-30T10:10:56-04:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -505,31 +505,31 @@
    ],
    "mark_method": "liq",
    "mark_quotes": {
-    "fetched": "2026-10-30T10:02:58-04:00",
+    "fetched": "2026-10-30T10:10:56-04:00",
     "intrinsic_floor": 0.0,
     "legs": [
      {
-      "ask": 12.35,
-      "bid": 11.8,
+      "ask": 13.05,
+      "bid": 12.25,
       "leg": "long 440C",
-      "mid": 12.075
+      "mid": 12.65
      },
      {
-      "ask": 9.55,
-      "bid": 8.9,
+      "ask": 9.85,
+      "bid": 9.3,
       "leg": "short 450C",
-      "mid": 9.225
+      "mid": 9.575
      }
     ],
-    "liq_raw": 2.25,
-    "mid_raw": 2.85,
+    "liq_raw": 2.4,
+    "mid_raw": 3.08,
     "source": "Nasdaq public option chain",
-    "underlying": 416.4
+    "underlying": 414.93
    },
    "mark_valid": true,
    "max_loss": 430.0,
    "max_value": 1000,
-   "mid": 2.85,
+   "mid": 3.08,
    "multiplier": 100,
    "opened": "2026-10-21T10:11:49-04:00",
    "price_source": "Nasdaq public option chain API (api.nasdaq.com), fetched 2026-10-21 10:11:49 ET; raw: reports/2026-10-21/raw_decider/TSM_2026-12-18_chain.json",
@@ -546,7 +546,7 @@
     "consecutive_valid_at_or_below_stop": 0,
     "rule": "stop is hit only after 2 consecutive VALID marks (from 09:35 ET on; mid if quotes wide) at/below stop",
     "stop_confirmed": false,
-    "updated": "2026-10-30T10:02:58-04:00"
+    "updated": "2026-10-30T10:10:56-04:00"
    },
    "symbol": "TSM",
    "target": 7.5,
@@ -564,10 +564,10 @@
    "underlying_target_note": "TSM 450 = short strike / max spread value; added 2026-10-22 per Flow & Gamma request. Consider taking profit at spread $5.00+ if TSM stalls at the 430-435 call wall. 10/29: first take-profit $5.00 (call wall now 440)."
   }
  ],
- "positions_value": 225.0,
- "published_at": "2026-10-30 10:10:27 AM EDT",
- "published_epoch_ms": 1793369427917,
- "server_time": "2026-10-30 10:10:27 AM EDT",
+ "positions_value": 240.0,
+ "published_at": "2026-10-30 10:11:29 AM EDT",
+ "published_epoch_ms": 1793369489787,
+ "server_time": "2026-10-30 10:11:29 AM EDT",
  "start_date": "2026-10-21",
  "starting_cash": 10000.0,
  "strategy_b": {
@@ -612,7 +612,7 @@
   "win_rate": null
  },
  "today": "2026-10-30",
- "total_return": -0.020499999999999963,
+ "total_return": -0.019000000000000017,
  "trades": [
   {
    "action": "BUY_TO_OPEN",
