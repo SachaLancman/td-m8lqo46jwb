@@ -1,5 +1,5 @@
 {
- "account_value": 10024.630000000001,
+ "account_value": 10039.9,
  "alerts": [],
  "cash": 7019.29,
  "closed_trades": 0,
@@ -9,6 +9,10 @@
   {
    "date": "2026-10-30",
    "value": 10024.63
+  },
+  {
+   "date": "2026-11-02",
+   "value": 10039.9
   }
  ],
  "intraday": [
@@ -75,27 +79,15 @@
   {
    "t": "2026-10-30T16:31-04:00",
    "value": 10024.63
+  },
+  {
+   "t": "2026-11-02T09:37-05:00",
+   "value": 10039.9
   }
  ],
  "last_signals": {
-  "at": "2026-10-30T14:06:58-04:00",
+  "at": "2026-11-02T09:37:42-05:00",
   "candidates": [
-   {
-    "best_amount": "$1,001 - $15,000",
-    "buys": 3,
-    "earnings": "earnings 2026-11-17 (12 trading days away)",
-    "liquidity": "liquid: mcap $4,882B, avg $vol $22,998M/day",
-    "members": [
-     "Fields"
-    ],
-    "price": 202.59,
-    "qualifies": true,
-    "score": 3,
-    "ticker": "NVDA",
-    "urls": [
-     "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035669.pdf"
-    ]
-   },
    {
     "best_amount": "$1,001 - $15,000",
     "buys": 2,
@@ -104,8 +96,8 @@
     "members": [
      "Taylor"
     ],
-    "price": 128.735,
-    "qualifies": true,
+    "price": 128.64,
+    "qualifies": false,
     "score": 2,
     "ticker": "PLD",
     "urls": [
@@ -116,12 +108,12 @@
     "best_amount": "$1,001 - $15,000",
     "buys": 1,
     "earnings": "earnings date unknown (Earnings announcement* for LRCX:  Our vendor, Zacks Investment Research, hasn't )",
-    "liquidity": "liquid: mcap $293B, avg $vol $2,118M/day",
+    "liquidity": "liquid: mcap $300B, avg $vol $2,227M/day",
     "members": [
      "Taylor"
     ],
-    "price": 234.28,
-    "qualifies": true,
+    "price": 240.13,
+    "qualifies": false,
     "score": 1,
     "ticker": "LRCX",
     "urls": [
@@ -132,11 +124,11 @@
     "best_amount": "$1,001 - $15,000",
     "buys": 1,
     "earnings": "earnings date unknown (Earnings announcement* for T:  Our vendor, Zacks Investment Research, hasn't pro)",
-    "liquidity": "liquid: mcap $144B, avg $vol $748M/day",
+    "liquidity": "liquid: mcap $144B, avg $vol $745M/day",
     "members": [
      "Taylor"
     ],
-    "price": 21.435,
+    "price": 21.37,
     "qualifies": true,
     "score": 1,
     "ticker": "T",
@@ -148,32 +140,16 @@
     "best_amount": "$1,001 - $15,000",
     "buys": 1,
     "earnings": "earnings date unknown (Earnings announcement* for RPM:  Our vendor, Zacks Investment Research, hasn't p)",
-    "liquidity": "liquid: mcap $13B, avg $vol $60M/day",
+    "liquidity": "liquid: mcap $13B, avg $vol $61M/day",
     "members": [
      "Taylor"
     ],
-    "price": 102.125,
+    "price": 105.25,
     "qualifies": true,
     "score": 1,
     "ticker": "RPM",
     "urls": [
      "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035727.pdf"
-    ]
-   },
-   {
-    "best_amount": "$1,001 - $15,000",
-    "buys": 1,
-    "earnings": "earnings date unknown (Earnings announcement* for TSM:  Our vendor, Zacks Investment Research, hasn't p)",
-    "liquidity": "liquid: mcap $2,089B, avg $vol $4,222M/day",
-    "members": [
-     "Fields"
-    ],
-    "price": 402.78,
-    "qualifies": true,
-    "score": 1,
-    "ticker": "TSM",
-    "urls": [
-     "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035669.pdf"
     ]
    }
   ],
@@ -193,7 +169,9 @@
     "amount": "$1,001 - $15,000",
     "delay_days": 14,
     "filed": "2026-10-29",
-    "held": null,
+    "held": [
+     "copycat"
+    ],
     "kind": "buy",
     "member": "David J. Taylor",
     "ticker": "LRCX",
@@ -226,7 +204,9 @@
     "amount": "$1,001 - $15,000",
     "delay_days": 14,
     "filed": "2026-10-29",
-    "held": null,
+    "held": [
+     "copycat"
+    ],
     "kind": "buy",
     "member": "David J. Taylor",
     "ticker": "PLD",
@@ -237,7 +217,9 @@
     "amount": "$1,001 - $15,000",
     "delay_days": 14,
     "filed": "2026-10-29",
-    "held": null,
+    "held": [
+     "copycat"
+    ],
     "kind": "buy",
     "member": "David J. Taylor",
     "ticker": "PLD",
@@ -516,7 +498,9 @@
     "amount": "$15,001 - $50,000",
     "delay_days": 25,
     "filed": "2026-10-27",
-    "held": null,
+    "held": [
+     "copycat"
+    ],
     "kind": "sell",
     "member": "Pete Sessions",
     "ticker": "NVDA",
@@ -625,15 +609,8 @@
   ],
   "f13": [
    {
-    "age_days": 77,
-    "changes": [
-     "ADD +45% GOOGL",
-     "ADD +658% GOOG",
-     "ADD +44% DAL",
-     "ADD +30% LEN",
-     "TRIM -58% COF",
-     "TRIM -52% NUE"
-    ],
+    "age_days": 80,
+    "changes": [],
     "error": null,
     "filed": "2026-08-14",
     "firm": "Berkshire Hathaway",
@@ -643,15 +620,8 @@
     "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001067983&type=13F-HR"
    },
    {
-    "age_days": 361,
-    "changes": [
-     "NEW PLTR",
-     "NEW NVDA",
-     "NEW PFE",
-     "EXIT UNH",
-     "EXIT REGN",
-     "EXIT META"
-    ],
+    "age_days": 364,
+    "changes": [],
     "error": null,
     "filed": "2025-11-03",
     "firm": "Scion Asset Mgmt",
@@ -661,13 +631,8 @@
     "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001649339&type=13F-HR"
    },
    {
-    "age_days": 168,
-    "changes": [
-     "NEW MSFT",
-     "EXIT HLT",
-     "TRIM -95% GOOG",
-     "TRIM -95% GOOGL"
-    ],
+    "age_days": 171,
+    "changes": [],
     "error": null,
     "filed": "2026-05-15",
     "firm": "Pershing Square",
@@ -677,15 +642,8 @@
     "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001336528&type=13F-HR"
    },
    {
-    "age_days": 77,
-    "changes": [
-     "ADD +140% INSM",
-     "ADD +307% AMZN",
-     "NEW CDW",
-     "NEW GOOGL",
-     "ADD +141% STX",
-     "NEW FOXA"
-    ],
+    "age_days": 80,
+    "changes": [],
     "error": null,
     "filed": "2026-08-14",
     "firm": "Duquesne Family Office",
@@ -695,15 +653,8 @@
     "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001536411&type=13F-HR"
    },
    {
-    "age_days": 77,
-    "changes": [
-     "TRIM -41% MU",
-     "ADD +55% META",
-     "NEW AAPL",
-     "TRIM -42% BABA",
-     "EXIT SNDK",
-     "NEW BA"
-    ],
+    "age_days": 80,
+    "changes": [],
     "error": null,
     "filed": "2026-08-14",
     "firm": "Appaloosa",
@@ -713,15 +664,8 @@
     "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001656456&type=13F-HR"
    },
    {
-    "age_days": 77,
-    "changes": [
-     "ADD +42% SNDK",
-     "ADD +61% MU",
-     "EXIT SMH",
-     "EXIT NVDA",
-     "NEW NBIS",
-     "EXIT ORCL"
-    ],
+    "age_days": 80,
+    "changes": [],
     "error": null,
     "filed": "2026-08-14",
     "firm": "Situational Awareness LP",
@@ -735,202 +679,199 @@
   "news": [
    {
     "kind": "headline",
-    "link": "https://247wallst.com/investing/2026/10/30/sandisk-sinks-9-despite-earnings-beat-raised-guidance-and-8-for-1-split-western-digital-tumbles-8-seagate-slides-7-micron-falls-6/?.tsrc=rss",
+    "link": "https://www.cbsnews.com/news/marvell-lumentum-acquisition-ai-connectivity/?.tsrc=rss",
+    "source": "Yahoo Finance",
+    "tags": [
+     "deal"
+    ],
+    "ticker": "NVDA",
+    "time": "2026-11-02T14:23:54+00:00",
+    "title": "Marvell to acquire Lumentum in $115 billion AI connectivity deal"
+   },
+   {
+    "kind": "headline",
+    "link": "https://www.fool.com/investing/2026/11/02/why-every-investor-needs-invest-in-miracle-drugs/?.tsrc=rss",
+    "source": "Yahoo Finance",
+    "tags": [
+     "earnings"
+    ],
+    "ticker": "NVDA",
+    "time": "2026-11-02T14:20:00+00:00",
+    "title": "Here's Why I Think Every Investor Needs to Invest in These \"Miracle\" Drugs"
+   },
+   {
+    "kind": "headline",
+    "link": "https://www.tikr.com/blog/23-big-funds-bought-amd-stock-before-earnings?ref=yahoofinance&tlnk=yf-261102-h559788v&.tsrc=rss",
+    "source": "Yahoo Finance",
+    "tags": [
+     "earnings"
+    ],
+    "ticker": "NVDA",
+    "time": "2026-11-02T14:01:10+00:00",
+    "title": "23 Big Funds Bought Advanced Micro Devices Last Quarter. Is It a Buy Before Earnings?"
+   },
+   {
+    "kind": "headline",
+    "link": "https://finance.yahoo.com/m/9e7a7710-9e1a-35b4-ba03-c1bc8203ddcb/apple%2C-marvell%2C-lumentum%2C.html?.tsrc=rss",
+    "source": "Yahoo Finance",
+    "tags": [
+     "earnings"
+    ],
+    "ticker": "NVDA",
+    "time": "2026-11-02T13:59:00+00:00",
+    "title": "Apple, Marvell, Lumentum, SpaceX, EchoStar, Palantir, and More Stocks That Explain Today\u2019s Market"
+   },
+   {
+    "kind": "headline",
+    "link": "https://finance.yahoo.com/m/2fea8461-818e-3758-9705-fca9939406d3/marvell-could-be-making-a.html?.tsrc=rss",
+    "source": "Yahoo Finance",
+    "tags": [
+     "deal"
+    ],
+    "ticker": "GOOGL",
+    "time": "2026-11-02T14:10:00+00:00",
+    "title": "Marvell Could Be Making a $115 Billion Mistake With Lumentum Purchase"
+   },
+   {
+    "kind": "headline",
+    "link": "https://finance.yahoo.com/technology/articles/nomura-flags-tech-pocket-portfolio-134324765.html?.tsrc=rss",
+    "source": "Yahoo Finance",
+    "tags": [
+     "earnings"
+    ],
+    "ticker": "GOOGL",
+    "time": "2026-11-02T13:43:24+00:00",
+    "title": "Nomura flags this tech pocket as \u2019portfolio shelter\u2019 from AI spending pressure"
+   },
+   {
+    "kind": "headline",
+    "link": "https://finance.yahoo.com/video/will-ai-stocks-rebound-a-closer-look-at-last-weeks-tech-sell-off-142253275.html?.tsrc=rss",
+    "source": "Yahoo Finance",
+    "tags": [],
+    "ticker": "GOOGL",
+    "time": "2026-11-02T14:22:53+00:00",
+    "title": "Will AI stocks rebound? A closer look at last week's tech sell-off"
+   },
+   {
+    "kind": "headline",
+    "link": "https://finance.yahoo.com/video/ai-is-breaking-the-search-business-model-140831683.html?.tsrc=rss",
+    "source": "Yahoo Finance",
+    "tags": [],
+    "ticker": "GOOGL",
+    "time": "2026-11-02T14:08:31+00:00",
+    "title": "AI is breaking the search business model"
+   },
+   {
+    "kind": "headline",
+    "link": "https://decrypt.co/382332/morning-minute-the-binance-hack-leads-to-mass-outflows-while-fbi-opens-probe?.tsrc=rss",
+    "source": "Yahoo Finance",
+    "tags": [
+     "legal",
+     "risk"
+    ],
+    "ticker": "MU",
+    "time": "2026-11-02T13:34:02+00:00",
+    "title": "Morning Minute: Binance Hack Leads to Mass Outflows While FBI Opens Probe"
+   },
+   {
+    "kind": "headline",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/vertiv-centerra-gold-highlighted-zacks-124100526.html?.tsrc=rss",
+    "source": "Yahoo Finance",
+    "tags": [
+     "earnings",
+     "analyst"
+    ],
+    "ticker": "MU",
+    "time": "2026-11-02T12:41:00+00:00",
+    "title": "Vertiv and Centerra Gold have been highlighted as Zacks Bull and Bear of the Day"
+   },
+   {
+    "kind": "headline",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/zacks-com-featured-highlights-alphabet-085700899.html?.tsrc=rss",
     "source": "Yahoo Finance",
     "tags": [
      "earnings",
      "capital"
     ],
     "ticker": "MU",
-    "time": "2026-10-30T13:17:24+00:00",
-    "title": "Sandisk Sinks 9% Despite Earnings Beat, Raised Guidance and 8-for-1 Split; Western Digital Tumbles 8%, Seagate Slides 7%, Micron Falls 6%"
+    "time": "2026-11-02T08:57:00+00:00",
+    "title": "Zacks.com featured highlights include Alphabet, GormanRupp, Micron, Corning, Suncor Energy and Plains All American Pipeline"
    },
    {
     "kind": "headline",
-    "link": "https://finance.yahoo.com/markets/stocks/articles/bet-5-dividend-growth-stocks-131600212.html?.tsrc=rss",
+    "link": "https://finance.yahoo.com/m/bd018301-6d3e-3184-af80-f59e8a518b89/why-tech-just-got-an-upgrade.html?.tsrc=rss",
     "source": "Yahoo Finance",
     "tags": [
-     "earnings",
-     "capital"
+     "analyst"
     ],
     "ticker": "MU",
-    "time": "2026-10-30T13:16:00+00:00",
-    "title": "Bet on These 5 Dividend Growth Stocks as Alphabet Loses $500B in Market Cap"
+    "time": "2026-11-02T13:35:00+00:00",
+    "title": "Why Tech Just Got an Upgrade 3 Weeks After These Analysts Slashed Their Rating"
    },
    {
     "kind": "headline",
-    "link": "https://www.fool.com/investing/2026/10/30/why-intel-is-down-today/?.tsrc=rss",
-    "source": "Yahoo Finance",
-    "tags": [
-     "earnings"
-    ],
-    "ticker": "MU",
-    "time": "2026-10-30T17:09:02+00:00",
-    "title": "Why Intel Is Down Today"
-   },
-   {
-    "kind": "headline",
-    "link": "https://www.tikr.com/blog/sandisk-sinks-12-despite-earnings-beat-and-8-for-1-split-as-memory-stocks-slide-its-absurd?ref=yahoofinance&.tsrc=rss",
-    "source": "Yahoo Finance",
-    "tags": [
-     "earnings"
-    ],
-    "ticker": "MU",
-    "time": "2026-10-30T16:47:25+00:00",
-    "title": "Sandisk Sinks 12% Despite Earnings Beat and 8-for-1 Split as Memory Stocks Slide: \u201cIt\u2019s Absurd\u201d"
-   },
-   {
-    "kind": "headline",
-    "link": "https://finance.yahoo.com/video/demand-for-ai-intelligence-is-insatiable-but-wheres-the-roi-173810027.html?.tsrc=rss",
-    "source": "Yahoo Finance",
-    "tags": [
-     "earnings",
-     "people"
-    ],
-    "ticker": "GOOGL",
-    "time": "2026-10-30T17:38:10+00:00",
-    "title": "Demand for AI intelligence is insatiable, but where\u2019s the ROI?"
-   },
-   {
-    "kind": "headline",
-    "link": "https://www.cbsnews.com/news/nasdaq-futures-tumble-tech-earnings-ai/?.tsrc=rss",
-    "source": "Yahoo Finance",
-    "tags": [
-     "earnings"
-    ],
-    "ticker": "GOOGL",
-    "time": "2026-10-30T17:44:11+00:00",
-    "title": "Tech stocks crushed as Nasdaq tumbles more than 800 points"
-   },
-   {
-    "kind": "headline",
-    "link": "https://www.fool.com/investing/2026/10/30/big-tech-stocks-have-never-looked-cheaper-is-the-magnificent-seven-a-screaming-buy/?.tsrc=rss",
-    "source": "Yahoo Finance",
-    "tags": [
-     "earnings"
-    ],
-    "ticker": "GOOGL",
-    "time": "2026-10-30T17:20:03+00:00",
-    "title": "Big Tech Stocks Have Never Looked Cheaper. Is the Magnificent Seven a Screaming Buy?"
-   },
-   {
-    "kind": "headline",
-    "link": "https://www.cnn.com/2026/10/30/investing/us-stocks-ai-investment?.tsrc=rss",
-    "source": "Yahoo Finance",
-    "tags": [
-     "earnings"
-    ],
-    "ticker": "GOOGL",
-    "time": "2026-10-30T17:00:50+00:00",
-    "title": "Wall Street sell-off deepens as investors question returns on \u2018monster AI splurge\u2019"
-   },
-   {
-    "kind": "headline",
-    "link": "https://247wallst.com/investing/2026/10/30/cathie-woods-latest-amd-move-means-absolutely-nothing/?.tsrc=rss",
-    "source": "Yahoo Finance",
-    "tags": [
-     "earnings"
-    ],
-    "ticker": "TSM",
-    "time": "2026-10-30T14:45:08+00:00",
-    "title": "Cathie Wood\u2019s Latest AMD Move Means Absolutely Nothing"
-   },
-   {
-    "kind": "headline",
-    "link": "https://www.euronews.com/2026/10/30/tech-firms-take-fresh-hit-as-disappointing-earnings-fan-ai-fears?.tsrc=rss",
-    "source": "Yahoo Finance",
-    "tags": [
-     "earnings"
-    ],
-    "ticker": "TSM",
-    "time": "2026-10-30T09:36:52+00:00",
-    "title": "Tech firms take fresh hit as disappointing earnings fan AI fears"
-   },
-   {
-    "kind": "headline",
-    "link": "https://finance.yahoo.com/m/ec43d90a-a22a-3227-8cfa-a34d4c621d05/intel-stock-sinks-25%25.-a.html?.tsrc=rss",
-    "source": "Yahoo Finance",
-    "tags": [
-     "earnings"
-    ],
-    "ticker": "TSM",
-    "time": "2026-10-30T09:15:00+00:00",
-    "title": "Intel Stock Sinks 25%. A Supply Setback and PC Weakness Overshadow AI Growth."
-   },
-   {
-    "kind": "headline",
-    "link": "https://finance.yahoo.com/markets/stocks/articles/asian-tech-stocks-slump-ai-044824243.html?.tsrc=rss",
-    "source": "Yahoo Finance",
-    "tags": [
-     "earnings"
-    ],
-    "ticker": "TSM",
-    "time": "2026-10-30T04:48:24+00:00",
-    "title": "Asian tech stocks slump as AI rout deepens on disappointing U.S. earnings"
-   },
-   {
-    "kind": "headline",
-    "link": "https://finance.yahoo.com/energy/articles/vistra-completes-acquisition-cogentrix-energy-160000258.html?.tsrc=rss",
+    "link": "https://www.power-technology.com/news/vistra-acquires-cogentrix-5-5gw-natural-gas/?.tsrc=rss",
     "source": "Yahoo Finance",
     "tags": [
      "deal"
     ],
     "ticker": "VST",
-    "time": "2026-10-30T16:00:00+00:00",
-    "title": "Vistra Completes Acquisition of Cogentrix Energy, Expanding Diverse Generation Fleet"
+    "time": "2026-11-02T08:18:01+00:00",
+    "title": "Vistra acquires Cogentrix, adding 5.5GW of natural gas capacity"
    },
    {
     "kind": "headline",
-    "link": "https://finance.yahoo.com/markets/stocks/articles/vistra-corp-vst-reports-next-130005755.html?.tsrc=rss",
-    "source": "Yahoo Finance",
-    "tags": [
-     "earnings"
-    ],
-    "ticker": "VST",
-    "time": "2026-10-30T13:00:05+00:00",
-    "title": "Vistra Corp. (VST) Reports Next Week: Wall Street Expects Earnings Growth"
-   },
-   {
-    "kind": "headline",
-    "link": "https://finance.yahoo.com/markets/stocks/articles/vistra-declares-dividend-common-stock-201500894.html?.tsrc=rss",
-    "source": "Yahoo Finance",
-    "tags": [
-     "capital"
-    ],
-    "ticker": "VST",
-    "time": "2026-10-29T20:15:00+00:00",
-    "title": "Vistra Declares Dividend on Common Stock, Series B Preferred Stock, and Series C Preferred Stock"
-   },
-   {
-    "kind": "headline",
-    "link": "https://finance.yahoo.com/markets/stocks/articles/vst-utility-stock-offers-stronger-152200713.html?.tsrc=rss",
+    "link": "https://www.tikr.com/blog/vistra-added-5500-mw-of-gas-plants-most-of-them-outside-texas-heres-what-that-means-for-its-november-6-report?ref=yahoofinance&tlnk=yf-261102-h22qfggp&.tsrc=rss",
     "source": "Yahoo Finance",
     "tags": [],
     "ticker": "VST",
-    "time": "2026-10-30T15:22:00+00:00",
-    "title": "VST or SO: Which Utility Stock Offers Stronger Growth Potential?"
+    "time": "2026-11-02T13:23:22+00:00",
+    "title": "Vistra Added 5,500 MW of Gas Plants, Most of Them Outside Texas. Here\u2019s What That Means for Its November 6 Report"
+   },
+   {
+    "kind": "headline",
+    "link": "https://www.tikr.com/blog/asml-fell-6-in-intels-chip-rout-its-ceo-says-supply-will-not-fully-meet-the-demand?ref=yahoofinance&tlnk=yf-261102-3w8qqpgr&.tsrc=rss",
+    "source": "Yahoo Finance",
+    "tags": [
+     "earnings",
+     "people"
+    ],
+    "ticker": "TSM",
+    "time": "2026-11-02T13:02:26+00:00",
+    "title": "ASML Fell 6% in Intel\u2019s Chip Rout. Its CEO Says Supply \u201cWill Not Fully Meet the Demand\u201d"
+   },
+   {
+    "kind": "headline",
+    "link": "https://finance.yahoo.com/technology/articles/elon-musk-blinks-tesla-terafab-041311073.html?.tsrc=rss",
+    "source": "Yahoo Finance",
+    "tags": [
+     "people"
+    ],
+    "ticker": "TSM",
+    "time": "2026-11-02T04:13:11+00:00",
+    "title": "Elon Musk Blinks? Tesla\u2019s Terafab May Reportedly Lean on TSMC After All"
    }
   ],
-  "report": "reports/2026-10-30/copycat.md"
+  "report": "reports/2026-11-02/copycat.md"
  },
- "marked_at": "2026-11-02T09:32:16-05:00",
+ "marked_at": "2026-11-02T09:37:31-05:00",
  "mode": "paper",
  "name": "Copycat $10K (PAPER)",
- "notes": "# Copycat scan 2026-10-30 14:06 ET (paper, free data)\n\nAccount: $10,000.00 value, $10,000.00 cash, 0/10 positions. Rules: copycat/COPYCAT.md.\n\n## (a) Congress: House PTRs\nWindow: filed since 2026-10-09 (buys must be filed within ~10 days to count). Source: House Clerk.\n\nNew filings this scan: 29 (of 29 in window)\n- [David J. Taylor OH02 doc 20035727](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035727.pdf) filed 2026-10-29: 8 rows\n- [Kevin Hern OK01 doc 20035710](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035710.pdf) filed 2026-10-28: 3 rows\n- [Suzan K. DelBene WA01 doc 20035689](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035689.pdf) filed 2026-10-28: 2 rows\n- [Diana Harshbarger TN01 doc 9116391](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9116391.pdf) filed 2026-10-27: 0 rows (paper/scanned filing: no machine-readable rows)\n- [Diana Harshbarger TN01 doc 9116390](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9116390.pdf) filed 2026-10-27: 0 rows (paper/scanned filing: no machine-readable rows)\n- [Diana Harshbarger TN01 doc 9116389](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9116389.pdf) filed 2026-10-27: 0 rows (paper/scanned filing: no machine-readable rows)\n- [Max Miller OH07 doc 20035715](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035715.pdf) filed 2026-10-27: 2 rows\n- [Jodey Arrington TX19 doc 20035714](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035714.pdf) filed 2026-10-27: 1 rows\n- [Pete Sessions TX17 doc 20035563](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035563.pdf) filed 2026-10-27: 32 rows\n- [Sheri Biggs SC03 doc 20035525](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035525.pdf) filed 2026-10-27: 1 rows\n- [Darrell E. Issa CA48 doc 20035700](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035700.pdf) filed 2026-10-22: 2 rows\n- [Cleo Fields LA06 doc 20035669](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035669.pdf) filed 2026-10-22: 4 rows\n- [Rudy C. Yakym III IN02 doc 20035691](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035691.pdf) filed 2026-10-20: 1 rows\n- [James A. Himes CT04 doc 20035687](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035687.pdf) filed 2026-10-20: 1 rows\n- [Michael Rulli OH06 doc 20035671](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035671.pdf) filed 2026-10-19: 2 rows\n- [Jonathan Jackson IL01 doc 20035551](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035551.pdf) filed 2026-10-19: 6 rows\n- [Laurel Lee FL15 doc 20035490](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035490.pdf) filed 2026-10-16: 2 rows\n- [David J. Taylor OH02 doc 20035660](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035660.pdf) filed 2026-10-15: 4 rows\n- [Scott H. Peters CA50 doc 20035637](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035637.pdf) filed 2026-10-15: 4 rows\n- [Michael T. McCaul TX10 doc 9116378](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9116378.pdf) filed 2026-10-14: 0 rows (paper/scanned filing: no machine-readable rows)\n- [Mike Kelly PA16 doc 20035652](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035652.pdf) filed 2026-10-14: 2 rows\n- [Richard Dean Dr McCormick GA06 doc 20035651](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035651.pdf) filed 2026-10-14: 1 rows\n- [Richard W. Allen GA12 doc 20035648](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035648.pdf) filed 2026-10-14: 2 rows\n- [Suzan K. DelBene WA01 doc 20035627](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035627.pdf) filed 2026-10-14: 4 rows\n- [Daniel Meuser PA09 doc 20035487](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035487.pdf) filed 2026-10-14: 1 rows\n- [Kevin Hern OK01 doc 20035588](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035588.pdf) filed 2026-10-13: 24 rows\n- [Rick Larsen WA02 doc 20035635](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035635.pdf) filed 2026-10-12: 4 rows\n- [Gilbert Cisneros CA31 doc 20035622](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035622.pdf) filed 2026-10-12: 57 rows\n- [Lisa McClain MI09 doc 20035585](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035585.pdf) filed 2026-10-12: 9 rows\n\n| | Member | Ticker | Type | Amount | Traded | Delay | Held? | Filing |\n|---|---|---|---|---|---|---|---|---|\n| BUY | David J. Taylor | T | purchase (self) | $1,001 - $15,000 | 2026-10-15 | 14d |  | [20035727](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035727.pdf) |\n| BUY | David J. Taylor | LRCX | purchase (self) | $1,001 - $15,000 | 2026-10-15 | 14d |  | [20035727](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035727.pdf) |\n| SELL | David J. Taylor | MPC | sale (self) | $1,001 - $15,000 | 2026-10-15 | 14d |  | [20035727](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035727.pdf) |\n| SELL | David J. Taylor | MPC | sale (self) | $1,001 - $15,000 | 2026-10-15 | 14d |  | [20035727](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035727.pdf) |\n| BUY | David J. Taylor | PLD | purchase (self) | $1,001 - $15,000 | 2026-10-15 | 14d |  | [20035727](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035727.pdf) |\n| BUY | David J. Taylor | PLD | purchase (self) | $1,001 - $15,000 | 2026-10-15 | 14d |  | [20035727](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035727.pdf) |\n| BUY | David J. Taylor | RPM | purchase (self) | $1,001 - $15,000 | 2026-10-15 | 14d |  | [20035727](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035727.pdf) |\n| SELL | David J. Taylor | V | sale (self) | $1,001 - $15,000 | 2026-10-15 | 14d |  | [20035727](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035727.pdf) |\n| SELL | Kevin Hern | ASML | partial sale (joint) | $15,001 - $50,000 | 2026-10-23 | 5d |  | [20035710](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035710.pdf) |\n| SELL | Kevin Hern | STX | partial sale (self) | $15,001 - $50,000 | 2026-10-23 | 5d |  | [20035710](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035710.pdf) |\n| SELL | Kevin Hern | TXN | partial sale (joint) | $15,001 - $50,000 | 2026-10-14 | 14d |  | [20035710](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035710.pdf) |\n| SELL | Pete Sessions | ABT | sale (spouse) | $50,001 - $100,000 | 2026-10-02 | 25d |  | [20035563](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035563.pdf) |\n| SELL | Pete Sessions | GOOG | sale (spouse) | $100,001 - $250,000 | 2026-10-02 | 25d |  | [20035563](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035563.pdf) |\n| SELL | Pete Sessions | AMZN | sale (spouse) | $100,001 - $250,000 | 2026-10-02 | 25d | crazy | [20035563](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035563.pdf) |\n| SELL | Pete Sessions | AMZN | sale (self) | $15,001 - $50,000 | 2026-10-27 | 0d | crazy | [20035563](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035563.pdf) |\n| SELL | Pete Sessions | AAPL | sale (spouse) | $250,001 - $500,000 | 2026-10-02 | 25d |  | [20035563](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035563.pdf) |\n| SELL | Pete Sessions | BRK.B | sale (self) | $15,001 - $50,000 | 2026-10-15 | 12d |  | [20035563](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035563.pdf) |\n| SELL | Pete Sessions | CVX | sale (self) | $15,001 - $50,000 | 2026-10-14 | 13d |  | [20035563](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035563.pdf) |\n| SELL | Pete Sessions | CMG | sale (spouse) | $15,001 - $50,000 | 2026-10-02 | 25d |  | [20035563](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035563.pdf) |\n| SELL | Pete Sessions | COST | sale (spouse) | $250,001 - $500,000 | 2026-10-02 | 25d |  | [20035563](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035563.pdf) |\n| SELL | Pete Sessions | COST | sale (self) | $100,001 - $250,000 | 2026-10-13 | 14d |  | [20035563](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035563.pdf) |\n| SELL | Pete Sessions | XOM | sale (self) | $1,001 - $15,000 | 2026-10-14 | 13d |  | [20035563](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035563.pdf) |\n| SELL | Pete Sessions | HD | sale (self) | $1,001 - $15,000 | 2026-10-22 | 5d |  | [20035563](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035563.pdf) |\n| SELL | Pete Sessions | HON | sale (self) | $1,001 - $15,000 | 2026-10-01 | 26d |  | [20035563](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035563.pdf) |\n| SELL | Pete Sessions | IBM | sale (self) | $1,001 - $15,000 | 2026-10-20 | 7d",
- "notes_date": "2026-10-30",
- "peak_value": 10024.630000000001,
+ "notes": "# Copycat scan 2026-11-02 09:37 ET (paper, free data)\n\nAccount: $10,039.90 value, $7,019.29 cash, 3/10 positions. Rules: copycat/COPYCAT.md.\n\n## (a) Congress: House PTRs\nWindow: filed since 2026-10-19 (buys must be filed within ~10 days to count). Source: House Clerk.\n\nNew filings this scan: 0 (of 16 in window)\n\n| | Member | Ticker | Type | Amount | Traded | Delay | Held? | Filing |\n|---|---|---|---|---|---|---|---|---|\n\n### Ranked BUY candidates (filed <= 10 days; score = amount tier + repeat buys + 2 x extra members + good-record bonus)\n\n| Ticker | Score | Buys | Members | Biggest amount | Price | Liquidity | Earnings | Qualifies |\n|---|---|---|---|---|---|---|---|---|\n| PLD | 2 | 2 | Taylor | $1,001 - $15,000 | 128.64 | liquid: mcap $122B, avg $vol $380M/day | earnings date unknown (Earnings announcement* for PLD:  Our vendor, Zacks Investment Research, hasn't p) | no (held: copycat) |\n| LRCX | 1 | 1 | Taylor | $1,001 - $15,000 | 240.13 | liquid: mcap $300B, avg $vol $2,227M/day | earnings date unknown (Earnings announcement* for LRCX:  Our vendor, Zacks Investment Research, hasn't ) | no (held: copycat) |\n| T | 1 | 1 | Taylor | $1,001 - $15,000 | 21.37 | liquid: mcap $144B, avg $vol $745M/day | earnings date unknown (Earnings announcement* for T:  Our vendor, Zacks Investment Research, hasn't pro) | YES |\n| RPM | 1 | 1 | Taylor | $1,001 - $15,000 | 105.25 | liquid: mcap $13B, avg $vol $61M/day | earnings date unknown (Earnings announcement* for RPM:  Our vendor, Zacks Investment Research, hasn't p) | YES |\n\n## (b) 13F: tracked investors\nSEC EDGAR refused (403 Forbidden: SEC rejects the configured User-Agent contact (a users.noreply.github.com address)); used the 13f.info mirror of the same EDGAR 13F filings. Q3 2026 13Fs are due by **Fri Nov 14, 2026**; entry signals only from a 13F filed in the last 30 days.\n\n- **Berkshire Hathaway** (Buffett/Abel): latest Q2-2026 filed 2026-08-14 (80d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001067983&type=13F-HR) / [13f.info](https://13f.info/manager/0001067983-berkshire-hathaway-inc)\n- **Scion Asset Mgmt** (Michael Burry): latest Q3-2025 filed 2025-11-03 (364d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001649339&type=13F-HR) / [13f.info](https://13f.info/manager/0001649339-scion-asset-management-llc)\n- **Pershing Square** (Bill Ackman): latest Q1-2026 filed 2026-05-15 (171d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001336528&type=13F-HR) / [13f.info](https://13f.info/manager/0001336528-pershing-square-capital-management-l-p)\n- **Duquesne Family Office** (Stan Druckenmiller): latest Q2-2026 filed 2026-08-14 (80d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001536411&type=13F-HR) / [13f.info](https://13f.info/manager/0001536411-duquesne-family-office-llc)\n- **Appaloosa** (David Tepper): latest Q2-2026 filed 2026-08-14 (80d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001656456&type=13F-HR) / [13f.info](https://13f.info/manager/0001656456-appaloosa-lp)\n- **Situational Awareness LP** (Leopold Aschenbrenner): latest Q2-2026 filed 2026-08-14 (80d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002045724&type=13F-HR) / [13f.info](https://13f.info/manager/0002045724-situational-awareness-lp)\n\n## (c) News / 8-K on held tickers (GOOGL, LRCX, MU, NBIS, NVDA, PLD, TSM, VOO, VST)\n\n- NVDA [headline] [Marvell to acquire Lumentum in $115 billion AI connectivity deal](https://www.cbsnews.com/news/marvell-lumentum-acquisition-ai-connectivity/?.tsrc=rss) (Yahoo Finance, 2026-11-02T14:23) tags: deal\n- NVDA [headline] [Here's Why I Think Every Investor Needs to Invest in These \"Miracle\" Drugs](https://www.fool.com/investing/2026/11/02/why-every-investor-needs-invest-in-miracle-drugs/?.tsrc=rss) (Yahoo Finance, 2026-11-02T14:20) tags: earnings\n- NVDA [headline] [23 Big Funds Bought Advanced Micro Devices Last Quarter. Is It a Buy Before Earnings?](https://www.tikr.com/blog/23-big-funds-bought-amd-stock-before-earnings?ref=yahoofinance&tlnk=yf-261102-h559788v&.tsrc=rss) (Yahoo Finance, 2026-11-02T14:01) tags: earnings\n- NVDA [headline] [Apple, Marvell, Lumentum, SpaceX, EchoStar, Palantir, and More Stocks That Explain Today\u2019s Market](https://finance.yahoo.com/m/9e7a7710-9e1a-35b4-ba03-c1bc8203ddcb/apple%2C-marvell%2C-lumentum%2C.html?.tsrc=rss) (Yahoo Finance, 2026-11-02T13:59) tags: earnings\n- GOOGL [headline] [Marvell Could Be Making a $115 Billion Mistake With Lumentum Purchase](https://finance.yahoo.com/m/2fea8461-818e-3758-9705-fca9939406d3/marvell-could-be-making-a.html?.tsrc=rss) (Yahoo Finance, 2026-11-02T14:10) tags: deal\n- GOOGL [headline] [Nomura flags this tech pocket as \u2019portfolio shelter\u2019 from AI spending pressure](https://finance.yahoo.com/technology/articles/nomura-flags-tech-pocket-portfolio-134324765.html?.tsrc=rss) (Yahoo Finance, 2026-11-02T13:43) tags: earnings\n- GOOGL [headline] [Will AI stocks rebound? A closer look at last week's tech sell-off](https://finance.yahoo.com/video/will-ai-stocks-rebound-a-closer-look-at-last-weeks-tech-sell-off-142253275.html?.tsrc=rss) (Yahoo Finance, 2026-11-02T14:22)\n- GOOGL [headline] [AI is breaking the search business model](https://finance.yahoo.com/video/ai-is-breaking-the-search-business-model-140831683.html?.tsrc=rss) (Yahoo Finance, 2026-11-02T14:08)\n- MU [headline] [Morning Minute: Binance Hack Leads to Mass Outflows While FBI Opens Probe](https://decrypt.co/382332/morning-minute-the-binance-hack-leads-to-mass-outflows-while-fbi-opens-probe?.tsrc=rss) (Yahoo Finance, 2026-11-02T13:34) tags: legal,risk\n- MU [headline] [Vertiv and Centerra Gold have been highlighted as Zacks Bull and Bear of the Day](https://finance.yahoo.com/markets/stocks/articles/vertiv-centerra-gold-highlighted-zacks-124100526.html?.tsrc=rss) (Yahoo Finance, 2026-11-02T12:41) tags: earnings,analyst\n- MU [headline] [Zacks.com featured highlights include Alphabet, GormanRupp, Micron, Corning, Suncor Energy and Plains All American Pipeline](https://finance.yahoo.com/markets/stocks/articles/zacks-com-featured-highlights-alphabet-085700899.html?.tsrc=rss) (Yahoo Finance, 2026-11-02T08:57) tags: earnings,capital\n- MU [headline] [Why Tech Just Got an Upgrade 3 Weeks After These Analysts Slashed Their Rating](https://finance.yahoo.com/m/bd018301-6d3e-3184-af80-f59e8a518b89/why-tech-just-got-an-upgrade.html?.tsrc=rss) (Yahoo Finance, 2026-11-02T13:35) tags: analyst\n- VST [headline] [Vistra acquires Cogentrix, adding 5.5GW of natural gas capacity](https://www.power-technology.com/news/vistra-acquires-cogentrix-5-5gw-natural-gas/?.tsrc=rss) (Yahoo Finance, 2026-11-02T08:18) tags: deal\n- VST [headline] [Vistra Added 5,500 MW of Gas Plants, Most of Them Outside Texas. Here\u2019s What That Means for Its November 6 Report](https://www.tikr.com/blog/vistra-added-5500-mw-of-gas-plants-most-of-them-outside-texas-heres-what-that-means-for-its-november-6-report?ref=yahoofinance&tlnk=yf-261102-h22qfggp&.tsrc=rss) (Yahoo Finance, 2026-11-02T13:23)\n- TSM [headline] [ASML Fell 6% in Intel\u2019s Chip Rout. Its CEO Says Supply \u201cWill Not Fully Meet the Demand\u201d](https://www.tikr.com/blog/asml-fell-6-in-intels-chip-rout-its-ceo-says-supply-will-not-fully-meet-the-demand?ref=yahoofinance&tlnk=yf-261102-3w8qqpgr&.tsrc=rss) (Yahoo Finance, 2026-11-02T13:02) tags: earnings,people\n- TSM [headline] [Elon Musk Blinks? Tesla\u2019s Terafab May Reportedly Lean on TSMC After All](https://finance.yahoo.com/technology/articles/elon-musk-blinks-tesla-terafab-041311073.html?.tsrc=rss) (Yahoo Finance, 2026-11-02T04:13) tags: people\n- TSM [headline] [TSM Soars 33% in the Past Year: Is It a Solid Investment Proposition?](https://finance.yahoo.com/markets/stocks/articles/tsm-soars-33-past-solid-125400386.html?.tsrc=rss) (Yahoo Finance, 2026-11-02T12:54)\n- TSM [headline] [8 ETFs Cut Taiwan Semiconductor (TSM) Holdings on Thursday](https://finance.yahoo.com/markets/stocks/articles/8-etfs-cut-taiwan-semiconductor-110332360.html?.tsrc=rss) (Yahoo Finance, 2026-11-02T11:03)\n- NBIS [headline] [Is this the dot-com bubble again? Nearly $1 trillion gone](https://finance.yahoo.com/video/dot-com-bubble-again-nearly-120000826.html?.tsrc=rss) (Yahoo Finance, 2026-11-02T12:00)\n- NBIS [headline] [Is Nebius Stock a Buy After Its 36% Pullback?](https://www.fool.com/investing/2026/11/01/is-nebius-stock-a-buy-after-its-36-pullback/?.tsrc=rss) (Yahoo Finance, 2026-11-01T19:35)\n- PLD [headline] [Dimensional Fund Advisors Ltd. : Form 8.3 - PROLOGIS INC - Ordinary Shares](https://finance.yahoo.com/markets/stocks/articles/dimensional-fund-advisors-ltd-form-100400033.html?.tsrc=rss) (Yahoo Finance, 2026-11-02T10:04) tags: deal\n- PLD [headline] [Form 8.3](https://finance.yahoo.com/markets/options/articles/form-8-3-115900200.html?.tsrc=rss) (Yahoo Fin",
+ "notes_date": "2026-11-02",
+ "peak_value": 10039.9,
  "positions": [
   {
    "cost": 1013.15,
    "earnings": "earnings 2026-11-17 (12 trading days away)",
    "entry": 202.63,
-   "high_water": 204.94,
+   "high_water": 207.25,
    "id": "C1",
-   "last": 204.94,
-   "last_note": "before 09:35 ET / weekend: previous mark kept",
-   "last_updated": "2026-11-02T09:32:16-05:00",
-   "mark_method": "kept",
-   "mark_valid": false,
+   "last": 207.25,
+   "last_note": "",
+   "last_updated": "2026-11-02T09:37:31-05:00",
+   "mark_method": "bid",
+   "mark_valid": true,
    "opened_at": "2026-10-30T14:07:15-04:00",
    "qty": 5,
    "source": "Rep. Cleo Fields (LA06): 3 separate NVDA buys ($1K-15K each, traded 10/01), PTR filed 10/22",
@@ -940,8 +881,8 @@
    "thesis": "Top-ranked Congress signal (repeat buyer x3, score 3); mega-cap liquid; earnings 11/17 is 12 trading days out; buying into today's AI/tech sell-off",
    "tp1": 253.29,
    "tp1_done": false,
-   "unrealized_pct": 0.0114,
-   "unrealized_pnl": 11.55
+   "unrealized_pct": 0.0228,
+   "unrealized_pnl": 23.1
   },
   {
    "cost": 1030.08,
@@ -949,11 +890,11 @@
    "entry": 128.76,
    "high_water": 128.76,
    "id": "C2",
-   "last": 127.98,
-   "last_note": "before 09:35 ET / weekend: previous mark kept",
-   "last_updated": "2026-11-02T09:32:16-05:00",
-   "mark_method": "kept",
-   "mark_valid": false,
+   "last": 128.24,
+   "last_note": "",
+   "last_updated": "2026-11-02T09:37:31-05:00",
+   "mark_method": "bid",
+   "mark_valid": true,
    "opened_at": "2026-10-30T14:07:15-04:00",
    "qty": 8,
    "source": "Rep. David J. Taylor (OH02): 2 PLD buys ($1K-15K each, traded 10/15), PTR filed 10/29",
@@ -963,20 +904,20 @@
    "thesis": "Freshest filing (yesterday) and a repeat buy (score 2); liquid large-cap REIT; Q3 earnings already reported mid-Oct",
    "tp1": 160.95,
    "tp1_done": false,
-   "unrealized_pct": -0.0061,
-   "unrealized_pnl": -6.24
+   "unrealized_pct": -0.004,
+   "unrealized_pnl": -4.16
   },
   {
    "cost": 937.48,
    "earnings": "earnings date unknown (Earnings announcement* for LRCX:  Our vendor, Zacks Investment Research, hasn't )",
    "entry": 234.37,
-   "high_water": 239.2,
+   "high_water": 239.61,
    "id": "C3",
-   "last": 239.2,
-   "last_note": "before 09:35 ET / weekend: previous mark kept",
-   "last_updated": "2026-11-02T09:32:16-05:00",
-   "mark_method": "kept",
-   "mark_valid": false,
+   "last": 239.61,
+   "last_note": "",
+   "last_updated": "2026-11-02T09:37:31-05:00",
+   "mark_method": "bid",
+   "mark_valid": true,
    "opened_at": "2026-10-30T14:07:16-04:00",
    "qty": 4,
    "source": "Rep. David J. Taylor (OH02): LRCX buy ($1K-15K, traded 10/15), PTR filed 10/29",
@@ -986,20 +927,20 @@
    "thesis": "Freshest filing; tie at score 1 broken by liquidity ($2.1B/day avg vs T $0.7B); Q3 earnings already out (late Oct); semis sold off today",
    "tp1": 292.96,
    "tp1_done": false,
-   "unrealized_pct": 0.0206,
-   "unrealized_pnl": 19.32
+   "unrealized_pct": 0.0224,
+   "unrealized_pnl": 20.96
   }
  ],
- "positions_value": 3005.34,
- "published_at": "2026-11-02 09:32:19 AM EST",
- "published_epoch_ms": 1793629939615,
+ "positions_value": 3020.61,
+ "published_at": "2026-11-02 09:38:09 AM EST",
+ "published_epoch_ms": 1793630289694,
  "realized_pnl": 0,
- "server_time": "2026-11-02 09:32:19 AM EST",
+ "server_time": "2026-11-02 09:38:09 AM EST",
  "start_date": "2026-10-30",
  "starting_cash": 10000.0,
  "status": "active",
  "today": "2026-11-02",
- "total_return": 0.002463000000000104,
+ "total_return": 0.003989999999999938,
  "trades": [],
  "win_rate": null
 }
