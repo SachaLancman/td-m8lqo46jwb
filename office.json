@@ -4,25 +4,27 @@
  "copycat": {
   "account_value": 10039.9,
   "alerts": [],
-  "cash": 7019.29,
+  "cash": 5083.98,
   "error": null,
-  "positions": 3,
+  "positions": 5,
   "starting_cash": 10000.0,
   "symbols": [
    "NVDA",
    "PLD",
-   "LRCX"
+   "LRCX",
+   "T",
+   "RPM"
   ],
   "total_return": 0.003989999999999938
  },
  "crazy": {
-  "account_value": 1376.0,
+  "account_value": 1379.0,
   "busted": false,
   "error": null,
   "goal_target": 100000.0,
   "positions": 4,
   "starting_cash": 1000.0,
-  "total_return": 0.3759999999999999
+  "total_return": 0.379
  },
  "drawdown": -0.0244389027431422,
  "error": null,
@@ -30,23 +32,23 @@
  "goal_target": 100000.0,
  "mode": "paper",
  "positions": 0,
- "published_at": "2026-11-02 09:38:09 AM EST",
- "published_epoch_ms": 1793630289694,
+ "published_at": "2026-11-02 09:39:12 AM EST",
+ "published_epoch_ms": 1793630352015,
  "roles": {
   "coordinator": {
-   "note": "daily run kicked off; waiting on the Decider",
-   "source": "status.json",
-   "state": "idle"
-  },
-  "copycat": {
-   "note": "test",
-   "source": "status.json",
-   "state": "idle"
-  },
-  "crazy": {
-   "note": "EOD $1,409 (+$461 day, 1.41x), 4 open, 11 trades",
+   "note": "09:37 scan: no main trade; Copycat bought T, RPM",
    "source": "status.json",
    "state": "done"
+  },
+  "copycat": {
+   "note": "$10,040 \u00b7 5 positions \u00b7 bought T, RPM (Rep. Taylor)",
+   "source": "status.json",
+   "state": "working"
+  },
+  "crazy": {
+   "note": "$1,379 (+37.9%) \u00b7 4 open \u00b7 TSLA whale checked, no trade",
+   "source": "status.json",
+   "state": "idle"
   },
   "decider": {
    "note": "13:15 scan: no trade, 0/10 open, $9,780 cash",
@@ -84,7 +86,7 @@
    "state": "done"
   }
  },
- "server_time": "2026-11-02 09:38:09 AM EST",
+ "server_time": "2026-11-02 09:39:12 AM EST",
  "starting_cash": 10000.0,
  "status_json_error": null,
  "today": "2026-11-02",
