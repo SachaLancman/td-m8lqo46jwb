@@ -1,16 +1,16 @@
 {
- "account_value": 1591.0,
+ "account_value": 1581.0,
  "alerts": [],
  "bust_threshold": 20.0,
  "busted": false,
  "buying_power": 383.0,
  "cash": 383.0,
  "closed_trades": 9,
- "drawdown": -0.013639181649101051,
+ "drawdown": -0.01983880967141971,
  "error": null,
  "goal": "Grow $1,000 to $100,000 as fast as possible (paper).",
- "goal_progress_linear": 0.01591,
- "goal_progress_log": 0.10083508982329074,
+ "goal_progress_linear": 0.01581,
+ "goal_progress_log": 0.09946593496610451,
  "goal_target": 100000.0,
  "history": [
   {
@@ -43,7 +43,7 @@
   },
   {
    "date": "2026-11-02",
-   "value": 1591.0
+   "value": 1581.0
   }
  ],
  "intraday": [
@@ -1094,11 +1094,15 @@
   {
    "t": "2026-11-02T10:20-05:00",
    "value": 1591.0
+  },
+  {
+   "t": "2026-11-02T10:22-05:00",
+   "value": 1581.0
   }
  ],
- "marked_at": "2026-11-02T10:20:05-05:00",
+ "marked_at": "2026-11-02T10:22:15-05:00",
  "mode": "paper",
- "multiple": 1.591,
+ "multiple": 1.581,
  "name": "Crazy $1K (Grok Bot, paper)",
  "notes": "# Crazy $1K, 2026-11-02\n- 09:38 ET \u00b7 $1,379 \u00b7 No ALERTs (C6 CVNA 1.21 vs 1.64, C11 SPY 755/745P 2.01 vs 2.66 on the gap-up, C12 MSTR 125/115P 3.15 vs 3.70, C13 AMZN 245/255C 3.59 vs 3.17 mid). Whale TSLA 435C 11/27 $2.8M checked: positive gamma pin under the 410 call wall and opening spreads too wide (420/430 natural $470 > $383 cash, 430/435 natural ~2.80 on 5 wide); no trade, recheck when quotes tighten. $383 cash.\n- 10:20 ET \u00b7 $1,591 \u00b7 No ALERTs. C13 AMZN 245/255C mid 5.20 (liq 5.00, +58-64%) is a single contract under the 75% full-close rule; stop raised 1.50\u21923.20 to lock about breakeven. C6 CVNA 2.30 (+40%), C11 SPY 755/745P 2.01, C12 MSTR 125/115P 2.57. No new trade: $383 cash, MU/LLY/TSLA whale leads fight gamma. \n",
  "notes_date": "2026-11-02",
@@ -1113,9 +1117,9 @@
    "high_water": 2.3,
    "id": "C6",
    "kind": "option",
-   "last": 2.3,
+   "last": 2.22,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-02T10:20:05-05:00",
+   "last_updated": "2026-11-02T10:22:15-05:00",
    "legs": [
     {
      "expiration": "2026-11-20",
@@ -1132,7 +1136,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 2.52,
+   "mid": 2.48,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-29T13:43:02-04:00",
@@ -1148,9 +1152,9 @@
    "target_hit": false,
    "thesis": "Post-earnings gap +16% (59 to 68.7) with whale continuation calls (74C 12/18 $680K FlowbyBobby; $642K CVNA calls FL0WG0D); earnings already out so no event risk; fit to cash with a Nov 72/78 call spread",
    "underlying": "CVNA",
-   "underlying_last": 72.835,
-   "unrealized_pct": 0.4024,
-   "unrealized_pnl": 66.0
+   "underlying_last": 72.81,
+   "unrealized_pct": 0.3537,
+   "unrealized_pnl": 58.0
   },
   {
    "contracts": 1.0,
@@ -1161,9 +1165,9 @@
    "high_water": 3.99,
    "id": "C11",
    "kind": "option",
-   "last": 2.01,
+   "last": 2.05,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-02T10:20:05-05:00",
+   "last_updated": "2026-11-02T10:22:15-05:00",
    "legs": [
     {
      "expiration": "2026-11-06",
@@ -1180,7 +1184,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 2.02,
+   "mid": 2.08,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-30T10:42:33-04:00",
@@ -1196,9 +1200,9 @@
    "target_hit": false,
    "thesis": "VIX through 20, SPY pinned at 760 king node in deep negative gamma (flip ~769), crowd/ripster shorts; 1-week spread survives the 760 pin and covers election week",
    "underlying": "SPY",
-   "underlying_last": 760.57,
-   "unrealized_pct": -0.2444,
-   "unrealized_pnl": -65.0
+   "underlying_last": 760.29,
+   "unrealized_pct": -0.2293,
+   "unrealized_pnl": -61.0
   },
   {
    "contracts": 1.0,
@@ -1209,9 +1213,9 @@
    "high_water": 3.7,
    "id": "C12",
    "kind": "option",
-   "last": 2.57,
+   "last": 2.49,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-02T10:20:05-05:00",
+   "last_updated": "2026-11-02T10:22:15-05:00",
    "legs": [
     {
      "expiration": "2026-11-20",
@@ -1228,7 +1232,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 2.65,
+   "mid": 2.57,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-30T10:42:34-04:00",
@@ -1244,9 +1248,9 @@
    "target_hit": false,
    "thesis": "Whale lead: MSTR put buying (FlowbyBobby 160k 100P 12/4, FL0WG0D 'Togi loading MSTR puts'); spot 129.7 below 138.6 flip, sitting on 130 put wall; spread fits cash and limits IV crush (earnings date unverified)",
    "underlying": "MSTR",
-   "underlying_last": 135.12,
-   "unrealized_pct": -0.3054,
-   "unrealized_pnl": -113.0
+   "underlying_last": 135.57,
+   "unrealized_pct": -0.327,
+   "unrealized_pnl": -121.0
   },
   {
    "contracts": 1.0,
@@ -1257,9 +1261,9 @@
    "high_water": 5.37,
    "id": "C13",
    "kind": "option",
-   "last": 5.2,
-   "last_note": "liquidation 5.00 below intrinsic floor 7.06: mid used",
-   "last_updated": "2026-11-02T10:20:05-05:00",
+   "last": 5.22,
+   "last_note": "liquidation 5.05 below intrinsic floor 7.53: mid used",
+   "last_updated": "2026-11-02T10:22:15-05:00",
    "legs": [
     {
      "expiration": "2026-11-20",
@@ -1276,35 +1280,37 @@
    ],
    "mark_method": "mid",
    "mark_valid": true,
-   "mid": 5.2,
+   "mid": 5.22,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-30T11:14:33-04:00",
    "source": "WhalesFlowRadar 11:08 ET https://x.com/WhalesFlowRadar/status/2116185542631284873; OptionsMike",
    "stop": 3.2,
    "stop_watch": {
-    "consecutive_valid_at_or_below_stop": 0
+    "consecutive_valid_at_or_below_stop": 0,
+    "rule": "stop hit only after 2 consecutive VALID marks (from 09:35 ET; mid if quotes wide) at/beyond stop",
+    "stop_confirmed": false
    },
    "symbol": "AMZN",
    "target": 7.0,
    "target_hit": false,
    "thesis": "Whale lead: WhalesFlowRadar AMZN Sept-2027 240C ~$6.9M + 260C ~$6M (Sept 240C vol 2068 vs OI 309 = opening). AMZN reclaimed 240 put wall from 232.5 post-earnings low; OptionsMike 4x AMZN call alerts, 'overdone this am'. Bullish hedge to the bearish C11/C12.",
    "underlying": "AMZN",
-   "underlying_last": 252.055,
-   "unrealized_pct": 0.6404,
-   "unrealized_pnl": 203.0
+   "underlying_last": 252.53,
+   "unrealized_pct": 0.6467,
+   "unrealized_pnl": 205.0
   }
  ],
- "positions_value": 1208.0,
- "published_at": "2026-11-02 10:21:33 AM EST",
- "published_epoch_ms": 1793632893667,
+ "positions_value": 1198.0,
+ "published_at": "2026-11-02 10:22:24 AM EST",
+ "published_epoch_ms": 1793632944832,
  "realized_pnl": 500.0,
- "server_time": "2026-11-02 10:21:33 AM EST",
+ "server_time": "2026-11-02 10:22:24 AM EST",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
  "today": "2026-11-02",
- "total_return": 0.591,
+ "total_return": 0.581,
  "trades": [
   {
    "action": "OPEN",
