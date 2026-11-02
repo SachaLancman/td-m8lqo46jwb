@@ -1,16 +1,16 @@
 {
- "account_value": 1593.0,
+ "account_value": 1591.0,
  "alerts": [],
  "bust_threshold": 20.0,
  "busted": false,
  "buying_power": 928.0,
  "cash": 928.0,
  "closed_trades": 10,
- "drawdown": -0.012399256044637319,
+ "drawdown": -0.013639181649101051,
  "error": null,
  "goal": "Grow $1,000 to $100,000 as fast as possible (paper).",
- "goal_progress_linear": 0.01593,
- "goal_progress_log": 0.10110788790056574,
+ "goal_progress_linear": 0.01591,
+ "goal_progress_log": 0.10083508982329074,
  "goal_target": 100000.0,
  "history": [
   {
@@ -43,7 +43,7 @@
   },
   {
    "date": "2026-11-02",
-   "value": 1593.0
+   "value": 1591.0
   }
  ],
  "intraday": [
@@ -1122,11 +1122,15 @@
   {
    "t": "2026-11-02T11:14-05:00",
    "value": 1593.0
+  },
+  {
+   "t": "2026-11-02T11:16-05:00",
+   "value": 1591.0
   }
  ],
- "marked_at": "2026-11-02T11:14:04-05:00",
+ "marked_at": "2026-11-02T11:16:52-05:00",
  "mode": "paper",
- "multiple": 1.593,
+ "multiple": 1.591,
  "name": "Crazy $1K (Grok Bot, paper)",
  "notes": "# Crazy $1K, 2026-11-02\n- 09:38 ET \u00b7 $1,379 \u00b7 No ALERTs (C6 CVNA 1.21 vs 1.64, C11 SPY 755/745P 2.01 vs 2.66 on the gap-up, C12 MSTR 125/115P 3.15 vs 3.70, C13 AMZN 245/255C 3.59 vs 3.17 mid). Whale TSLA 435C 11/27 $2.8M checked: positive gamma pin under the 410 call wall and opening spreads too wide (420/430 natural $470 > $383 cash, 430/435 natural ~2.80 on 5 wide); no trade, recheck when quotes tighten. $383 cash.\n- 10:20 ET \u00b7 $1,591 \u00b7 No ALERTs. C13 AMZN 245/255C mid 5.20 (liq 5.00, +58-64%) is a single contract under the 75% full-close rule; stop raised 1.50\u21923.20 to lock about breakeven. C6 CVNA 2.30 (+40%), C11 SPY 755/745P 2.01, C12 MSTR 125/115P 2.57. No new trade: $383 cash, MU/LLY/TSLA whale leads fight gamma. \n- 10:40 ET \u00b7 $1,557 \u00b7 CLOSED C13 AMZN 11/20 245/255C at 5.45 (entry 3.17, +72% at the bid, +78% mid, +$228): 1-lot near the 75% full-close rule, AMZN 252.8 above its 250 call wall in positive gamma (pin), and cash was only $383, so banked it to fund new trades. C6 CVNA liq 2.31 (+41%), C11 SPY 755/745P 1.57, C12 MSTR 125/115P 2.41. New idea checked: TSLA 11/20 415/425C, but TSLA is pinned at the 410 wall in positive gamma (don't chase), so no trade. $928 cash.\n- 11:15 ET \u00b7 $1,593 \u00b7 No ALERTs. C6 CVNA liq 2.31 (+41%), C11 SPY 755/745P 2.00 (SPY faded back to the 760 pin in negative gamma), C12 MSTR 125/115P 2.65. Whale AMD 760C Apr $1.5M checked: negative gamma under the 509.6 flip and earnings this week, skip; SKHY LEAPs off-list. No new trade: index pinned at its walls, already short SPY/MSTR. $928 cash.\n",
  "notes_date": "2026-11-02",
@@ -1141,9 +1145,9 @@
    "high_water": 2.35,
    "id": "C6",
    "kind": "option",
-   "last": 2.11,
+   "last": 2.25,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-02T11:14:04-05:00",
+   "last_updated": "2026-11-02T11:16:52-05:00",
    "legs": [
     {
      "expiration": "2026-11-20",
@@ -1160,7 +1164,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 2.31,
+   "mid": 2.4,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-29T13:43:02-04:00",
@@ -1176,9 +1180,9 @@
    "target_hit": false,
    "thesis": "Post-earnings gap +16% (59 to 68.7) with whale continuation calls (74C 12/18 $680K FlowbyBobby; $642K CVNA calls FL0WG0D); earnings already out so no event risk; fit to cash with a Nov 72/78 call spread",
    "underlying": "CVNA",
-   "underlying_last": 71.7294,
-   "unrealized_pct": 0.2866,
-   "unrealized_pnl": 47.0
+   "underlying_last": 71.88,
+   "unrealized_pct": 0.372,
+   "unrealized_pnl": 61.0
   },
   {
    "contracts": 1.0,
@@ -1189,9 +1193,9 @@
    "high_water": 3.99,
    "id": "C11",
    "kind": "option",
-   "last": 1.97,
+   "last": 1.9,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-02T11:14:04-05:00",
+   "last_updated": "2026-11-02T11:16:52-05:00",
    "legs": [
     {
      "expiration": "2026-11-06",
@@ -1208,7 +1212,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 2.0,
+   "mid": 1.92,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-30T10:42:33-04:00",
@@ -1224,9 +1228,9 @@
    "target_hit": false,
    "thesis": "VIX through 20, SPY pinned at 760 king node in deep negative gamma (flip ~769), crowd/ripster shorts; 1-week spread survives the 760 pin and covers election week",
    "underlying": "SPY",
-   "underlying_last": 760.76,
-   "unrealized_pct": -0.2594,
-   "unrealized_pnl": -69.0
+   "underlying_last": 761.19,
+   "unrealized_pct": -0.2857,
+   "unrealized_pnl": -76.0
   },
   {
    "contracts": 1.0,
@@ -1237,9 +1241,9 @@
    "high_water": 3.7,
    "id": "C12",
    "kind": "option",
-   "last": 2.57,
+   "last": 2.48,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-02T11:14:04-05:00",
+   "last_updated": "2026-11-02T11:16:52-05:00",
    "legs": [
     {
      "expiration": "2026-11-20",
@@ -1256,7 +1260,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 2.65,
+   "mid": 2.56,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-30T10:42:34-04:00",
@@ -1272,21 +1276,21 @@
    "target_hit": false,
    "thesis": "Whale lead: MSTR put buying (FlowbyBobby 160k 100P 12/4, FL0WG0D 'Togi loading MSTR puts'); spot 129.7 below 138.6 flip, sitting on 130 put wall; spread fits cash and limits IV crush (earnings date unverified)",
    "underlying": "MSTR",
-   "underlying_last": 134.47,
-   "unrealized_pct": -0.3054,
-   "unrealized_pnl": -113.0
+   "underlying_last": 134.79,
+   "unrealized_pct": -0.3297,
+   "unrealized_pnl": -122.0
   }
  ],
- "positions_value": 665.0,
- "published_at": "2026-11-02 11:15:56 AM EST",
- "published_epoch_ms": 1793636156731,
+ "positions_value": 663.0,
+ "published_at": "2026-11-02 11:16:59 AM EST",
+ "published_epoch_ms": 1793636219212,
  "realized_pnl": 728.0,
- "server_time": "2026-11-02 11:15:56 AM EST",
+ "server_time": "2026-11-02 11:16:59 AM EST",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
  "today": "2026-11-02",
- "total_return": 0.593,
+ "total_return": 0.591,
  "trades": [
   {
    "action": "OPEN",
