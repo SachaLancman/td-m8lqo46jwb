@@ -1,9 +1,9 @@
 {
- "account_value": 10020.630000000001,
+ "account_value": 10006.529999999999,
  "alerts": [],
  "cash": 3289.71,
  "closed_trades": 0,
- "drawdown": -0.006462544902194112,
+ "drawdown": -0.007860548632187214,
  "error": null,
  "history": [
   {
@@ -16,7 +16,7 @@
   },
   {
    "date": "2026-11-03",
-   "value": 10020.63
+   "value": 10006.53
   }
  ],
  "intraday": [
@@ -251,6 +251,10 @@
   {
    "t": "2026-11-03T09:51-05:00",
    "value": 10020.63
+  },
+  {
+   "t": "2026-11-03T10:07-05:00",
+   "value": 10006.53
   }
  ],
  "last_signals": {
@@ -1076,7 +1080,7 @@
   ],
   "report": "reports/2026-11-03/copycat.md"
  },
- "marked_at": "2026-11-03T09:51:29-05:00",
+ "marked_at": "2026-11-03T10:07:59-05:00",
  "mode": "paper",
  "name": "Copycat $10K (PAPER)",
  "notes": "# Copycat scan 2026-11-03 09:41 ET (paper, free data)\n\nAccount: $10,030.08 value, $5,083.98 cash, 5/10 positions. Rules: copycat/COPYCAT.md.\n\n## (a) Congress: House PTRs\nWindow: filed since 2026-10-20 (buys must be filed within ~10 days to count). Source: House Clerk.\n\nNew filings this scan: 4 (of 18 in window)\n- [Donald Sternoff Beyer Jr VA08 doc 20035743](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035743.pdf) filed 2026-11-01: 1 rows\n- [John J Mr McGuire III VA05 doc 20035484](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035484.pdf) filed 2026-11-01: 4 rows\n- [Carol Devine Miller WV01 doc 20035734](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035734.pdf) filed 2026-10-30: 1 rows\n- [Thomas H. Kean Jr NJ07 doc 20035591](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035591.pdf) filed 2026-10-30: 6 rows\n\n| | Member | Ticker | Type | Amount | Traded | Delay | Held? | Filing |\n|---|---|---|---|---|---|---|---|---|\n| SELL | John J Mr McGuire III | AVGO | partial sale (spouse) | $1,001 - $15,000 | 2026-09-24 | 38d |  | [20035484](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035484.pdf) |\n| BUY | John J Mr McGuire III | MU | purchase (spouse) | $1,001 - $15,000 | 2026-09-24 | 38d | Webull (Sacha, real) | [20035484](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035484.pdf) |\n| BUY | John J Mr McGuire III | MU | purchase (spouse) | $1,001 - $15,000 | 2026-09-25 | 37d | Webull (Sacha, real) | [20035484](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035484.pdf) |\n| BUY | John J Mr McGuire III | MU | purchase (spouse) | $1,001 - $15,000 | 2026-10-01 | 31d | Webull (Sacha, real) | [20035484](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035484.pdf) |\n| SELL | Carol Devine Miller | HONA | sale (spouse) | $710.52 | 2026-09-29 | 31d |  | [20035734](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035734.pdf) |\n| SELL | Thomas H. Kean Jr | ABT | partial sale (self) | $1,001 - $15,000 | 2026-09-17 | 43d |  | [20035591](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035591.pdf) |\n| BUY | Thomas H. Kean Jr | ESAB | purchase (self) | $1,001 - $15,000 | 2026-09-29 | 31d |  | [20035591](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035591.pdf) |\n| SELL | Thomas H. Kean Jr | JNJ | partial sale (self) | $1,001 - $15,000 | 2026-09-30 | 30d |  | [20035591](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035591.pdf) |\n| SELL | Thomas H. Kean Jr | MDLZ | partial sale (self) | $1,001 - $15,000 | 2026-09-23 | 37d |  | [20035591](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035591.pdf) |\n| SELL | Thomas H. Kean Jr | SYK | partial sale (self) | $1,001 - $15,000 | 2026-09-30 | 30d |  | [20035591](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035591.pdf) |\n| BUY | Thomas H. Kean Jr | TXN | purchase (self) | $1,001 - $15,000 | 2026-09-17 | 43d |  | [20035591](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035591.pdf) |\n\nAlso 1 non-stock rows (bonds, treasuries, private funds) skipped.\n\n### Ranked BUY candidates (filed <= 10 days; score = amount tier + repeat buys + 2 x extra members + good-record bonus)\n\n| Ticker | Score | Buys | Members | Biggest amount | Price | Liquidity | Earnings | Qualifies |\n|---|---|---|---|---|---|---|---|---|\n| MU | 3 | 3 | McGuire | $1,001 - $15,000 | 865.595 | liquid: mcap $979B, avg $vol $22,119M/day | earnings 2026-12-16 (31 trading days away) | YES (held: Webull (Sacha, real)) |\n| PLD | 2 | 2 | Taylor | $1,001 - $15,000 | 128.525 | liquid: mcap $122B, avg $vol $380M/day | earnings date unknown (Earnings announcement* for PLD:  Our vendor, Zacks Investment Research, hasn't p) | no (held: copycat) |\n| TXN | 1 | 1 | Kean | $1,001 - $15,000 | 309.55 | liquid: mcap $283B, avg $vol $1,949M/day | earnings date unknown (Earnings announcement* for TXN:  Our vendor, Zacks Investment Research, hasn't p) | YES |\n| ESAB | 1 | 1 | Kean | $1,001 - $15,000 | 76.275 | avg $ volume $0M < $20M | earnings 2026-11-04 is 1 trading day(s) away (<= 3) | no |\n| LRCX | 1 | 1 | Taylor | $1,001 - $15,000 | 235.15 | liquid: mcap $294B, avg $vol $2,204M/day | earnings date unknown (Earnings announcement* for LRCX:  Our vendor, Zacks Investment Research, hasn't ) | no (held: copycat) |\n| T | 1 | 1 | Taylor | $1,001 - $15,000 | 21.28 | liquid: mcap $143B, avg $vol $742M/day | earnings date unknown (Earnings announcement* for T:  Our vendor, Zacks Investment Research, hasn't pro) | no (held: copycat) |\n| RPM | 1 | 1 | Taylor | $1,001 - $15,000 | 106.48 | liquid: mcap $14B, avg $vol $62M/day | earnings date unknown (Earnings announcement* for RPM:  Our vendor, Zacks Investment Research, hasn't p) | no (held: copycat) |\n\n## (b) 13F: tracked investors\nSEC EDGAR refused (403 Forbidden: SEC rejects the configured User-Agent contact (a users.noreply.github.com address)); used the 13f.info mirror of the same EDGAR 13F filings. Q3 2026 13Fs are due by **Fri Nov 14, 2026**; entry signals only from a 13F filed in the last 30 days.\n\n- **Berkshire Hathaway** (Buffett/Abel): latest Q2-2026 filed 2026-08-14 (81d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001067983&type=13F-HR) / [13f.info](https://13f.info/manager/0001067983-berkshire-hathaway-inc)\n- **Scion Asset Mgmt** (Michael Burry): latest Q3-2025 filed 2025-11-03 (365d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001649339&type=13F-HR) / [13f.info](https://13f.info/manager/0001649339-scion-asset-management-llc)\n- **Pershing Square** (Bill Ackman): latest Q1-2026 filed 2026-05-15 (172d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001336528&type=13F-HR) / [13f.info](https://13f.info/manager/0001336528-pershing-square-capital-management-l-p)\n- **Duquesne Family Office** (Stan Druckenmiller): latest Q2-2026 filed 2026-08-14 (81d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001536411&type=13F-HR) / [13f.info](https://13f.info/manager/0001536411-duquesne-family-office-llc)\n- **Appaloosa** (David Tepper): latest Q2-2026 filed 2026-08-14 (81d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001656456&type=13F-HR) / [13f.info](https://13f.info/manager/0001656456-appaloosa-lp)\n- **Situational Awareness LP** (Leopold Aschenbrenner): latest Q2-2026 filed 2026-08-14 (81d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002045724&type=13F-HR) / [13f.info](https://13f.info/manager/0002045724-situational-awareness-lp)\n\n## (c) News / 8-K on held tickers (GOOGL, LRCX, MU, NBIS, NVDA, PLD, RPM, T, TSM, VOO, VST)\n\n- GOOGL [headline] [Nitro Games PLC (OSTO:NITRO) (Q3 2026) Earnings Call Highlights: 1 Million Pre-Registrations ...](https://finance.yahoo.com/markets/stocks/articles/nitro-games-plc-osto-nitro-130153268.html?.tsrc=rss) (Yahoo Finance, 2026-11-03T13:01) tags: earnings,deal\n- GOOGL [headline] [Nasdaq-100 in correction again as AI earnings \u2018not good enough\u2019](https://finance.yahoo.com/video/nasdaq-100-in-correction-again-as-ai-earnings-not-good-enough-144020217.html?.tsrc=rss) (Yahoo Finance, 2026-11-03T14:40) tags: earnings\n- GOOGL [headline] [Opinion: No Way Google Pulls Back like Microsoft. Larry Page Is \u201cWilling to Go Bankrupt Rather Than Lose\u201d the AI Race](https://www.tikr.com/blog/opinion-no-way-google-pulls-back-like-microsoft-larry-page-is-willing-to-go-bankrupt-rather-than-lose-the-ai-race?ref=yahoofinance&tlnk=yf-261103-62p9cc82&.tsrc=rss) (Yahoo Finance, 2026-11-03T14:11) tags: risk\n- GOOGL [headline] [AI Stocks Lose $5 Trillion in 3 Weeks as Hedge Funds Go Underweight AI for the First Time Since 2023](https://247wallst.com/investing/2026/11/03/ai-stocks-lose-5-trillion-in-3-weeks-as-hedge-funds-go-underweight-ai-for-the-first-time-since-2023/?.tsrc=rss) (Yahoo Finance, 2026-11-03T13:54) tags: earnings\n- NVDA [headline] [Shopify Operating Income Jumps 66%: Rapid Earnings Reaction](https://www.fool.com/investing/2026/11/03/shopify-operating-income-jumps-66-rapid-earnings-r/?.tsrc=rss) (Yahoo Finance, 2026-11-03T14:20) tags: earnings\n- NVDA [headline] [Burry vs Karp: One Year Later, Who Actually Won the Palantir Fight?](https://247wallst.com/investing/2026/11/03/burry-vs-karp-one-year-later-who-actually-won-the-palantir-fight/?.tsrc=rss) (Yahoo Finance, 2026-11-03T14:06) tags: earnings\n- NVDA [headline] [Here's My Top Stock to Buy for November](https://www.fool.com/investing/2026/11/03/heres-my-top-stock-to-buy-for-november/?.tsrc=rss) (Yahoo Finance, 2026-11-03T14:05) tags: earnings\n- NVDA [headline] [Upstart Beats Expectations in a Challenging Macro Environment. What It Means for Investors](https://www.fool.com/investing/2026/11/03/upstart-beats-expectations-",
@@ -1089,9 +1093,9 @@
    "entry": 202.63,
    "high_water": 209.29,
    "id": "C1",
-   "last": 208.1,
+   "last": 208.01,
    "last_note": "",
-   "last_updated": "2026-11-03T09:51:29-05:00",
+   "last_updated": "2026-11-03T10:07:59-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-10-30T14:07:15-04:00",
@@ -1103,8 +1107,8 @@
    "thesis": "Top-ranked Congress signal (repeat buyer x3, score 3); mega-cap liquid; earnings 11/17 is 12 trading days out; buying into today's AI/tech sell-off",
    "tp1": 253.29,
    "tp1_done": false,
-   "unrealized_pct": 0.027,
-   "unrealized_pnl": 27.35
+   "unrealized_pct": 0.0266,
+   "unrealized_pnl": 26.9
   },
   {
    "cost": 1030.08,
@@ -1112,9 +1116,9 @@
    "entry": 128.76,
    "high_water": 130.1,
    "id": "C2",
-   "last": 128.79,
+   "last": 128.48,
    "last_note": "",
-   "last_updated": "2026-11-03T09:51:29-05:00",
+   "last_updated": "2026-11-03T10:07:59-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-10-30T14:07:15-04:00",
@@ -1126,8 +1130,8 @@
    "thesis": "Freshest filing (yesterday) and a repeat buy (score 2); liquid large-cap REIT; Q3 earnings already reported mid-Oct",
    "tp1": 160.95,
    "tp1_done": false,
-   "unrealized_pct": 0.0002,
-   "unrealized_pnl": 0.24
+   "unrealized_pct": -0.0022,
+   "unrealized_pnl": -2.24
   },
   {
    "cost": 937.48,
@@ -1135,9 +1139,9 @@
    "entry": 234.37,
    "high_water": 241.54,
    "id": "C3",
-   "last": 233.76,
+   "last": 232.47,
    "last_note": "",
-   "last_updated": "2026-11-03T09:51:29-05:00",
+   "last_updated": "2026-11-03T10:07:59-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-10-30T14:07:16-04:00",
@@ -1149,8 +1153,8 @@
    "thesis": "Freshest filing; tie at score 1 broken by liquidity ($2.1B/day avg vs T $0.7B); Q3 earnings already out (late Oct); semis sold off today",
    "tp1": 292.96,
    "tp1_done": false,
-   "unrealized_pct": -0.0026,
-   "unrealized_pnl": -2.44
+   "unrealized_pct": -0.0081,
+   "unrealized_pnl": -7.6
   },
   {
    "cost": 983.02,
@@ -1158,9 +1162,9 @@
    "entry": 21.37,
    "high_water": 21.57,
    "id": "C4",
-   "last": 21.2,
+   "last": 21.27,
    "last_note": "",
-   "last_updated": "2026-11-03T09:51:29-05:00",
+   "last_updated": "2026-11-03T10:07:59-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-11-02T09:38:22-05:00",
@@ -1172,8 +1176,8 @@
    "thesis": "Copy Rep. Taylor's repeat AT&T buy (also bought 10/09); liquid defensive telecom",
    "tp1": 26.71,
    "tp1_done": false,
-   "unrealized_pct": -0.008,
-   "unrealized_pnl": -7.82
+   "unrealized_pct": -0.0047,
+   "unrealized_pnl": -4.6
   },
   {
    "cost": 952.29,
@@ -1181,9 +1185,9 @@
    "entry": 105.81,
    "high_water": 109.95,
    "id": "C5",
-   "last": 106.06,
+   "last": 106.18,
    "last_note": "",
-   "last_updated": "2026-11-03T09:51:29-05:00",
+   "last_updated": "2026-11-03T10:07:59-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-11-02T09:38:23-05:00",
@@ -1195,8 +1199,8 @@
    "thesis": "Copy Rep. Taylor's repeat RPM International buy (also bought 10/09); liquid coatings/industrial",
    "tp1": 132.26,
    "tp1_done": false,
-   "unrealized_pct": 0.0024,
-   "unrealized_pnl": 2.25
+   "unrealized_pct": 0.0035,
+   "unrealized_pnl": 3.33
   },
   {
    "cost": 864.57,
@@ -1204,9 +1208,9 @@
    "entry": 864.57,
    "high_water": 866.03,
    "id": "C6",
-   "last": 860.82,
+   "last": 860.74,
    "last_note": "",
-   "last_updated": "2026-11-03T09:51:29-05:00",
+   "last_updated": "2026-11-03T10:07:59-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-11-03T09:41:44-05:00",
@@ -1218,8 +1222,8 @@
    "thesis": "Copy Rep. McGuire's repeated MU buys; earnings 12/16 far off",
    "tp1": 1080.71,
    "tp1_done": false,
-   "unrealized_pct": -0.0043,
-   "unrealized_pnl": -3.75
+   "unrealized_pct": -0.0044,
+   "unrealized_pnl": -3.83
   },
   {
    "cost": 929.7,
@@ -1227,10 +1231,10 @@
    "entry": 309.9,
    "high_water": 311.5,
    "id": "C7",
-   "last": 311.5,
+   "last": 308.09,
    "last_note": "",
-   "last_updated": "2026-11-03T09:51:29-05:00",
-   "mark_method": "last",
+   "last_updated": "2026-11-03T10:07:59-05:00",
+   "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-11-03T09:41:44-05:00",
    "qty": 3,
@@ -1241,20 +1245,20 @@
    "thesis": "Copy Rep. Kean's TXN buy",
    "tp1": 387.38,
    "tp1_done": false,
-   "unrealized_pct": 0.0052,
-   "unrealized_pnl": 4.8
+   "unrealized_pct": -0.0058,
+   "unrealized_pnl": -5.43
   }
  ],
- "positions_value": 6730.92,
- "published_at": "2026-11-03 10:07:07 AM EST",
- "published_epoch_ms": 1793718427464,
+ "positions_value": 6716.82,
+ "published_at": "2026-11-03 10:08:00 AM EST",
+ "published_epoch_ms": 1793718480934,
  "realized_pnl": 0,
- "server_time": "2026-11-03 10:07:07 AM EST",
+ "server_time": "2026-11-03 10:08:00 AM EST",
  "start_date": "2026-10-30",
  "starting_cash": 10000.0,
  "status": "active",
  "today": "2026-11-03",
- "total_return": 0.002063000000000148,
+ "total_return": 0.0006529999999997926,
  "trades": [],
  "win_rate": null
 }
