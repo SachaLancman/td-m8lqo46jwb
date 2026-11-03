@@ -1,18 +1,18 @@
 {
- "account_value": 1454.0,
+ "account_value": 1450.0,
  "alerts": [
   "C11: STOP CONFIRMED (last 0.23, stop 1.4)"
  ],
  "bust_threshold": 20.0,
  "busted": false,
  "buying_power": 677.0,
- "cash": 677.0,
- "closed_trades": 10,
- "drawdown": -0.2315010570824524,
+ "cash": 696.0,
+ "closed_trades": 11,
+ "drawdown": -0.233615221987315,
  "error": null,
  "goal": "Grow $1,000 to $100,000 as fast as possible (paper).",
- "goal_progress_linear": 0.01454,
- "goal_progress_log": 0.0812822032615095,
+ "goal_progress_linear": 0.0145,
+ "goal_progress_log": 0.08068400111748743,
  "goal_target": 100000.0,
  "history": [
   {
@@ -1312,9 +1312,9 @@
  ],
  "marked_at": "2026-11-03T11:43:30-05:00",
  "mode": "paper",
- "multiple": 1.454,
+ "multiple": 1.45,
  "name": "Crazy $1K (Grok Bot, paper)",
- "notes": "- 09:40 scan: no alerts, no new positions; value $1,869.\n- 10:46 ET scan: $1,869, no ALERTs, no new trades (chop).\n- 11:15 ET: marked $1,754, no ALERTs, no new trades (chop, cash $677)\n",
+ "notes": "- 09:40 scan: no alerts, no new positions; value $1,869.\n- 10:46 ET scan: $1,869, no ALERTs, no new trades (chop).\n- 11:15 ET: marked $1,754, no ALERTs, no new trades (chop, cash $677)\n- 11:42 closed C11 SPY 755/745P 11/6 on stop at 0.19, -$247; account $1,450\n",
  "notes_date": "2026-11-03",
  "peak_value": 1892.0,
  "positions": [
@@ -1365,54 +1365,6 @@
    "underlying_last": 71.84,
    "unrealized_pct": 0.2683,
    "unrealized_pnl": 44.0
-  },
-  {
-   "contracts": 1.0,
-   "detail": "SPY +755P 2026-11-06 / -745P 2026-11-06",
-   "entry": 2.66,
-   "expires_today": false,
-   "gamma_check": "SPY negative -15.2B, flip 769, CW=PW 760",
-   "high_water": 3.99,
-   "id": "C11",
-   "kind": "option",
-   "last": 0.23,
-   "last_note": "liquidation 0.19 below intrinsic floor 0.41: mid used",
-   "last_updated": "2026-11-03T11:43:30-05:00",
-   "legs": [
-    {
-     "expiration": "2026-11-06",
-     "right": "put",
-     "side": "long",
-     "strike": 755.0
-    },
-    {
-     "expiration": "2026-11-06",
-     "right": "put",
-     "side": "short",
-     "strike": 745.0
-    }
-   ],
-   "mark_method": "mid",
-   "mark_valid": true,
-   "mid": 0.23,
-   "multiplier": 100,
-   "must_close": false,
-   "opened": "2026-10-30T10:42:33-04:00",
-   "source": "gex.py + day-trade crowd (ripster47, RedDogT3) + FlowbyBobby levels",
-   "stop": 1.4,
-   "stop_watch": {
-    "consecutive_valid_at_or_below_stop": 3,
-    "rule": "stop hit only after 2 consecutive VALID marks (from 09:35 ET; mid if quotes wide) at/beyond stop",
-    "stop_confirmed": true
-   },
-   "symbol": "SPY",
-   "target": 7.0,
-   "target_hit": false,
-   "thesis": "VIX through 20, SPY pinned at 760 king node in deep negative gamma (flip ~769), crowd/ripster shorts; 1-week spread survives the 760 pin and covers election week",
-   "underlying": "SPY",
-   "underlying_last": 754.59,
-   "unrealized_pct": -0.9135,
-   "unrealized_pnl": -243.0
   },
   {
    "contracts": 1.0,
@@ -1511,16 +1463,16 @@
    "unrealized_pnl": 74.0
   }
  ],
- "positions_value": 777.0,
- "published_at": "2026-11-03 11:43:37 AM EST",
- "published_epoch_ms": 1793724217440,
- "realized_pnl": 728.0,
- "server_time": "2026-11-03 11:43:37 AM EST",
+ "positions_value": 754.0,
+ "published_at": "2026-11-03 11:44:52 AM EST",
+ "published_epoch_ms": 1793724292436,
+ "realized_pnl": 481.0,
+ "server_time": "2026-11-03 11:44:52 AM EST",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
  "today": "2026-11-03",
- "total_return": 0.45399999999999996,
+ "total_return": 0.44999999999999996,
  "trades": [
   {
    "action": "OPEN",
@@ -2027,7 +1979,38 @@
    "thesis": "Earnings 11/03 downside bet riding a $2M whale 135P 11/06 buy (vol 10.5K vs OI 640); 145/135 put spread pays up to $1,000 on a ~10%+ post-earnings drop, risk capped at $251",
    "time": "2026-11-02T13:49:31-05:00",
    "value_after": 1660.0
+  },
+  {
+   "action": "CLOSE",
+   "cash_flow": 19.0,
+   "detail": "SPY +755P 2026-11-06 / -745P 2026-11-06",
+   "entry": 2.66,
+   "exit_quotes": {
+    "legs": [
+     {
+      "ask": 0.45,
+      "bid": 0.41,
+      "leg": "long 755P 2026-11-06"
+     },
+     {
+      "ask": 0.22,
+      "bid": 0.18,
+      "leg": "short 745P 2026-11-06"
+     }
+    ],
+    "source": "Nasdaq public option chain",
+    "underlying": 754.59
+   },
+   "id": "C11",
+   "pnl": -247.0,
+   "pnl_pct": -0.9286,
+   "price": 0.19,
+   "qty": 1.0,
+   "reason": "stop confirmed (last 0.23 vs stop 1.40)",
+   "symbol": "SPY",
+   "time": "2026-11-03T11:43:42-05:00",
+   "value_after": 1450.0
   }
  ],
- "win_rate": 0.6
+ "win_rate": 0.5454545454545454
 }
