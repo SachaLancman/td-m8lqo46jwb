@@ -1,16 +1,16 @@
 {
- "account_value": 1754.0,
+ "account_value": 1453.0,
  "alerts": [],
  "bust_threshold": 20.0,
  "busted": false,
  "buying_power": 677.0,
  "cash": 677.0,
  "closed_trades": 10,
- "drawdown": -0.07293868921775903,
+ "drawdown": -0.2320295983086681,
  "error": null,
  "goal": "Grow $1,000 to $100,000 as fast as possible (paper).",
- "goal_progress_linear": 0.01754,
- "goal_progress_log": 0.12201479451501084,
+ "goal_progress_linear": 0.01453,
+ "goal_progress_log": 0.08113280714901076,
  "goal_target": 100000.0,
  "history": [
   {
@@ -47,7 +47,7 @@
   },
   {
    "date": "2026-11-03",
-   "value": 1754.0
+   "value": 1453.0
   }
  ],
  "intraday": [
@@ -1294,11 +1294,15 @@
   {
    "t": "2026-11-03T11:15-05:00",
    "value": 1754.0
+  },
+  {
+   "t": "2026-11-03T11:17-05:00",
+   "value": 1453.0
   }
  ],
- "marked_at": "2026-11-03T11:15:12-05:00",
+ "marked_at": "2026-11-03T11:17:11-05:00",
  "mode": "paper",
- "multiple": 1.754,
+ "multiple": 1.453,
  "name": "Crazy $1K (Grok Bot, paper)",
  "notes": "- 09:40 scan: no alerts, no new positions; value $1,869.\n- 10:46 ET scan: $1,869, no ALERTs, no new trades (chop).\n- 11:15 ET: marked $1,754, no ALERTs, no new trades (chop, cash $677)\n",
  "notes_date": "2026-11-03",
@@ -1313,9 +1317,9 @@
    "high_water": 2.35,
    "id": "C6",
    "kind": "option",
-   "last": 2.06,
+   "last": 1.99,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-03T11:15:12-05:00",
+   "last_updated": "2026-11-03T11:17:11-05:00",
    "legs": [
     {
      "expiration": "2026-11-20",
@@ -1332,7 +1336,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 2.19,
+   "mid": 2.13,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-29T13:43:02-04:00",
@@ -1348,9 +1352,9 @@
    "target_hit": false,
    "thesis": "Post-earnings gap +16% (59 to 68.7) with whale continuation calls (74C 12/18 $680K FlowbyBobby; $642K CVNA calls FL0WG0D); earnings already out so no event risk; fit to cash with a Nov 72/78 call spread",
    "underlying": "CVNA",
-   "underlying_last": 72.095,
-   "unrealized_pct": 0.2561,
-   "unrealized_pnl": 42.0
+   "underlying_last": 71.94,
+   "unrealized_pct": 0.2134,
+   "unrealized_pnl": 35.0
   },
   {
    "contracts": 1.0,
@@ -1361,9 +1365,9 @@
    "high_water": 3.99,
    "id": "C11",
    "kind": "option",
-   "last": 3.08,
-   "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-03T11:15:12-05:00",
+   "last": 0.2,
+   "last_note": "wide quotes (755P 0.35/0.45 (25% of mid); 745P 0.15/0.25 (50% of mid)): mid used, not liquidation",
+   "last_updated": "2026-11-03T11:17:11-05:00",
    "legs": [
     {
      "expiration": "2026-11-06",
@@ -1378,16 +1382,16 @@
      "strike": 745.0
     }
    ],
-   "mark_method": "liq",
+   "mark_method": "mid",
    "mark_valid": true,
-   "mid": 3.1,
+   "mid": 0.2,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-30T10:42:33-04:00",
    "source": "gex.py + day-trade crowd (ripster47, RedDogT3) + FlowbyBobby levels",
    "stop": 1.4,
    "stop_watch": {
-    "consecutive_valid_at_or_below_stop": 0,
+    "consecutive_valid_at_or_below_stop": 1,
     "rule": "stop hit only after 2 consecutive VALID marks (from 09:35 ET; mid if quotes wide) at/beyond stop",
     "stop_confirmed": false
    },
@@ -1396,9 +1400,9 @@
    "target_hit": false,
    "thesis": "VIX through 20, SPY pinned at 760 king node in deep negative gamma (flip ~769), crowd/ripster shorts; 1-week spread survives the 760 pin and covers election week",
    "underlying": "SPY",
-   "underlying_last": 755.96,
-   "unrealized_pct": 0.1579,
-   "unrealized_pnl": 42.0
+   "underlying_last": 756.22,
+   "unrealized_pct": -0.9248,
+   "unrealized_pnl": -246.0
   },
   {
    "contracts": 1.0,
@@ -1409,9 +1413,9 @@
    "high_water": 3.7,
    "id": "C12",
    "kind": "option",
-   "last": 2.13,
+   "last": 2.17,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-03T11:15:12-05:00",
+   "last_updated": "2026-11-03T11:17:11-05:00",
    "legs": [
     {
      "expiration": "2026-11-20",
@@ -1428,7 +1432,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 2.21,
+   "mid": 2.25,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-30T10:42:34-04:00",
@@ -1444,9 +1448,9 @@
    "target_hit": false,
    "thesis": "Whale lead: MSTR put buying (FlowbyBobby 160k 100P 12/4, FL0WG0D 'Togi loading MSTR puts'); spot 129.7 below 138.6 flip, sitting on 130 put wall; spread fits cash and limits IV crush (earnings date unverified)",
    "underlying": "MSTR",
-   "underlying_last": 137.745,
-   "unrealized_pct": -0.4243,
-   "unrealized_pnl": -157.0
+   "underlying_last": 137.3,
+   "unrealized_pct": -0.4135,
+   "unrealized_pnl": -153.0
   },
   {
    "contracts": 1.0,
@@ -1457,9 +1461,9 @@
    "high_water": 4.05,
    "id": "C14",
    "kind": "option",
-   "last": 3.5,
+   "last": 3.4,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-03T11:15:12-05:00",
+   "last_updated": "2026-11-03T11:17:11-05:00",
    "legs": [
     {
      "expiration": "2026-11-06",
@@ -1476,7 +1480,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 3.82,
+   "mid": 3.73,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-11-02T13:49:31-05:00",
@@ -1492,21 +1496,21 @@
    "target_hit": false,
    "thesis": "Earnings 11/03 downside bet riding a $2M whale 135P 11/06 buy (vol 10.5K vs OI 640); 145/135 put spread pays up to $1,000 on a ~10%+ post-earnings drop, risk capped at $251",
    "underlying": "SHOP",
-   "underlying_last": 144.0,
-   "unrealized_pct": 0.3944,
-   "unrealized_pnl": 99.0
+   "underlying_last": 143.28,
+   "unrealized_pct": 0.3546,
+   "unrealized_pnl": 89.0
   }
  ],
- "positions_value": 1077.0,
- "published_at": "2026-11-03 11:16:35 AM EST",
- "published_epoch_ms": 1793722595279,
+ "positions_value": 776.0,
+ "published_at": "2026-11-03 11:17:17 AM EST",
+ "published_epoch_ms": 1793722637084,
  "realized_pnl": 728.0,
- "server_time": "2026-11-03 11:16:35 AM EST",
+ "server_time": "2026-11-03 11:17:17 AM EST",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
  "today": "2026-11-03",
- "total_return": 0.754,
+ "total_return": 0.45300000000000007,
  "trades": [
   {
    "action": "OPEN",
