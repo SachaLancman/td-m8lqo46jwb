@@ -1300,7 +1300,7 @@
  "mode": "paper",
  "multiple": 1.73,
  "name": "Crazy $1K (Grok Bot, paper)",
- "notes": "- 09:40 scan: no alerts, no new positions; value $1,869.\n- 10:46 ET scan: $1,869, no ALERTs, no new trades (chop).\n- 11:15 ET: marked $1,754, no ALERTs, no new trades (chop, cash $677)\n- 11:42 closed C11 SPY 755/745P 11/6 on stop at 0.19, -$247; account $1,450\n",
+ "notes": "- 09:40 scan: no alerts, no new positions; value $1,869.\n- 10:46 ET scan: $1,869, no ALERTs, no new trades (chop).\n- 11:15 ET: marked $1,754, no ALERTs, no new trades (chop, cash $677)\n- 11:42 closed C11 SPY 755/745P 11/6 on stop at 0.19, -$247; account $1,450\n- 11:47 ET CORRECTION: the 11:42 C11 close (0.19, -$247) was VOIDED \u2014 caused by a quote bug (Nasdaq chain rows from a non-standard 'b1spy' root with 0DTE-like prices were taken instead of the real SPY 11/06 contracts). The 11:01/11:17/11:32/11:43 marks ($1,417/$1,453/$1,474/$1,454) were wrong and have been removed. C11 is restored (755/745P 11/06, entry 2.66, stop 1.40, target 7.00) and now marks 3.11 (mid 3.13). Fixed code applied; account value is $1,730, cash $677.\n",
  "notes_date": "2026-11-03",
  "peak_value": 1892.0,
  "positions": [
@@ -1498,10 +1498,10 @@
   }
  ],
  "positions_value": 1053.0,
- "published_at": "2026-11-03 11:45:54 AM EST",
- "published_epoch_ms": 1793724354317,
+ "published_at": "2026-11-03 11:46:04 AM EST",
+ "published_epoch_ms": 1793724364207,
  "realized_pnl": 481.0,
- "server_time": "2026-11-03 11:45:54 AM EST",
+ "server_time": "2026-11-03 11:46:04 AM EST",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
