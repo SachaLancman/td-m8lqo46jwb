@@ -1,5 +1,5 @@
 {
- "account_value": 1636.0,
+ "account_value": 1606.0,
  "alerts": [
   "C6: TP25 (up 27%): sell half (all if 1 contract and up 40%+) per CRAZY.md"
  ],
@@ -8,11 +8,11 @@
  "buying_power": 677.0,
  "cash": 677.0,
  "closed_trades": 11,
- "drawdown": -0.13530655391120505,
+ "drawdown": -0.15116279069767447,
  "error": null,
  "goal": "Grow $1,000 to $100,000 as fast as possible (paper).",
- "goal_progress_linear": 0.01636,
- "goal_progress_log": 0.10689164966765208,
+ "goal_progress_linear": 0.01606,
+ "goal_progress_log": 0.10287277047133107,
  "goal_target": 100000.0,
  "history": [
   {
@@ -49,7 +49,7 @@
   },
   {
    "date": "2026-11-03",
-   "value": 1636.0
+   "value": 1606.0
   }
  ],
  "intraday": [
@@ -1348,11 +1348,15 @@
   {
    "t": "2026-11-03T13:42-05:00",
    "value": 1636.0
+  },
+  {
+   "t": "2026-11-03T13:54-05:00",
+   "value": 1606.0
   }
  ],
- "marked_at": "2026-11-03T13:42:50-05:00",
+ "marked_at": "2026-11-03T13:54:00-05:00",
  "mode": "paper",
- "multiple": 1.636,
+ "multiple": 1.606,
  "name": "Crazy $1K (Grok Bot, paper)",
  "notes": "- 09:40 scan: no alerts, no new positions; value $1,869.\n- 10:46 ET scan: $1,869, no ALERTs, no new trades (chop).\n- 11:15 ET: marked $1,754, no ALERTs, no new trades (chop, cash $677)\n- 11:42 closed C11 SPY 755/745P 11/6 on stop at 0.19, -$247; account $1,450\n- 11:47 ET CORRECTION: the 11:42 C11 close (0.19, -$247) was VOIDED \u2014 caused by a quote bug (Nasdaq chain rows from a non-standard 'b1spy' root with 0DTE-like prices were taken instead of the real SPY 11/06 contracts). The 11:01/11:17/11:32/11:43 marks ($1,417/$1,453/$1,474/$1,454) were wrong and have been removed. C11 is restored (755/745P 11/06, entry 2.66, stop 1.40, target 7.00) and now marks 3.11 (mid 3.13). Fixed code applied; account value is $1,730, cash $677.\n- 12:16 ET marked cd /workspace/trading-team && grep \"^AAPL\" /tmp/gex.log; R=reports/2026-11-03; cat >> $R/x_whale_flow.md <<'E'\n- 11:43 ET | @WhalesFlowRadar | AAPL 360C Jan 2027, ~$5.2M | https://x.com/WhalesFlowRadar/status/2117658987885989960\n- 11:53 ET | @FlowbyBobby | FRVO 10C 1/15/2027, $2.3M, 9% OTM | https://x.com/FlowbyBobby/status/2117661467680096609\n- 11:43 ET | @FlowbyBobby | PLUG 2.5C 6/17/2027, $80K (small) | https://x.com/FlowbyBobby/status/2117659007028740150\nE\ncat >> $R/decision.md <<'E'\n\n## 12:14 scan\nNo main-account trade: SPY 755.3 (flip 766, negative), QQQ 687.1 (flip 714, negative), no conditional entry armed, after-close watchlist unchanged. Whale: AAPL 360C Jan ~$5.2M (bullish, far-dated, conflicts with our AAPL 325/315P idea; AAPL gamma still negative so lead only), FRVO 10C Jan $2.3M (not liquid/watchlist). Crazy $1,705 and Copycat $10,012 marked: no ALERTs, no trades (chop, Crazy cash $677).\nE\necho \"- 12:16 ET marked $1,705, no ALERTs, no trades.\" >> $R/crazy.md; echo \"- 12:16 ET marked \\$10,011.75, 7 positions, no ALERTs, no trades.\" >> $R/copycat.md\npython3 set_status.py copycat idle '$10,012 \u00b7 7 positions \u00b7 no alerts, holding' 2>&1 | tail -1,705, no ALERTs, no trades.\n- 12:43 ET marked $1,668; C6 TP25 alert (+35%, 1 contract < 40%): hold. No trades.\n- 13:13 ET marked $1,655, no ALERTs, no trades.\n- 13:42 ET marked $1,636; C6 TP25 (+27%, 1 contract < 40%): hold. No trades.\n",
  "notes_date": "2026-11-03",
@@ -1367,9 +1371,9 @@
    "high_water": 2.35,
    "id": "C6",
    "kind": "option",
-   "last": 2.08,
+   "last": 2.09,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-03T13:42:50-05:00",
+   "last_updated": "2026-11-03T13:54:00-05:00",
    "legs": [
     {
      "expiration": "2026-11-20",
@@ -1386,7 +1390,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 2.19,
+   "mid": 2.24,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-29T13:43:02-04:00",
@@ -1402,9 +1406,9 @@
    "target_hit": false,
    "thesis": "Post-earnings gap +16% (59 to 68.7) with whale continuation calls (74C 12/18 $680K FlowbyBobby; $642K CVNA calls FL0WG0D); earnings already out so no event risk; fit to cash with a Nov 72/78 call spread",
    "underlying": "CVNA",
-   "underlying_last": 71.805,
-   "unrealized_pct": 0.2683,
-   "unrealized_pnl": 44.0
+   "underlying_last": 71.89,
+   "unrealized_pct": 0.2744,
+   "unrealized_pnl": 45.0
   },
   {
    "contracts": 1.0,
@@ -1415,9 +1419,9 @@
    "high_water": 3.7,
    "id": "C12",
    "kind": "option",
-   "last": 2.33,
+   "last": 2.28,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-03T13:42:50-05:00",
+   "last_updated": "2026-11-03T13:54:00-05:00",
    "legs": [
     {
      "expiration": "2026-11-20",
@@ -1434,7 +1438,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 2.41,
+   "mid": 2.36,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-30T10:42:34-04:00",
@@ -1450,9 +1454,9 @@
    "target_hit": false,
    "thesis": "Whale lead: MSTR put buying (FlowbyBobby 160k 100P 12/4, FL0WG0D 'Togi loading MSTR puts'); spot 129.7 below 138.6 flip, sitting on 130 put wall; spread fits cash and limits IV crush (earnings date unverified)",
    "underlying": "MSTR",
-   "underlying_last": 136.245,
-   "unrealized_pct": -0.3703,
-   "unrealized_pnl": -137.0
+   "underlying_last": 136.0,
+   "unrealized_pct": -0.3838,
+   "unrealized_pnl": -142.0
   },
   {
    "contracts": 1.0,
@@ -1463,9 +1467,9 @@
    "high_water": 4.05,
    "id": "C14",
    "kind": "option",
-   "last": 2.21,
+   "last": 2.03,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-03T13:42:50-05:00",
+   "last_updated": "2026-11-03T13:54:00-05:00",
    "legs": [
     {
      "expiration": "2026-11-06",
@@ -1482,7 +1486,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 2.43,
+   "mid": 2.17,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-11-02T13:49:31-05:00",
@@ -1498,9 +1502,9 @@
    "target_hit": false,
    "thesis": "Earnings 11/03 downside bet riding a $2M whale 135P 11/06 buy (vol 10.5K vs OI 640); 145/135 put spread pays up to $1,000 on a ~10%+ post-earnings drop, risk capped at $251",
    "underlying": "SHOP",
-   "underlying_last": 147.15,
-   "unrealized_pct": -0.1195,
-   "unrealized_pnl": -30.0
+   "underlying_last": 147.085,
+   "unrealized_pct": -0.1912,
+   "unrealized_pnl": -48.0
   },
   {
    "contracts": 1.0,
@@ -1511,9 +1515,9 @@
    "high_water": 3.29,
    "id": "C11",
    "kind": "option",
-   "last": 2.97,
+   "last": 2.89,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-03T13:42:50-05:00",
+   "last_updated": "2026-11-03T13:54:00-05:00",
    "legs": [
     {
      "expiration": "2026-11-06",
@@ -1530,7 +1534,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 2.99,
+   "mid": 2.92,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-30T10:42:33-04:00",
@@ -1546,21 +1550,21 @@
    "target_hit": false,
    "thesis": "VIX through 20, SPY pinned at 760 king node in deep negative gamma (flip ~769), crowd/ripster shorts; 1-week spread survives the 760 pin and covers election week",
    "underlying": "SPY",
-   "underlying_last": 756.19,
-   "unrealized_pct": 0.1165,
-   "unrealized_pnl": 31.0
+   "underlying_last": 756.0,
+   "unrealized_pct": 0.0865,
+   "unrealized_pnl": 23.0
   }
  ],
- "positions_value": 959.0,
- "published_at": "2026-11-03 01:43:30 PM EST",
- "published_epoch_ms": 1793731410588,
+ "positions_value": 929.0,
+ "published_at": "2026-11-03 01:54:04 PM EST",
+ "published_epoch_ms": 1793732044815,
  "realized_pnl": 481.0,
- "server_time": "2026-11-03 01:43:30 PM EST",
+ "server_time": "2026-11-03 01:54:04 PM EST",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
  "today": "2026-11-03",
- "total_return": 0.6359999999999999,
+ "total_return": 0.6060000000000001,
  "trades": [
   {
    "action": "OPEN",
