@@ -1,19 +1,20 @@
 {
- "account_value": 1632.0,
+ "account_value": 1577.0,
  "alerts": [
-  "C6: TP25 (up 78%): sell half (all if 1 contract and up 40%+) per CRAZY.md",
-  "C11: STOP CONFIRMED (last 1.24, stop 1.4)"
+  "C6: TP25 (up 87%): sell half (all if 1 contract and up 40%+) per CRAZY.md",
+  "C12: STOP CONFIRMED (last 1.58, stop 1.85)",
+  "C11: STOP CONFIRMED (last 0.7, stop 1.4)"
  ],
  "bust_threshold": 20.0,
  "busted": false,
  "buying_power": 1042.0,
  "cash": 1042.0,
  "closed_trades": 12,
- "drawdown": -0.13742071881606766,
+ "drawdown": -0.16649048625792817,
  "error": null,
  "goal": "Grow $1,000 to $100,000 as fast as possible (paper).",
- "goal_progress_linear": 0.01632,
- "goal_progress_log": 0.10636007720892114,
+ "goal_progress_linear": 0.01577,
+ "goal_progress_log": 0.09891584666445143,
  "goal_target": 100000.0,
  "history": [
   {
@@ -54,7 +55,7 @@
   },
   {
    "date": "2026-11-04",
-   "value": 1632.0
+   "value": 1577.0
   }
  ],
  "intraday": [
@@ -1425,11 +1426,15 @@
   {
    "t": "2026-11-04T09:47-05:00",
    "value": 1632.0
+  },
+  {
+   "t": "2026-11-04T10:09-05:00",
+   "value": 1577.0
   }
  ],
- "marked_at": "2026-11-04T09:47:47-05:00",
+ "marked_at": "2026-11-04T10:09:22-05:00",
  "mode": "paper",
- "multiple": 1.632,
+ "multiple": 1.577,
  "name": "Crazy $1K (Grok Bot, paper)",
  "notes": "- 09:36 ET value $1,566 (cash $1,042). Closed C14 SHOP 11/6 145/135 put spread (1 contract) at 3.65, +$114 (+45%) post-earnings per TP25 rule (single contract up 40%+ = sell all). No new entry this scan; 10 AM run will look for fresh ideas.\n",
  "notes_date": "2026-11-04",
@@ -1441,12 +1446,12 @@
    "entry": 1.64,
    "expires_today": false,
    "gamma_check": "positive gamma, spot 68.6 above flip 60.9; CW 70 just above (first hurdle), PW 58",
-   "high_water": 2.92,
+   "high_water": 3.07,
    "id": "C6",
    "kind": "option",
-   "last": 2.92,
-   "last_note": "liquidation 2.55 below intrinsic floor 2.87: mid used",
-   "last_updated": "2026-11-04T09:47:47-05:00",
+   "last": 3.07,
+   "last_note": "liquidation 2.79 below intrinsic floor 4.26: mid used",
+   "last_updated": "2026-11-04T10:09:22-05:00",
    "legs": [
     {
      "expiration": "2026-11-20",
@@ -1463,7 +1468,7 @@
    ],
    "mark_method": "mid",
    "mark_valid": true,
-   "mid": 2.92,
+   "mid": 3.07,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-29T13:43:02-04:00",
@@ -1479,9 +1484,9 @@
    "target_hit": false,
    "thesis": "Post-earnings gap +16% (59 to 68.7) with whale continuation calls (74C 12/18 $680K FlowbyBobby; $642K CVNA calls FL0WG0D); earnings already out so no event risk; fit to cash with a Nov 72/78 call spread",
    "underlying": "CVNA",
-   "underlying_last": 74.87,
-   "unrealized_pct": 0.7805,
-   "unrealized_pnl": 128.0
+   "underlying_last": 76.26,
+   "unrealized_pct": 0.872,
+   "unrealized_pnl": 143.0
   },
   {
    "contracts": 1.0,
@@ -1492,9 +1497,9 @@
    "high_water": 3.7,
    "id": "C12",
    "kind": "option",
-   "last": 1.74,
+   "last": 1.58,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-04T09:47:47-05:00",
+   "last_updated": "2026-11-04T10:09:22-05:00",
    "legs": [
     {
      "expiration": "2026-11-20",
@@ -1511,25 +1516,25 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 1.84,
+   "mid": 1.65,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-30T10:42:34-04:00",
    "source": "FlowbyBobby + FL0WG0D whale posts",
    "stop": 1.85,
    "stop_watch": {
-    "consecutive_valid_at_or_below_stop": 1,
+    "consecutive_valid_at_or_below_stop": 2,
     "rule": "stop hit only after 2 consecutive VALID marks (from 09:35 ET; mid if quotes wide) at/beyond stop",
-    "stop_confirmed": false
+    "stop_confirmed": true
    },
    "symbol": "MSTR",
    "target": 8.0,
    "target_hit": false,
    "thesis": "Whale lead: MSTR put buying (FlowbyBobby 160k 100P 12/4, FL0WG0D 'Togi loading MSTR puts'); spot 129.7 below 138.6 flip, sitting on 130 put wall; spread fits cash and limits IV crush (earnings date unverified)",
    "underlying": "MSTR",
-   "underlying_last": 140.5999,
-   "unrealized_pct": -0.5297,
-   "unrealized_pnl": -196.0
+   "underlying_last": 143.765,
+   "unrealized_pct": -0.573,
+   "unrealized_pnl": -212.0
   },
   {
    "contracts": 1.0,
@@ -1540,9 +1545,9 @@
    "high_water": 3.49,
    "id": "C11",
    "kind": "option",
-   "last": 1.24,
+   "last": 0.7,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-04T09:47:47-05:00",
+   "last_updated": "2026-11-04T10:09:22-05:00",
    "legs": [
     {
      "expiration": "2026-11-06",
@@ -1559,14 +1564,14 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 1.26,
+   "mid": 0.71,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-10-30T10:42:33-04:00",
    "source": "gex.py + day-trade crowd (ripster47, RedDogT3) + FlowbyBobby levels",
    "stop": 1.4,
    "stop_watch": {
-    "consecutive_valid_at_or_below_stop": 3,
+    "consecutive_valid_at_or_below_stop": 4,
     "rule": "stop hit only after 2 consecutive VALID marks (from 09:35 ET; mid if quotes wide) at/beyond stop",
     "stop_confirmed": true
    },
@@ -1575,21 +1580,21 @@
    "target_hit": false,
    "thesis": "VIX through 20, SPY pinned at 760 king node in deep negative gamma (flip ~769), crowd/ripster shorts; 1-week spread survives the 760 pin and covers election week",
    "underlying": "SPY",
-   "underlying_last": 767.83,
-   "unrealized_pct": -0.5338,
-   "unrealized_pnl": -142.0
+   "underlying_last": 767.6099,
+   "unrealized_pct": -0.7368,
+   "unrealized_pnl": -196.0
   }
  ],
- "positions_value": 590.0,
- "published_at": "2026-11-04 09:47:51 AM EST",
- "published_epoch_ms": 1793803671714,
+ "positions_value": 535.0,
+ "published_at": "2026-11-04 10:09:34 AM EST",
+ "published_epoch_ms": 1793804974637,
  "realized_pnl": 595.0,
- "server_time": "2026-11-04 09:47:51 AM EST",
+ "server_time": "2026-11-04 10:09:34 AM EST",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
  "today": "2026-11-04",
- "total_return": 0.6319999999999999,
+ "total_return": 0.577,
  "trades": [
   {
    "action": "OPEN",
