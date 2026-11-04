@@ -1,16 +1,16 @@
 {
- "account_value": 1556.0,
+ "account_value": 1532.0,
  "alerts": [],
  "bust_threshold": 20.0,
  "busted": false,
- "buying_power": 1556.0,
+ "buying_power": 1037.0,
  "cash": 1037.0,
  "closed_trades": 15,
- "drawdown": -0.17758985200845667,
+ "drawdown": -0.19027484143763218,
  "error": null,
  "goal": "Grow $1,000 to $100,000 as fast as possible (paper).",
- "goal_progress_linear": 0.01556,
- "goal_progress_log": 0.09600479632683506,
+ "goal_progress_linear": 0.01532,
+ "goal_progress_log": 0.09262938264829257,
  "goal_target": 100000.0,
  "history": [
   {
@@ -51,7 +51,7 @@
   },
   {
    "date": "2026-11-04",
-   "value": 1556.0
+   "value": 1532.0
   }
  ],
  "intraday": [
@@ -1446,11 +1446,15 @@
   {
    "t": "2026-11-04T10:48-05:00",
    "value": 1556.0
+  },
+  {
+   "t": "2026-11-04T11:07-05:00",
+   "value": 1532.0
   }
  ],
- "marked_at": "2026-11-04T10:48:07-05:00",
+ "marked_at": "2026-11-04T11:07:01-05:00",
  "mode": "paper",
- "multiple": 1.556,
+ "multiple": 1.532,
  "name": "Crazy $1K (Grok Bot, paper)",
  "notes": "- 09:36 ET value $1,566 (cash $1,042). Closed C14 SHOP 11/6 145/135 put spread (1 contract) at 3.65, +$114 (+45%) post-earnings per TP25 rule (single contract up 40%+ = sell all). No new entry this scan; 10 AM run will look for fresh ideas.\n- 10:15 ET: closed C6 CVNA 72/78C at 2.97 (+$133, TP25 single contract), C12 MSTR 125/115P at 1.59 (-$211, stop; MSTR 144.9), C11 SPY 755/745P at 0.58 (-$208, stop; SPY 768). All cash $1,556, no new entries this scan.\n- 10:50 ET: opened C15 GLD 12/18 375/385C x1 at 3.75 ($375, GLD whale $2.1M) and C16 NKE 12/18 42.5/45C x2 at 0.72 ($144, NKE whale $3.6M). Value $1,556, cash ~$1,037.\n",
  "notes_date": "2026-11-04",
@@ -1460,11 +1464,14 @@
    "contracts": 1.0,
    "detail": "GLD +375C 2026-12-18 / -385C 2026-12-18",
    "entry": 3.75,
+   "expires_today": false,
    "gamma_check": "GLD spot 370.27 positive, flip 365.76, CW 400, PW 345",
    "high_water": 3.75,
    "id": "C15",
    "kind": "option",
-   "last": 3.75,
+   "last": 3.65,
+   "last_note": "liquidation mark (bid long / ask short); mid also stored",
+   "last_updated": "2026-11-04T11:07:01-05:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1479,29 +1486,40 @@
      "strike": 385.0
     }
    ],
-   "mark_method": "fill",
+   "mark_method": "liq",
    "mark_valid": true,
+   "mid": 3.73,
    "multiplier": 100,
+   "must_close": false,
    "opened": "2026-11-04T10:48:47-05:00",
    "source": "https://x.com/FL0WG0D/status/2118005712400130447",
    "stop": null,
    "stop_watch": {
-    "consecutive_valid_at_or_below_stop": 0
+    "consecutive_valid_at_or_below_stop": 0,
+    "rule": "stop hit only after 2 consecutive VALID marks (from 09:35 ET; mid if quotes wide) at/beyond stop",
+    "stop_confirmed": false
    },
    "symbol": "GLD",
    "target": null,
+   "target_hit": false,
    "thesis": "Follow $2.1M GLD call whale; positive gamma above 365.8 flip, CW 400",
-   "underlying": "GLD"
+   "underlying": "GLD",
+   "underlying_last": 370.89,
+   "unrealized_pct": -0.0267,
+   "unrealized_pnl": -10.0
   },
   {
    "contracts": 2.0,
    "detail": "NKE +42.5C 2026-12-18 / -45C 2026-12-18",
    "entry": 0.72,
+   "expires_today": false,
    "gamma_check": "NKE spot 40.56 positive, flip 37.21, CW/PW 40",
    "high_water": 0.72,
    "id": "C16",
    "kind": "option",
-   "last": 0.72,
+   "last": 0.65,
+   "last_note": "liquidation mark (bid long / ask short); mid also stored",
+   "last_updated": "2026-11-04T11:07:01-05:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1516,31 +1534,39 @@
      "strike": 45.0
     }
    ],
-   "mark_method": "fill",
+   "mark_method": "liq",
    "mark_valid": true,
+   "mid": 0.7,
    "multiplier": 100,
+   "must_close": false,
    "opened": "2026-11-04T10:48:53-05:00",
    "source": "https://x.com/WhalesFlowRadar/status/2118003366794231855",
    "stop": null,
    "stop_watch": {
-    "consecutive_valid_at_or_below_stop": 0
+    "consecutive_valid_at_or_below_stop": 0,
+    "rule": "stop hit only after 2 consecutive VALID marks (from 09:35 ET; mid if quotes wide) at/beyond stop",
+    "stop_confirmed": false
    },
    "symbol": "NKE",
    "target": null,
+   "target_hit": false,
    "thesis": "Follow $3.6M NKE 45C Sept whale, cheaper Dec spread",
-   "underlying": "NKE"
+   "underlying": "NKE",
+   "underlying_last": 40.405,
+   "unrealized_pct": -0.0972,
+   "unrealized_pnl": -14.0
   }
  ],
- "positions_value": 519.0,
- "published_at": "2026-11-04 10:49:43 AM EST",
- "published_epoch_ms": 1793807383985,
+ "positions_value": 495.0,
+ "published_at": "2026-11-04 11:07:04 AM EST",
+ "published_epoch_ms": 1793808424643,
  "realized_pnl": 309.0,
- "server_time": "2026-11-04 10:49:43 AM EST",
+ "server_time": "2026-11-04 11:07:04 AM EST",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
  "today": "2026-11-04",
- "total_return": 0.556,
+ "total_return": 0.532,
  "trades": [
   {
    "action": "OPEN",
