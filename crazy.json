@@ -1,16 +1,16 @@
 {
- "account_value": 1589.0,
+ "account_value": 1514.0,
  "alerts": [],
  "bust_threshold": 20.0,
  "busted": false,
- "buying_power": 1037.0,
- "cash": 1037.0,
+ "buying_power": 617.0,
+ "cash": 617.0,
  "closed_trades": 15,
- "drawdown": -0.16014799154334036,
+ "drawdown": -0.19978858350951378,
  "error": null,
  "goal": "Grow $1,000 to $100,000 as fast as possible (paper).",
- "goal_progress_linear": 0.01589,
- "goal_progress_log": 0.10056194860368976,
+ "goal_progress_linear": 0.01514,
+ "goal_progress_log": 0.09006293758202698,
  "goal_target": 100000.0,
  "history": [
   {
@@ -55,14 +55,10 @@
   },
   {
    "date": "2026-11-05",
-   "value": 1589.0
+   "value": 1514.0
   }
  ],
  "intraday": [
-  {
-   "t": "2026-10-23T10:33-04:00",
-   "value": 935.0
-  },
   {
    "t": "2026-10-23T10:44-04:00",
    "value": 945.0
@@ -1658,13 +1654,17 @@
   {
    "t": "2026-11-05T13:44-05:00",
    "value": 1589.0
+  },
+  {
+   "t": "2026-11-05T13:45-05:00",
+   "value": 1514.0
   }
  ],
- "marked_at": "2026-11-05T13:44:21-05:00",
+ "marked_at": "2026-11-05T13:45:02-05:00",
  "mode": "paper",
- "multiple": 1.589,
+ "multiple": 1.514,
  "name": "Crazy $1K (Grok Bot, paper)",
- "notes": "- 09:40 ET: marked $1,576, no alerts; holding.\n- 10:39 ET: marked $1,600, no alerts; holding.\n- 11:10 ET: marked $1,550, no alerts; holding.\n- 11:41 ET: marked $1,583, no alerts; holding.\n- 12:13 ET: marked $1,611; C15 TP25 alert but single contract <+40%, holding; no new entries.\n- 12:39 ET: $1,593, no alerts, no new entries (holding off into NFP).\n- 13:12 ET: $1,573, no alerts, no new entries (holding off into NFP).\n",
+ "notes": "- 09:40 ET: marked $1,576, no alerts; holding.\n- 10:39 ET: marked $1,600, no alerts; holding.\n- 11:10 ET: marked $1,550, no alerts; holding.\n- 11:41 ET: marked $1,583, no alerts; holding.\n- 12:13 ET: marked $1,611; C15 TP25 alert but single contract <+40%, holding; no new entries.\n- 12:39 ET: $1,593, no alerts, no new entries (holding off into NFP).\n- 13:12 ET: $1,573, no alerts, no new entries (holding off into NFP).\n- 13:45 ET: marked $1,514; opened C17 U 12/18 50/55C x1 @1.95 ($195) whale FL0WG0D follow toward CW50; opened C18 SPY 11/13 725/715P x1 @2.25 ($225) neg-gamma @ put wall; cash $617, 4 positions. C15 +20% hold (<+25%); C16 down hold. No closes.\n",
  "notes_date": "2026-11-05",
  "peak_value": 1892.0,
  "positions": [
@@ -1679,7 +1679,7 @@
    "kind": "option",
    "last": 4.5,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-05T13:44:21-05:00",
+   "last_updated": "2026-11-05T13:45:02-05:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1727,7 +1727,7 @@
    "kind": "option",
    "last": 0.51,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-05T13:44:21-05:00",
+   "last_updated": "2026-11-05T13:45:02-05:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1763,18 +1763,114 @@
    "underlying_last": 39.31,
    "unrealized_pct": -0.2917,
    "unrealized_pnl": -42.0
+  },
+  {
+   "contracts": 1.0,
+   "detail": "U +50C 2026-12-18 / -55C 2026-12-18",
+   "entry": 1.95,
+   "expires_today": false,
+   "gamma_check": "U positive GEX; CW 50 PW 47 spot~48.2; defined-risk long toward call wall",
+   "high_water": 1.95,
+   "id": "C17",
+   "kind": "option",
+   "last": 1.38,
+   "last_note": "liquidation mark (bid long / ask short); mid also stored",
+   "last_updated": "2026-11-05T13:45:02-05:00",
+   "legs": [
+    {
+     "expiration": "2026-12-18",
+     "right": "call",
+     "side": "long",
+     "strike": 50.0
+    },
+    {
+     "expiration": "2026-12-18",
+     "right": "call",
+     "side": "short",
+     "strike": 55.0
+    }
+   ],
+   "mark_method": "liq",
+   "mark_valid": true,
+   "mid": 1.67,
+   "multiplier": 100,
+   "must_close": false,
+   "opened": "2026-11-05T13:44:58-05:00",
+   "source": "FL0WG0D X whale + gex CW50",
+   "stop": null,
+   "stop_watch": {
+    "consecutive_valid_at_or_below_stop": 0,
+    "rule": "stop hit only after 2 consecutive VALID marks (from 09:35 ET; mid if quotes wide) at/beyond stop",
+    "stop_confirmed": false
+   },
+   "symbol": "U",
+   "target": 3.9,
+   "target_hit": false,
+   "thesis": "FL0WG0D $1.1M U 55C Dec whale; cheaper 50/55C debit toward CW 50; Dec expiry past NFP",
+   "underlying": "U",
+   "underlying_last": 48.25,
+   "unrealized_pct": -0.2923,
+   "unrealized_pnl": -57.0
+  },
+  {
+   "contracts": 1.0,
+   "detail": "SPY +725P 2026-11-13 / -715P 2026-11-13",
+   "entry": 2.25,
+   "expires_today": false,
+   "gamma_check": "SPY net GEX deeply negative; spot~736 at PW 735 flip~765; dealers amplify downside",
+   "high_water": 2.25,
+   "id": "C18",
+   "kind": "option",
+   "last": 2.07,
+   "last_note": "liquidation mark (bid long / ask short); mid also stored",
+   "last_updated": "2026-11-05T13:45:02-05:00",
+   "legs": [
+    {
+     "expiration": "2026-11-13",
+     "right": "put",
+     "side": "long",
+     "strike": 725.0
+    },
+    {
+     "expiration": "2026-11-13",
+     "right": "put",
+     "side": "short",
+     "strike": 715.0
+    }
+   ],
+   "mark_method": "liq",
+   "mark_valid": true,
+   "mid": 2.16,
+   "multiplier": 100,
+   "must_close": false,
+   "opened": "2026-11-05T13:44:58-05:00",
+   "source": "gex SPY neg / put wall",
+   "stop": null,
+   "stop_watch": {
+    "consecutive_valid_at_or_below_stop": 0,
+    "rule": "stop hit only after 2 consecutive VALID marks (from 09:35 ET; mid if quotes wide) at/beyond stop",
+    "stop_confirmed": false
+   },
+   "symbol": "SPY",
+   "target": 4.5,
+   "target_hit": false,
+   "thesis": "Neg-gamma direction: SPY at put wall 735 deeply neg GEX; cheap 725/715P debit thru NFP (11/13)",
+   "underlying": "SPY",
+   "underlying_last": 735.91,
+   "unrealized_pct": -0.08,
+   "unrealized_pnl": -18.0
   }
  ],
- "positions_value": 552.0,
- "published_at": "2026-11-05 01:44:30 PM EST",
- "published_epoch_ms": 1793904270592,
+ "positions_value": 897.0,
+ "published_at": "2026-11-05 01:45:32 PM EST",
+ "published_epoch_ms": 1793904332735,
  "realized_pnl": 309.0,
- "server_time": "2026-11-05 01:44:30 PM EST",
+ "server_time": "2026-11-05 01:45:32 PM EST",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
  "today": "2026-11-05",
- "total_return": 0.589,
+ "total_return": 0.514,
  "trades": [
   {
    "action": "OPEN",
@@ -2467,6 +2563,34 @@
    "thesis": "Follow $3.6M NKE 45C Sept whale, cheaper Dec spread",
    "time": "2026-11-04T10:48:53-05:00",
    "value_after": 1556.0
+  },
+  {
+   "action": "OPEN",
+   "cash_flow": -195.0,
+   "detail": "U +50C 2026-12-18 / -55C 2026-12-18",
+   "gamma_check": "U positive GEX; CW 50 PW 47 spot~48.2; defined-risk long toward call wall",
+   "id": "C17",
+   "price": 1.95,
+   "qty": 1.0,
+   "source": "FL0WG0D X whale + gex CW50",
+   "symbol": "U",
+   "thesis": "FL0WG0D $1.1M U 55C Dec whale; cheaper 50/55C debit toward CW 50; Dec expiry past NFP",
+   "time": "2026-11-05T13:44:58-05:00",
+   "value_after": 1589.0
+  },
+  {
+   "action": "OPEN",
+   "cash_flow": -225.0,
+   "detail": "SPY +725P 2026-11-13 / -715P 2026-11-13",
+   "gamma_check": "SPY net GEX deeply negative; spot~736 at PW 735 flip~765; dealers amplify downside",
+   "id": "C18",
+   "price": 2.25,
+   "qty": 1.0,
+   "source": "gex SPY neg / put wall",
+   "symbol": "SPY",
+   "thesis": "Neg-gamma direction: SPY at put wall 735 deeply neg GEX; cheap 725/715P debit thru NFP (11/13)",
+   "time": "2026-11-05T13:44:58-05:00",
+   "value_after": 1589.0
   }
  ],
  "win_rate": 0.5333333333333333
