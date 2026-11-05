@@ -1,16 +1,16 @@
 {
- "account_value": 1433.0,
+ "account_value": 1366.0,
  "alerts": [],
  "bust_threshold": 20.0,
  "busted": false,
  "buying_power": 17.0,
  "cash": 17.0,
  "closed_trades": 15,
- "drawdown": -0.242600422832981,
+ "drawdown": -0.2780126849894292,
  "error": null,
  "goal": "Grow $1,000 to $100,000 as fast as possible (paper).",
- "goal_progress_linear": 0.01433,
- "goal_progress_log": 0.07812309519867223,
+ "goal_progress_linear": 0.01366,
+ "goal_progress_log": 0.06772534967275688,
  "goal_target": 100000.0,
  "history": [
   {
@@ -55,14 +55,10 @@
   },
   {
    "date": "2026-11-05",
-   "value": 1433.0
+   "value": 1366.0
   }
  ],
  "intraday": [
-  {
-   "t": "2026-10-23T12:12-04:00",
-   "value": 970.0
-  },
   {
    "t": "2026-10-23T12:18-04:00",
    "value": 975.0
@@ -1658,11 +1654,15 @@
   {
    "t": "2026-11-05T14:53-05:00",
    "value": 1433.0
+  },
+  {
+   "t": "2026-11-05T15:06-05:00",
+   "value": 1366.0
   }
  ],
- "marked_at": "2026-11-05T14:53:02-05:00",
+ "marked_at": "2026-11-05T15:06:15-05:00",
  "mode": "paper",
- "multiple": 1.433,
+ "multiple": 1.366,
  "name": "Crazy $1K (Grok Bot, paper)",
  "notes": "- 09:40 ET: marked $1,576, no alerts; holding.\n- 10:39 ET: marked $1,600, no alerts; holding.\n- 11:10 ET: marked $1,550, no alerts; holding.\n- 11:41 ET: marked $1,583, no alerts; holding.\n- 12:13 ET: marked $1,611; C15 TP25 alert but single contract <+40%, holding; no new entries.\n- 12:39 ET: $1,593, no alerts, no new entries (holding off into NFP).\n- 13:12 ET: $1,573, no alerts, no new entries (holding off into NFP).\n- 13:45 ET: marked $1,514; opened C17 U 12/18 50/55C x1 @1.95 ($195) whale FL0WG0D follow toward CW50; opened C18 SPY 11/13 725/715P x1 @2.25 ($225) neg-gamma @ put wall; cash $617, 4 positions. C15 +20% hold (<+25%); C16 down hold. No closes.\n- 14:15 ET: marked $1,525; C15 +20% hold (<+25%); C16/C17/C18 no alerts. Opened C19 IWM 11/13 270/265P x1 @1.56 ($156) neg-gamma @ PW 270; opened C20 NVDA 11/13 182.5/177.5P x1 @2.10 ($210) thru PW 190. Cash $251, 6 positions.\n- 14:45 ET: marked $1,501 then re-mark $1,443 after C21; ALERT C19/C20 STOP CONFIRMED were false (stops were underlying 275/188 vs option marks \u2014 IWM ~272.6 still <275, NVDA ~184.5 still <188; spreads near entry not pennies). Overrode closes; reset C19 stop\u21920.78 and C20\u21921.05 (-50% premium). C15 GLD +18.7% hold (<+25%). Opened C21 QQQ 11/13 655/650P x1 @2.34 ($234) neg-gamma below flip; cash $17 so no 2nd open. 7 positions, value $1,443.\n",
  "notes_date": "2026-11-05",
@@ -1677,9 +1677,9 @@
    "high_water": 4.8,
    "id": "C15",
    "kind": "option",
-   "last": 4.45,
+   "last": 4.65,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-05T14:53:02-05:00",
+   "last_updated": "2026-11-05T15:06:15-05:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1696,7 +1696,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 4.57,
+   "mid": 4.77,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-11-04T10:48:47-05:00",
@@ -1712,9 +1712,9 @@
    "target_hit": false,
    "thesis": "Follow $2.1M GLD call whale; positive gamma above 365.8 flip, CW 400",
    "underlying": "GLD",
-   "underlying_last": 377.2,
-   "unrealized_pct": 0.1867,
-   "unrealized_pnl": 70.0
+   "underlying_last": 376.0601,
+   "unrealized_pct": 0.24,
+   "unrealized_pnl": 90.0
   },
   {
    "contracts": 2.0,
@@ -1725,9 +1725,9 @@
    "high_water": 0.73,
    "id": "C16",
    "kind": "option",
-   "last": 0.5,
+   "last": 0.52,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-05T14:53:02-05:00",
+   "last_updated": "2026-11-05T15:06:15-05:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1744,7 +1744,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 0.55,
+   "mid": 0.57,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-11-04T10:48:53-05:00",
@@ -1760,9 +1760,9 @@
    "target_hit": false,
    "thesis": "Follow $3.6M NKE 45C Sept whale, cheaper Dec spread",
    "underlying": "NKE",
-   "underlying_last": 39.51,
-   "unrealized_pct": -0.3056,
-   "unrealized_pnl": -44.0
+   "underlying_last": 39.415,
+   "unrealized_pct": -0.2778,
+   "unrealized_pnl": -40.0
   },
   {
    "contracts": 1.0,
@@ -1773,9 +1773,9 @@
    "high_water": 1.95,
    "id": "C17",
    "kind": "option",
-   "last": 1.49,
+   "last": 1.5,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-05T14:53:02-05:00",
+   "last_updated": "2026-11-05T15:06:15-05:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1792,7 +1792,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 1.62,
+   "mid": 1.79,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-11-05T13:44:58-05:00",
@@ -1808,9 +1808,9 @@
    "target_hit": false,
    "thesis": "FL0WG0D $1.1M U 55C Dec whale; cheaper 50/55C debit toward CW 50; Dec expiry past NFP",
    "underlying": "U",
-   "underlying_last": 49.335,
-   "unrealized_pct": -0.2359,
-   "unrealized_pnl": -46.0
+   "underlying_last": 48.935,
+   "unrealized_pct": -0.2308,
+   "unrealized_pnl": -45.0
   },
   {
    "contracts": 1.0,
@@ -1821,9 +1821,9 @@
    "high_water": 2.25,
    "id": "C18",
    "kind": "option",
-   "last": 2.03,
+   "last": 1.63,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-05T14:53:02-05:00",
+   "last_updated": "2026-11-05T15:06:15-05:00",
    "legs": [
     {
      "expiration": "2026-11-13",
@@ -1840,7 +1840,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 2.09,
+   "mid": 1.7,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-11-05T13:44:58-05:00",
@@ -1856,9 +1856,9 @@
    "target_hit": false,
    "thesis": "Neg-gamma direction: SPY at put wall 735 deeply neg GEX; cheap 725/715P debit thru NFP (11/13)",
    "underlying": "SPY",
-   "underlying_last": 740.4999,
-   "unrealized_pct": -0.0978,
-   "unrealized_pnl": -22.0
+   "underlying_last": 736.945,
+   "unrealized_pct": -0.2756,
+   "unrealized_pnl": -62.0
   },
   {
    "contracts": 1.0,
@@ -1869,9 +1869,9 @@
    "high_water": 1.56,
    "id": "C19",
    "kind": "option",
-   "last": 1.45,
+   "last": 1.23,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-05T14:53:02-05:00",
+   "last_updated": "2026-11-05T15:06:15-05:00",
    "legs": [
     {
      "expiration": "2026-11-13",
@@ -1888,7 +1888,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 1.48,
+   "mid": 1.27,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-11-05T14:16:42-05:00",
@@ -1904,9 +1904,9 @@
    "target_hit": false,
    "thesis": "IWM ~272.5 at PW 270, deep neg-gamma (flip 285); tight 5-wide put debit for continuation through wall",
    "underlying": "IWM",
-   "underlying_last": 273.11,
-   "unrealized_pct": -0.0705,
-   "unrealized_pnl": -11.0
+   "underlying_last": 271.62,
+   "unrealized_pct": -0.2115,
+   "unrealized_pnl": -33.0
   },
   {
    "contracts": 1.0,
@@ -1917,9 +1917,9 @@
    "high_water": 2.1,
    "id": "C20",
    "kind": "option",
-   "last": 1.85,
+   "last": 1.65,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-05T14:53:02-05:00",
+   "last_updated": "2026-11-05T15:06:15-05:00",
    "legs": [
     {
      "expiration": "2026-11-13",
@@ -1936,7 +1936,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 1.95,
+   "mid": 1.78,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-11-05T14:16:42-05:00",
@@ -1952,9 +1952,9 @@
    "target_hit": false,
    "thesis": "NVDA ~184 already thru PW 190, flip 197.5 neg; 5-wide put debit for continuation",
    "underlying": "NVDA",
-   "underlying_last": 184.945,
-   "unrealized_pct": -0.119,
-   "unrealized_pnl": -25.0
+   "underlying_last": 183.695,
+   "unrealized_pct": -0.2143,
+   "unrealized_pnl": -45.0
   },
   {
    "contracts": 1.0,
@@ -1965,9 +1965,9 @@
    "high_water": 2.34,
    "id": "C21",
    "kind": "option",
-   "last": 1.89,
+   "last": 1.79,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-05T14:53:02-05:00",
+   "last_updated": "2026-11-05T15:06:15-05:00",
    "legs": [
     {
      "expiration": "2026-11-13",
@@ -1984,7 +1984,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 2.05,
+   "mid": 1.9,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-11-05T14:47:40-05:00",
@@ -2000,21 +2000,21 @@
    "target_hit": false,
    "thesis": "Neg-gamma QQQ below flip 695; spot thru prior PW, continuation put debit at 655/650 toward 645",
    "underlying": "QQQ",
-   "underlying_last": 658.0,
-   "unrealized_pct": -0.1923,
-   "unrealized_pnl": -45.0
+   "underlying_last": 653.4837,
+   "unrealized_pct": -0.235,
+   "unrealized_pnl": -55.0
   }
  ],
- "positions_value": 1416.0,
- "published_at": "2026-11-05 02:53:14 PM EST",
- "published_epoch_ms": 1793908394650,
+ "positions_value": 1349.0,
+ "published_at": "2026-11-05 03:06:29 PM EST",
+ "published_epoch_ms": 1793909189715,
  "realized_pnl": 309.0,
- "server_time": "2026-11-05 02:53:14 PM EST",
+ "server_time": "2026-11-05 03:06:29 PM EST",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
  "today": "2026-11-05",
- "total_return": 0.43300000000000005,
+ "total_return": 0.3660000000000001,
  "trades": [
   {
    "action": "OPEN",
