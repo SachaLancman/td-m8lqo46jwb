@@ -6,7 +6,7 @@
  "bust_threshold": 20.0,
  "busted": false,
  "buying_power": 17.0,
- "cash": 101.0,
+ "cash": 30.0,
  "closed_trades": 16,
  "drawdown": -0.39534883720930236,
  "error": null,
@@ -1961,13 +1961,50 @@
    "underlying_last": 660.74,
    "unrealized_pct": -0.3974,
    "unrealized_pnl": -93.0
+  },
+  {
+   "contracts": 1.0,
+   "detail": "IWM +265P 2026-11-13 / -260P 2026-11-13",
+   "entry": 0.71,
+   "gamma_check": "IWM neg GEX -3.7B, flip 282.8, PW 270 CW 280; 265/260 below PW needs break; stop 275 below CW",
+   "high_water": 0.71,
+   "id": "C22",
+   "kind": "option",
+   "last": 0.71,
+   "legs": [
+    {
+     "expiration": "2026-11-13",
+     "right": "put",
+     "side": "long",
+     "strike": 265.0
+    },
+    {
+     "expiration": "2026-11-13",
+     "right": "put",
+     "side": "short",
+     "strike": 260.0
+    }
+   ],
+   "mark_method": "fill",
+   "mark_valid": true,
+   "multiplier": 100,
+   "opened": "2026-11-06T10:12:32-05:00",
+   "source": "own (post-NFP neg-gamma continuation)",
+   "stop": 0.35,
+   "stop_watch": {
+    "consecutive_valid_at_or_below_stop": 0
+   },
+   "symbol": "IWM",
+   "target": 260.0,
+   "thesis": "Neg-gamma IWM ~272 at PW 270 (flip 283); ladder under C19 270/265 with 265/260P for continuation thru wall",
+   "underlying": "IWM"
   }
  ],
- "positions_value": 1043.0,
- "published_at": "2026-11-06 10:12:14 AM EST",
- "published_epoch_ms": 1793977934481,
+ "positions_value": 1114.0,
+ "published_at": "2026-11-06 10:13:15 AM EST",
+ "published_epoch_ms": 1793977995721,
  "realized_pnl": 183.0,
- "server_time": "2026-11-06 10:12:14 AM EST",
+ "server_time": "2026-11-06 10:13:15 AM EST",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
@@ -2765,6 +2802,20 @@
    "reason": "STOP CONFIRMED: last 0.84 below stop 1.05 on 2 valid marks",
    "symbol": "NVDA",
    "time": "2026-11-06T10:05:49-05:00",
+   "value_after": 1144.0
+  },
+  {
+   "action": "OPEN",
+   "cash_flow": -71.0,
+   "detail": "IWM +265P 2026-11-13 / -260P 2026-11-13",
+   "gamma_check": "IWM neg GEX -3.7B, flip 282.8, PW 270 CW 280; 265/260 below PW needs break; stop 275 below CW",
+   "id": "C22",
+   "price": 0.71,
+   "qty": 1.0,
+   "source": "own (post-NFP neg-gamma continuation)",
+   "symbol": "IWM",
+   "thesis": "Neg-gamma IWM ~272 at PW 270 (flip 283); ladder under C19 270/265 with 265/260P for continuation thru wall",
+   "time": "2026-11-06T10:12:32-05:00",
    "value_after": 1144.0
   }
  ],
