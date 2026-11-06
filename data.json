@@ -10,13 +10,13 @@
   "date": "2026-11-06",
   "disclaimer": "Free public data; estimate only; supporting signal for PAPER trading; never places orders.",
   "error": null,
-  "generated_at": "2026-11-06 10:13:23 AM EST",
+  "generated_at": "2026-11-06 10:49:20 AM EST",
   "stale": false,
   "tickers": [
    {
-    "as_of": "2026-11-06 10:12 AM EST",
+    "as_of": "2026-11-06 10:48 AM EST",
     "call_wall": 740.0,
-    "flip": 756.14,
+    "flip": 755.18,
     "flip_note": null,
     "gex_heatmap_png": "gex_heatmap_SPY.png",
     "heatmap": {
@@ -32,92 +32,92 @@
      ],
      "nodes": {
       "king": {
-       "dist_pct": -0.08,
+       "dist_pct": 0.04,
        "expiry": "2026-11-20",
-       "row_total": -1101810911,
+       "row_total": -689073056,
        "strike": 740.0,
-       "value": -829584673
+       "value": -767819812
       },
       "king_strike": {
-       "dist_pct": -0.08,
-       "net_gex": -1101810911,
-       "strike": 740.0
+       "dist_pct": -1.99,
+       "net_gex": -1035393246,
+       "strike": 725.0
       },
       "neg_above": {
-       "dist_pct": 0.6,
-       "net_gex": -511957231,
-       "net_vex": -11677566,
-       "strike": 745.0
-      },
-      "neg_below": {
-       "dist_pct": -0.08,
-       "net_gex": -1101810911,
-       "net_vex": 8017064,
+       "dist_pct": 0.04,
+       "net_gex": -689073056,
+       "net_vex": 2671610,
        "strike": 740.0
       },
-      "node_threshold": 165271637,
+      "neg_below": {
+       "dist_pct": -0.5,
+       "net_gex": -194221418,
+       "net_vex": 2604948,
+       "strike": 736.0
+      },
+      "node_threshold": 155308987,
       "pos_above": null,
       "pos_below": null,
       "vex_king": {
-       "dist_pct": -2.1,
+       "dist_pct": -1.99,
        "expiry": "2026-11-20",
        "strike": 725.0,
-       "value": 59521138
+       "value": 52136126
       }
      },
-     "total_gex": -8873713702,
-     "total_vex": 842803031,
-     "vex_read": "net VEX +$842.8M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
+     "total_gex": -8812723223,
+     "total_vex": 765699798,
+     "vex_read": "net VEX +$765.7M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
     },
-    "net_gex": -11366173164,
+    "net_gex": -11301634365,
     "png": "gex_SPY.png",
     "put_wall": 740.0,
     "regime": "negative",
     "regime_label": "negative gamma: dealers amplify moves -> trend / higher volatility, expect bigger ranges",
     "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
-    "spot": 740.56,
+    "spot": 739.7,
     "spot_vs_flip": "below flip",
     "ticker": "SPY",
     "top_strikes": [
      {
-      "call_gex": 938460652,
-      "net_gex": -1289418242,
-      "put_gex": -2227878895,
-      "strike": 740.0
-     },
-     {
-      "call_gex": 38402546,
-      "net_gex": -1136804745,
-      "put_gex": -1175207291,
+      "call_gex": 39107320,
+      "net_gex": -1128582810,
+      "put_gex": -1167690130,
       "strike": 725.0
      },
      {
-      "call_gex": 152061249,
-      "net_gex": -1085720858,
-      "put_gex": -1237782107,
+      "call_gex": 157452971,
+      "net_gex": -1037623476,
+      "put_gex": -1195076447,
       "strike": 730.0
      },
      {
-      "call_gex": 246657592,
-      "net_gex": -831926798,
-      "put_gex": -1078584390,
+      "call_gex": 174461418,
+      "net_gex": -955928874,
+      "put_gex": -1130390292,
       "strike": 735.0
      },
      {
-      "call_gex": 53112300,
-      "net_gex": -668660236,
-      "put_gex": -721772536,
+      "call_gex": 1191068979,
+      "net_gex": -864061865,
+      "put_gex": -2055130844,
+      "strike": 740.0
+     },
+     {
+      "call_gex": 53838961,
+      "net_gex": -677479228,
+      "put_gex": -731318188,
       "strike": 700.0
      }
     ],
-    "unusual_0dte_count": 48,
-    "unusual_count": 42,
+    "unusual_0dte_count": 75,
+    "unusual_count": 48,
     "unusual_flow": [
      {
-      "est_premium": 8889320,
+      "est_premium": 9665178,
       "expiry": "2026-12-04",
-      "mid": 18.16,
-      "moneyness": 1.1,
+      "mid": 19.74,
+      "moneyness": 1.3,
       "oi": 549,
       "strike": 749.0,
       "type": "put",
@@ -125,10 +125,32 @@
       "volume": 4895
      },
      {
-      "est_premium": 5981389,
+      "est_premium": 8283000,
+      "expiry": "2026-11-30",
+      "mid": 6.6,
+      "moneyness": -4.3,
+      "oi": 1012,
+      "strike": 708.0,
+      "type": "put",
+      "vol_oi": 12.4,
+      "volume": 12550
+     },
+     {
+      "est_premium": 6337832,
+      "expiry": "2026-11-09",
+      "mid": 3.19,
+      "moneyness": -1.3,
+      "oi": 3600,
+      "strike": 730.0,
+      "type": "put",
+      "vol_oi": 5.5,
+      "volume": 19899
+     },
+     {
+      "est_premium": 6312550,
       "expiry": "2026-11-20",
-      "mid": 45.25,
-      "moneyness": 6.1,
+      "mid": 47.75,
+      "moneyness": 6.3,
       "oi": 0,
       "strike": 786.0,
       "type": "put",
@@ -136,45 +158,23 @@
       "volume": 1322
      },
      {
-      "est_premium": 5693728,
-      "expiry": "2026-11-30",
-      "mid": 5.68,
-      "moneyness": -4.4,
-      "oi": 1012,
-      "strike": 708.0,
-      "type": "put",
-      "vol_oi": 9.9,
-      "volume": 10033
-     },
-     {
-      "est_premium": 4799171,
-      "expiry": "2026-11-20",
-      "mid": 46.73,
-      "moneyness": 6.3,
-      "oi": 0,
-      "strike": 787.0,
-      "type": "put",
-      "vol_oi": null,
-      "volume": 1027
-     },
-     {
-      "est_premium": 3425415,
-      "expiry": "2026-11-20",
-      "mid": 47.97,
-      "moneyness": 6.5,
-      "oi": 1,
-      "strike": 789.0,
-      "type": "put",
-      "vol_oi": 714.0,
-      "volume": 714
+      "est_premium": 5216722,
+      "expiry": "2026-11-09",
+      "mid": 4.76,
+      "moneyness": 0.0,
+      "oi": 2861,
+      "strike": 740.0,
+      "type": "call",
+      "vol_oi": 3.8,
+      "volume": 10948
      }
     ],
     "vex_heatmap_png": "vex_heatmap_SPY.png"
    },
    {
-    "as_of": "2026-11-06 10:12 AM EST",
+    "as_of": "2026-11-06 10:48 AM EST",
     "call_wall": 660.0,
-    "flip": 690.03,
+    "flip": 689.83,
     "flip_note": null,
     "gex_heatmap_png": "gex_heatmap_QQQ.png",
     "heatmap": {
@@ -190,92 +190,97 @@
      ],
      "nodes": {
       "king": {
-       "dist_pct": -1.68,
-       "expiry": "2026-11-13",
-       "row_total": -596645992,
-       "strike": 650.0,
-       "value": -297221642
+       "dist_pct": 0.07,
+       "expiry": "2026-11-06",
+       "row_total": 379881028,
+       "strike": 660.0,
+       "value": 417609594
       },
       "king_strike": {
-       "dist_pct": -1.68,
-       "net_gex": -596645992,
+       "dist_pct": -1.45,
+       "net_gex": -662261123,
        "strike": 650.0
       },
       "neg_above": {
-       "dist_pct": 2.1,
-       "net_gex": -130901360,
-       "net_vex": -9587635,
+       "dist_pct": 2.34,
+       "net_gex": -293809748,
+       "net_vex": -13942810,
        "strike": 675.0
       },
       "neg_below": {
-       "dist_pct": -1.68,
-       "net_gex": -596645992,
-       "net_vex": 29610756,
-       "strike": 650.0
+       "dist_pct": -0.69,
+       "net_gex": -124267571,
+       "net_vex": -478527,
+       "strike": 655.0
       },
-      "node_threshold": 89496899,
-      "pos_above": null,
+      "node_threshold": 99339168,
+      "pos_above": {
+       "dist_pct": 0.07,
+       "net_gex": 379881028,
+       "net_vex": 1514895,
+       "strike": 660.0
+      },
       "pos_below": null,
       "vex_king": {
-       "dist_pct": 2.86,
+       "dist_pct": -9.03,
        "expiry": "2026-11-20",
-       "strike": 680.0,
-       "value": -25717859
+       "strike": 600.0,
+       "value": 23715188
       }
      },
-     "total_gex": -2286897898,
-     "total_vex": 88776965,
-     "vex_read": "net VEX +$88.8M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
+     "total_gex": -2568903142,
+     "total_vex": 90708658,
+     "vex_read": "net VEX +$90.7M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
     },
-    "net_gex": -3531638215,
+    "net_gex": -3786947491,
     "png": "gex_QQQ.png",
     "put_wall": 650.0,
     "regime": "negative",
     "regime_label": "negative gamma: dealers amplify moves -> trend / higher volatility, expect bigger ranges",
     "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
-    "spot": 661.1,
+    "spot": 659.55,
     "spot_vs_flip": "below flip",
     "ticker": "QQQ",
     "top_strikes": [
      {
-      "call_gex": 111720902,
-      "net_gex": -753441588,
-      "put_gex": -865162490,
+      "call_gex": 94529406,
+      "net_gex": -808926410,
+      "put_gex": -903455816,
       "strike": 650.0
      },
      {
-      "call_gex": 261606983,
-      "net_gex": -478062158,
-      "put_gex": -739669141,
+      "call_gex": 257230832,
+      "net_gex": -485486475,
+      "put_gex": -742717308,
       "strike": 680.0
      },
      {
-      "call_gex": 21326373,
-      "net_gex": -341629630,
-      "put_gex": -362956003,
-      "strike": 640.0
-     },
-     {
-      "call_gex": 93853758,
-      "net_gex": -310687628,
-      "put_gex": -404541385,
+      "call_gex": 85575414,
+      "net_gex": -454115761,
+      "put_gex": -539691174,
       "strike": 675.0
      },
      {
-      "call_gex": 136662527,
-      "net_gex": -243926891,
-      "put_gex": -380589418,
-      "strike": 690.0
+      "call_gex": 21822752,
+      "net_gex": -332745470,
+      "put_gex": -354568222,
+      "strike": 640.0
+     },
+     {
+      "call_gex": 878098266,
+      "net_gex": 302544565,
+      "put_gex": -575553702,
+      "strike": 660.0
      }
     ],
-    "unusual_0dte_count": 25,
-    "unusual_count": 37,
+    "unusual_0dte_count": 33,
+    "unusual_count": 34,
     "unusual_flow": [
      {
-      "est_premium": 46139576,
+      "est_premium": 48479055,
       "expiry": "2026-11-20",
-      "mid": 80.56,
-      "moneyness": 12.2,
+      "mid": 84.65,
+      "moneyness": 12.5,
       "oi": 1022,
       "strike": 742.0,
       "type": "put",
@@ -283,10 +288,10 @@
       "volume": 5727
      },
      {
-      "est_premium": 35860234,
+      "est_premium": 37557590,
       "expiry": "2026-11-20",
-      "mid": 81.44,
-      "moneyness": 12.4,
+      "mid": 85.3,
+      "moneyness": 12.7,
       "oi": 1056,
       "strike": 743.0,
       "type": "put",
@@ -294,10 +299,10 @@
       "volume": 4403
      },
      {
-      "est_premium": 30391305,
+      "est_premium": 31893756,
       "expiry": "2026-11-20",
-      "mid": 84.35,
-      "moneyness": 12.8,
+      "mid": 88.52,
+      "moneyness": 13.1,
       "oi": 1007,
       "strike": 746.0,
       "type": "put",
@@ -305,10 +310,10 @@
       "volume": 3603
      },
      {
-      "est_premium": 26693244,
+      "est_premium": 27983648,
       "expiry": "2026-11-20",
-      "mid": 87.6,
-      "moneyness": 13.3,
+      "mid": 91.84,
+      "moneyness": 13.6,
       "oi": 4,
       "strike": 749.0,
       "type": "put",
@@ -316,10 +321,10 @@
       "volume": 3047
      },
      {
-      "est_premium": 20302542,
+      "est_premium": 21283102,
       "expiry": "2026-11-20",
-      "mid": 96.17,
-      "moneyness": 14.7,
+      "mid": 100.82,
+      "moneyness": 14.9,
       "oi": 447,
       "strike": 758.0,
       "type": "put",
@@ -330,1138 +335,9 @@
     "vex_heatmap_png": "vex_heatmap_QQQ.png"
    },
    {
-    "as_of": "2026-11-06 10:12 AM EST",
-    "call_wall": 360.0,
-    "flip": 357.44,
-    "flip_note": null,
-    "gex_heatmap_png": "gex_heatmap_TSLA.png",
-    "heatmap": {
-     "expiries": [
-      "2026-11-06",
-      "2026-11-09",
-      "2026-11-11",
-      "2026-11-13",
-      "2026-11-20",
-      "2026-11-27",
-      "2026-12-04",
-      "2026-12-11"
-     ],
-     "nodes": {
-      "king": {
-       "dist_pct": 0.15,
-       "expiry": "2026-11-06",
-       "row_total": 109002817,
-       "strike": 360.0,
-       "value": 101941359
-      },
-      "king_strike": {
-       "dist_pct": 0.15,
-       "net_gex": 109002817,
-       "strike": 360.0
-      },
-      "neg_above": null,
-      "neg_below": null,
-      "node_threshold": 16350423,
-      "pos_above": {
-       "dist_pct": 0.15,
-       "net_gex": 109002817,
-       "net_vex": 769540,
-       "strike": 360.0
-      },
-      "pos_below": null,
-      "vex_king": {
-       "dist_pct": 5.01,
-       "expiry": "2026-11-13",
-       "strike": 377.5,
-       "value": 1357501
-      }
-     },
-     "total_gex": 77937346,
-     "total_vex": 11862345,
-     "vex_read": "net VEX +$11.9M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
-    },
-    "net_gex": 91778016,
-    "png": null,
-    "put_wall": 360.0,
-    "regime": "positive",
-    "regime_label": "positive gamma: dealers dampen moves -> mean-reverting / pinning toward big strikes",
-    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
-    "spot": 359.48,
-    "spot_vs_flip": "above flip",
-    "ticker": "TSLA",
-    "top_strikes": [
-     {
-      "call_gex": 167387973,
-      "net_gex": 106184554,
-      "put_gex": -61203419,
-      "strike": 360.0
-     },
-     {
-      "call_gex": 37910931,
-      "net_gex": 22338434,
-      "put_gex": -15572497,
-      "strike": 400.0
-     },
-     {
-      "call_gex": 31688716,
-      "net_gex": 22163615,
-      "put_gex": -9525100,
-      "strike": 362.5
-     },
-     {
-      "call_gex": 30809689,
-      "net_gex": -20503866,
-      "put_gex": -51313555,
-      "strike": 350.0
-     },
-     {
-      "call_gex": 12787324,
-      "net_gex": -16164688,
-      "put_gex": -28952012,
-      "strike": 355.0
-     }
-    ],
-    "unusual_0dte_count": 14,
-    "unusual_count": 6,
-    "unusual_flow": [
-     {
-      "est_premium": 2341045,
-      "expiry": "2026-11-13",
-      "mid": 10.55,
-      "moneyness": -0.5,
-      "oi": 416,
-      "strike": 357.5,
-      "type": "call",
-      "vol_oi": 5.3,
-      "volume": 2219
-     },
-     {
-      "est_premium": 1939625,
-      "expiry": "2026-11-09",
-      "mid": 6.58,
-      "moneyness": -1.2,
-      "oi": 401,
-      "strike": 355.0,
-      "type": "call",
-      "vol_oi": 7.4,
-      "volume": 2950
-     },
-     {
-      "est_premium": 1187165,
-      "expiry": "2026-11-09",
-      "mid": 7.92,
-      "moneyness": -1.9,
-      "oi": 365,
-      "strike": 352.5,
-      "type": "call",
-      "vol_oi": 4.1,
-      "volume": 1498
-     },
-     {
-      "est_premium": 1170588,
-      "expiry": "2026-11-13",
-      "mid": 4.62,
-      "moneyness": 3.6,
-      "oi": 435,
-      "strike": 372.5,
-      "type": "call",
-      "vol_oi": 5.8,
-      "volume": 2531
-     },
-     {
-      "est_premium": 761370,
-      "expiry": "2026-11-13",
-      "mid": 30.95,
-      "moneyness": -8.9,
-      "oi": 80,
-      "strike": 327.5,
-      "type": "call",
-      "vol_oi": 3.1,
-      "volume": 246
-     }
-    ],
-    "vex_heatmap_png": "vex_heatmap_TSLA.png"
-   },
-   {
-    "as_of": "2026-11-06 10:12 AM EST",
-    "call_wall": 345.0,
-    "flip": 344.0,
-    "flip_note": null,
-    "gex_heatmap_png": "gex_heatmap_AAPL.png",
-    "heatmap": {
-     "expiries": [
-      "2026-11-06",
-      "2026-11-09",
-      "2026-11-11",
-      "2026-11-13",
-      "2026-11-20",
-      "2026-11-27",
-      "2026-12-04",
-      "2026-12-11"
-     ],
-     "nodes": {
-      "king": {
-       "dist_pct": -0.97,
-       "expiry": "2026-11-06",
-       "row_total": -158001603,
-       "strike": 340.0,
-       "value": -144513910
-      },
-      "king_strike": {
-       "dist_pct": -0.97,
-       "net_gex": -158001603,
-       "strike": 340.0
-      },
-      "neg_above": {
-       "dist_pct": 0.48,
-       "net_gex": -67500381,
-       "net_vex": -899462,
-       "strike": 345.0
-      },
-      "neg_below": {
-       "dist_pct": -0.24,
-       "net_gex": -112814432,
-       "net_vex": 939141,
-       "strike": 342.5
-      },
-      "node_threshold": 23700241,
-      "pos_above": {
-       "dist_pct": 1.94,
-       "net_gex": 38785144,
-       "net_vex": 2954589,
-       "strike": 350.0
-      },
-      "pos_below": null,
-      "vex_king": {
-       "dist_pct": 6.31,
-       "expiry": "2026-11-20",
-       "strike": 365.0,
-       "value": 13500423
-      }
-     },
-     "total_gex": -200258526,
-     "total_vex": 91273419,
-     "vex_read": "net VEX +$91.3M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
-    },
-    "net_gex": -85438958,
-    "png": null,
-    "put_wall": 340.0,
-    "regime": "negative",
-    "regime_label": "negative gamma: dealers amplify moves -> trend / higher volatility, expect bigger ranges",
-    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
-    "spot": 343.34,
-    "spot_vs_flip": "below flip",
-    "ticker": "AAPL",
-    "top_strikes": [
-     {
-      "call_gex": 109453429,
-      "net_gex": -156799878,
-      "put_gex": -266253307,
-      "strike": 340.0
-     },
-     {
-      "call_gex": 42995267,
-      "net_gex": -112814432,
-      "put_gex": -155809699,
-      "strike": 342.5
-     },
-     {
-      "call_gex": 108777965,
-      "net_gex": 96261551,
-      "put_gex": -12516414,
-      "strike": 360.0
-     },
-     {
-      "call_gex": 76357648,
-      "net_gex": 74722217,
-      "put_gex": -1635431,
-      "strike": 365.0
-     },
-     {
-      "call_gex": 142337663,
-      "net_gex": 71299332,
-      "put_gex": -71038331,
-      "strike": 350.0
-     }
-    ],
-    "unusual_0dte_count": 2,
-    "unusual_count": 4,
-    "unusual_flow": [
-     {
-      "est_premium": 1527468,
-      "expiry": "2026-11-13",
-      "mid": 27.32,
-      "moneyness": 7.8,
-      "oi": 174,
-      "strike": 370.0,
-      "type": "put",
-      "vol_oi": 3.2,
-      "volume": 559
-     },
-     {
-      "est_premium": 897440,
-      "expiry": "2026-11-09",
-      "mid": 3.95,
-      "moneyness": -0.2,
-      "oi": 398,
-      "strike": 342.5,
-      "type": "call",
-      "vol_oi": 5.7,
-      "volume": 2272
-     },
-     {
-      "est_premium": 436800,
-      "expiry": "2026-11-13",
-      "mid": 36.4,
-      "moneyness": -10.4,
-      "oi": 22,
-      "strike": 307.5,
-      "type": "call",
-      "vol_oi": 5.5,
-      "volume": 120
-     },
-     {
-      "est_premium": 273520,
-      "expiry": "2026-11-11",
-      "mid": 5.2,
-      "moneyness": -0.2,
-      "oi": 143,
-      "strike": 342.5,
-      "type": "call",
-      "vol_oi": 3.7,
-      "volume": 526
-     }
-    ],
-    "vex_heatmap_png": "vex_heatmap_AAPL.png"
-   },
-   {
-    "as_of": "2026-11-06 10:13 AM EST",
-    "call_wall": 620.0,
-    "flip": 613.59,
-    "flip_note": null,
-    "gex_heatmap_png": "gex_heatmap_META.png",
-    "heatmap": {
-     "expiries": [
-      "2026-11-06",
-      "2026-11-09",
-      "2026-11-11",
-      "2026-11-13",
-      "2026-11-20",
-      "2026-11-27",
-      "2026-12-04",
-      "2026-12-11"
-     ],
-     "nodes": {
-      "king": {
-       "dist_pct": 0.07,
-       "expiry": "2026-11-06",
-       "row_total": 41663835,
-       "strike": 620.0,
-       "value": 43201681
-      },
-      "king_strike": {
-       "dist_pct": 0.07,
-       "net_gex": 41663835,
-       "strike": 620.0
-      },
-      "neg_above": {
-       "dist_pct": 0.88,
-       "net_gex": -14487452,
-       "net_vex": 138741,
-       "strike": 625.0
-      },
-      "neg_below": {
-       "dist_pct": -1.14,
-       "net_gex": -6663126,
-       "net_vex": 20713,
-       "strike": 612.5
-      },
-      "node_threshold": 6249575,
-      "pos_above": {
-       "dist_pct": 0.07,
-       "net_gex": 41663835,
-       "net_vex": 98508,
-       "strike": 620.0
-      },
-      "pos_below": {
-       "dist_pct": -0.33,
-       "net_gex": 12676741,
-       "net_vex": -195876,
-       "strike": 617.5
-      },
-      "vex_king": {
-       "dist_pct": 6.53,
-       "expiry": "2026-11-20",
-       "strike": 660.0,
-       "value": 4231978
-      }
-     },
-     "total_gex": 61816808,
-     "total_vex": 26525777,
-     "vex_read": "net VEX +$26.5M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
-    },
-    "net_gex": 175404679,
-    "png": null,
-    "put_wall": 625.0,
-    "regime": "positive",
-    "regime_label": "positive gamma: dealers dampen moves -> mean-reverting / pinning toward big strikes",
-    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
-    "spot": 619.57,
-    "spot_vs_flip": "above flip",
-    "ticker": "META",
-    "top_strikes": [
-     {
-      "call_gex": 12013128,
-      "net_gex": -42999483,
-      "put_gex": -55012611,
-      "strike": 610.0
-     },
-     {
-      "call_gex": 57588959,
-      "net_gex": 42475238,
-      "put_gex": -15113721,
-      "strike": 700.0
-     },
-     {
-      "call_gex": 89289696,
-      "net_gex": 40972233,
-      "put_gex": -48317463,
-      "strike": 620.0
-     },
-     {
-      "call_gex": 66179767,
-      "net_gex": 40593476,
-      "put_gex": -25586291,
-      "strike": 650.0
-     },
-     {
-      "call_gex": 34898733,
-      "net_gex": 28671058,
-      "put_gex": -6227675,
-      "strike": 622.5
-     }
-    ],
-    "unusual_0dte_count": 22,
-    "unusual_count": 4,
-    "unusual_flow": [
-     {
-      "est_premium": 881810,
-      "expiry": "2026-11-13",
-      "mid": 5.45,
-      "moneyness": 4.5,
-      "oi": 77,
-      "strike": 647.5,
-      "type": "call",
-      "vol_oi": 21.0,
-      "volume": 1618
-     },
-     {
-      "est_premium": 363630,
-      "expiry": "2026-11-09",
-      "mid": 9.78,
-      "moneyness": -0.3,
-      "oi": 60,
-      "strike": 617.5,
-      "type": "call",
-      "vol_oi": 6.2,
-      "volume": 372
-     },
-     {
-      "est_premium": 272350,
-      "expiry": "2026-11-09",
-      "mid": 10.47,
-      "moneyness": -0.3,
-      "oi": 71,
-      "strike": 617.5,
-      "type": "put",
-      "vol_oi": 3.7,
-      "volume": 260
-     },
-     {
-      "est_premium": 800,
-      "expiry": "2026-11-20",
-      "mid": 0.01,
-      "moneyness": -99.2,
-      "oi": 0,
-      "strike": 5.0,
-      "type": "put",
-      "vol_oi": null,
-      "volume": 800
-     }
-    ],
-    "vex_heatmap_png": "vex_heatmap_META.png"
-   },
-   {
-    "as_of": "2026-11-06 10:13 AM EST",
-    "call_wall": 535.0,
-    "flip": 502.16,
-    "flip_note": null,
-    "gex_heatmap_png": "gex_heatmap_MSFT.png",
-    "heatmap": {
-     "expiries": [
-      "2026-11-06",
-      "2026-11-09",
-      "2026-11-11",
-      "2026-11-13",
-      "2026-11-20",
-      "2026-11-27",
-      "2026-12-04",
-      "2026-12-11"
-     ],
-     "nodes": {
-      "king": {
-       "dist_pct": 0.23,
-       "expiry": "2026-11-06",
-       "row_total": 222188283,
-       "strike": 535.0,
-       "value": 160850529
-      },
-      "king_strike": {
-       "dist_pct": 0.23,
-       "net_gex": 222188283,
-       "strike": 535.0
-      },
-      "neg_above": null,
-      "neg_below": null,
-      "node_threshold": 33328242,
-      "pos_above": {
-       "dist_pct": 0.23,
-       "net_gex": 222188283,
-       "net_vex": 2702315,
-       "strike": 535.0
-      },
-      "pos_below": {
-       "dist_pct": -0.24,
-       "net_gex": 73715465,
-       "net_vex": -1502288,
-       "strike": 532.5
-      },
-      "vex_king": {
-       "dist_pct": 8.66,
-       "expiry": "2026-11-20",
-       "strike": 580.0,
-       "value": 13668529
-      }
-     },
-     "total_gex": 579260365,
-     "total_vex": 77178783,
-     "vex_read": "net VEX +$77.2M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
-    },
-    "net_gex": 1220595851,
-    "png": null,
-    "put_wall": 540.0,
-    "regime": "positive",
-    "regime_label": "positive gamma: dealers dampen moves -> mean-reverting / pinning toward big strikes",
-    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
-    "spot": 533.76,
-    "spot_vs_flip": "above flip",
-    "ticker": "MSFT",
-    "top_strikes": [
-     {
-      "call_gex": 262672091,
-      "net_gex": 262115353,
-      "put_gex": -556738,
-      "strike": 575.0
-     },
-     {
-      "call_gex": 283298132,
-      "net_gex": 226900828,
-      "put_gex": -56397304,
-      "strike": 535.0
-     },
-     {
-      "call_gex": 122621209,
-      "net_gex": 121001195,
-      "put_gex": -1620014,
-      "strike": 580.0
-     },
-     {
-      "call_gex": 136238486,
-      "net_gex": 117091058,
-      "put_gex": -19147428,
-      "strike": 550.0
-     },
-     {
-      "call_gex": 134379706,
-      "net_gex": 90201843,
-      "put_gex": -44177863,
-      "strike": 525.0
-     }
-    ],
-    "unusual_0dte_count": 7,
-    "unusual_count": 4,
-    "unusual_flow": [
-     {
-      "est_premium": 607415,
-      "expiry": "2026-11-13",
-      "mid": 74.08,
-      "moneyness": -14.3,
-      "oi": 17,
-      "strike": 457.5,
-      "type": "call",
-      "vol_oi": 4.8,
-      "volume": 82
-     },
-     {
-      "est_premium": 447475,
-      "expiry": "2026-11-11",
-      "mid": 63.92,
-      "moneyness": -12.4,
-      "oi": 15,
-      "strike": 467.5,
-      "type": "call",
-      "vol_oi": 4.7,
-      "volume": 70
-     },
-     {
-      "est_premium": 413525,
-      "expiry": "2026-11-11",
-      "mid": 59.08,
-      "moneyness": -11.5,
-      "oi": 22,
-      "strike": 472.5,
-      "type": "call",
-      "vol_oi": 3.2,
-      "volume": 70
-     },
-     {
-      "est_premium": 346140,
-      "expiry": "2026-11-13",
-      "mid": 64.1,
-      "moneyness": -12.4,
-      "oi": 4,
-      "strike": 467.5,
-      "type": "call",
-      "vol_oi": 13.5,
-      "volume": 54
-     }
-    ],
-    "vex_heatmap_png": "vex_heatmap_MSFT.png"
-   },
-   {
-    "as_of": "2026-11-06 10:13 AM EST",
-    "call_wall": 265.0,
-    "flip": 249.04,
-    "flip_note": null,
-    "gex_heatmap_png": "gex_heatmap_AMZN.png",
-    "heatmap": {
-     "expiries": [
-      "2026-11-06",
-      "2026-11-09",
-      "2026-11-11",
-      "2026-11-13",
-      "2026-11-20",
-      "2026-11-27",
-      "2026-12-04",
-      "2026-12-11"
-     ],
-     "nodes": {
-      "king": {
-       "dist_pct": 0.84,
-       "expiry": "2026-11-06",
-       "row_total": 109071535,
-       "strike": 265.0,
-       "value": 72834882
-      },
-      "king_strike": {
-       "dist_pct": 0.84,
-       "net_gex": 109071535,
-       "strike": 265.0
-      },
-      "neg_above": null,
-      "neg_below": null,
-      "node_threshold": 16360730,
-      "pos_above": {
-       "dist_pct": 0.84,
-       "net_gex": 109071535,
-       "net_vex": 3398098,
-       "strike": 265.0
-      },
-      "pos_below": {
-       "dist_pct": -0.11,
-       "net_gex": 52426876,
-       "net_vex": -244454,
-       "strike": 262.5
-      },
-      "vex_king": {
-       "dist_pct": 4.64,
-       "expiry": "2026-11-20",
-       "strike": 275.0,
-       "value": 6169621
-      }
-     },
-     "total_gex": 382327760,
-     "total_vex": 31458077,
-     "vex_read": "net VEX +$31.5M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
-    },
-    "net_gex": 512360798,
-    "png": null,
-    "put_wall": 260.0,
-    "regime": "positive",
-    "regime_label": "positive gamma: dealers dampen moves -> mean-reverting / pinning toward big strikes",
-    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
-    "spot": 262.8,
-    "spot_vs_flip": "above flip",
-    "ticker": "AMZN",
-    "top_strikes": [
-     {
-      "call_gex": 175460689,
-      "net_gex": 114157893,
-      "put_gex": -61302796,
-      "strike": 265.0
-     },
-     {
-      "call_gex": 96586994,
-      "net_gex": 81342918,
-      "put_gex": -15244076,
-      "strike": 270.0
-     },
-     {
-      "call_gex": 77023445,
-      "net_gex": 72439566,
-      "put_gex": -4583879,
-      "strike": 275.0
-     },
-     {
-      "call_gex": 125132798,
-      "net_gex": 52957525,
-      "put_gex": -72175272,
-      "strike": 260.0
-     },
-     {
-      "call_gex": 81688280,
-      "net_gex": 52426876,
-      "put_gex": -29261403,
-      "strike": 262.5
-     }
-    ],
-    "unusual_0dte_count": 1,
-    "unusual_count": 2,
-    "unusual_flow": [
-     {
-      "est_premium": 10085,
-      "expiry": "2026-11-13",
-      "mid": 0.14,
-      "moneyness": 13.2,
-      "oi": 223,
-      "strike": 297.5,
-      "type": "call",
-      "vol_oi": 3.3,
-      "volume": 747
-     },
-     {
-      "est_premium": 9295,
-      "expiry": "2026-11-13",
-      "mid": 0.11,
-      "moneyness": -19.1,
-      "oi": 148,
-      "strike": 212.5,
-      "type": "put",
-      "vol_oi": 5.7,
-      "volume": 845
-     }
-    ],
-    "vex_heatmap_png": "vex_heatmap_AMZN.png"
-   },
-   {
-    "as_of": "2026-11-06 10:13 AM EST",
-    "call_wall": 290.0,
-    "flip": 286.43,
-    "flip_note": null,
-    "gex_heatmap_png": "gex_heatmap_GOOGL.png",
-    "heatmap": {
-     "expiries": [
-      "2026-11-06",
-      "2026-11-09",
-      "2026-11-11",
-      "2026-11-13",
-      "2026-11-20",
-      "2026-11-27",
-      "2026-12-04",
-      "2026-12-11"
-     ],
-     "nodes": {
-      "king": {
-       "dist_pct": 0.44,
-       "expiry": "2026-11-06",
-       "row_total": 78394059,
-       "strike": 290.0,
-       "value": 86164853
-      },
-      "king_strike": {
-       "dist_pct": 0.44,
-       "net_gex": 78394059,
-       "strike": 290.0
-      },
-      "neg_above": null,
-      "neg_below": {
-       "dist_pct": -3.03,
-       "net_gex": -19964135,
-       "net_vex": 1405198,
-       "strike": 280.0
-      },
-      "node_threshold": 11759109,
-      "pos_above": {
-       "dist_pct": 0.44,
-       "net_gex": 78394059,
-       "net_vex": 1773305,
-       "strike": 290.0
-      },
-      "pos_below": {
-       "dist_pct": -0.43,
-       "net_gex": 52398236,
-       "net_vex": -1340314,
-       "strike": 287.5
-      },
-      "vex_king": {
-       "dist_pct": 0.44,
-       "expiry": "2026-11-06",
-       "strike": 290.0,
-       "value": 1850771
-      }
-     },
-     "total_gex": 112745012,
-     "total_vex": 16799029,
-     "vex_read": "net VEX +$16.8M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
-    },
-    "net_gex": 145480038,
-    "png": null,
-    "put_wall": 290.0,
-    "regime": "positive",
-    "regime_label": "positive gamma: dealers dampen moves -> mean-reverting / pinning toward big strikes",
-    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
-    "spot": 288.73,
-    "spot_vs_flip": "above flip",
-    "ticker": "GOOGL",
-    "top_strikes": [
-     {
-      "call_gex": 152945436,
-      "net_gex": 72703884,
-      "put_gex": -80241552,
-      "strike": 290.0
-     },
-     {
-      "call_gex": 69646130,
-      "net_gex": 52398236,
-      "put_gex": -17247894,
-      "strike": 287.5
-     },
-     {
-      "call_gex": 61721621,
-      "net_gex": 29735099,
-      "put_gex": -31986522,
-      "strike": 300.0
-     },
-     {
-      "call_gex": 18354925,
-      "net_gex": -23757776,
-      "put_gex": -42112701,
-      "strike": 280.0
-     },
-     {
-      "call_gex": 2341940,
-      "net_gex": -22882302,
-      "put_gex": -25224242,
-      "strike": 275.0
-     }
-    ],
-    "unusual_0dte_count": 6,
-    "unusual_count": 1,
-    "unusual_flow": [
-     {
-      "est_premium": 385110,
-      "expiry": "2026-11-11",
-      "mid": 4.95,
-      "moneyness": -0.4,
-      "oi": 50,
-      "strike": 287.5,
-      "type": "call",
-      "vol_oi": 15.6,
-      "volume": 778
-     }
-    ],
-    "vex_heatmap_png": "vex_heatmap_GOOGL.png"
-   },
-   {
-    "as_of": "2026-11-06 10:13 AM EST",
-    "call_wall": 190.0,
-    "flip": 191.15,
-    "flip_note": null,
-    "gex_heatmap_png": "gex_heatmap_NVDA.png",
-    "heatmap": {
-     "expiries": [
-      "2026-11-06",
-      "2026-11-09",
-      "2026-11-11",
-      "2026-11-13",
-      "2026-11-20",
-      "2026-11-27",
-      "2026-12-04",
-      "2026-12-11"
-     ],
-     "nodes": {
-      "king": {
-       "dist_pct": -1.04,
-       "expiry": "2026-11-20",
-       "row_total": -47732726,
-       "strike": 190.0,
-       "value": -48859342
-      },
-      "king_strike": {
-       "dist_pct": -1.04,
-       "net_gex": -47732726,
-       "strike": 190.0
-      },
-      "neg_above": {
-       "dist_pct": 6.77,
-       "net_gex": -7966695,
-       "net_vex": -1293029,
-       "strike": 205.0
-      },
-      "neg_below": {
-       "dist_pct": -1.04,
-       "net_gex": -47732726,
-       "net_vex": 688150,
-       "strike": 190.0
-      },
-      "node_threshold": 7159909,
-      "pos_above": {
-       "dist_pct": 0.26,
-       "net_gex": 8850223,
-       "net_vex": -35987,
-       "strike": 192.5
-      },
-      "pos_below": null,
-      "vex_king": {
-       "dist_pct": 9.37,
-       "expiry": "2026-11-20",
-       "strike": 210.0,
-       "value": 3777690
-      }
-     },
-     "total_gex": -15421596,
-     "total_vex": 13000623,
-     "vex_read": "net VEX +$13.0M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
-    },
-    "net_gex": 29498046,
-    "png": null,
-    "put_wall": 190.0,
-    "regime": "positive",
-    "regime_label": "positive gamma: dealers dampen moves -> mean-reverting / pinning toward big strikes",
-    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
-    "spot": 192.01,
-    "spot_vs_flip": "above flip",
-    "ticker": "NVDA",
-    "top_strikes": [
-     {
-      "call_gex": 97479541,
-      "net_gex": -46472187,
-      "put_gex": -143951728,
-      "strike": 190.0
-     },
-     {
-      "call_gex": 13533412,
-      "net_gex": -35607240,
-      "put_gex": -49140653,
-      "strike": 180.0
-     },
-     {
-      "call_gex": 78927025,
-      "net_gex": 32914553,
-      "put_gex": -46012472,
-      "strike": 210.0
-     },
-     {
-      "call_gex": 36191277,
-      "net_gex": 28313927,
-      "put_gex": -7877350,
-      "strike": 230.0
-     },
-     {
-      "call_gex": 54624154,
-      "net_gex": 26380169,
-      "put_gex": -28243985,
-      "strike": 220.0
-     }
-    ],
-    "unusual_0dte_count": 14,
-    "unusual_count": 9,
-    "unusual_flow": [
-     {
-      "est_premium": 12018212,
-      "expiry": "2026-11-13",
-      "mid": 3.33,
-      "moneyness": 4.2,
-      "oi": 8773,
-      "strike": 200.0,
-      "type": "call",
-      "vol_oi": 4.1,
-      "volume": 36145
-     },
-     {
-      "est_premium": 4397370,
-      "expiry": "2026-11-13",
-      "mid": 1.38,
-      "moneyness": 8.1,
-      "oi": 3800,
-      "strike": 207.5,
-      "type": "call",
-      "vol_oi": 8.4,
-      "volume": 31865
-     },
-     {
-      "est_premium": 2918944,
-      "expiry": "2026-11-09",
-      "mid": 2.91,
-      "moneyness": 1.6,
-      "oi": 2313,
-      "strike": 195.0,
-      "type": "call",
-      "vol_oi": 4.3,
-      "volume": 10048
-     },
-     {
-      "est_premium": 2891795,
-      "expiry": "2026-11-09",
-      "mid": 3.95,
-      "moneyness": 0.3,
-      "oi": 2269,
-      "strike": 192.5,
-      "type": "put",
-      "vol_oi": 3.2,
-      "volume": 7321
-     },
-     {
-      "est_premium": 1335985,
-      "expiry": "2026-12-18",
-      "mid": 162.93,
-      "moneyness": 1097.9,
-      "oi": 0,
-      "strike": 2300.0,
-      "type": "call",
-      "vol_oi": null,
-      "volume": 82
-     }
-    ],
-    "vex_heatmap_png": "vex_heatmap_NVDA.png"
-   },
-   {
-    "as_of": "2026-11-06 10:13 AM EST",
-    "call_wall": 410.0,
-    "flip": 399.5,
-    "flip_note": null,
-    "gex_heatmap_png": "gex_heatmap_TSM.png",
-    "heatmap": {
-     "expiries": [
-      "2026-11-06",
-      "2026-11-13",
-      "2026-11-20",
-      "2026-11-27",
-      "2026-12-04",
-      "2026-12-11",
-      "2026-12-18"
-     ],
-     "nodes": {
-      "king": {
-       "dist_pct": 0.0,
-       "expiry": "2026-11-06",
-       "row_total": -97045174,
-       "strike": 375.0,
-       "value": -94502141
-      },
-      "king_strike": {
-       "dist_pct": 0.0,
-       "net_gex": -97045174,
-       "strike": 375.0
-      },
-      "neg_above": {
-       "dist_pct": 6.67,
-       "net_gex": -18271299,
-       "net_vex": -3293049,
-       "strike": 400.0
-      },
-      "neg_below": {
-       "dist_pct": 0.0,
-       "net_gex": -97045174,
-       "net_vex": -18419,
-       "strike": 375.0
-      },
-      "node_threshold": 14556776,
-      "pos_above": null,
-      "pos_below": null,
-      "vex_king": {
-       "dist_pct": 6.67,
-       "expiry": "2026-12-18",
-       "strike": 400.0,
-       "value": -2338598
-      }
-     },
-     "total_gex": -224352942,
-     "total_vex": 970808,
-     "vex_read": "net VEX +$1.0M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
-    },
-    "net_gex": -216239789,
-    "png": null,
-    "put_wall": 375.0,
-    "regime": "negative",
-    "regime_label": "negative gamma: dealers amplify moves -> trend / higher volatility, expect bigger ranges",
-    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
-    "spot": 375.0,
-    "spot_vs_flip": "below flip",
-    "ticker": "TSM",
-    "top_strikes": [
-     {
-      "call_gex": 8085427,
-      "net_gex": -97045174,
-      "put_gex": -105130601,
-      "strike": 375.0
-     },
-     {
-      "call_gex": 4497101,
-      "net_gex": -25277246,
-      "put_gex": -29774347,
-      "strike": 360.0
-     },
-     {
-      "call_gex": 7212640,
-      "net_gex": -22859922,
-      "put_gex": -30072562,
-      "strike": 370.0
-     },
-     {
-      "call_gex": 11246312,
-      "net_gex": -18271299,
-      "put_gex": -29517611,
-      "strike": 400.0
-     },
-     {
-      "call_gex": 1346846,
-      "net_gex": -16135379,
-      "put_gex": -17482225,
-      "strike": 350.0
-     }
-    ],
-    "unusual_0dte_count": 9,
-    "unusual_count": 1,
-    "unusual_flow": [
-     {
-      "est_premium": 495950,
-      "expiry": "2026-11-13",
-      "mid": 5.45,
-      "moneyness": 4.7,
-      "oi": 76,
-      "strike": 392.5,
-      "type": "call",
-      "vol_oi": 12.0,
-      "volume": 910
-     }
-    ],
-    "vex_heatmap_png": "vex_heatmap_TSM.png"
-   },
-   {
-    "as_of": "2026-11-06 10:13 AM EST",
+    "as_of": "2026-11-06 10:48 AM EST",
     "call_wall": 280.0,
-    "flip": 282.24,
+    "flip": 283.32,
     "flip_note": null,
     "gex_heatmap_png": "gex_heatmap_IWM.png",
     "heatmap": {
@@ -1477,92 +353,92 @@
      ],
      "nodes": {
       "king": {
-       "dist_pct": -1.05,
+       "dist_pct": -0.83,
        "expiry": "2026-11-20",
-       "row_total": -509805017,
+       "row_total": -551797448,
        "strike": 270.0,
-       "value": -350730631
+       "value": -370240234
       },
       "king_strike": {
-       "dist_pct": -1.05,
-       "net_gex": -509805017,
+       "dist_pct": -0.83,
+       "net_gex": -551797448,
        "strike": 270.0
       },
       "neg_above": {
-       "dist_pct": 0.78,
-       "net_gex": -302134135,
-       "net_vex": -6090560,
-       "strike": 275.0
+       "dist_pct": 0.09,
+       "net_gex": -121536995,
+       "net_vex": -459881,
+       "strike": 272.5
       },
       "neg_below": {
-       "dist_pct": -0.32,
-       "net_gex": -103156790,
-       "net_vex": 421634,
+       "dist_pct": -0.09,
+       "net_gex": -159719577,
+       "net_vex": 703937,
        "strike": 272.0
       },
-      "node_threshold": 76470753,
+      "node_threshold": 82769617,
       "pos_above": null,
       "pos_below": null,
       "vex_king": {
-       "dist_pct": -2.88,
+       "dist_pct": -2.66,
        "expiry": "2026-11-20",
        "strike": 265.0,
-       "value": 27507820
+       "value": 26338564
       }
      },
-     "total_gex": -2823073463,
-     "total_vex": 297441192,
-     "vex_read": "net VEX +$297.4M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
+     "total_gex": -2971966193,
+     "total_vex": 264613494,
+     "vex_read": "net VEX +$264.6M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
     },
-    "net_gex": -3461191185,
+    "net_gex": -3673194130,
     "png": null,
     "put_wall": 270.0,
     "regime": "negative",
     "regime_label": "negative gamma: dealers amplify moves -> trend / higher volatility, expect bigger ranges",
     "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
-    "spot": 272.86,
+    "spot": 272.25,
     "spot_vs_flip": "below flip",
     "ticker": "IWM",
     "top_strikes": [
      {
-      "call_gex": 47753828,
-      "net_gex": -608865610,
-      "put_gex": -656619438,
+      "call_gex": 55018761,
+      "net_gex": -656438493,
+      "put_gex": -711457254,
       "strike": 270.0
      },
      {
-      "call_gex": 127633693,
-      "net_gex": -383119979,
-      "put_gex": -510753673,
-      "strike": 275.0
-     },
-     {
-      "call_gex": 29723668,
-      "net_gex": -352235582,
-      "put_gex": -381959250,
+      "call_gex": 27806655,
+      "net_gex": -366441785,
+      "put_gex": -394248440,
       "strike": 265.0
      },
      {
-      "call_gex": 18946740,
-      "net_gex": -279246761,
-      "put_gex": -298193500,
+      "call_gex": 96457686,
+      "net_gex": -317828808,
+      "put_gex": -414286494,
+      "strike": 275.0
+     },
+     {
+      "call_gex": 18112462,
+      "net_gex": -289022038,
+      "put_gex": -307134500,
       "strike": 260.0
      },
      {
-      "call_gex": 2479555,
-      "net_gex": -193718030,
-      "put_gex": -196197584,
+      "call_gex": 6644289,
+      "net_gex": -197876372,
+      "put_gex": -204520661,
       "strike": 268.0
      }
     ],
-    "unusual_0dte_count": 7,
-    "unusual_count": 9,
+    "unusual_0dte_count": 11,
+    "unusual_count": 19,
     "unusual_flow": [
      {
-      "est_premium": 1388760,
+      "est_premium": 1349000,
       "expiry": "2026-11-09",
-      "mid": 12.22,
-      "moneyness": 4.1,
+      "mid": 11.88,
+      "moneyness": 4.3,
       "oi": 193,
       "strike": 284.0,
       "type": "put",
@@ -1570,10 +446,10 @@
       "volume": 1136
      },
      {
-      "est_premium": 1204740,
+      "est_premium": 1185534,
       "expiry": "2026-11-13",
-      "mid": 6.9,
-      "moneyness": 1.7,
+      "mid": 6.79,
+      "moneyness": 1.9,
       "oi": 547,
       "strike": 277.5,
       "type": "put",
@@ -1581,40 +457,1240 @@
       "volume": 1746
      },
      {
-      "est_premium": 339294,
-      "expiry": "2026-11-13",
-      "mid": 15.21,
-      "moneyness": 5.2,
-      "oi": 32,
-      "strike": 287.0,
-      "type": "put",
-      "vol_oi": 7.0,
-      "volume": 223
-     },
-     {
-      "est_premium": 186636,
+      "est_premium": 737890,
       "expiry": "2026-11-11",
-      "mid": 2.06,
-      "moneyness": 0.4,
-      "oi": 249,
-      "strike": 274.0,
-      "type": "call",
-      "vol_oi": 3.6,
-      "volume": 906
+      "mid": 2.26,
+      "moneyness": -0.8,
+      "oi": 1018,
+      "strike": 270.0,
+      "type": "put",
+      "vol_oi": 3.2,
+      "volume": 3265
      },
      {
-      "est_premium": 82112,
-      "expiry": "2026-11-10",
-      "mid": 0.32,
-      "moneyness": 2.6,
-      "oi": 532,
-      "strike": 280.0,
+      "est_premium": 476974,
+      "expiry": "2026-11-09",
+      "mid": 2.2,
+      "moneyness": -0.1,
+      "oi": 715,
+      "strike": 272.0,
       "type": "call",
-      "vol_oi": 4.8,
-      "volume": 2566
+      "vol_oi": 3.0,
+      "volume": 2173
+     },
+     {
+      "est_premium": 383838,
+      "expiry": "2026-11-13",
+      "mid": 3.88,
+      "moneyness": -0.1,
+      "oi": 303,
+      "strike": 272.0,
+      "type": "call",
+      "vol_oi": 3.3,
+      "volume": 988
      }
     ],
     "vex_heatmap_png": "vex_heatmap_IWM.png"
+   },
+   {
+    "as_of": "2026-11-06 10:48 AM EST",
+    "call_wall": 360.0,
+    "flip": 354.35,
+    "flip_note": null,
+    "gex_heatmap_png": "gex_heatmap_TSLA.png",
+    "heatmap": {
+     "expiries": [
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-11",
+      "2026-11-13",
+      "2026-11-20",
+      "2026-11-27",
+      "2026-12-04",
+      "2026-12-11"
+     ],
+     "nodes": {
+      "king": {
+       "dist_pct": -1.33,
+       "expiry": "2026-11-06",
+       "row_total": 14145050,
+       "strike": 352.5,
+       "value": 15999739
+      },
+      "king_strike": {
+       "dist_pct": 0.77,
+       "net_gex": -14462247,
+       "strike": 360.0
+      },
+      "neg_above": {
+       "dist_pct": 0.07,
+       "net_gex": -10832653,
+       "net_vex": -32984,
+       "strike": 357.5
+      },
+      "neg_below": {
+       "dist_pct": -3.43,
+       "net_gex": -2589717,
+       "net_vex": 276241,
+       "strike": 345.0
+      },
+      "node_threshold": 2169337,
+      "pos_above": {
+       "dist_pct": 1.47,
+       "net_gex": 14377837,
+       "net_vex": 328187,
+       "strike": 362.5
+      },
+      "pos_below": {
+       "dist_pct": -1.33,
+       "net_gex": 14145050,
+       "net_vex": -203899,
+       "strike": 352.5
+      },
+      "vex_king": {
+       "dist_pct": 5.66,
+       "expiry": "2026-11-13",
+       "strike": 377.5,
+       "value": 1046843
+      }
+     },
+     "total_gex": 7584020,
+     "total_vex": 6806466,
+     "vex_read": "net VEX +$6.8M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
+    },
+    "net_gex": 24529420,
+    "png": null,
+    "put_wall": 360.0,
+    "regime": "positive",
+    "regime_label": "positive gamma: dealers dampen moves -> mean-reverting / pinning toward big strikes",
+    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
+    "spot": 357.27,
+    "spot_vs_flip": "above flip",
+    "ticker": "TSLA",
+    "top_strikes": [
+     {
+      "call_gex": 35715254,
+      "net_gex": 23138518,
+      "put_gex": -12576736,
+      "strike": 400.0
+     },
+     {
+      "call_gex": 80005610,
+      "net_gex": -18767766,
+      "put_gex": -98773376,
+      "strike": 360.0
+     },
+     {
+      "call_gex": 19819754,
+      "net_gex": 14377837,
+      "put_gex": -5441917,
+      "strike": 362.5
+     },
+     {
+      "call_gex": 23030698,
+      "net_gex": 14145050,
+      "put_gex": -8885648,
+      "strike": 352.5
+     },
+     {
+      "call_gex": 5514754,
+      "net_gex": -12251610,
+      "put_gex": -17766364,
+      "strike": 330.0
+     }
+    ],
+    "unusual_0dte_count": 19,
+    "unusual_count": 13,
+    "unusual_flow": [
+     {
+      "est_premium": 4373685,
+      "expiry": "2026-11-09",
+      "mid": 6.22,
+      "moneyness": 0.8,
+      "oi": 1052,
+      "strike": 360.0,
+      "type": "call",
+      "vol_oi": 6.7,
+      "volume": 7026
+     },
+     {
+      "est_premium": 4131320,
+      "expiry": "2026-11-09",
+      "mid": 8.95,
+      "moneyness": -0.6,
+      "oi": 401,
+      "strike": 355.0,
+      "type": "call",
+      "vol_oi": 11.5,
+      "volume": 4616
+     },
+     {
+      "est_premium": 4125712,
+      "expiry": "2026-11-13",
+      "mid": 11.62,
+      "moneyness": 0.8,
+      "oi": 1038,
+      "strike": 360.0,
+      "type": "call",
+      "vol_oi": 3.4,
+      "volume": 3549
+     },
+     {
+      "est_premium": 3287510,
+      "expiry": "2026-11-13",
+      "mid": 13.02,
+      "moneyness": 0.1,
+      "oi": 416,
+      "strike": 357.5,
+      "type": "call",
+      "vol_oi": 6.1,
+      "volume": 2524
+     },
+     {
+      "est_premium": 3023790,
+      "expiry": "2026-11-13",
+      "mid": 9.07,
+      "moneyness": 2.2,
+      "oi": 944,
+      "strike": 365.0,
+      "type": "call",
+      "vol_oi": 3.5,
+      "volume": 3332
+     }
+    ],
+    "vex_heatmap_png": "vex_heatmap_TSLA.png"
+   },
+   {
+    "as_of": "2026-11-06 10:49 AM EST",
+    "call_wall": 190.0,
+    "flip": 190.16,
+    "flip_note": null,
+    "gex_heatmap_png": "gex_heatmap_NVDA.png",
+    "heatmap": {
+     "expiries": [
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-11",
+      "2026-11-13",
+      "2026-11-20",
+      "2026-11-27",
+      "2026-12-04",
+      "2026-12-11"
+     ],
+     "nodes": {
+      "king": {
+       "dist_pct": 0.08,
+       "expiry": "2026-11-06",
+       "row_total": 17471196,
+       "strike": 190.0,
+       "value": 55182915
+      },
+      "king_strike": {
+       "dist_pct": -2.55,
+       "net_gex": -32960346,
+       "strike": 185.0
+      },
+      "neg_above": {
+       "dist_pct": 2.71,
+       "net_gex": -11012921,
+       "net_vex": -252038,
+       "strike": 195.0
+      },
+      "neg_below": {
+       "dist_pct": -2.55,
+       "net_gex": -32960346,
+       "net_vex": 1084353,
+       "strike": 185.0
+      },
+      "node_threshold": 4944052,
+      "pos_above": {
+       "dist_pct": 0.08,
+       "net_gex": 17471196,
+       "net_vex": -393265,
+       "strike": 190.0
+      },
+      "pos_below": null,
+      "vex_king": {
+       "dist_pct": 5.35,
+       "expiry": "2026-11-20",
+       "strike": 200.0,
+       "value": 1332784
+      }
+     },
+     "total_gex": -47573143,
+     "total_vex": 7595764,
+     "vex_read": "net VEX +$7.6M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
+    },
+    "net_gex": -10447183,
+    "png": null,
+    "put_wall": 190.0,
+    "regime": "negative",
+    "regime_label": "negative gamma: dealers amplify moves -> trend / higher volatility, expect bigger ranges",
+    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
+    "spot": 189.85,
+    "spot_vs_flip": "below flip",
+    "ticker": "NVDA",
+    "top_strikes": [
+     {
+      "call_gex": 14311081,
+      "net_gex": -41298000,
+      "put_gex": -55609080,
+      "strike": 185.0
+     },
+     {
+      "call_gex": 13820724,
+      "net_gex": -35656627,
+      "put_gex": -49477351,
+      "strike": 180.0
+     },
+     {
+      "call_gex": 73126981,
+      "net_gex": 31666233,
+      "put_gex": -41460748,
+      "strike": 210.0
+     },
+     {
+      "call_gex": 3369441,
+      "net_gex": -25153362,
+      "put_gex": -28522803,
+      "strike": 175.0
+     },
+     {
+      "call_gex": 3098237,
+      "net_gex": -25146002,
+      "put_gex": -28244239,
+      "strike": 170.0
+     }
+    ],
+    "unusual_0dte_count": 14,
+    "unusual_count": 14,
+    "unusual_flow": [
+     {
+      "est_premium": 8878526,
+      "expiry": "2026-11-13",
+      "mid": 2.25,
+      "moneyness": 5.3,
+      "oi": 8773,
+      "strike": 200.0,
+      "type": "call",
+      "vol_oi": 4.5,
+      "volume": 39548
+     },
+     {
+      "est_premium": 6855442,
+      "expiry": "2026-11-09",
+      "mid": 5.82,
+      "moneyness": 1.4,
+      "oi": 2269,
+      "strike": 192.5,
+      "type": "put",
+      "vol_oi": 5.2,
+      "volume": 11769
+     },
+     {
+      "est_premium": 3037562,
+      "expiry": "2026-11-09",
+      "mid": 4.38,
+      "moneyness": 0.1,
+      "oi": 2059,
+      "strike": 190.0,
+      "type": "put",
+      "vol_oi": 3.4,
+      "volume": 6943
+     },
+     {
+      "est_premium": 2742096,
+      "expiry": "2026-11-13",
+      "mid": 0.84,
+      "moneyness": 9.3,
+      "oi": 3800,
+      "strike": 207.5,
+      "type": "call",
+      "vol_oi": 8.6,
+      "volume": 32644
+     },
+     {
+      "est_premium": 2097598,
+      "expiry": "2026-11-09",
+      "mid": 2.35,
+      "moneyness": -2.6,
+      "oi": 2768,
+      "strike": 185.0,
+      "type": "put",
+      "vol_oi": 3.2,
+      "volume": 8907
+     }
+    ],
+    "vex_heatmap_png": "vex_heatmap_NVDA.png"
+   },
+   {
+    "as_of": "2026-11-06 10:49 AM EST",
+    "call_wall": 625.0,
+    "flip": 617.27,
+    "flip_note": null,
+    "gex_heatmap_png": "gex_heatmap_META.png",
+    "heatmap": {
+     "expiries": [
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-11",
+      "2026-11-13",
+      "2026-11-20",
+      "2026-11-27",
+      "2026-12-04",
+      "2026-12-11"
+     ],
+     "nodes": {
+      "king": {
+       "dist_pct": -0.1,
+       "expiry": "2026-11-06",
+       "row_total": 60503318,
+       "strike": 622.5,
+       "value": 59439659
+      },
+      "king_strike": {
+       "dist_pct": -0.1,
+       "net_gex": 60503318,
+       "strike": 622.5
+      },
+      "neg_above": null,
+      "neg_below": {
+       "dist_pct": -0.91,
+       "net_gex": -10178495,
+       "net_vex": 182685,
+       "strike": 617.5
+      },
+      "node_threshold": 9075498,
+      "pos_above": {
+       "dist_pct": 0.3,
+       "net_gex": 16218762,
+       "net_vex": 672326,
+       "strike": 625.0
+      },
+      "pos_below": {
+       "dist_pct": -0.1,
+       "net_gex": 60503318,
+       "net_vex": -350662,
+       "strike": 622.5
+      },
+      "vex_king": {
+       "dist_pct": 5.91,
+       "expiry": "2026-11-20",
+       "strike": 660.0,
+       "value": 4482439
+      }
+     },
+     "total_gex": 143684361,
+     "total_vex": 25699561,
+     "vex_read": "net VEX +$25.7M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
+    },
+    "net_gex": 257934479,
+    "png": null,
+    "put_wall": 625.0,
+    "regime": "positive",
+    "regime_label": "positive gamma: dealers dampen moves -> mean-reverting / pinning toward big strikes",
+    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
+    "spot": 623.15,
+    "spot_vs_flip": "above flip",
+    "ticker": "META",
+    "top_strikes": [
+     {
+      "call_gex": 68064993,
+      "net_gex": 60503318,
+      "put_gex": -7561675,
+      "strike": 622.5
+     },
+     {
+      "call_gex": 71215259,
+      "net_gex": 45393013,
+      "put_gex": -25822246,
+      "strike": 650.0
+     },
+     {
+      "call_gex": 60870765,
+      "net_gex": 45068733,
+      "put_gex": -15802031,
+      "strike": 700.0
+     },
+     {
+      "call_gex": 66112641,
+      "net_gex": 38767834,
+      "put_gex": -27344807,
+      "strike": 630.0
+     },
+     {
+      "call_gex": 46587732,
+      "net_gex": 31347166,
+      "put_gex": -15240566,
+      "strike": 660.0
+     }
+    ],
+    "unusual_0dte_count": 22,
+    "unusual_count": 7,
+    "unusual_flow": [
+     {
+      "est_premium": 944820,
+      "expiry": "2026-11-13",
+      "mid": 5.8,
+      "moneyness": 3.9,
+      "oi": 77,
+      "strike": 647.5,
+      "type": "call",
+      "vol_oi": 21.2,
+      "volume": 1629
+     },
+     {
+      "est_premium": 698182,
+      "expiry": "2026-11-11",
+      "mid": 9.53,
+      "moneyness": 0.7,
+      "oi": 52,
+      "strike": 627.5,
+      "type": "call",
+      "vol_oi": 14.1,
+      "volume": 733
+     },
+     {
+      "est_premium": 528088,
+      "expiry": "2026-11-09",
+      "mid": 10.38,
+      "moneyness": -0.9,
+      "oi": 60,
+      "strike": 617.5,
+      "type": "call",
+      "vol_oi": 8.5,
+      "volume": 509
+     },
+     {
+      "est_premium": 410078,
+      "expiry": "2026-11-11",
+      "mid": 12.78,
+      "moneyness": -0.9,
+      "oi": 29,
+      "strike": 617.5,
+      "type": "put",
+      "vol_oi": 11.1,
+      "volume": 321
+     },
+     {
+      "est_premium": 294650,
+      "expiry": "2026-11-09",
+      "mid": 8.88,
+      "moneyness": -0.9,
+      "oi": 71,
+      "strike": 617.5,
+      "type": "put",
+      "vol_oi": 4.7,
+      "volume": 332
+     }
+    ],
+    "vex_heatmap_png": "vex_heatmap_META.png"
+   },
+   {
+    "as_of": "2026-11-06 10:49 AM EST",
+    "call_wall": 265.0,
+    "flip": 251.58,
+    "flip_note": null,
+    "gex_heatmap_png": "gex_heatmap_AMZN.png",
+    "heatmap": {
+     "expiries": [
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-11",
+      "2026-11-13",
+      "2026-11-20",
+      "2026-11-27",
+      "2026-12-04",
+      "2026-12-11"
+     ],
+     "nodes": {
+      "king": {
+       "dist_pct": 0.62,
+       "expiry": "2026-11-06",
+       "row_total": 139801399,
+       "strike": 265.0,
+       "value": 101042980
+      },
+      "king_strike": {
+       "dist_pct": 0.62,
+       "net_gex": 139801399,
+       "strike": 265.0
+      },
+      "neg_above": null,
+      "neg_below": null,
+      "node_threshold": 20970210,
+      "pos_above": {
+       "dist_pct": 0.62,
+       "net_gex": 139801399,
+       "net_vex": 4398503,
+       "strike": 265.0
+      },
+      "pos_below": {
+       "dist_pct": -0.33,
+       "net_gex": 74250623,
+       "net_vex": -1840435,
+       "strike": 262.5
+      },
+      "vex_king": {
+       "dist_pct": 4.42,
+       "expiry": "2026-11-20",
+       "strike": 275.0,
+       "value": 6010531
+      }
+     },
+     "total_gex": 412750264,
+     "total_vex": 30337024,
+     "vex_read": "net VEX +$30.3M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
+    },
+    "net_gex": 547883948,
+    "png": null,
+    "put_wall": 265.0,
+    "regime": "positive",
+    "regime_label": "positive gamma: dealers dampen moves -> mean-reverting / pinning toward big strikes",
+    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
+    "spot": 263.37,
+    "spot_vs_flip": "above flip",
+    "ticker": "AMZN",
+    "top_strikes": [
+     {
+      "call_gex": 210472926,
+      "net_gex": 144992733,
+      "put_gex": -65480193,
+      "strike": 265.0
+     },
+     {
+      "call_gex": 98865650,
+      "net_gex": 83783340,
+      "put_gex": -15082310,
+      "strike": 270.0
+     },
+     {
+      "call_gex": 103806829,
+      "net_gex": 74250623,
+      "put_gex": -29556206,
+      "strike": 262.5
+     },
+     {
+      "call_gex": 78793843,
+      "net_gex": 74175399,
+      "put_gex": -4618444,
+      "strike": 275.0
+     },
+     {
+      "call_gex": 59055889,
+      "net_gex": 53008053,
+      "put_gex": -6047835,
+      "strike": 280.0
+     }
+    ],
+    "unusual_0dte_count": 1,
+    "unusual_count": 2,
+    "unusual_flow": [
+     {
+      "est_premium": 9460,
+      "expiry": "2026-11-13",
+      "mid": 0.11,
+      "moneyness": -19.3,
+      "oi": 148,
+      "strike": 212.5,
+      "type": "put",
+      "vol_oi": 5.8,
+      "volume": 860
+     },
+     {
+      "est_premium": 7844,
+      "expiry": "2026-11-13",
+      "mid": 0.11,
+      "moneyness": 13.0,
+      "oi": 223,
+      "strike": 297.5,
+      "type": "call",
+      "vol_oi": 3.3,
+      "volume": 747
+     }
+    ],
+    "vex_heatmap_png": "vex_heatmap_AMZN.png"
+   },
+   {
+    "as_of": "2026-11-06 10:49 AM EST",
+    "call_wall": 287.5,
+    "flip": 286.5,
+    "flip_note": null,
+    "gex_heatmap_png": "gex_heatmap_GOOGL.png",
+    "heatmap": {
+     "expiries": [
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-11",
+      "2026-11-13",
+      "2026-11-20",
+      "2026-11-27",
+      "2026-12-04",
+      "2026-12-11"
+     ],
+     "nodes": {
+      "king": {
+       "dist_pct": -0.0,
+       "expiry": "2026-11-06",
+       "row_total": 87733644,
+       "strike": 287.5,
+       "value": 82282096
+      },
+      "king_strike": {
+       "dist_pct": -0.0,
+       "net_gex": 87733644,
+       "strike": 287.5
+      },
+      "neg_above": null,
+      "neg_below": {
+       "dist_pct": -0.87,
+       "net_gex": -13568271,
+       "net_vex": 106000,
+       "strike": 285.0
+      },
+      "node_threshold": 13160047,
+      "pos_above": {
+       "dist_pct": 4.35,
+       "net_gex": 17920122,
+       "net_vex": 2950023,
+       "strike": 300.0
+      },
+      "pos_below": {
+       "dist_pct": -0.0,
+       "net_gex": 87733644,
+       "net_vex": -22245,
+       "strike": 287.5
+      },
+      "vex_king": {
+       "dist_pct": -4.35,
+       "expiry": "2026-11-20",
+       "strike": 275.0,
+       "value": 1432188
+      }
+     },
+     "total_gex": 53149947,
+     "total_vex": 16541292,
+     "vex_read": "net VEX +$16.5M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
+    },
+    "net_gex": 77605859,
+    "png": null,
+    "put_wall": 290.0,
+    "regime": "positive",
+    "regime_label": "positive gamma: dealers dampen moves -> mean-reverting / pinning toward big strikes",
+    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
+    "spot": 287.51,
+    "spot_vs_flip": "above flip",
+    "ticker": "GOOGL",
+    "top_strikes": [
+     {
+      "call_gex": 109141869,
+      "net_gex": 87733644,
+      "put_gex": -21408225,
+      "strike": 287.5
+     },
+     {
+      "call_gex": 59100965,
+      "net_gex": 27723183,
+      "put_gex": -31377783,
+      "strike": 300.0
+     },
+     {
+      "call_gex": 2365375,
+      "net_gex": -23872762,
+      "put_gex": -26238138,
+      "strike": 275.0
+     },
+     {
+      "call_gex": 18788068,
+      "net_gex": -23494179,
+      "put_gex": -42282248,
+      "strike": 280.0
+     },
+     {
+      "call_gex": 25622935,
+      "net_gex": -15849854,
+      "put_gex": -41472789,
+      "strike": 285.0
+     }
+    ],
+    "unusual_0dte_count": 6,
+    "unusual_count": 4,
+    "unusual_flow": [
+     {
+      "est_premium": 615795,
+      "expiry": "2026-11-09",
+      "mid": 3.05,
+      "moneyness": -0.9,
+      "oi": 349,
+      "strike": 285.0,
+      "type": "put",
+      "vol_oi": 5.8,
+      "volume": 2019
+     },
+     {
+      "est_premium": 451098,
+      "expiry": "2026-11-11",
+      "mid": 4.33,
+      "moneyness": -0.0,
+      "oi": 50,
+      "strike": 287.5,
+      "type": "call",
+      "vol_oi": 20.9,
+      "volume": 1043
+     },
+     {
+      "est_premium": 183860,
+      "expiry": "2026-11-09",
+      "mid": 0.73,
+      "moneyness": 2.6,
+      "oi": 577,
+      "strike": 295.0,
+      "type": "call",
+      "vol_oi": 4.4,
+      "volume": 2536
+     },
+     {
+      "est_premium": 19408,
+      "expiry": "2026-11-13",
+      "mid": 0.16,
+      "moneyness": 12.2,
+      "oi": 148,
+      "strike": 322.5,
+      "type": "call",
+      "vol_oi": 8.2,
+      "volume": 1213
+     }
+    ],
+    "vex_heatmap_png": "vex_heatmap_GOOGL.png"
+   },
+   {
+    "as_of": "2026-11-06 10:49 AM EST",
+    "call_wall": 535.0,
+    "flip": 501.51,
+    "flip_note": null,
+    "gex_heatmap_png": "gex_heatmap_MSFT.png",
+    "heatmap": {
+     "expiries": [
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-11",
+      "2026-11-13",
+      "2026-11-20",
+      "2026-11-27",
+      "2026-12-04",
+      "2026-12-11"
+     ],
+     "nodes": {
+      "king": {
+       "dist_pct": 0.04,
+       "expiry": "2026-11-06",
+       "row_total": 198134240,
+       "strike": 535.0,
+       "value": 147463053
+      },
+      "king_strike": {
+       "dist_pct": 0.04,
+       "net_gex": 198134240,
+       "strike": 535.0
+      },
+      "neg_above": null,
+      "neg_below": null,
+      "node_threshold": 29720136,
+      "pos_above": {
+       "dist_pct": 0.04,
+       "net_gex": 198134240,
+       "net_vex": 400027,
+       "strike": 535.0
+      },
+      "pos_below": null,
+      "vex_king": {
+       "dist_pct": 8.46,
+       "expiry": "2026-11-20",
+       "strike": 580.0,
+       "value": 14100082
+      }
+     },
+     "total_gex": 568338667,
+     "total_vex": 74940355,
+     "vex_read": "net VEX +$74.9M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
+    },
+    "net_gex": 1225972581,
+    "png": null,
+    "put_wall": 535.0,
+    "regime": "positive",
+    "regime_label": "positive gamma: dealers dampen moves -> mean-reverting / pinning toward big strikes",
+    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
+    "spot": 534.77,
+    "spot_vs_flip": "above flip",
+    "ticker": "MSFT",
+    "top_strikes": [
+     {
+      "call_gex": 263393737,
+      "net_gex": 262807243,
+      "put_gex": -586494,
+      "strike": 575.0
+     },
+     {
+      "call_gex": 282583496,
+      "net_gex": 202235447,
+      "put_gex": -80348049,
+      "strike": 535.0
+     },
+     {
+      "call_gex": 126520108,
+      "net_gex": 124819021,
+      "put_gex": -1701087,
+      "strike": 580.0
+     },
+     {
+      "call_gex": 135089150,
+      "net_gex": 117625162,
+      "put_gex": -17463987,
+      "strike": 550.0
+     },
+     {
+      "call_gex": 126729747,
+      "net_gex": 94229011,
+      "put_gex": -32500736,
+      "strike": 525.0
+     }
+    ],
+    "unusual_0dte_count": 6,
+    "unusual_count": 7,
+    "unusual_flow": [
+     {
+      "est_premium": 659522,
+      "expiry": "2026-11-13",
+      "mid": 4.22,
+      "moneyness": -3.2,
+      "oi": 333,
+      "strike": 517.5,
+      "type": "put",
+      "vol_oi": 4.7,
+      "volume": 1561
+     },
+     {
+      "est_premium": 625250,
+      "expiry": "2026-11-13",
+      "mid": 76.25,
+      "moneyness": -14.4,
+      "oi": 17,
+      "strike": 457.5,
+      "type": "call",
+      "vol_oi": 4.8,
+      "volume": 82
+     },
+     {
+      "est_premium": 562980,
+      "expiry": "2026-11-13",
+      "mid": 3.3,
+      "moneyness": -4.2,
+      "oi": 366,
+      "strike": 512.5,
+      "type": "put",
+      "vol_oi": 4.7,
+      "volume": 1706
+     },
+     {
+      "est_premium": 465325,
+      "expiry": "2026-11-11",
+      "mid": 66.47,
+      "moneyness": -12.6,
+      "oi": 15,
+      "strike": 467.5,
+      "type": "call",
+      "vol_oi": 4.7,
+      "volume": 70
+     },
+     {
+      "est_premium": 427175,
+      "expiry": "2026-11-11",
+      "mid": 61.02,
+      "moneyness": -11.6,
+      "oi": 22,
+      "strike": 472.5,
+      "type": "call",
+      "vol_oi": 3.2,
+      "volume": 70
+     }
+    ],
+    "vex_heatmap_png": "vex_heatmap_MSFT.png"
+   },
+   {
+    "as_of": "2026-11-06 10:49 AM EST",
+    "call_wall": 345.0,
+    "flip": 344.16,
+    "flip_note": null,
+    "gex_heatmap_png": "gex_heatmap_AAPL.png",
+    "heatmap": {
+     "expiries": [
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-11",
+      "2026-11-13",
+      "2026-11-20",
+      "2026-11-27",
+      "2026-12-04",
+      "2026-12-11"
+     ],
+     "nodes": {
+      "king": {
+       "dist_pct": -0.69,
+       "expiry": "2026-11-06",
+       "row_total": -102905233,
+       "strike": 342.5,
+       "value": -92381427
+      },
+      "king_strike": {
+       "dist_pct": -0.69,
+       "net_gex": -102905233,
+       "strike": 342.5
+      },
+      "neg_above": {
+       "dist_pct": 0.76,
+       "net_gex": -17714720,
+       "net_vex": 753990,
+       "strike": 347.5
+      },
+      "neg_below": {
+       "dist_pct": -0.69,
+       "net_gex": -102905233,
+       "net_vex": 2110451,
+       "strike": 342.5
+      },
+      "node_threshold": 15435785,
+      "pos_above": {
+       "dist_pct": 0.04,
+       "net_gex": 65809430,
+       "net_vex": 268427,
+       "strike": 345.0
+      },
+      "pos_below": null,
+      "vex_king": {
+       "dist_pct": 5.84,
+       "expiry": "2026-11-20",
+       "strike": 365.0,
+       "value": 14407642
+      }
+     },
+     "total_gex": 31522919,
+     "total_vex": 85501989,
+     "vex_read": "net VEX +$85.5M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
+    },
+    "net_gex": 141835744,
+    "png": null,
+    "put_wall": 345.0,
+    "regime": "positive",
+    "regime_label": "positive gamma: dealers dampen moves -> mean-reverting / pinning toward big strikes",
+    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
+    "spot": 344.87,
+    "spot_vs_flip": "above flip",
+    "ticker": "AAPL",
+    "top_strikes": [
+     {
+      "call_gex": 118693075,
+      "net_gex": 105649311,
+      "put_gex": -13043765,
+      "strike": 360.0
+     },
+     {
+      "call_gex": 7619077,
+      "net_gex": -102905233,
+      "put_gex": -110524310,
+      "strike": 342.5
+     },
+     {
+      "call_gex": 83286064,
+      "net_gex": 81583998,
+      "put_gex": -1702065,
+      "strike": 365.0
+     },
+     {
+      "call_gex": 86235667,
+      "net_gex": -71548377,
+      "put_gex": -157784044,
+      "strike": 340.0
+     },
+     {
+      "call_gex": 331657614,
+      "net_gex": 66500328,
+      "put_gex": -265157285,
+      "strike": 345.0
+     }
+    ],
+    "unusual_0dte_count": 3,
+    "unusual_count": 7,
+    "unusual_flow": [
+     {
+      "est_premium": 1562510,
+      "expiry": "2026-11-09",
+      "mid": 4.1,
+      "moneyness": -0.7,
+      "oi": 398,
+      "strike": 342.5,
+      "type": "call",
+      "vol_oi": 9.6,
+      "volume": 3811
+     },
+     {
+      "est_premium": 1181250,
+      "expiry": "2026-11-13",
+      "mid": 6.3,
+      "moneyness": -0.7,
+      "oi": 467,
+      "strike": 342.5,
+      "type": "call",
+      "vol_oi": 4.0,
+      "volume": 1875
+     },
+     {
+      "est_premium": 681355,
+      "expiry": "2026-11-13",
+      "mid": 1.27,
+      "moneyness": -5.8,
+      "oi": 1708,
+      "strike": 325.0,
+      "type": "put",
+      "vol_oi": 3.1,
+      "volume": 5365
+     },
+     {
+      "est_premium": 599850,
+      "expiry": "2026-11-13",
+      "mid": 3.88,
+      "moneyness": 0.8,
+      "oi": 491,
+      "strike": 347.5,
+      "type": "call",
+      "vol_oi": 3.2,
+      "volume": 1548
+     },
+     {
+      "est_premium": 441900,
+      "expiry": "2026-11-13",
+      "mid": 36.83,
+      "moneyness": -10.8,
+      "oi": 22,
+      "strike": 307.5,
+      "type": "call",
+      "vol_oi": 5.5,
+      "volume": 120
+     }
+    ],
+    "vex_heatmap_png": "vex_heatmap_AAPL.png"
+   },
+   {
+    "as_of": "2026-11-06 10:49 AM EST",
+    "call_wall": 410.0,
+    "flip": 398.57,
+    "flip_note": null,
+    "gex_heatmap_png": "gex_heatmap_TSM.png",
+    "heatmap": {
+     "expiries": [
+      "2026-11-06",
+      "2026-11-13",
+      "2026-11-20",
+      "2026-11-27",
+      "2026-12-04",
+      "2026-12-11",
+      "2026-12-18"
+     ],
+     "nodes": {
+      "king": {
+       "dist_pct": 0.36,
+       "expiry": "2026-11-06",
+       "row_total": -40800396,
+       "strike": 375.0,
+       "value": -39477150
+      },
+      "king_strike": {
+       "dist_pct": 0.36,
+       "net_gex": -40800396,
+       "strike": 375.0
+      },
+      "neg_above": {
+       "dist_pct": 0.36,
+       "net_gex": -40800396,
+       "net_vex": -145670,
+       "strike": 375.0
+      },
+      "neg_below": {
+       "dist_pct": -0.98,
+       "net_gex": -25518505,
+       "net_vex": 228265,
+       "strike": 370.0
+      },
+      "node_threshold": 6120059,
+      "pos_above": null,
+      "pos_below": null,
+      "vex_king": {
+       "dist_pct": 9.73,
+       "expiry": "2026-12-04",
+       "strike": 410.0,
+       "value": 1583124
+      }
+     },
+     "total_gex": -162858956,
+     "total_vex": 2374570,
+     "vex_read": "net VEX +$2.4M per vol point: if IV falls (vol crush) dealers buy -> supportive; if IV spikes dealers sell -> adds downside pressure"
+    },
+    "net_gex": -173311139,
+    "png": null,
+    "put_wall": 375.0,
+    "regime": "negative",
+    "regime_label": "negative gamma: dealers amplify moves -> trend / higher volatility, expect bigger ranges",
+    "source": "Yahoo Finance options via yfinance (free, may be ~15 min delayed)",
+    "spot": 373.66,
+    "spot_vs_flip": "below flip",
+    "ticker": "TSM",
+    "top_strikes": [
+     {
+      "call_gex": 13090219,
+      "net_gex": -40800396,
+      "put_gex": -53890614,
+      "strike": 375.0
+     },
+     {
+      "call_gex": 5330139,
+      "net_gex": -25518505,
+      "put_gex": -30848644,
+      "strike": 370.0
+     },
+     {
+      "call_gex": 4757187,
+      "net_gex": -21742613,
+      "put_gex": -26499800,
+      "strike": 360.0
+     },
+     {
+      "call_gex": 1508172,
+      "net_gex": -14653762,
+      "put_gex": -16161934,
+      "strike": 350.0
+     },
+     {
+      "call_gex": 11489381,
+      "net_gex": -14206556,
+      "put_gex": -25695937,
+      "strike": 400.0
+     }
+    ],
+    "unusual_0dte_count": 7,
+    "unusual_count": 1,
+    "unusual_flow": [
+     {
+      "est_premium": 379660,
+      "expiry": "2026-11-13",
+      "mid": 4.1,
+      "moneyness": 5.0,
+      "oi": 76,
+      "strike": 392.5,
+      "type": "call",
+      "vol_oi": 12.2,
+      "volume": 926
+     }
+    ],
+    "vex_heatmap_png": "vex_heatmap_TSM.png"
    }
   ]
  },
@@ -1679,9 +1755,9 @@
  "peak_value": 10025.0,
  "positions": [],
  "positions_value": 0,
- "published_at": "2026-11-06 10:47:48 AM EST",
- "published_epoch_ms": 1793980068747,
- "server_time": "2026-11-06 10:47:48 AM EST",
+ "published_at": "2026-11-06 10:49:50 AM EST",
+ "published_epoch_ms": 1793980190262,
+ "server_time": "2026-11-06 10:49:50 AM EST",
  "start_date": "2026-10-21",
  "starting_cash": 10000.0,
  "strategy_b": {
