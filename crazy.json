@@ -6,8 +6,8 @@
  "bust_threshold": 20.0,
  "busted": false,
  "buying_power": 17.0,
- "cash": 17.0,
- "closed_trades": 15,
+ "cash": 101.0,
+ "closed_trades": 16,
  "drawdown": -0.39534883720930236,
  "error": null,
  "goal": "Grow $1,000 to $100,000 as fast as possible (paper).",
@@ -1916,54 +1916,6 @@
   },
   {
    "contracts": 1.0,
-   "detail": "NVDA +182.5P 2026-11-13 / -177.5P 2026-11-13",
-   "entry": 2.1,
-   "expires_today": false,
-   "gamma_check": "neg gamma spot 184 flip 197.5 PW 190 already above spot; momentum thru 180 node; stop 188",
-   "high_water": 2.1,
-   "id": "C20",
-   "kind": "option",
-   "last": 0.84,
-   "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-06T10:04:53-05:00",
-   "legs": [
-    {
-     "expiration": "2026-11-13",
-     "right": "put",
-     "side": "long",
-     "strike": 182.5
-    },
-    {
-     "expiration": "2026-11-13",
-     "right": "put",
-     "side": "short",
-     "strike": 177.5
-    }
-   ],
-   "mark_method": "liq",
-   "mark_valid": true,
-   "mid": 0.87,
-   "multiplier": 100,
-   "must_close": false,
-   "opened": "2026-11-05T14:16:42-05:00",
-   "source": "own / gex PW 190 broken",
-   "stop": 1.05,
-   "stop_watch": {
-    "consecutive_valid_at_or_below_stop": 2,
-    "rule": "stop hit only after 2 consecutive VALID marks (from 09:35 ET; mid if quotes wide) at/beyond stop",
-    "stop_confirmed": true
-   },
-   "symbol": "NVDA",
-   "target": 177.5,
-   "target_hit": false,
-   "thesis": "NVDA ~184 already thru PW 190, flip 197.5 neg; 5-wide put debit for continuation",
-   "underlying": "NVDA",
-   "underlying_last": 192.7401,
-   "unrealized_pct": -0.6,
-   "unrealized_pnl": -126.0
-  },
-  {
-   "contracts": 1.0,
    "detail": "QQQ +655P 2026-11-13 / -650P 2026-11-13",
    "entry": 2.34,
    "expires_today": false,
@@ -2011,11 +1963,11 @@
    "unrealized_pnl": -93.0
   }
  ],
- "positions_value": 1127.0,
- "published_at": "2026-11-06 10:05:05 AM EST",
- "published_epoch_ms": 1793977505090,
- "realized_pnl": 309.0,
- "server_time": "2026-11-06 10:05:05 AM EST",
+ "positions_value": 1043.0,
+ "published_at": "2026-11-06 10:06:07 AM EST",
+ "published_epoch_ms": 1793977567063,
+ "realized_pnl": 183.0,
+ "server_time": "2026-11-06 10:06:07 AM EST",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
@@ -2783,7 +2735,38 @@
    "thesis": "Neg-gamma QQQ below flip 695; spot thru prior PW, continuation put debit at 655/650 toward 645",
    "time": "2026-11-05T14:47:40-05:00",
    "value_after": 1501.0
+  },
+  {
+   "action": "CLOSE",
+   "cash_flow": 84.0,
+   "detail": "NVDA +182.5P 2026-11-13 / -177.5P 2026-11-13",
+   "entry": 2.1,
+   "exit_quotes": {
+    "legs": [
+     {
+      "ask": 2.53,
+      "bid": 2.49,
+      "leg": "long 182.5P 2026-11-13"
+     },
+     {
+      "ask": 1.65,
+      "bid": 1.63,
+      "leg": "short 177.5P 2026-11-13"
+     }
+    ],
+    "source": "Nasdaq public option chain",
+    "underlying": 192.7401
+   },
+   "id": "C20",
+   "pnl": -126.0,
+   "pnl_pct": -0.6,
+   "price": 0.84,
+   "qty": 1.0,
+   "reason": "STOP CONFIRMED: last 0.84 below stop 1.05 on 2 valid marks",
+   "symbol": "NVDA",
+   "time": "2026-11-06T10:05:49-05:00",
+   "value_after": 1144.0
   }
  ],
- "win_rate": 0.5333333333333333
+ "win_rate": 0.5
 }
