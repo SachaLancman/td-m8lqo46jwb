@@ -1,9 +1,9 @@
 {
- "account_value": 9425.6,
+ "account_value": 9422.17,
  "alerts": [],
  "cash": 3010.27,
  "closed_trades": 2,
- "drawdown": -0.0654592937999029,
+ "drawdown": -0.06579937555833393,
  "error": null,
  "history": [
   {
@@ -28,7 +28,7 @@
   },
   {
    "date": "2026-11-06",
-   "value": 9425.6
+   "value": 9422.17
   }
  ],
  "intraday": [
@@ -795,6 +795,10 @@
   {
    "t": "2026-11-06T11:48-05:00",
    "value": 9425.6
+  },
+  {
+   "t": "2026-11-06T12:06-05:00",
+   "value": 9422.17
   }
  ],
  "last_signals": {
@@ -1639,7 +1643,7 @@
   ],
   "report": "reports/2026-11-06/copycat.md"
  },
- "marked_at": "2026-11-06T11:48:48-05:00",
+ "marked_at": "2026-11-06T12:06:41-05:00",
  "mode": "paper",
  "name": "Copycat $10K (PAPER)",
  "notes": "# Copycat scan 2026-11-06 10:05 ET (paper, free data)\n\nAccount: $9,461.15 value, $4,714.54 cash, 5/10 positions. Rules: copycat/COPYCAT.md.\n\n## (a) Congress: House PTRs\nWindow: filed since 2026-10-23 (buys must be filed within ~10 days to count). Source: House Clerk.\n\nNew filings this scan: 3 (of 19 in window)\n- [Maria Elvira Salazar FL27 doc 20035778](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035778.pdf) filed 2026-11-05: 5 rows\n- [Daniel Meuser PA09 doc 20035662](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035662.pdf) filed 2026-11-05: 1 rows\n- [Mike Kelly PA16 doc 20035765](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035765.pdf) filed 2026-11-04: 2 rows\n\n| | Member | Ticker | Type | Amount | Traded | Delay | Held? | Filing |\n|---|---|---|---|---|---|---|---|---|\n| SELL | Maria Elvira Salazar | CSCO | sale (self) | $1,001 - $15,000 | 2026-10-23 | 13d |  | [20035778](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035778.pdf) |\n| BUY | Maria Elvira Salazar | NVDA | purchase (self) | $1,001 - $15,000 | 2026-10-23 | 13d | copycat | [20035778](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035778.pdf) |\n| BUY | Maria Elvira Salazar | NVDA | purchase (self) | $1,001 - $15,000 | 2026-10-23 | 13d | copycat | [20035778](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035778.pdf) |\n| BUY | Maria Elvira Salazar | PG | purchase (self) | $1,001 - $15,000 | 2026-10-23 | 13d |  | [20035778](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035778.pdf) |\n| BUY | Maria Elvira Salazar | PG | purchase (self) | $1,001 - $15,000 | 2026-10-23 | 13d |  | [20035778](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035778.pdf) |\n| SELL | Daniel Meuser | NVDA | partial sale (spouse) | $1,001 - $15,000 | 2026-09-25 | 41d | copycat | [20035662](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035662.pdf) |\n\nAlso 2 non-stock rows (bonds, treasuries, private funds) skipped.\n\n### Ranked BUY candidates (filed <= 10 days; score = amount tier + repeat buys + 2 x extra members + good-record bonus)\n\n| Ticker | Score | Buys | Members | Biggest amount | Price | Liquidity | Earnings | Qualifies |\n|---|---|---|---|---|---|---|---|---|\n| MU | 3 | 3 | McGuire | $1,001 - $15,000 | 712.94 | liquid: mcap $807B, avg $vol $18,331M/day | earnings 2026-12-16 (28 trading days away) | YES (held: Webull (Sacha, real)) |\n| NVDA | 2 | 2 | Salazar | $1,001 - $15,000 | 193.08 | liquid: mcap $4,652B, avg $vol $22,211M/day | earnings 2026-11-17 (7 trading days away) | no (held: copycat) |\n| PG | 2 | 2 | Salazar | $1,001 - $15,000 | 165.2001 | liquid: mcap $383B, avg $vol $1,086M/day | earnings date unknown (Earnings announcement* for PG:  Our vendor, Zacks Investment Research, hasn't pr) | YES |\n| PLD | 2 | 2 | Taylor | $1,001 - $15,000 | 127.93 | liquid: mcap $122B, avg $vol $378M/day | earnings date unknown (Earnings announcement* for PLD:  Our vendor, Zacks Investment Research, hasn't p) | no (held: copycat) |\n| FMAO | 1 | 1 | Latta | $1,001 - $15,000 | 36.23 | market cap $0.5B < $2B | earnings date unknown (Earnings announcement* for FMAO:  Our vendor, Zacks Investment Research, hasn't ) | no |\n| TXN | 1 | 1 | Kean | $1,001 - $15,000 | 278.01 | liquid: mcap $254B, avg $vol $1,799M/day | earnings date unknown (Earnings announcement* for TXN:  Our vendor, Zacks Investment Research, hasn't p) | no (held: copycat) |\n| ESAB | 1 | 1 | Kean | $1,001 - $15,000 | 79.915 | avg $ volume $0M < $20M | earnings date unknown (Earnings announcement* for ESAB:  Our vendor, Zacks Investment Research, hasn't ) | no |\n| T | 1 | 1 | Taylor | $1,001 - $15,000 | 21.645 | liquid: mcap $146B, avg $vol $755M/day | earnings date unknown (Earnings announcement* for T:  Our vendor, Zacks Investment Research, hasn't pro) | no (held: copycat) |\n\n## (b) 13F: tracked investors\nSEC EDGAR refused (403 Forbidden: SEC rejects the configured User-Agent contact (a users.noreply.github.com address)); used the 13f.info mirror of the same EDGAR 13F filings. Q3 2026 13Fs are due by **Fri Nov 14, 2026**; entry signals only from a 13F filed in the last 30 days.\n\n- **Berkshire Hathaway** (Buffett/Abel): latest Q2-2026 filed 2026-08-14 (84d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001067983&type=13F-HR) / [13f.info](https://13f.info/manager/0001067983-berkshire-hathaway-inc)\n- **Scion Asset Mgmt** (Michael Burry): latest Q3-2025 filed 2025-11-03 (368d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001649339&type=13F-HR) / [13f.info](https://13f.info/manager/0001649339-scion-asset-management-llc)\n- **Pershing Square** (Bill Ackman): latest Q1-2026 filed 2026-05-15 (175d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001336528&type=13F-HR) / [13f.info](https://13f.info/manager/0001336528-pershing-square-capital-management-l-p)\n- **Duquesne Family Office** (Stan Druckenmiller): latest Q2-2026 filed 2026-08-14 (84d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001536411&type=13F-HR) / [13f.info](https://13f.info/manager/0001536411-duquesne-family-office-llc)\n- **Appaloosa** (David Tepper): latest Q2-2026 filed 2026-08-14 (84d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001656456&type=13F-HR) / [13f.info](https://13f.info/manager/0001656456-appaloosa-lp)\n- **Situational Awareness LP** (Leopold Aschenbrenner): latest Q2-2026 filed 2026-08-14 (84d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002045724&type=13F-HR) / [13f.info](https://13f.info/manager/0002045724-situational-awareness-lp)\n\n## (c) News / 8-K on held tickers (GOOGL, MU, NBIS, NVDA, PLD, RPM, T, TSM, TXN, VOO, VST)\n\n- GOOGL [headline] [IREN stock soars, driven by massive gains in AI cloud sales](https://finance.yahoo.com/video/iren-stock-soars-driven-by-massive-gains-in-ai-cloud-sales-145935931.html?.tsrc=rss) (Yahoo Finance, 2026-11-06T14:59) tags: earnings\n- GOOGL [headline] [USA Today Co Inc (TDAY) (Q3 2026) Earnings Call Highlights: Digital Subscriptions Shine as Cost ...](https://finance.yahoo.com/media-advertising/articles/usa-today-co-inc-tday-131000399.html?.tsrc=rss) (Yahoo Finance, 2026-11-06T13:10) tags: earnings\n- GOOGL [headline] [The Zacks Analyst Blog Highlights Microsoft, Amazon, Alphabet, Nextpower and Centene](https://finance.yahoo.com/markets/stocks/articles/zacks-analyst-blog-highlights-microsoft-125800453.html?.tsrc=rss) (Yahoo Finance, 2026-11-06T12:58) tags: earnings\n- GOOGL [headline] [TeraWulf Rises 4% After Q3 Beat and Google-Backed Anthropic Lease; IREN Surges 17%, Cipher Digital Climbs 6%](https://247wallst.com/investing/2026/11/06/terawulf-rises-4-after-q3-beat-and-google-backed-anthropic-lease-iren-surges-17-cipher-mining-climbs-6/?.tsrc=rss) (Yahoo Finance, 2026-11-06T14:54)\n- NVDA [headline] [This Chip CEO Just Warned the Data Center Market Is in a 'Bubble.' Which Stocks Are Most Exposed?](https://www.fool.com/investing/2026/11/06/this-chip-ceo-just-warned-the-data-center-market-is-in-a-bubble-which-stocks-are-most-exposed/?.tsrc=rss) (Yahoo Finance, 2026-11-06T14:40) tags: people\n- NVDA [headline] [Jensen Huang Says Nvidia's Next-Gen Vera Rubin Chips Will Generate $40 Billion in Revenue per Gigawatt, Up From $25 Billion for Grace Blackwell. What That Means for Nvidia's Growth Runway?](https://www.fool.com/investing/2026/11/06/jensen-huang-says-nvidias-next-gen-vera-rubin-chip/?.tsrc=rss) (Yahoo Finance, 2026-11-06T14:35) tags: earnings\n- NVDA [headline] [AMD\u2019s Data Center Sales Nearly Doubled and the Stock Is Jumping. Where Does the Price Target Go Now?](https://247wallst.com/investing/2026/11/06/amds-data-center-sales-nearly-doubled-and-the-stock-is-jumping-where-does-the-price-target-go-now/?.tsrc=rss) (Yahoo Finance, 2026-11-06T14:33) tags: analyst\n- NVDA [headline] [Cybertruck's Days Are Numbered. Here's What Tesla Has Planned.](https://www.fool.com/investing/2026/11/06/cybertruck-s-days-are-numbered-here-s-what-tesla-has-planned/?.tsrc=rss) (Yahoo Finance, 2026-11-06T14:51)\n- TXN [headline] [Global Embedded Microcontroller Unit Market Report 2026: Forecast to 2030 | Capitalize on AI, IoT and 32-Bit Demand with Texas Instruments, Infineon, NXP and STMicroelectronics](https://finance.yahoo.com/technology/articles/global-embedded-microcontroller-unit-market-140200472.html?.tsrc=rss) (Yahoo Finance, 2026-11-06T14:02) tags: earnings,capital\n- TXN [headline] [General Purpose Microcontroller Unit (MCU) Global Market Report 2026 | Capture $20.29 Billion by 2030 as STMicroelectronics, TI, Infineon and NXP Accelerate Ultra-Low-Power IoT](https://finance.yahoo.com/technology/articles/general-purpose-microcontroller-unit-mcu-140100130.html?.tsrc=rss) (Yahoo Finance, 2026-11-06T14:01) t",
@@ -1652,9 +1656,9 @@
    "entry": 202.63,
    "high_water": 209.29,
    "id": "C1",
-   "last": 187.94,
+   "last": 188.52,
    "last_note": "",
-   "last_updated": "2026-11-06T11:48:48-05:00",
+   "last_updated": "2026-11-06T12:06:41-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-10-30T14:07:15-04:00",
@@ -1666,8 +1670,8 @@
    "thesis": "Top-ranked Congress signal (repeat buyer x3, score 3); mega-cap liquid; earnings 11/17 is 12 trading days out; buying into today's AI/tech sell-off",
    "tp1": 253.29,
    "tp1_done": false,
-   "unrealized_pct": -0.0725,
-   "unrealized_pnl": -73.45
+   "unrealized_pct": -0.0696,
+   "unrealized_pnl": -70.55
   },
   {
    "cost": 1030.08,
@@ -1675,9 +1679,9 @@
    "entry": 128.76,
    "high_water": 145.12,
    "id": "C2",
-   "last": 128.06,
+   "last": 128.09,
    "last_note": "",
-   "last_updated": "2026-11-06T11:48:48-05:00",
+   "last_updated": "2026-11-06T12:06:41-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-10-30T14:07:15-04:00",
@@ -1689,8 +1693,8 @@
    "thesis": "Freshest filing (yesterday) and a repeat buy (score 2); liquid large-cap REIT; Q3 earnings already reported mid-Oct",
    "tp1": 160.95,
    "tp1_done": false,
-   "unrealized_pct": -0.0054,
-   "unrealized_pnl": -5.6
+   "unrealized_pct": -0.0052,
+   "unrealized_pnl": -5.36
   },
   {
    "cost": 983.02,
@@ -1700,7 +1704,7 @@
    "id": "C4",
    "last": 21.57,
    "last_note": "",
-   "last_updated": "2026-11-06T11:48:48-05:00",
+   "last_updated": "2026-11-06T12:06:41-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-11-02T09:38:22-05:00",
@@ -1721,9 +1725,9 @@
    "entry": 105.81,
    "high_water": 110.68,
    "id": "C5",
-   "last": 104.35,
+   "last": 104.22,
    "last_note": "",
-   "last_updated": "2026-11-06T11:48:48-05:00",
+   "last_updated": "2026-11-06T12:06:41-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-11-02T09:38:23-05:00",
@@ -1735,8 +1739,8 @@
    "thesis": "Copy Rep. Taylor's repeat RPM International buy (also bought 10/09); liquid coatings/industrial",
    "tp1": 132.26,
    "tp1_done": false,
-   "unrealized_pct": -0.0138,
-   "unrealized_pnl": -13.14
+   "unrealized_pct": -0.015,
+   "unrealized_pnl": -14.31
   },
   {
    "cost": 929.7,
@@ -1744,9 +1748,9 @@
    "entry": 309.9,
    "high_water": 316.5,
    "id": "C7",
-   "last": 276.71,
+   "last": 274.62,
    "last_note": "",
-   "last_updated": "2026-11-06T11:48:48-05:00",
+   "last_updated": "2026-11-06T12:06:41-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-11-03T09:41:44-05:00",
@@ -1758,8 +1762,8 @@
    "thesis": "Copy Rep. Kean's TXN buy",
    "tp1": 387.38,
    "tp1_done": false,
-   "unrealized_pct": -0.1071,
-   "unrealized_pnl": -99.57
+   "unrealized_pct": -0.1138,
+   "unrealized_pnl": -105.84
   },
   {
    "cost": 710.55,
@@ -1767,9 +1771,9 @@
    "entry": 710.55,
    "high_water": 710.55,
    "id": "C8",
-   "last": 693.71,
+   "last": 695.0,
    "last_note": "",
-   "last_updated": "2026-11-06T11:48:48-05:00",
+   "last_updated": "2026-11-06T12:06:41-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-11-06T10:07:23-05:00",
@@ -1781,8 +1785,8 @@
    "thesis": "Congress buy: McGuire disclosed MU purchase; qualifies score 3, liquid mega-cap, earnings 12/16",
    "tp1": 888.19,
    "tp1_done": false,
-   "unrealized_pct": -0.0237,
-   "unrealized_pnl": -16.84
+   "unrealized_pct": -0.0219,
+   "unrealized_pnl": -15.55
   },
   {
    "cost": 993.72,
@@ -1790,9 +1794,9 @@
    "entry": 165.62,
    "high_water": 166.79,
    "id": "C9",
-   "last": 165.99,
+   "last": 165.92,
    "last_note": "",
-   "last_updated": "2026-11-06T11:48:48-05:00",
+   "last_updated": "2026-11-06T12:06:41-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-11-06T10:08:30-05:00",
@@ -1804,20 +1808,20 @@
    "thesis": "Congress buy: Salazar disclosed PG purchases (2 rows); qualifies score 2, liquid large-cap consumer staple",
    "tp1": 207.03,
    "tp1_done": false,
-   "unrealized_pct": 0.0022,
-   "unrealized_pnl": 2.22
+   "unrealized_pct": 0.0018,
+   "unrealized_pnl": 1.8
   }
  ],
- "positions_value": 6415.33,
- "published_at": "2026-11-06 11:48:59 AM EST",
- "published_epoch_ms": 1793983739090,
+ "positions_value": 6411.9,
+ "published_at": "2026-11-06 12:06:56 PM EST",
+ "published_epoch_ms": 1793984816242,
  "realized_pnl": -377.22,
- "server_time": "2026-11-06 11:48:59 AM EST",
+ "server_time": "2026-11-06 12:06:56 PM EST",
  "start_date": "2026-10-30",
  "starting_cash": 10000.0,
  "status": "active",
  "today": "2026-11-06",
- "total_return": -0.057439999999999936,
+ "total_return": -0.05778300000000003,
  "trades": [
   {
    "closed_at": "2026-11-05T15:46:14-05:00",
