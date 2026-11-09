@@ -6,7 +6,7 @@
  "bust_threshold": 20.0,
  "busted": false,
  "buying_power": 153.0,
- "cash": 153.0,
+ "cash": 27.0,
  "closed_trades": 19,
  "drawdown": -0.4667019027484144,
  "error": null,
@@ -1674,7 +1674,7 @@
  "mode": "paper",
  "multiple": 1.009,
  "name": "Crazy $1K (Grok Bot, paper)",
- "notes": "- 09:38 ET: Crazy mark-only, value $1,062.00, cash $30, 7 open (C15-C22), no ALERTs, no cash for new positions.\n- 10:12 ET: closed C19 IWM 270/265P (-$127), C21 QQQ 655/650P (-$150), C22 IWM 265/260P (-$61) on confirmed stops after the rally (marks match underlying). Held C15 GLD 375/385C (1 contract, +27%, below the 40% sell-all rule). Skipped NBIS whale copy: strike unknown, whale gex check returned no data, weekly premium very rich. Value $1,014, cash $153.\n- 10:48 ET: value $994, cash $153. C15 GLD TP25 alert at +25% but 1 contract (<40%) so held. Considered AVGO 11/27 340/345C (~$150) off the $10.9M whale LEAPS; skipped - gamma pins 320 with flip 331, would use all cash.\n- 11:10 ET: value $998, cash $153. Held C15 GLD (+28%, 1 contract, <40%); $1.5M GLD whale calls back it. No new open.\n",
+ "notes": "- 09:38 ET: Crazy mark-only, value $1,062.00, cash $30, 7 open (C15-C22), no ALERTs, no cash for new positions.\n- 10:12 ET: closed C19 IWM 270/265P (-$127), C21 QQQ 655/650P (-$150), C22 IWM 265/260P (-$61) on confirmed stops after the rally (marks match underlying). Held C15 GLD 375/385C (1 contract, +27%, below the 40% sell-all rule). Skipped NBIS whale copy: strike unknown, whale gex check returned no data, weekly premium very rich. Value $1,014, cash $153.\n- 10:48 ET: value $994, cash $153. C15 GLD TP25 alert at +25% but 1 contract (<40%) so held. Considered AVGO 11/27 340/345C (~$150) off the $10.9M whale LEAPS; skipped - gamma pins 320 with flip 331, would use all cash.\n- 11:10 ET: value $998, cash $153. Held C15 GLD (+28%, 1 contract, <40%); $1.5M GLD whale calls back it. No new open.\n- 11:39 ET: OPENED C23 CCJ 12/18 +85C/-95C x1 at $1.26 ($126, max value $1,000), copying the $2M CCJ 85C whale; stop 0.60. C15 GLD held (+27%, 1 contract). Value $1,009, cash $27.\n",
  "notes_date": "2026-11-09",
  "peak_value": 1892.0,
  "positions": [
@@ -1869,13 +1869,50 @@
    "underlying_last": 749.86,
    "unrealized_pct": -0.7689,
    "unrealized_pnl": -173.0
+  },
+  {
+   "contracts": 1.0,
+   "detail": "CCJ +85C 2026-12-18 / -95C 2026-12-18",
+   "entry": 1.26,
+   "gamma_check": "CCJ 74.19 net -16.5M, CW=PW 75 pin just above spot, negative; mild headwind, 5+ weeks to expiry",
+   "high_water": 1.26,
+   "id": "C23",
+   "kind": "option",
+   "last": 1.26,
+   "legs": [
+    {
+     "expiration": "2026-12-18",
+     "right": "call",
+     "side": "long",
+     "strike": 85.0
+    },
+    {
+     "expiration": "2026-12-18",
+     "right": "call",
+     "side": "short",
+     "strike": 95.0
+    }
+   ],
+   "mark_method": "fill",
+   "mark_valid": true,
+   "multiplier": 100,
+   "opened": "2026-11-09T11:39:55-05:00",
+   "source": "@FlowbyBobby https://x.com/FlowbyBobby/status/2119831706064789978 + @FL0WG0D $1.8M CCJ calls",
+   "stop": 0.6,
+   "stop_watch": {
+    "consecutive_valid_at_or_below_stop": 0
+   },
+   "symbol": "CCJ",
+   "target": null,
+   "thesis": "Copy $2M CCJ 85C 12/18 whale (11,635 vol vs 2,306 OI) as a cheap 85/95 call spread; earnings already out (10/30)",
+   "underlying": "CCJ"
   }
  ],
- "positions_value": 856.0,
- "published_at": "2026-11-09 11:39:47 AM EST",
- "published_epoch_ms": 1794242387990,
+ "positions_value": 982.0,
+ "published_at": "2026-11-09 11:40:50 AM EST",
+ "published_epoch_ms": 1794242450198,
  "realized_pnl": -155.0,
- "server_time": "2026-11-09 11:39:48 AM EST",
+ "server_time": "2026-11-09 11:40:50 AM EST",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
@@ -2781,6 +2818,20 @@
    "symbol": "IWM",
    "time": "2026-11-09T10:13:13-05:00",
    "value_after": 1014.0
+  },
+  {
+   "action": "OPEN",
+   "cash_flow": -126.0,
+   "detail": "CCJ +85C 2026-12-18 / -95C 2026-12-18",
+   "gamma_check": "CCJ 74.19 net -16.5M, CW=PW 75 pin just above spot, negative; mild headwind, 5+ weeks to expiry",
+   "id": "C23",
+   "price": 1.26,
+   "qty": 1.0,
+   "source": "@FlowbyBobby https://x.com/FlowbyBobby/status/2119831706064789978 + @FL0WG0D $1.8M CCJ calls",
+   "symbol": "CCJ",
+   "thesis": "Copy $2M CCJ 85C 12/18 whale (11,635 vol vs 2,306 OI) as a cheap 85/95 call spread; earnings already out (10/30)",
+   "time": "2026-11-09T11:39:55-05:00",
+   "value_after": 1009.0
   }
  ],
  "win_rate": 0.42105263157894735
