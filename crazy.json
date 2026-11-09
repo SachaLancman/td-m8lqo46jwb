@@ -1,16 +1,19 @@
 {
- "account_value": 1062.0,
- "alerts": [],
+ "account_value": 1059.0,
+ "alerts": [
+  "C19: STOP CONFIRMED (last 0.44, stop 0.78)",
+  "C22: STOP CONFIRMED (last 0.17, stop 0.35)"
+ ],
  "bust_threshold": 20.0,
  "busted": false,
  "buying_power": 30.0,
  "cash": 30.0,
  "closed_trades": 16,
- "drawdown": -0.4386892177589852,
+ "drawdown": -0.4402748414376322,
  "error": null,
  "goal": "Grow $1,000 to $100,000 as fast as possible (paper).",
- "goal_progress_linear": 0.01062,
- "goal_progress_log": 0.013062258372725141,
+ "goal_progress_linear": 0.01059,
+ "goal_progress_log": 0.012447980053742489,
  "goal_target": 100000.0,
  "history": [
   {
@@ -63,14 +66,10 @@
   },
   {
    "date": "2026-11-09",
-   "value": 1062.0
+   "value": 1059.0
   }
  ],
  "intraday": [
-  {
-   "t": "2026-10-26T14:16-04:00",
-   "value": 975.0
-  },
   {
    "t": "2026-10-26T14:22-04:00",
    "value": 975.0
@@ -1666,11 +1665,15 @@
   {
    "t": "2026-11-09T09:38-05:00",
    "value": 1062.0
+  },
+  {
+   "t": "2026-11-09T09:40-05:00",
+   "value": 1059.0
   }
  ],
- "marked_at": "2026-11-09T09:38:23-05:00",
+ "marked_at": "2026-11-09T09:40:02-05:00",
  "mode": "paper",
- "multiple": 1.062,
+ "multiple": 1.059,
  "name": "Crazy $1K (Grok Bot, paper)",
  "notes": "- 09:38 ET: Crazy mark-only, value $1,062.00, cash $30, 7 open (C15-C22), no ALERTs, no cash for new positions.\n",
  "notes_date": "2026-11-09",
@@ -1687,7 +1690,7 @@
    "kind": "option",
    "last": 4.25,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-09T09:38:23-05:00",
+   "last_updated": "2026-11-09T09:40:02-05:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1720,7 +1723,7 @@
    "target_hit": false,
    "thesis": "Follow $2.1M GLD call whale; positive gamma above 365.8 flip, CW 400",
    "underlying": "GLD",
-   "underlying_last": 377.36,
+   "underlying_last": 378.2703,
    "unrealized_pct": 0.1333,
    "unrealized_pnl": 50.0
   },
@@ -1735,7 +1738,7 @@
    "kind": "option",
    "last": 0.38,
    "last_note": "no usable live quotes (no live bid/ask for 42.5C 2026-12-18); previous mark kept",
-   "last_updated": "2026-11-09T09:38:23-05:00",
+   "last_updated": "2026-11-09T09:40:02-05:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1783,7 +1786,7 @@
    "kind": "option",
    "last": 2.2,
    "last_note": "wide quotes (55C 2.15/3.00 (33% of mid)): mid used, not liquidation",
-   "last_updated": "2026-11-09T09:38:23-05:00",
+   "last_updated": "2026-11-09T09:40:02-05:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1831,7 +1834,7 @@
    "kind": "option",
    "last": 1.13,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-09T09:38:23-05:00",
+   "last_updated": "2026-11-09T09:40:02-05:00",
    "legs": [
     {
      "expiration": "2026-11-13",
@@ -1864,7 +1867,7 @@
    "target_hit": false,
    "thesis": "Neg-gamma direction: SPY at put wall 735 deeply neg GEX; cheap 725/715P debit thru NFP (11/13)",
    "underlying": "SPY",
-   "underlying_last": 744.42,
+   "underlying_last": 741.63,
    "unrealized_pct": -0.4978,
    "unrealized_pnl": -112.0
   },
@@ -1877,9 +1880,9 @@
    "high_water": 1.57,
    "id": "C19",
    "kind": "option",
-   "last": 0.43,
+   "last": 0.44,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-09T09:38:23-05:00",
+   "last_updated": "2026-11-09T09:40:02-05:00",
    "legs": [
     {
      "expiration": "2026-11-13",
@@ -1903,18 +1906,18 @@
    "source": "own / gex PW 270",
    "stop": 0.78,
    "stop_watch": {
-    "consecutive_valid_at_or_below_stop": 1,
+    "consecutive_valid_at_or_below_stop": 2,
     "rule": "stop hit only after 2 consecutive VALID marks (from 09:35 ET; mid if quotes wide) at/beyond stop",
-    "stop_confirmed": false
+    "stop_confirmed": true
    },
    "symbol": "IWM",
    "target": 265.0,
    "target_hit": false,
    "thesis": "IWM ~272.5 at PW 270, deep neg-gamma (flip 285); tight 5-wide put debit for continuation through wall",
    "underlying": "IWM",
-   "underlying_last": 277.68,
-   "unrealized_pct": -0.7244,
-   "unrealized_pnl": -113.0
+   "underlying_last": 277.7,
+   "unrealized_pct": -0.7179,
+   "unrealized_pnl": -112.0
   },
   {
    "contracts": 1.0,
@@ -1925,9 +1928,9 @@
    "high_water": 2.4,
    "id": "C21",
    "kind": "option",
-   "last": 1.39,
+   "last": 1.34,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-09T09:38:23-05:00",
+   "last_updated": "2026-11-09T09:40:02-05:00",
    "legs": [
     {
      "expiration": "2026-11-13",
@@ -1960,9 +1963,9 @@
    "target_hit": false,
    "thesis": "Neg-gamma QQQ below flip 695; spot thru prior PW, continuation put debit at 655/650 toward 645",
    "underlying": "QQQ",
-   "underlying_last": 667.64,
-   "unrealized_pct": -0.406,
-   "unrealized_pnl": -95.0
+   "underlying_last": 661.75,
+   "unrealized_pct": -0.4274,
+   "unrealized_pnl": -100.0
   },
   {
    "contracts": 1.0,
@@ -1973,9 +1976,9 @@
    "high_water": 0.71,
    "id": "C22",
    "kind": "option",
-   "last": 0.16,
+   "last": 0.17,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-09T09:38:23-05:00",
+   "last_updated": "2026-11-09T09:40:02-05:00",
    "legs": [
     {
      "expiration": "2026-11-13",
@@ -1999,30 +2002,30 @@
    "source": "own (post-NFP neg-gamma continuation)",
    "stop": 0.35,
    "stop_watch": {
-    "consecutive_valid_at_or_below_stop": 1,
+    "consecutive_valid_at_or_below_stop": 2,
     "rule": "stop hit only after 2 consecutive VALID marks (from 09:35 ET; mid if quotes wide) at/beyond stop",
-    "stop_confirmed": false
+    "stop_confirmed": true
    },
    "symbol": "IWM",
    "target": 260.0,
    "target_hit": false,
    "thesis": "Neg-gamma IWM ~272 at PW 270 (flip 283); ladder under C19 270/265 with 265/260P for continuation thru wall",
    "underlying": "IWM",
-   "underlying_last": 277.68,
-   "unrealized_pct": -0.7746,
-   "unrealized_pnl": -55.0
+   "underlying_last": 277.7,
+   "unrealized_pct": -0.7606,
+   "unrealized_pnl": -54.0
   }
  ],
- "positions_value": 1032.0,
- "published_at": "2026-11-09 09:40:01 AM EST",
- "published_epoch_ms": 1794235201854,
+ "positions_value": 1029.0,
+ "published_at": "2026-11-09 09:40:31 AM EST",
+ "published_epoch_ms": 1794235231585,
  "realized_pnl": 183.0,
- "server_time": "2026-11-09 09:40:01 AM EST",
+ "server_time": "2026-11-09 09:40:31 AM EST",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
  "today": "2026-11-09",
- "total_return": 0.062000000000000055,
+ "total_return": 0.05899999999999994,
  "trades": [
   {
    "action": "OPEN",
