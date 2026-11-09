@@ -1,16 +1,18 @@
 {
- "account_value": 986.0,
- "alerts": [],
+ "account_value": 994.0,
+ "alerts": [
+  "C15: TP25 (up 25%): sell half (all if 1 contract and up 40%+) per CRAZY.md"
+ ],
  "bust_threshold": 20.0,
  "busted": false,
  "buying_power": 153.0,
  "cash": 153.0,
  "closed_trades": 19,
- "drawdown": -0.4788583509513742,
+ "drawdown": -0.4746300211416491,
  "error": null,
  "goal": "Grow $1,000 to $100,000 as fast as possible (paper).",
- "goal_progress_linear": 0.00986,
- "goal_progress_log": -0.003061542529394397,
+ "goal_progress_linear": 0.00994,
+ "goal_progress_log": -0.0013068078013433449,
  "goal_target": 100000.0,
  "history": [
   {
@@ -63,14 +65,10 @@
   },
   {
    "date": "2026-11-09",
-   "value": 986.0
+   "value": 994.0
   }
  ],
  "intraday": [
-  {
-   "t": "2026-10-26T15:14-04:00",
-   "value": 950.0
-  },
   {
    "t": "2026-10-26T15:15-04:00",
    "value": 902.0
@@ -1666,11 +1664,15 @@
   {
    "t": "2026-11-09T10:35-05:00",
    "value": 986.0
+  },
+  {
+   "t": "2026-11-09T10:48-05:00",
+   "value": 994.0
   }
  ],
- "marked_at": "2026-11-09T10:35:08-05:00",
+ "marked_at": "2026-11-09T10:48:23-05:00",
  "mode": "paper",
- "multiple": 0.986,
+ "multiple": 0.994,
  "name": "Crazy $1K (Grok Bot, paper)",
  "notes": "- 09:38 ET: Crazy mark-only, value $1,062.00, cash $30, 7 open (C15-C22), no ALERTs, no cash for new positions.\n- 10:12 ET: closed C19 IWM 270/265P (-$127), C21 QQQ 655/650P (-$150), C22 IWM 265/260P (-$61) on confirmed stops after the rally (marks match underlying). Held C15 GLD 375/385C (1 contract, +27%, below the 40% sell-all rule). Skipped NBIS whale copy: strike unknown, whale gex check returned no data, weekly premium very rich. Value $1,014, cash $153.\n",
  "notes_date": "2026-11-09",
@@ -1685,9 +1687,9 @@
    "high_water": 4.8,
    "id": "C15",
    "kind": "option",
-   "last": 4.65,
+   "last": 4.7,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-09T10:35:08-05:00",
+   "last_updated": "2026-11-09T10:48:23-05:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1704,7 +1706,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 4.77,
+   "mid": 4.83,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-11-04T10:48:47-05:00",
@@ -1720,9 +1722,9 @@
    "target_hit": false,
    "thesis": "Follow $2.1M GLD call whale; positive gamma above 365.8 flip, CW 400",
    "underlying": "GLD",
-   "underlying_last": 377.47,
-   "unrealized_pct": 0.24,
-   "unrealized_pnl": 90.0
+   "underlying_last": 377.305,
+   "unrealized_pct": 0.2533,
+   "unrealized_pnl": 95.0
   },
   {
    "contracts": 2.0,
@@ -1733,9 +1735,9 @@
    "high_water": 0.73,
    "id": "C16",
    "kind": "option",
-   "last": 0.41,
+   "last": 0.47,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-09T10:35:08-05:00",
+   "last_updated": "2026-11-09T10:48:23-05:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1752,7 +1754,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 0.47,
+   "mid": 0.51,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-11-04T10:48:53-05:00",
@@ -1768,9 +1770,9 @@
    "target_hit": false,
    "thesis": "Follow $3.6M NKE 45C Sept whale, cheaper Dec spread",
    "underlying": "NKE",
-   "underlying_last": 39.4455,
-   "unrealized_pct": -0.4306,
-   "unrealized_pnl": -62.0
+   "underlying_last": 39.645,
+   "unrealized_pct": -0.3472,
+   "unrealized_pnl": -50.0
   },
   {
    "contracts": 1.0,
@@ -1781,9 +1783,9 @@
    "high_water": 2.85,
    "id": "C17",
    "kind": "option",
-   "last": 2.27,
+   "last": 2.2,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-09T10:35:08-05:00",
+   "last_updated": "2026-11-09T10:48:23-05:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1800,7 +1802,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 2.47,
+   "mid": 2.44,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-11-05T13:44:58-05:00",
@@ -1816,9 +1818,9 @@
    "target_hit": false,
    "thesis": "FL0WG0D $1.1M U 55C Dec whale; cheaper 50/55C debit toward CW 50; Dec expiry past NFP",
    "underlying": "U",
-   "underlying_last": 52.02,
-   "unrealized_pct": 0.1641,
-   "unrealized_pnl": 32.0
+   "underlying_last": 52.098,
+   "unrealized_pct": 0.1282,
+   "unrealized_pnl": 25.0
   },
   {
    "contracts": 1.0,
@@ -1829,9 +1831,9 @@
    "high_water": 2.43,
    "id": "C18",
    "kind": "option",
-   "last": 0.59,
+   "last": 0.57,
    "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-09T10:35:08-05:00",
+   "last_updated": "2026-11-09T10:48:23-05:00",
    "legs": [
     {
      "expiration": "2026-11-13",
@@ -1848,7 +1850,7 @@
    ],
    "mark_method": "liq",
    "mark_valid": true,
-   "mid": 0.6,
+   "mid": 0.58,
    "multiplier": 100,
    "must_close": false,
    "opened": "2026-11-05T13:44:58-05:00",
@@ -1864,21 +1866,21 @@
    "target_hit": false,
    "thesis": "Neg-gamma direction: SPY at put wall 735 deeply neg GEX; cheap 725/715P debit thru NFP (11/13)",
    "underlying": "SPY",
-   "underlying_last": 749.25,
-   "unrealized_pct": -0.7378,
-   "unrealized_pnl": -166.0
+   "underlying_last": 750.07,
+   "unrealized_pct": -0.7467,
+   "unrealized_pnl": -168.0
   }
  ],
- "positions_value": 833.0,
- "published_at": "2026-11-09 10:35:18 AM EST",
- "published_epoch_ms": 1794238518147,
+ "positions_value": 841.0,
+ "published_at": "2026-11-09 10:48:34 AM EST",
+ "published_epoch_ms": 1794239314102,
  "realized_pnl": -155.0,
- "server_time": "2026-11-09 10:35:18 AM EST",
+ "server_time": "2026-11-09 10:48:34 AM EST",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
  "today": "2026-11-09",
- "total_return": -0.014000000000000012,
+ "total_return": -0.006000000000000005,
  "trades": [
   {
    "action": "OPEN",
