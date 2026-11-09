@@ -1,9 +1,9 @@
 {
- "account_value": 9469.08,
+ "account_value": 9478.869999999999,
  "alerts": [],
  "cash": 3010.27,
  "closed_trades": 2,
- "drawdown": -0.061148286553087905,
+ "drawdown": -0.060177615878149626,
  "error": null,
  "history": [
   {
@@ -32,7 +32,7 @@
   },
   {
    "date": "2026-11-09",
-   "value": 9469.08
+   "value": 9478.87
   }
  ],
  "intraday": [
@@ -931,6 +931,10 @@
   {
    "t": "2026-11-09T10:22-05:00",
    "value": 9469.08
+  },
+  {
+   "t": "2026-11-09T10:35-05:00",
+   "value": 9478.87
   }
  ],
  "last_signals": {
@@ -1792,7 +1796,7 @@
   ],
   "report": "reports/2026-11-09/copycat.md"
  },
- "marked_at": "2026-11-09T10:22:25-05:00",
+ "marked_at": "2026-11-09T10:35:08-05:00",
  "mode": "paper",
  "name": "Copycat $10K (PAPER)",
  "notes": "# Copycat scan 2026-11-09 09:38 ET (paper, free data)\n\nAccount: $9,404.42 value, $3,010.27 cash, 7/10 positions. Rules: copycat/COPYCAT.md.\n\n## (a) Congress: House PTRs\nWindow: filed since 2026-10-26 (buys must be filed within ~10 days to count). Source: House Clerk.\n\nNew filings this scan: 1 (of 20 in window)\n- [Josh Gottheimer NJ05 doc 20035770](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035770.pdf) filed 2026-11-05: 3 rows\n\n| | Member | Ticker | Type | Amount | Traded | Delay | Held? | Filing |\n|---|---|---|---|---|---|---|---|---|\n| BUY | Josh Gottheimer | AMAT | purchase (joint) | $1,001 - $15,000 | 2026-10-26 | 10d |  | [20035770](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035770.pdf) |\n| BUY | Josh Gottheimer | BHE | purchase (joint) | $1,001 - $15,000 | 2026-10-12 | 24d |  | [20035770](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035770.pdf) |\n| SELL | Josh Gottheimer | TLK | sale (joint) | $1,001 - $15,000 | 2026-10-15 | 21d |  | [20035770](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035770.pdf) |\n\n### Ranked BUY candidates (filed <= 10 days; score = amount tier + repeat buys + 2 x extra members + good-record bonus)\n\n| Ticker | Score | Buys | Members | Biggest amount | Price | Liquidity | Earnings | Qualifies |\n|---|---|---|---|---|---|---|---|---|\n| MU | 3 | 3 | McGuire | $1,001 - $15,000 | 702.81 | liquid: mcap $795B, avg $vol $19,110M/day | earnings 2026-12-16 (27 trading days away) | no (held: Webull (Sacha, real), copycat) |\n| NVDA | 2 | 2 | Salazar | $1,001 - $15,000 | 174.345 | liquid: mcap $4,203B, avg $vol $20,086M/day | earnings 2026-11-17 (6 trading days away) | no (held: copycat) |\n| PG | 2 | 2 | Salazar | $1,001 - $15,000 | 165.985 | liquid: mcap $385B, avg $vol $1,091M/day | earnings date unknown (Earnings announcement* for PG:  Our vendor, Zacks Investment Research, hasn't pr) | no (held: copycat) |\n| AMAT | 1 | 1 | Gottheimer | $1,001 - $15,000 | 354.73 | liquid: mcap $282B, avg $vol $2,447M/day | earnings 2026-11-12 is 3 trading day(s) away (<= 3) | no |\n| BHE | 1 | 1 | Gottheimer | $1,001 - $15,000 | 61.83 | avg $ volume $14M < $20M | earnings date unknown (Earnings announcement* for BHE:  Our vendor, Zacks Investment Research, hasn't p) | no |\n| FMAO | 1 | 1 | Latta | $1,001 - $15,000 | 36.95 | market cap $0.5B < $2B | earnings date unknown (Earnings announcement* for FMAO:  Our vendor, Zacks Investment Research, hasn't ) | no |\n| TXN | 1 | 1 | Kean | $1,001 - $15,000 | 286.805 | liquid: mcap $262B, avg $vol $1,966M/day | earnings date unknown (Earnings announcement* for TXN:  Our vendor, Zacks Investment Research, hasn't p) | no (held: copycat) |\n| ESAB | 1 | 1 | Kean | $1,001 - $15,000 | 85.25 | avg $ volume $0M < $20M | earnings date unknown (Earnings announcement* for ESAB:  Our vendor, Zacks Investment Research, hasn't ) | no |\n\n## (b) 13F: tracked investors\nSEC EDGAR refused (403 Forbidden: SEC rejects the configured User-Agent contact (a users.noreply.github.com address)); used the 13f.info mirror of the same EDGAR 13F filings. Q3 2026 13Fs are due by **Fri Nov 14, 2026**; entry signals only from a 13F filed in the last 30 days.\n\n- **Berkshire Hathaway** (Buffett/Abel): latest Q2-2026 filed 2026-08-14 (87d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001067983&type=13F-HR) / [13f.info](https://13f.info/manager/0001067983-berkshire-hathaway-inc)\n- **Scion Asset Mgmt** (Michael Burry): latest Q3-2025 filed 2025-11-03 (371d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001649339&type=13F-HR) / [13f.info](https://13f.info/manager/0001649339-scion-asset-management-llc)\n- **Pershing Square** (Bill Ackman): latest Q1-2026 filed 2026-05-15 (178d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001336528&type=13F-HR) / [13f.info](https://13f.info/manager/0001336528-pershing-square-capital-management-l-p)\n- **Duquesne Family Office** (Stan Druckenmiller): latest Q2-2026 filed 2026-08-14 (87d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001536411&type=13F-HR) / [13f.info](https://13f.info/manager/0001536411-duquesne-family-office-llc)\n- **Appaloosa** (David Tepper): latest Q2-2026 filed 2026-08-14 (87d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001656456&type=13F-HR) / [13f.info](https://13f.info/manager/0001656456-appaloosa-lp)\n- **Situational Awareness LP** (Leopold Aschenbrenner): latest Q2-2026 filed 2026-08-14 (87d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002045724&type=13F-HR) / [13f.info](https://13f.info/manager/0002045724-situational-awareness-lp)\n\n## (c) News / 8-K on held tickers (GOOGL, MU, NBIS, NVDA, PG, PLD, RPM, T, TSM, TXN, VOO, VST)\n\n- NVDA [headline] [Nvidia's Jensen Huang admits to affair with suspected Chinese spy, raising security concerns](https://finance.yahoo.com/video/nvidias-jensen-huang-admits-to-affair-with-suspected-chinese-spy-raising-security-concerns-141917404.html?.tsrc=rss) (Yahoo Finance, 2026-11-09T14:19) tags: legal,people\n- NVDA [headline] [Nvidia stock slumps amid board investigation into CEO Jensen Huang](https://www.cbsnews.com/news/nvidia-jensen-huang-stock-board-investigation-spy/?.tsrc=rss) (Yahoo Finance, 2026-11-09T14:15) tags: legal,people\n- NVDA [headline] [Nvidia Stock Drops On Spy Scandal, CEO Probe](https://finance.yahoo.com/m/2c1c8bc5-818d-357d-a3f9-2b7a4a511e1f/nvidia-stock-drops-on-spy.html?.tsrc=rss) (Yahoo Finance, 2026-11-09T14:06) tags: legal,people\n- NVDA [headline] [Nvidia Board Launches Probe In CEO Jensen Huang Spying Case. The Stock Is Falling.](https://finance.yahoo.com/m/7d4c4e40-eb01-324f-b03d-99c6800c4248/nvidia-board-launches-probe.html?.tsrc=rss) (Yahoo Finance, 2026-11-09T13:58) tags: legal,people\n- PG [headline] [After the Democratic Midterm Sweep: 4 Dividend Stocks Built for Gridlock](https://247wallst.com/investing/2026/11/09/after-the-democratic-midterm-sweep-4-dividend-stocks-built-for-gridlock/?.tsrc=rss) (Yahoo Finance, 2026-11-09T14:27) tags: capital\n- PG [headline] [3 Legacy Dividend Stocks That Never Go Out of Style](https://247wallst.com/investing/2026/11/09/3-legacy-dividend-stocks-that-never-go-out-of-style/?.tsrc=rss) (Yahoo Finance, 2026-11-09T13:18) tags: capital\n- PG [headline] [3 Top Dividend Stocks to Buy in November for a Lifetime of Passive Income](https://www.fool.com/investing/2026/11/09/3-top-dividend-stocks-buy-november-lifetime-income/?.tsrc=rss) (Yahoo Finance, 2026-11-09T11:45) tags: capital\n- PG [headline] [Procter & Gamble's Dividend Has Survived 26 Recessions. Here's What $10,000 Now Earns in Yearly Dividend Income.](https://www.fool.com/investing/2026/11/08/procter-gambles-dividend-has-survived-26-recession/?.tsrc=rss) (Yahoo Finance, 2026-11-08T23:50) tags: capital\n- MU [headline] [Micron Has Lost Over 40% Since June. Where Does Its Price Target Stand Now?](https://247wallst.com/investing/2026/11/09/micron-has-lost-over-40-since-june-where-does-its-price-target-stand-now/?.tsrc=rss) (Yahoo Finance, 2026-11-09T13:47) tags: analyst\n- MU [headline] [Stock Market Today: Futures Jump as Market Looks to Rebound from Last Week\u2019s Big Losses; Nvidia Shares Slide as Company Investigates CEO Huang](https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11092026-12244409?.tsrc=rss) (Yahoo Finance, 2026-11-09T13:28) tags: people\n- MU [headline] [STX Posts Record Q1 FY27 Profit: Can AI Storage Demand Drive Growth?](https://finance.yahoo.com/technology/articles/stx-posts-record-q1-fy27-121300140.html?.tsrc=rss) (Yahoo Finance, 2026-11-09T12:13) tags: earnings\n- MU [headline] [Micron's 26 SCAs: Can Take-or-Pay Deals Boost Earnings Stability?](https://finance.yahoo.com/markets/stocks/articles/microns-26-scas-pay-deals-120800703.html?.tsrc=rss) (Yahoo Finance, 2026-11-09T12:08) tags: earnings\n- GOOGL [headline] [Waymo Faces a Recall Query on 2,895 Robotaxis. Alphabet\u2019s Earnings Won\u2019t Feel It, but Its $126 Billion Bet Might](https://www.tikr.com/blog/waymo-faces-a-recall-query-on-2895-robotaxis-alphabets-earnings-wont-feel-it-but-its-126-billion-bet-might?ref=yahoofinance&tlnk=yf-261109-w7qghgj5&.tsrc=rss) (Yahoo Finance, 2026-11-09T13:15) tags: earnings,risk\n- GOOGL [headline] [Bank of America Is Doubling Down on Apple While Tech Sells Off. Here\u2019s Its Price Target](https://247wallst.com/investing/2026/11/09/bank-of-america-is-doubling-down-on-apple-while-tech-sells-off-heres-its-price-target/?.tsrc=rss) (Yahoo Finance, 2026-11-09T14:03) tags: analyst\n- GOOGL [headline] [1754 Properties and Vander Capital Partners Acquire 40 Jessie Street, a 100% Google-Leased Office Building in Downtown San Francisco](https://finance.yahoo.com/real-estate/articles/1754-properties-vander-capital-partners-135500569.html?.tsrc=rss) ",
@@ -1805,9 +1809,9 @@
    "entry": 202.63,
    "high_water": 209.29,
    "id": "C1",
-   "last": 178.38,
+   "last": 179.22,
    "last_note": "",
-   "last_updated": "2026-11-09T10:22:25-05:00",
+   "last_updated": "2026-11-09T10:35:08-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-10-30T14:07:15-04:00",
@@ -1819,8 +1823,8 @@
    "thesis": "Top-ranked Congress signal (repeat buyer x3, score 3); mega-cap liquid; earnings 11/17 is 12 trading days out; buying into today's AI/tech sell-off",
    "tp1": 253.29,
    "tp1_done": false,
-   "unrealized_pct": -0.1197,
-   "unrealized_pnl": -121.25
+   "unrealized_pct": -0.1155,
+   "unrealized_pnl": -117.05
   },
   {
    "cost": 1030.08,
@@ -1828,9 +1832,9 @@
    "entry": 128.76,
    "high_water": 145.12,
    "id": "C2",
-   "last": 130.48,
+   "last": 130.42,
    "last_note": "",
-   "last_updated": "2026-11-09T10:22:25-05:00",
+   "last_updated": "2026-11-09T10:35:08-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-10-30T14:07:15-04:00",
@@ -1842,8 +1846,8 @@
    "thesis": "Freshest filing (yesterday) and a repeat buy (score 2); liquid large-cap REIT; Q3 earnings already reported mid-Oct",
    "tp1": 160.95,
    "tp1_done": false,
-   "unrealized_pct": 0.0134,
-   "unrealized_pnl": 13.76
+   "unrealized_pct": 0.0129,
+   "unrealized_pnl": 13.28
   },
   {
    "cost": 983.02,
@@ -1851,9 +1855,9 @@
    "entry": 21.37,
    "high_water": 22.12,
    "id": "C4",
-   "last": 21.6,
+   "last": 21.63,
    "last_note": "",
-   "last_updated": "2026-11-09T10:22:25-05:00",
+   "last_updated": "2026-11-09T10:35:08-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-11-02T09:38:22-05:00",
@@ -1865,8 +1869,8 @@
    "thesis": "Copy Rep. Taylor's repeat AT&T buy (also bought 10/09); liquid defensive telecom",
    "tp1": 26.71,
    "tp1_done": false,
-   "unrealized_pct": 0.0108,
-   "unrealized_pnl": 10.58
+   "unrealized_pct": 0.0122,
+   "unrealized_pnl": 11.96
   },
   {
    "cost": 952.29,
@@ -1874,9 +1878,9 @@
    "entry": 105.81,
    "high_water": 110.68,
    "id": "C5",
-   "last": 104.63,
+   "last": 104.56,
    "last_note": "",
-   "last_updated": "2026-11-09T10:22:25-05:00",
+   "last_updated": "2026-11-09T10:35:08-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-11-02T09:38:23-05:00",
@@ -1888,8 +1892,8 @@
    "thesis": "Copy Rep. Taylor's repeat RPM International buy (also bought 10/09); liquid coatings/industrial",
    "tp1": 132.26,
    "tp1_done": false,
-   "unrealized_pct": -0.0112,
-   "unrealized_pnl": -10.62
+   "unrealized_pct": -0.0118,
+   "unrealized_pnl": -11.25
   },
   {
    "cost": 929.7,
@@ -1897,9 +1901,9 @@
    "entry": 309.9,
    "high_water": 316.5,
    "id": "C7",
-   "last": 287.66,
+   "last": 288.95,
    "last_note": "",
-   "last_updated": "2026-11-09T10:22:25-05:00",
+   "last_updated": "2026-11-09T10:35:08-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-11-03T09:41:44-05:00",
@@ -1911,18 +1915,18 @@
    "thesis": "Copy Rep. Kean's TXN buy",
    "tp1": 387.38,
    "tp1_done": false,
-   "unrealized_pct": -0.0718,
-   "unrealized_pnl": -66.72
+   "unrealized_pct": -0.0676,
+   "unrealized_pnl": -62.85
   },
   {
    "cost": 710.55,
    "earnings": "earnings 2026-12-16 (28 trading days away)",
    "entry": 710.55,
-   "high_water": 728.65,
+   "high_water": 729.07,
    "id": "C8",
-   "last": 728.16,
+   "last": 729.07,
    "last_note": "",
-   "last_updated": "2026-11-09T10:22:25-05:00",
+   "last_updated": "2026-11-09T10:35:08-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-11-06T10:07:23-05:00",
@@ -1934,8 +1938,8 @@
    "thesis": "Congress buy: McGuire disclosed MU purchase; qualifies score 3, liquid mega-cap, earnings 12/16",
    "tp1": 888.19,
    "tp1_done": false,
-   "unrealized_pct": 0.0248,
-   "unrealized_pnl": 17.61
+   "unrealized_pct": 0.0261,
+   "unrealized_pnl": 18.52
   },
   {
    "cost": 993.72,
@@ -1943,9 +1947,9 @@
    "entry": 165.62,
    "high_water": 166.79,
    "id": "C9",
-   "last": 166.11,
+   "last": 166.2,
    "last_note": "",
-   "last_updated": "2026-11-09T10:22:25-05:00",
+   "last_updated": "2026-11-09T10:35:08-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-11-06T10:08:30-05:00",
@@ -1957,20 +1961,20 @@
    "thesis": "Congress buy: Salazar disclosed PG purchases (2 rows); qualifies score 2, liquid large-cap consumer staple",
    "tp1": 207.03,
    "tp1_done": false,
-   "unrealized_pct": 0.003,
-   "unrealized_pnl": 2.94
+   "unrealized_pct": 0.0035,
+   "unrealized_pnl": 3.48
   }
  ],
- "positions_value": 6458.8099999999995,
- "published_at": "2026-11-09 10:22:34 AM EST",
- "published_epoch_ms": 1794237754497,
+ "positions_value": 6468.599999999999,
+ "published_at": "2026-11-09 10:35:18 AM EST",
+ "published_epoch_ms": 1794238518147,
  "realized_pnl": -377.22,
- "server_time": "2026-11-09 10:22:34 AM EST",
+ "server_time": "2026-11-09 10:35:18 AM EST",
  "start_date": "2026-10-30",
  "starting_cash": 10000.0,
  "status": "active",
  "today": "2026-11-09",
- "total_return": -0.05309200000000003,
+ "total_return": -0.052113000000000076,
  "trades": [
   {
    "closed_at": "2026-11-05T15:46:14-05:00",
