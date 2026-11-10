@@ -34,8 +34,8 @@
  "goal_target": 100000.0,
  "mode": "paper",
  "positions": 0,
- "published_at": "2026-11-10 10:16:47 AM EST",
- "published_epoch_ms": 1794323807139,
+ "published_at": "2026-11-10 10:17:49 AM EST",
+ "published_epoch_ms": 1794323869331,
  "roles": {
   "coordinator": {
    "note": "10:00 daily run kicked off; waiting on analysts and Decider",
@@ -53,14 +53,14 @@
    "state": "idle"
   },
   "decider": {
-   "note": "AAPL reassessment complete: HOLD; Nasdaq debit above approved ceiling; no paper entry",
+   "note": "Nov 10 daily: Flow/Gamma in; waiting on Technical/Fundamentals/Sentiment/Risk reports before any SPY/QQQ put spread terms",
    "source": "status.json",
-   "state": "idle"
+   "state": "waiting"
   },
   "flow_gamma": {
-   "note": "11/10 full daily: CPI + gex + analysts",
+   "note": "11/10 FULL DAILY ~10:17: CPI +0.4% (BLS; core +0.3%). SPY751 pin750 neg; QQQ679 pin680 neg. HOLD; no --check (no complete proposal).",
    "source": "status.json",
-   "state": "researching"
+   "state": "done"
   },
   "fundamentals": {
    "note": "Reading updated rules; building 11/10 calendar",
@@ -88,7 +88,7 @@
    "state": "researching"
   }
  },
- "server_time": "2026-11-10 10:16:47 AM EST",
+ "server_time": "2026-11-10 10:17:49 AM EST",
  "starting_cash": 10000.0,
  "status_json_error": null,
  "today": "2026-11-10",
