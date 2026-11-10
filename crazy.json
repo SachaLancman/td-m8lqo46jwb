@@ -1,8 +1,6 @@
 {
  "account_value": 957.0,
- "alerts": [
-  "C15: TP25 (up 32%): sell half (all if 1 contract and up 40%+) per CRAZY.md"
- ],
+ "alerts": [],
  "bust_threshold": 20.0,
  "busted": false,
  "buying_power": 27.0,
@@ -66,13 +64,13 @@
   {
    "date": "2026-11-09",
    "value": 957.0
+  },
+  {
+   "date": "2026-11-10",
+   "value": 957.0
   }
  ],
  "intraday": [
-  {
-   "t": "2026-10-27T13:41-04:00",
-   "value": 1405.0
-  },
   {
    "t": "2026-10-27T13:46-04:00",
    "value": 1418.0
@@ -1668,9 +1666,13 @@
   {
    "t": "2026-11-09T16:33-05:00",
    "value": 957.0
+  },
+  {
+   "t": "2026-11-10T09:43-05:00",
+   "value": 957.0
   }
  ],
- "marked_at": "2026-11-09T16:33:58-05:00",
+ "marked_at": "2026-11-10T09:43:09-05:00",
  "mode": "paper",
  "multiple": 0.957,
  "name": "Crazy $1K (Grok Bot, paper)",
@@ -1688,8 +1690,8 @@
    "id": "C15",
    "kind": "option",
    "last": 4.95,
-   "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-09T16:33:58-05:00",
+   "last_note": "no usable live quotes (no live bid/ask for 375.0C 2026-12-18); previous mark kept",
+   "last_updated": "2026-11-10T09:43:09-05:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1704,8 +1706,8 @@
      "strike": 385.0
     }
    ],
-   "mark_method": "liq",
-   "mark_valid": true,
+   "mark_method": "kept",
+   "mark_valid": false,
    "mid": 5.07,
    "multiplier": 100,
    "must_close": false,
@@ -1736,8 +1738,8 @@
    "id": "C16",
    "kind": "option",
    "last": 0.5,
-   "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-09T16:33:58-05:00",
+   "last_note": "no usable live quotes (no live bid/ask for 42.5C 2026-12-18); previous mark kept",
+   "last_updated": "2026-11-10T09:43:09-05:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1752,8 +1754,8 @@
      "strike": 45.0
     }
    ],
-   "mark_method": "liq",
-   "mark_valid": true,
+   "mark_method": "kept",
+   "mark_valid": false,
    "mid": 0.59,
    "multiplier": 100,
    "must_close": false,
@@ -1784,8 +1786,8 @@
    "id": "C17",
    "kind": "option",
    "last": 1.88,
-   "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-09T16:33:58-05:00",
+   "last_note": "no usable live quotes (no live bid/ask for 50.0C 2026-12-18); previous mark kept",
+   "last_updated": "2026-11-10T09:43:09-05:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1800,8 +1802,8 @@
      "strike": 55.0
     }
    ],
-   "mark_method": "liq",
-   "mark_valid": true,
+   "mark_method": "kept",
+   "mark_valid": false,
    "mid": 2.3,
    "multiplier": 100,
    "must_close": false,
@@ -1832,8 +1834,8 @@
    "id": "C18",
    "kind": "option",
    "last": 0.29,
-   "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-09T16:33:58-05:00",
+   "last_note": "no usable live quotes (no live bid/ask for 725.0P 2026-11-13); previous mark kept",
+   "last_updated": "2026-11-10T09:43:09-05:00",
    "legs": [
     {
      "expiration": "2026-11-13",
@@ -1848,8 +1850,8 @@
      "strike": 715.0
     }
    ],
-   "mark_method": "liq",
-   "mark_valid": true,
+   "mark_method": "kept",
+   "mark_valid": false,
    "mid": 0.31,
    "multiplier": 100,
    "must_close": false,
@@ -1880,8 +1882,8 @@
    "id": "C23",
    "kind": "option",
    "last": 1.18,
-   "last_note": "liquidation mark (bid long / ask short); mid also stored",
-   "last_updated": "2026-11-09T16:33:58-05:00",
+   "last_note": "no usable live quotes (no live bid/ask for 85.0C 2026-12-18); previous mark kept",
+   "last_updated": "2026-11-10T09:43:09-05:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1896,8 +1898,8 @@
      "strike": 95.0
     }
    ],
-   "mark_method": "liq",
-   "mark_valid": true,
+   "mark_method": "kept",
+   "mark_valid": false,
    "mid": 1.26,
    "multiplier": 100,
    "must_close": false,
@@ -1920,10 +1922,10 @@
   }
  ],
  "positions_value": 930.0,
- "published_at": "2026-11-10 09:33:22 AM EST",
- "published_epoch_ms": 1794321202110,
+ "published_at": "2026-11-10 09:43:49 AM EST",
+ "published_epoch_ms": 1794321829807,
  "realized_pnl": -155.0,
- "server_time": "2026-11-10 09:33:22 AM EST",
+ "server_time": "2026-11-10 09:43:49 AM EST",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
