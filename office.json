@@ -36,8 +36,8 @@
  "goal_target": 100000.0,
  "mode": "paper",
  "positions": 0,
- "published_at": "2026-11-10 10:48:31 AM EST",
- "published_epoch_ms": 1794325711653,
+ "published_at": "2026-11-10 10:49:33 AM EST",
+ "published_epoch_ms": 1794325773418,
  "roles": {
   "coordinator": {
    "note": "10:00 daily run kicked off; waiting on analysts and Decider",
@@ -55,9 +55,9 @@
    "state": "idle"
   },
   "decider": {
-   "note": "Nov 10 daily: Flow/Gamma, Risk, Technical, Fundamentals in; waiting on Sentiment",
+   "note": "SPY 745/735P: Fund YES (1/2); waiting on Tech/Sent votes + gex --check",
    "source": "status.json",
-   "state": "waiting"
+   "state": "deciding"
   },
   "flow_gamma": {
    "note": "11/10 FULL DAILY ~10:17: CPI +0.4% (BLS; core +0.3%). SPY751 pin750 neg; QQQ679 pin680 neg. HOLD; no --check (no complete proposal).",
@@ -65,7 +65,7 @@
    "state": "done"
   },
   "fundamentals": {
-   "note": "11/10: CPI hot (+0.4/core +0.3 m/m); bear lean SPY 740/730P Dec18 (conf 3); report done",
+   "note": "11/10 votes: SPY 745/735P YES 3/5; 740/730P YES 2/5; one only",
    "source": "status.json",
    "state": "done"
   },
@@ -75,9 +75,9 @@
    "state": "done"
   },
   "sentiment": {
-   "note": "11/10 CPI-day report written; Decider handoff awaits Sacha's OK",
+   "note": "Checking SPY 750 fail + refreshing 745/735P and 740/730P for Decider",
    "source": "status.json",
-   "state": "done"
+   "state": "researching"
   },
   "skeptic": {
    "note": "AAPL Nov27 355/360: moderate; quote and gamma re-clear required",
@@ -87,10 +87,10 @@
   "technical": {
    "note": null,
    "source": "status.json",
-   "state": "done"
+   "state": "researching"
   }
  },
- "server_time": "2026-11-10 10:48:31 AM EST",
+ "server_time": "2026-11-10 10:49:33 AM EST",
  "starting_cash": 10000.0,
  "status_json_error": null,
  "today": "2026-11-10",
