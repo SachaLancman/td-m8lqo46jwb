@@ -2,9 +2,9 @@
  "account_value": 9780.0,
  "cash": 9780.0,
  "copycat": {
-  "account_value": 9449.07,
+  "account_value": 9448.7,
   "alerts": [
-   "C1 NVDA: STOP WATCH (intraday 167.49 <= stop 172.24); act only if still below from 15:45 ET"
+   "C1 NVDA: STOP WATCH (intraday 167.23 <= stop 172.24); act only if still below from 15:45 ET"
   ],
   "cash": 3010.27,
   "error": null,
@@ -19,16 +19,16 @@
    "MU",
    "PG"
   ],
-  "total_return": -0.05509300000000006
+  "total_return": -0.0551299999999999
  },
  "crazy": {
-  "account_value": 742.0,
+  "account_value": 739.0,
   "busted": false,
   "error": null,
   "goal_target": 100000.0,
   "positions": 5,
   "starting_cash": 1000.0,
-  "total_return": -0.258
+  "total_return": -0.261
  },
  "drawdown": -0.0244389027431422,
  "error": null,
@@ -36,8 +36,8 @@
  "goal_target": 100000.0,
  "mode": "paper",
  "positions": 0,
- "published_at": "2026-11-10 11:48:21 AM EST",
- "published_epoch_ms": 1794329301791,
+ "published_at": "2026-11-10 12:01:49 PM EST",
+ "published_epoch_ms": 1794330109837,
  "roles": {
   "coordinator": {
    "note": "10:00 daily run kicked off; waiting on analysts and Decider",
@@ -55,9 +55,9 @@
    "state": "idle"
   },
   "decider": {
-   "note": "SPY 745/735P still armed; 11:45 nat 3.07/2.95 > 2.85",
+   "note": "12:00 ET fill-watch: checking SPY 745/735P natural and M15",
    "source": "status.json",
-   "state": "idle"
+   "state": "deciding"
   },
   "flow_gamma": {
    "note": "11/10 FULL DAILY ~10:17: CPI +0.4% (BLS; core +0.3%). SPY751 pin750 neg; QQQ679 pin680 neg. HOLD; no --check (no complete proposal).",
@@ -90,7 +90,7 @@
    "state": "done"
   }
  },
- "server_time": "2026-11-10 11:48:21 AM EST",
+ "server_time": "2026-11-10 12:01:49 PM EST",
  "starting_cash": 10000.0,
  "status_json_error": null,
  "today": "2026-11-10",
