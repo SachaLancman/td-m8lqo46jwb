@@ -1,9 +1,9 @@
 {
- "account_value": 9625.35,
+ "account_value": 9611.900000000001,
  "alerts": [],
  "cash": 3850.92,
  "closed_trades": 3,
- "drawdown": -0.04565424095833648,
+ "drawdown": -0.04698779770786854,
  "error": null,
  "history": [
   {
@@ -40,7 +40,7 @@
   },
   {
    "date": "2026-11-11",
-   "value": 9625.35
+   "value": 9611.9
   }
  ],
  "intraday": [
@@ -1351,6 +1351,10 @@
   {
    "t": "2026-11-11T13:56-05:00",
    "value": 9625.35
+  },
+  {
+   "t": "2026-11-11T14:11-05:00",
+   "value": 9611.9
   }
  ],
  "last_signals": {
@@ -2108,7 +2112,7 @@
   ],
   "report": "reports/2026-11-11/copycat.md"
  },
- "marked_at": "2026-11-11T13:56:28-05:00",
+ "marked_at": "2026-11-11T14:11:53-05:00",
  "mode": "paper",
  "name": "Copycat $10K (PAPER)",
  "notes": "# Copycat scan 2026-11-11 12:45 ET (paper, free data)\n\nAccount: $9,622.41 value, $3,850.92 cash, 6/10 positions. Rules: copycat/COPYCAT.md.\n\n## (a) Congress: House PTRs\nWindow: filed since 2026-10-28 (buys must be filed within ~10 days to count). Source: House Clerk.\n\nNew filings this scan: 0 (of 18 in window)\n\n| | Member | Ticker | Type | Amount | Traded | Delay | Held? | Filing |\n|---|---|---|---|---|---|---|---|---|\n\n### Ranked BUY candidates (filed <= 10 days; score = amount tier + repeat buys + 2 x extra members + good-record bonus)\n\n| Ticker | Score | Buys | Members | Biggest amount | Price | Liquidity | Earnings | Qualifies |\n|---|---|---|---|---|---|---|---|---|\n| MU | 3 | 3 | McGuire | $1,001 - $15,000 | 822.4275 | liquid: mcap $931B, avg $vol $22,605M/day | earnings 2026-12-16 (25 trading days away) | no (held: Webull (Sacha, real), copycat) |\n| NVDA | 2 | 2 | Salazar | $1,001 - $15,000 | 176.59 | liquid: mcap $4,256B, avg $vol $22,307M/day | earnings 2026-11-17 (4 trading days away) | YES |\n| PG | 2 | 2 | Salazar | $1,001 - $15,000 | 166.9486 | liquid: mcap $387B, avg $vol $1,098M/day | earnings date unknown (Earnings announcement* for PG:  Our vendor, Zacks Investment Research, hasn't pr) | no (held: copycat) |\n| AMAT | 1 | 1 | Gottheimer | $1,001 - $15,000 | 402.9 | liquid: mcap $320B, avg $vol $2,816M/day | earnings 2026-11-12 is 1 trading day(s) away (<= 3) | no |\n| BHE | 1 | 1 | Gottheimer | $1,001 - $15,000 | 66.31 | avg $ volume $15M < $20M | earnings date unknown (Earnings announcement* for BHE:  Our vendor, Zacks Investment Research, hasn't p) | no |\n| FMAO | 1 | 1 | Latta | $1,001 - $15,000 | 36.735 | market cap $0.5B < $2B | earnings date unknown (Earnings announcement* for FMAO:  Our vendor, Zacks Investment Research, hasn't ) | no |\n\n## (b) 13F: tracked investors\nSEC EDGAR refused (403 Forbidden: SEC rejects the configured User-Agent contact (a users.noreply.github.com address)); used the 13f.info mirror of the same EDGAR 13F filings. Q3 2026 13Fs are due by **Fri Nov 14, 2026**; entry signals only from a 13F filed in the last 30 days.\n\n- **Berkshire Hathaway** (Buffett/Abel): latest Q2-2026 filed 2026-08-14 (89d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001067983&type=13F-HR) / [13f.info](https://13f.info/manager/0001067983-berkshire-hathaway-inc)\n- **Scion Asset Mgmt** (Michael Burry): latest Q3-2025 filed 2025-11-03 (373d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001649339&type=13F-HR) / [13f.info](https://13f.info/manager/0001649339-scion-asset-management-llc)\n- **Pershing Square** (Bill Ackman): latest Q1-2026 filed 2026-05-15 (180d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001336528&type=13F-HR) / [13f.info](https://13f.info/manager/0001336528-pershing-square-capital-management-l-p)\n- **Duquesne Family Office** (Stan Druckenmiller): latest Q2-2026 filed 2026-08-14 (89d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001536411&type=13F-HR) / [13f.info](https://13f.info/manager/0001536411-duquesne-family-office-llc)\n- **Appaloosa** (David Tepper): latest Q2-2026 filed 2026-08-14 (89d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001656456&type=13F-HR) / [13f.info](https://13f.info/manager/0001656456-appaloosa-lp)\n- **Situational Awareness LP** (Leopold Aschenbrenner): latest Q2-2026 filed 2026-08-14 (89d ago) (stale for entries) [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002045724&type=13F-HR) / [13f.info](https://13f.info/manager/0002045724-situational-awareness-lp)\n\n## (c) News / 8-K on held tickers (GOOGL, MU, NBIS, PG, PLD, RPM, T, TSM, TXN, VOO, VST)\n\n- MU [headline] [Update: US Equity Indexes Advance as CoreWeave's Quarterly Results Fire Up AI Trade](https://finance.yahoo.com/technology/ai/articles/us-equity-indexes-advance-coreweave-173029168.html?.tsrc=rss) (Yahoo Finance, 2026-11-11T17:30) tags: earnings\n- MU [headline] [CoreWeave results lift AI infrastructure stocks as demand for computing power surges](https://www.proactiveinvestors.com/companies/news/1101611/coreweave-results-lift-ai-infrastructure-stocks-as-demand-for-computing-power-surges-1101611.html?.tsrc=rss) (Yahoo Finance, 2026-11-11T17:12) tags: earnings\n- MU [headline] [Why Micron Stock Popped Today](https://www.fool.com/investing/2026/11/11/why-micron-stock-popped-today/?.tsrc=rss) (Yahoo Finance, 2026-11-11T16:02) tags: earnings\n- MU [headline] [Micron Stock Surges After CoreWeave's AI Earnings Surprise](https://finance.yahoo.com/markets/stocks/articles/micron-stock-surges-coreweaves-ai-160154021.html?.tsrc=rss) (Yahoo Finance, 2026-11-11T16:01) tags: earnings\n- GOOGL [headline] [Eric Schmidt, Former Google CEO, Should Run Nvidia](https://247wallst.com/investing/2026/11/11/eric-schmidt-former-google-ceo-should-run-nvidia/?.tsrc=rss) (Yahoo Finance, 2026-11-11T15:55) tags: legal,people\n- GOOGL [headline] [Google Could Buy Uber to Win the Robotaxi Wars, Reuters Columnist Argues](https://www.benzinga.com/markets/prediction-markets/26/11/63153119/google-uber-robotaxis?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss) (Yahoo Finance, 2026-11-11T17:00) tags: deal\n- GOOGL [headline] [Many AI companies will adopt advertising: Criteo CEO](https://finance.yahoo.com/media-advertising/articles/many-ai-companies-adopt-advertising-022443967.html?.tsrc=rss) (Yahoo Finance, 2026-11-11T16:25) tags: people\n- GOOGL [headline] [Alphabet Stocks Rise as Google Commits $10 Billion to Anthropic IPO](https://finance.yahoo.com/markets/stocks/articles/alphabet-stocks-rise-google-commits-170439616.html?.tsrc=rss) (Yahoo Finance, 2026-11-11T17:04)\n- NBIS [headline] [CoreWeave Soars 17% on Raised Outlook, Rules Out Unsecured Debt: \u201cNor Do We Need To\u201d](https://www.tikr.com/blog/coreweave-soars-17-on-raised-outlook-rules-out-unsecured-debt-nor-do-we-need-to?ref=yahoofinance&tlnk=yf-261111-r7w7f56j&.tsrc=rss) (Yahoo Finance, 2026-11-11T14:32) tags: earnings,people\n- NBIS [headline] [AI Stocks, Neoclouds Rebound From SoftBank Bump, Get CoreWeave Lift](https://finance.yahoo.com/m/70db5656-a3a8-363b-9a8f-fe7f4b584fee/ai-stocks%2C-neoclouds-rebound.html?.tsrc=rss) (Yahoo Finance, 2026-11-11T16:54) tags: earnings\n- NBIS [headline] [Tech rises as CoreWeave results reignite AI trade: AlphaCheck](https://finance.yahoo.com/markets/article/tech-rises-coreweave-results-reignite-ai-trade-alphacheck-153336772.html?.tsrc=rss) (Yahoo Finance, 2026-11-11T15:33) tags: earnings\n- NBIS [headline] [PPI Data in Focus](https://finance.yahoo.com/markets/stocks/articles/ppi-data-focus-162600538.html?.tsrc=rss) (Yahoo Finance, 2026-11-11T16:26)\n- PLD [headline] [Prologis: Rents Must Climb 27% to Justify New Warehouses](https://www.credaily.com/briefs/prologis-rents-must-climb-27-to-justify-new-warehouses/?.tsrc=rss) (Yahoo Finance, 2026-11-11T16:46)\n- PLD [headline] [Form 8.3 Prologis Inc 11-Nov-26 Opening Position Disclosure](https://finance.yahoo.com/markets/options/articles/form-8-3-prologis-inc-153400866.html?.tsrc=rss) (Yahoo Finance, 2026-11-11T15:34)\n- TSM [headline] [Something happened in October that changes the TSMC stock debate](https://www.thestreet.com/investing/tsmc-record-october-sales-chip-sell-off?.tsrc=rss) (Yahoo Finance, 2026-11-11T16:07) tags: earnings\n- TSM [headline] [Marvell and Intel Rally 7% as CoreWeave\u2019s Results Reignite the AI Chip Trade; Taiwan Semiconductor Climbs 4%](https://247wallst.com/investing/2026/11/11/marvell-and-intel-rally-7-as-coreweaves-results-reignite-the-ai-chip-trade-taiwan-semiconductor-climbs-4/?.tsrc=rss) (Yahoo Finance, 2026-11-11T14:48) tags: earnings\n- T [headline] [Even $50,000 in Dividend Stocks Pays More Inside a Roth IRA. Here\u2019s How Much More](https://247wallst.com/investing/2026/11/11/even-50000-in-dividend-stocks-pays-more-inside-a-roth-ira-heres-how-much-more/?.tsrc=rss) (Yahoo Finance, 2026-11-11T15:47) tags: capital\n- T [headline] [How Investors May Respond To Corning (GLW) ETF Buying And AI Demand](https://finance.yahoo.com/markets/stocks/articles/investors-may-respond-corning-glw-151609125.html?.tsrc=rss) (Yahoo Finance, 2026-11-11T15:16) tags: capital\n- T [headline] [ASTS Q3 Earnings Call Highlights Service Rollout and Launch Plans](https://finance.yahoo.com/markets/stocks/articles/asts-q3-earnings-call-highlights-140000007.html?.tsrc=rss) (Yahoo Finance, 2026-11-11T14:00) tags: earnings\n- VST [headline] [Vistra Has Lost 29% in a Year. CIBC Cut Its Target but Still Sees 30% Upside](https://www.tikr.com/blog/vistra-has-lost-29-in-a-year-cibc-cut-its-target-but-still-sees-30-upside?ref=yahoofinance&tlnk=yf-261111-mwxgxv6h&.tsrc=rss) (Yahoo Finance, 2026-11-11T15:37) tags: analyst\n- VST [headline] [Here's What Key Metrics Tell Us About Vistra (VST) Q3 Earnings](https://finance.yahoo.com/markets/stocks/a",
@@ -2121,9 +2125,9 @@
    "entry": 128.76,
    "high_water": 145.12,
    "id": "C2",
-   "last": 129.99,
+   "last": 130.06,
    "last_note": "",
-   "last_updated": "2026-11-11T13:56:28-05:00",
+   "last_updated": "2026-11-11T14:11:53-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-10-30T14:07:15-04:00",
@@ -2135,8 +2139,8 @@
    "thesis": "Freshest filing (yesterday) and a repeat buy (score 2); liquid large-cap REIT; Q3 earnings already reported mid-Oct",
    "tp1": 160.95,
    "tp1_done": false,
-   "unrealized_pct": 0.0096,
-   "unrealized_pnl": 9.84
+   "unrealized_pct": 0.0101,
+   "unrealized_pnl": 10.4
   },
   {
    "cost": 983.02,
@@ -2144,9 +2148,9 @@
    "entry": 21.37,
    "high_water": 22.12,
    "id": "C4",
-   "last": 22.0,
+   "last": 22.03,
    "last_note": "",
-   "last_updated": "2026-11-11T13:56:28-05:00",
+   "last_updated": "2026-11-11T14:11:53-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-11-02T09:38:22-05:00",
@@ -2158,8 +2162,8 @@
    "thesis": "Copy Rep. Taylor's repeat AT&T buy (also bought 10/09); liquid defensive telecom",
    "tp1": 26.71,
    "tp1_done": false,
-   "unrealized_pct": 0.0295,
-   "unrealized_pnl": 28.98
+   "unrealized_pct": 0.0309,
+   "unrealized_pnl": 30.36
   },
   {
    "cost": 952.29,
@@ -2167,9 +2171,9 @@
    "entry": 105.81,
    "high_water": 110.68,
    "id": "C5",
-   "last": 105.77,
+   "last": 105.79,
    "last_note": "",
-   "last_updated": "2026-11-11T13:56:28-05:00",
+   "last_updated": "2026-11-11T14:11:53-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-11-02T09:38:23-05:00",
@@ -2181,8 +2185,8 @@
    "thesis": "Copy Rep. Taylor's repeat RPM International buy (also bought 10/09); liquid coatings/industrial",
    "tp1": 132.26,
    "tp1_done": false,
-   "unrealized_pct": -0.0004,
-   "unrealized_pnl": -0.36
+   "unrealized_pct": -0.0002,
+   "unrealized_pnl": -0.18
   },
   {
    "cost": 929.7,
@@ -2190,9 +2194,9 @@
    "entry": 309.9,
    "high_water": 316.5,
    "id": "C7",
-   "last": 313.82,
+   "last": 311.33,
    "last_note": "",
-   "last_updated": "2026-11-11T13:56:28-05:00",
+   "last_updated": "2026-11-11T14:11:53-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-11-03T09:41:44-05:00",
@@ -2204,8 +2208,8 @@
    "thesis": "Copy Rep. Kean's TXN buy",
    "tp1": 387.38,
    "tp1_done": false,
-   "unrealized_pct": 0.0126,
-   "unrealized_pnl": 11.76
+   "unrealized_pct": 0.0046,
+   "unrealized_pnl": 4.29
   },
   {
    "cost": 710.55,
@@ -2213,9 +2217,9 @@
    "entry": 710.55,
    "high_water": 826.19,
    "id": "C8",
-   "last": 825.62,
+   "last": 818.12,
    "last_note": "",
-   "last_updated": "2026-11-11T13:56:28-05:00",
+   "last_updated": "2026-11-11T14:11:53-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-11-06T10:07:23-05:00",
@@ -2227,8 +2231,8 @@
    "thesis": "Congress buy: McGuire disclosed MU purchase; qualifies score 3, liquid mega-cap, earnings 12/16",
    "tp1": 888.19,
    "tp1_done": false,
-   "unrealized_pct": 0.1619,
-   "unrealized_pnl": 115.07
+   "unrealized_pct": 0.1514,
+   "unrealized_pnl": 107.57
   },
   {
    "cost": 993.72,
@@ -2236,9 +2240,9 @@
    "entry": 165.62,
    "high_water": 169.71,
    "id": "C9",
-   "last": 167.25,
+   "last": 167.15,
    "last_note": "",
-   "last_updated": "2026-11-11T13:56:28-05:00",
+   "last_updated": "2026-11-11T14:11:53-05:00",
    "mark_method": "bid",
    "mark_valid": true,
    "opened_at": "2026-11-06T10:08:30-05:00",
@@ -2250,20 +2254,20 @@
    "thesis": "Congress buy: Salazar disclosed PG purchases (2 rows); qualifies score 2, liquid large-cap consumer staple",
    "tp1": 207.03,
    "tp1_done": false,
-   "unrealized_pct": 0.0098,
-   "unrealized_pnl": 9.78
+   "unrealized_pct": 0.0092,
+   "unrealized_pnl": 9.18
   }
  ],
- "positions_value": 5774.43,
- "published_at": "2026-11-11 01:56:38 PM EST",
- "published_epoch_ms": 1794423398544,
+ "positions_value": 5760.9800000000005,
+ "published_at": "2026-11-11 02:12:06 PM EST",
+ "published_epoch_ms": 1794424326143,
  "realized_pnl": -549.72,
- "server_time": "2026-11-11 01:56:38 PM EST",
+ "server_time": "2026-11-11 02:12:06 PM EST",
  "start_date": "2026-10-30",
  "starting_cash": 10000.0,
  "status": "active",
  "today": "2026-11-11",
- "total_return": -0.03746499999999997,
+ "total_return": -0.0388099999999999,
  "trades": [
   {
    "closed_at": "2026-11-05T15:46:14-05:00",
