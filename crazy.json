@@ -76,10 +76,6 @@
  ],
  "intraday": [
   {
-   "t": "2026-10-28T13:35-04:00",
-   "value": 1235.0
-  },
-  {
    "t": "2026-10-28T13:39-04:00",
    "value": 1235.0
   },
@@ -1674,9 +1670,13 @@
   {
    "t": "2026-11-11T09:30-05:00",
    "value": 718.0
+  },
+  {
+   "t": "2026-11-11T09:41-05:00",
+   "value": 718.0
   }
  ],
- "marked_at": "2026-11-11T09:30:13-05:00",
+ "marked_at": "2026-11-11T09:41:11-05:00",
  "mode": "paper",
  "multiple": 0.718,
  "name": "Crazy $1K (Grok Bot, paper)",
@@ -1694,8 +1694,8 @@
    "id": "C15",
    "kind": "option",
    "last": 3.55,
-   "last_note": "before 09:35 ET: opening quotes not used, previous mark kept",
-   "last_updated": "2026-11-11T09:30:13-05:00",
+   "last_note": "no usable live quotes (no live bid/ask for 375.0C 2026-12-18); previous mark kept",
+   "last_updated": "2026-11-11T09:41:11-05:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1742,8 +1742,8 @@
    "id": "C16",
    "kind": "option",
    "last": 0.31,
-   "last_note": "before 09:35 ET: opening quotes not used, previous mark kept",
-   "last_updated": "2026-11-11T09:30:13-05:00",
+   "last_note": "liquidation mark (bid long / ask short); mid also stored",
+   "last_updated": "2026-11-11T09:41:11-05:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1758,8 +1758,8 @@
      "strike": 45.0
     }
    ],
-   "mark_method": "kept",
-   "mark_valid": false,
+   "mark_method": "liq",
+   "mark_valid": true,
    "mid": 0.42,
    "multiplier": 100,
    "must_close": false,
@@ -1776,7 +1776,7 @@
    "target_hit": false,
    "thesis": "Follow $3.6M NKE 45C Sept whale, cheaper Dec spread",
    "underlying": "NKE",
-   "underlying_last": 38.675,
+   "underlying_last": 38.42,
    "unrealized_pct": -0.5694,
    "unrealized_pnl": -82.0
   },
@@ -1790,8 +1790,8 @@
    "id": "C17",
    "kind": "option",
    "last": 1.73,
-   "last_note": "before 09:35 ET: opening quotes not used, previous mark kept",
-   "last_updated": "2026-11-11T09:30:13-05:00",
+   "last_note": "no usable live quotes (no live bid/ask for 50.0C 2026-12-18); previous mark kept",
+   "last_updated": "2026-11-11T09:41:11-05:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1838,8 +1838,8 @@
    "id": "C18",
    "kind": "option",
    "last": 0.16,
-   "last_note": "before 09:35 ET: opening quotes not used, previous mark kept",
-   "last_updated": "2026-11-11T09:30:13-05:00",
+   "last_note": "no usable live quotes (no live bid/ask for 725.0P 2026-11-13); previous mark kept",
+   "last_updated": "2026-11-11T09:41:11-05:00",
    "legs": [
     {
      "expiration": "2026-11-13",
@@ -1886,8 +1886,8 @@
    "id": "C23",
    "kind": "option",
    "last": 0.85,
-   "last_note": "before 09:35 ET: opening quotes not used, previous mark kept",
-   "last_updated": "2026-11-11T09:30:13-05:00",
+   "last_note": "no usable live quotes (no live bid/ask for 85.0C 2026-12-18); previous mark kept",
+   "last_updated": "2026-11-11T09:41:11-05:00",
    "legs": [
     {
      "expiration": "2026-12-18",
@@ -1926,10 +1926,10 @@
   }
  ],
  "positions_value": 691.0,
- "published_at": "2026-11-11 09:30:16 AM EST",
- "published_epoch_ms": 1794407416790,
+ "published_at": "2026-11-11 09:41:55 AM EST",
+ "published_epoch_ms": 1794408115315,
  "realized_pnl": -155.0,
- "server_time": "2026-11-11 09:30:16 AM EST",
+ "server_time": "2026-11-11 09:41:55 AM EST",
  "start_date": "2026-10-22",
  "starting_cash": 1000.0,
  "status": "active",
