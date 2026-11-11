@@ -33,8 +33,8 @@
  "goal_target": 100000.0,
  "mode": "paper",
  "positions": 0,
- "published_at": "2026-11-11 10:12:56 AM EST",
- "published_epoch_ms": 1794409976142,
+ "published_at": "2026-11-11 10:16:59 AM EST",
+ "published_epoch_ms": 1794410219005,
  "roles": {
   "coordinator": {
    "note": "10 AM daily run: asking analysts",
@@ -52,14 +52,14 @@
    "state": "idle"
   },
   "decider": {
-   "note": "SPY 745/735P fill window closed after 15:30 ET, not filled",
+   "note": "Nov 11 daily: Tech NO + Flow/Gamma HOLD in; waiting on Fundamentals/Sentiment/Risk",
    "source": "status.json",
-   "state": "idle"
+   "state": "waiting"
   },
   "flow_gamma": {
-   "note": "11/11 ~10:12 daily: read 10:10 canon, no overwrite",
+   "note": "11/11 ~10:15 ET FULL DAILY written (9:46 note kept): 10:10 canon read, SPY 755/760C tgt 760+755 and QQQ 695/700C stop 684+679 checked; whale",
    "source": "status.json",
-   "state": "researching"
+   "state": "done"
   },
   "fundamentals": {
    "note": "11/11 daily run started",
@@ -67,9 +67,9 @@
    "state": "researching"
   },
   "risk": {
-   "note": "daily Risk 2026-11-11",
+   "note": "daily risk.md 2026-11-11",
    "source": "status.json",
-   "state": "researching"
+   "state": "writing"
   },
   "sentiment": {
    "note": "Daily 2026-11-11 sentiment research started",
@@ -87,7 +87,7 @@
    "state": "researching"
   }
  },
- "server_time": "2026-11-11 10:12:56 AM EST",
+ "server_time": "2026-11-11 10:16:59 AM EST",
  "starting_cash": 10000.0,
  "status_json_error": null,
  "today": "2026-11-11",
