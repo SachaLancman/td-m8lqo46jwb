@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hearth &amp; Third · Café + Bakery · Old City Philadelphia (Demo)</title>
+<meta name="description" content="Demo website concept for a neighborhood café and bakery in Old City, Philadelphia: online ordering, table and catering booking, AI chat assistant and automatic review requests.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Hearth & Third · Café + Bakery (demo site)">
+<meta property="og:description" content="A modern café website demo: order ahead, book catering, chat assistant, review automation.">
+<meta property="og:image" content="img/croissant-dark.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2248%22 fill=%22%23e7b46a%22/%3E%3Ctext x=%2250%22 y=%2268%22 font-size=%2254%22 text-anchor=%22middle%22 font-family=%22Georgia%22 fill=%22%231b1410%22%3EH%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="demo-bar">Demo concept · sample business, not a real café · <a href="#built">what's included ↓</a></div>
+
+<header class="nav" id="top">
+  <a class="logo" href="#top"><span class="logo-mark">H</span><span>Hearth <em>&amp;</em> Third</span></a>
+  <nav class="links">
+    <a href="#menu">Menu</a><a href="#story">Story</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a>
+  </nav>
+  <div class="nav-cta">
+    <span class="open-pill" id="openPill"><i></i><b>Checking hours…</b></span>
+    <button class="btn btn-solid" data-book="pickup">Order ahead</button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <canvas id="cup3d" aria-hidden="true"></canvas>
+  <div class="hero-glow"></div>
+  <div class="hero-copy">
+    <p class="eyebrow reveal">Café + Bakery · 3rd St, Old City</p>
+    <h1 class="reveal"><span class="line">Warm croissants.</span><span class="line">Serious <i>coffee.</i></span><span class="line small">Baked here at 5am, gone by noon.</span></h1>
+    <div class="hero-actions reveal">
+      <button class="btn btn-solid big magnetic" data-book="pickup">Order ahead for pickup</button>
+      <button class="btn btn-ghost big magnetic" data-book="table">Book a table / catering</button>
+    </div>
+    <div class="hero-proof reveal">
+      <div class="stars">★★★★★</div>
+      <div><b>4.8</b> on Google · <b>312</b> reviews <span class="muted">(sample numbers)</span></div>
+    </div>
+  </div>
+  <div class="scroll-hint"><span></span>scroll</div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Almond croissant</span><span>✺</span><span>Oat cortado</span><span>✺</span><span>Sourdough loaf</span><span>✺</span><span>Cardamom bun</span><span>✺</span><span>Breakfast sandwich</span><span>✺</span><span>Cold brew</span><span>✺</span>
+  <span>Almond croissant</span><span>✺</span><span>Oat cortado</span><span>✺</span><span>Sourdough loaf</span><span>✺</span><span>Cardamom bun</span><span>✺</span><span>Breakfast sandwich</span><span>✺</span><span>Cold brew</span><span>✺</span>
+</div></div>
+
+<section class="menu" id="menu">
+  <div class="section-head reveal">
+    <p class="eyebrow">The menu</p>
+    <h2>Small menu. <i>Everything made here.</i></h2>
+  </div>
+  <div class="tabs reveal" role="tablist">
+    <button class="tab active" data-tab="coffee" role="tab">Coffee</button>
+    <button class="tab" data-tab="pastry" role="tab">Pastry</button>
+    <button class="tab" data-tab="lunch" role="tab">Lunch</button>
+  </div>
+  <div class="menu-grid" id="menuGrid"></div>
+  <p class="menu-note reveal">Tap any item to add it to a pickup order. Vegan / gluten-free marked <span class="tag">VG</span> <span class="tag">GF</span></p>
+</section>
+
+<section class="story" id="story">
+  <div class="story-media">
+    <figure class="tilt reveal" style="--r:-4deg"><img src="img/croissant-dark.jpg" alt="Fresh croissants dusted with sugar" loading="lazy"></figure>
+    <figure class="tilt reveal small" style="--r:5deg"><img src="img/latte-table.jpg" alt="Latte art on a wooden table" loading="lazy"></figure>
+  </div>
+  <div class="story-copy reveal">
+    <p class="eyebrow">Our story</p>
+    <h2>A neighborhood counter, <i>not a chain.</i></h2>
+    <p>Two bakers, one old Old City storefront and a lot of butter. We laminate dough by hand every night, pull espresso from a local roaster and know most regulars by their order.</p>
+    <div class="stats">
+      <div><b data-count="1400">0</b><span>croissants a week</span></div>
+      <div><b data-count="6">0</b><span>years on 3rd St</span></div>
+      <div><b data-count="38">0</b><span>catering events last month</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" aria-label="Photos">
+  <div class="g-row" data-speed="-0.15">
+    <img src="img/interior.jpg" alt="Café interior" loading="lazy"><img src="img/bakery-case.jpg" alt="Bakery case with bread" loading="lazy"><img src="img/cheers.jpg" alt="Friends toasting with lattes" loading="lazy">
+  </div>
+  <div class="g-row" data-speed="0.12">
+    <img src="img/croissants.jpg" alt="Basket of croissants" loading="lazy"><img src="img/garden.jpg" alt="Back garden seating" loading="lazy"><img src="img/cafe-sign.jpg" alt="Café sign" loading="lazy">
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="section-head reveal">
+    <p class="eyebrow">What people say</p>
+    <h2>Rated <i>4.8</i>&nbsp;by the neighborhood</h2>
+    <p class="muted">Sample reviews for the demo. On a live site these pull in from Google automatically.</p>
+  </div>
+  <div class="review-track" id="reviewTrack"></div>
+</section>
+
+<section class="cta-band">
+  <div class="reveal">
+    <h2>Office breakfast? <i>We'll bring the trays.</i></h2>
+    <p>Pastry boxes, coffee carafes and sandwich platters for 10–80 people. Book 48 hours ahead.</p>
+    <button class="btn btn-solid big magnetic" data-book="catering">Plan a catering order</button>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="visit-card reveal">
+    <p class="eyebrow">Visit</p>
+    <h2>3rd St, Old City</h2>
+    <p class="muted">Sample address · two blocks from Independence Hall</p>
+    <ul class="hours" id="hoursList"></ul>
+    <div class="visit-actions">
+      <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Old+City+Philadelphia+PA+19106" target="_blank" rel="noopener">Directions</a>
+      <a class="btn btn-ghost" href="tel:+12155550123">Call (215) 555-0123</a>
+    </div>
+  </div>
+  <div class="map reveal" aria-hidden="true">
+    <div class="map-grid"></div>
+    <div class="pin"><span><b>H&amp;3</b></span></div>
+    <div class="street s1">Market St</div><div class="street s2">Chestnut St</div><div class="street s3">N 3rd St</div><div class="street s4">N 2nd St</div>
+  </div>
+</section>
+
+<section class="built" id="built">
+  <div class="section-head reveal">
+    <p class="eyebrow">About this demo</p>
+    <h2>What your business gets</h2>
+    <p class="muted">This is a sample site by Sacha Lancman to show local Philadelphia businesses what a modern site can do. Your real photos, menu and reviews go in.</p>
+  </div>
+  <div class="features">
+    <div class="feat reveal"><b>01</b><h3>Mobile-first, fast</h3><p>Built for phones, where most of your customers find you. Loads in about a second.</p></div>
+    <div class="feat reveal"><b>02</b><h3>Order &amp; book online</h3><p>Pickup orders, table or appointment booking and catering requests, 24/7. Connects to Square, Toast, Vagaro, Booksy or Calendly.</p></div>
+    <div class="feat reveal"><b>03</b><h3>AI chat assistant</h3><p>Answers "are you open?", "do you have vegan options?" and "can I book for 6?" at midnight, and hands hot leads to you. Try it ↘</p></div>
+    <div class="feat reveal"><b>04</b><h3>Automatic review requests</h3><p>After each order or visit, customers get a friendly text asking for a Google review. More reviews, higher in Maps.</p></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="logo"><span class="logo-mark">H</span><span>Hearth <em>&amp;</em> Third</span></div>
+  <p class="muted">Demo concept. Business name, numbers and reviews are samples. Photos: Unsplash.</p>
+  <p class="muted">Site by Sacha Lancman · Philadelphia</p>
+</footer>
+
+<!-- Booking / ordering modal -->
+<div class="modal" id="bookModal" aria-hidden="true" role="dialog" aria-labelledby="bookTitle">
+  <div class="modal-card">
+    <button class="x" data-close aria-label="Close">×</button>
+    <div class="seg" id="bookSeg">
+      <button data-type="pickup">Pickup order</button><button data-type="table">Table</button><button data-type="catering">Catering</button>
+    </div>
+    <h3 id="bookTitle">Order ahead</h3>
+    <div id="cartBox" class="cart"></div>
+    <label class="lbl">Day</label>
+    <div class="days" id="days"></div>
+    <label class="lbl">Time</label>
+    <div class="slots" id="slots"></div>
+    <div class="row2">
+      <div><label class="lbl" for="bName">Name</label><input id="bName" placeholder="Jamie" autocomplete="off"></div>
+      <div><label class="lbl" for="bPhone">Mobile</label><input id="bPhone" placeholder="(215) 555-0100" autocomplete="off" inputmode="tel"></div>
+    </div>
+    <div id="partyRow"><label class="lbl" for="bParty">Party size</label><input id="bParty" type="number" min="1" max="80" value="2"></div>
+    <button class="btn btn-solid big wide" id="bConfirm">Confirm</button>
+    <p class="tiny muted">Demo only: nothing is sent or charged.</p>
+  </div>
+  <div class="modal-done" id="bookDone">
+    <div class="check">✓</div>
+    <h3>You're all set</h3>
+    <p id="doneText"></p>
+    <div class="sms">
+      <div class="sms-h">Automatic text, sent the next day</div>
+      <div class="bubble">Hi <span id="smsName">Jamie</span>, thanks for coming to Hearth &amp; Third! 🥐 Mind leaving us a quick Google review? It really helps a small shop: g.page/r/review-link</div>
+    </div>
+    <button class="btn btn-ghost" data-close>Close</button>
+  </div>
+</div>
+
+<!-- Chat widget -->
+<button class="chat-fab" id="chatFab" aria-label="Open chat"><span class="dot"></span><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></button>
+<div class="chat" id="chat" aria-hidden="true">
+  <div class="chat-h"><div class="avatar">H</div><div><b>Hearth &amp; Third</b><span>AI assistant · replies instantly</span></div><button class="x" id="chatClose" aria-label="Close chat">×</button></div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chips" id="chips"></div>
+  <form class="chat-in" id="chatForm"><input id="chatInput" placeholder="Ask about hours, menu, catering…" autocomplete="off"><button aria-label="Send">➤</button></form>
+</div>
+
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}</script>
+<script type="module" src="cup3d.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
